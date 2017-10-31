@@ -1,0 +1,951 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family:Arial;
+}
+#fixedheader {
+    height:110px;
+    position: fixed;
+    z-index: 9999;
+    white-space: nowrap;
+    margin:auto;
+}
+.ErrorMessages{color:#ff0f0f;font-weight:bold;}
+#mobileheader {
+    height:110px;
+    z-index: 9999;
+    white-space: nowrap;
+    margin:auto;
+}
+.ErrorMessages{color:#ff0f0f;font-weight:bold;}
+
+div{overflow:hidden;}
+.HotLinks{font-size: .7em;}
+.FacebookIFrame{margin: 20px 0px 0px 0px;}
+.CartIcon{margin-top:17px;}
+.CartSummary{color:#ffffff; font-size: .7em;}
+.SearchHeaderText{color:#ffffff; font-size: .8em;}
+.AlertHeader{border: solid 1px black; background-color: Yellow; padding: 3px 0px 3px 0px; margin: 7px 0px 7px 0px; text-align:center; display:none;}
+.ContestPlacesProfile{float:left; margin: 0px 5px 0px 0px; font-weight:bold;}
+.SkaterProfileBlocks{width: 300px; float:left; padding: 0px 15px 10px 0px;}
+.MugShotProfile{margin-right:10px; float:left;}
+.SkaterIconMenuItem{float:left; padding: .8%; margin: .8%; text-align:center; font-size:.7em; width:9%; background-color: #d6d6d6;
+                    -moz-border-radius: 10px;
+                    border-radius: 10px;
+                    }
+.DPTComment{margin: 5px; padding:5px;}
+.PostInfo{margin: 10px 10px 10px 0px;}
+.PostMediaStrip{border-top: solid 2px black; background-color:#ffffff; margin: 25px -5px 0px -5px; padding:0px; clear:both;}
+.PostMediaStripSub{padding: 8px 0px 5px 10px;}
+
+.FeaturedCompany{margin:0px;padding:0px; float:left; width:230px; text-align:center;}
+.CompanyDiv{margin:0px;padding:0px; float:left; width:130px; height:40px;}
+.CompanyLinks{font-size:.6em;}
+
+.GridMfgs280 {width: 290px; text-align:center; list-style-type:none; margin:0px; padding:0px;}
+.GridMfgs280 li{width: 60px; float: left; padding:5px; margin:0px; height: 60px;}
+
+.NewArrivalSmallBlock{padding:11px; margin:0px; text-align:center; font-size: .7em; float:left; width: 60px; height:95px;}
+.NewArrivalSmallBlockText{font-size:.8em; text-align:center; padding:0px; margin:0px;}
+.NewArrivalSmallBlockTextAlert{font-size:.7em; font-weight:bold; color:Red; text-align:center; padding:0px; margin:0px;}
+#NewArrivals{width:100%;}
+
+.ProductBlock{width:200px; height:260px; float:left;}
+.ProductBlockText{font-size:.8em; text-align:center; padding:0px; margin:0px;}
+.ProductBlockTextAlert{font-size:.7em; font-weight:bold; color:Red; text-align:center; padding:0px; margin:0px;}
+.SkaterPhotosPage{border:solid 1px black; text-align:center; float:left; height: 95px; width: 95px; margin: 7px; padding: 5px;}
+
+.ContestGameResult{width:70px; font-size:.8em; float:left; text-align:center; border: solid 1px black; margin:3px; padding:0px;}
+.ContestGamePick{width:35px; float:left;font-size:.7em;}
+.ContestGameIcon{text-align:center;}
+
+.AlertHeader {
+    background: #fff6bf center no-repeat;
+    background-position: 15px 50%;
+    text-align: left;
+    padding: 5px 20px 5px 20px;
+    border-top: 2px solid #ffd324;
+    border-bottom: 2px solid #ffd324;
+    font-size: .9em;
+    border-right: solid 0px white;
+    border-left: solid 0px white;
+    }
+#DismissHeader
+{
+    float:right;
+    font-weight:bold;
+}
+
+.SizeSelectionGridItem
+{
+    border: solid 1px #D4D2D2;
+    height: 30px;
+    width: 38px;
+    text-align:center;
+    font-weight:bold;
+    color:Red;
+    padding: 10px 0px 0px 0px;
+    margin:  2px 2px 0px 2px;
+    float:left;
+}
+
+.WhatsUpTags
+{
+    border: solid 1px #D4D2D2;
+    padding:0px;
+    margin:4px;
+    width: 50%;
+    height: 30px;
+}
+
+
+.centered-cell {
+  text-align: center;
+}
+
+
+.SizeSelectionGridItemSmall
+{
+    border: solid 1px #D4D2D2;
+    height: 23px;
+    width: 24px;
+    float:left;
+    font-size: .7em;
+    text-align:center;
+    vertical-align:middle;
+    font-weight:bold;
+    color:Red;
+    padding: 10px 0px 0px 0px;
+    margin:2px;
+}
+
+.SizeSelectionGridItemNonNumeric
+{
+    border: solid 1px #D4D2D2;
+    text-align:center;
+    vertical-align:middle;
+    font-weight:bold;
+    color:Red;
+    padding:5px;
+    margin:5px;
+    width:85%;
+    
+}
+
+.FreeShipping
+{
+    font-size:.9em; margin:0px; padding:10px; text-align:center; color:#ff0f0f; clear:both;
+}
+.AlternateImagesAvailable
+{
+    font-size:.9em; margin:0px; padding:0px; text-align:center; color:#ff0f0f; clear:both;
+}
+.AltImages
+{
+    width:70px; height:90px; float:left; margin:1px 2px 1px 2px; padding:0px; font-size:.7em; color:#000000;
+}
+
+.AlternateItems
+{
+    background-color:#e1dfdf;
+}
+
+.CartAddedAlert
+{
+    display:none;
+    border: solid 1px red;
+    background-color:#D4D2D2;
+    text-align:center;
+    padding:5px;
+}
+
+.NotesAndTips
+{
+    font-size:.7em;
+    margin: 3px;
+}
+
+input
+{
+padding:2px;
+border:solid 1px #974040;
+margin:10px;
+font-weight:bold;
+}
+select
+{
+    font-weight:bold;
+}
+
+.Checkout
+{
+    padding:2px; margin: 3px;
+}
+
+form
+{
+    margin: 10px 0px 5px 0px;
+    border-top: solid 0px black;
+    border-bottom: solid 0px black;
+    /*padding: 5px;*/
+    padding: 10px 15px 10px 15px;
+    background-color:#ffffff
+}
+.PaymentForm
+{
+    margin: 0;
+    border: solid 0px black;
+    padding: 0px;
+    background-color:#dddddd;
+}
+a:visted
+{
+    text-decoration: none;
+    color: #974040;
+}
+a
+{
+    text-decoration: none;
+    color: #d52626;
+}
+a:hover
+{
+    text-decoration: none;
+    color:#974040;
+}
+
+
+
+
+
+p
+{
+    padding: 10px;
+}
+
+.BlogPost
+{
+    margin: 10px 0px 5px 0px;
+    border-top: solid 0px black;
+    border-bottom: solid 0px black;
+    padding: 10px 15px 10px 15px;
+    background-color:#ffffff;
+}
+.BlogPost img {
+    max-width: 100%;
+}
+
+
+
+.line-separator
+{
+height:0px;
+margin-top:10px
+margin-bottom:10px
+background:#000;
+border-bottom:2px solid #000;
+}
+
+
+
+.ShoeSizeGrid {
+    padding: 10px 6px 10px 11px;
+}
+
+.FeaturesItems{float:left; width:221px; text-align:center; margin: 2px; padding:5px; height:350px;}
+
+.SpotTeam{float:left; width:221px; text-align:center; margin: 2px; padding:5px;}
+
+.FeatCompanies{float:left; width:221px; text-align:center; margin: 2px; padding:5px;}
+
+/* TAMPA PRO 2016 PAGE ADDITIONS */
+
+/*.EventsItems{float:left; width:100%; text-align:center; margin: 1px; padding:0px; height:30px;}*/
+
+.doublespace {
+     white-space:pre-wrap;
+}
+
+.pro16title {
+     position: relative;
+     width: 940px;
+     height: 144px;
+     background-image: url("images3/PROTIX-BANNER.png");
+     background-repeat: no-repeat;
+     
+}
+
+
+.pro17title {
+     position: relative;
+     width: 940px;
+     height: 144px;
+     background-image: url("images3/PROTIX-BANNER17.png");
+     background-repeat: no-repeat;
+     
+}
+
+
+
+.pro16menu {
+     position: relative;
+     width: 940px;
+     height: 350px;
+     background-image: url("images3/pro16-podium-16.png");
+     background-repeat: no-repeat;
+     
+}
+
+
+.pro17menu {
+     position: relative;
+     width: 940px;
+     height: 350px;
+     background-image: url("images3/pro16-podium.png");
+     background-repeat: no-repeat;
+     
+}
+
+
+
+.pro16results {
+     padding: 10px 20px 0px 20px;
+     position: relative;
+     width: 900px;
+     height: 340px;
+     background-image: url("images3/turtle-right.png");
+     background-repeat: no-repeat;
+     
+}
+
+
+
+.pro17results {
+     padding: 10px 20px 0px 20px;
+     position: relative;
+     width: 900px;
+     height: 340px;
+     background-image: url("images3/turtle-right17.png");
+     background-repeat: no-repeat;
+     
+}
+
+
+
+
+.pro16contest {
+     padding: 10px 20px 10px 20px;
+     position: relative;
+     width: 900px;
+     height: 550px;
+     background-color:#ffffff;
+     display: flex;
+     flex-direction: column;
+}
+
+
+.pro16photos {
+     padding: 10px 20px 10px 20px;
+     position: relative;
+     width: 900px;
+     height: 290px;
+     background-color:#ffffff;
+     display: flex;
+     flex-direction: column;
+}
+
+
+.pro16hash {
+     padding: 10px 20px 10px 20px;
+     position: relative;
+     width: 900px;
+     height: 310px;
+     background-color:#ffffff;
+     display: flex;
+     flex-direction: column;
+}
+
+
+.textcenter {
+      position: relative;
+      margin: 20px;
+      max-width: 870px;
+      padding: 10px 10px 10px 10px;
+}
+
+
+.textfloatleft {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      max-width: 870px;
+      padding: 10px 10px 10px 10px;
+}
+
+
+.textfloatright {
+      position: absolute;
+      top: 20px;
+      left: 470px;
+      max-width: 870px;
+      padding: 10px 10px 10px 10px;
+}
+
+
+/* COLORED BARS */
+
+
+
+
+.ProBlogWhite
+{
+    padding: 10px 20px 0px 20px;
+    background-color: #ffffff;
+    width: 900px;
+    height: 1000px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ProBlogWhite img
+{
+    width: 100%;
+}
+
+
+.imagebottom
+{
+    margin-top: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.ProBlogBlack
+{
+    margin: 0px 0px 0px 0px;
+    padding: 10px 15px 10px 15px;
+    background-color:#000000;
+}
+
+.ProBlogBlue
+{
+    margin: 0px 0px 0px 0px;
+    padding: 10px 15px 10px 15px;
+    background-color:#60C5BA;
+}
+
+
+.ProBlogOrange
+{
+    margin: 0px 0px 0px 0px;
+    padding: 10px 15px 10px 15px;
+    background-color:#f16631;
+}
+
+
+
+.ProBlogBlue2
+{
+    margin: 0px 0px 0px 0px;
+    padding: 10px 15px 10px 15px;
+    background-color:#00A0DC;
+}
+
+
+
+<!-- END OF ADDITIONS -->
+
+<!-- ACCORDION STYLE -->
+
+
+<!-- END ACCORDION STYLE -->
+
+
+
+
+.CategoryListSmall
+{
+    font-size:.7em;
+}
+
+
+.BlogText
+{
+    font-size:.9em;
+    margin:0px;
+}
+
+
+.TwitterFeed li
+{
+    margin: 5px 5px 10px 15px;
+}
+#twitter_update_list
+{
+    padding:10px;
+}
+.post_box { position:relative; }
+.social-post { position:absolute; top:3.0em; }
+.counter-twitter { margin-bottom:1.4em; margin-left:0em; }
+.counter-fb-like { margin-bottom:1.6em; margin-left:0.5em; }
+.counter-google-one { margin-bottom:1.4em; margin-left:0.2em; }
+.counter-stumble 	{ margin-bottom:1.4em; margin-left:0.2em; }
+
+
+
+.instagram-placeholder {
+    float:left; width:115px; padding:4px; height:175px; text-align:center;
+}
+.instagram-image {
+    margin-top:10px; height:100px; width:100px;
+}
+.instagram-caption {
+    height:40px; overflow:hidden; font-size:.6em;
+}
+
+
+.MfgrAD600
+{
+    display:none;
+    clear:both;
+}
+
+.MfgrAD280
+{
+    display:none;
+    clear:both;
+}
+
+
+.Ollie
+{
+    text-align:center;
+    padding: 10px 0px 10px 0px;
+    width:100%;
+}
+
+
+/* TRANSITIONS MICRO SITE */
+
+.TransitionsLink a:link
+{
+    color:black;
+}
+
+.TransitionsLink a:hover
+{
+    color:red;
+}
+
+.TransitionsLink a:visted
+{
+    text-decoration: none;
+    color:black;
+}
+
+.TransitionsGallery
+{
+    margin: 5px;
+    margin-bottom: -0.5px;
+    border: 0px;
+    float: left;
+    width: 48.86%;
+}
+
+.TransitionsGallery img
+{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/* END OF TRANSITIONS SITE */
+
+
+.WhatsUpFloat
+{
+    float:left;
+    margin-right: 15px;
+    margin-bottom: auto;
+}
+
+
+h1 {
+    font-size:1.5em;
+    font-family: 'Jockey One', sans-serif;
+    text-transform:uppercase;
+    color:black
+}
+
+h1 a {
+    font-family: 'Jockey One', sans-serif;
+    text-transform:uppercase;
+    color:black
+
+}
+
+
+h2 {
+    font-size:1.3em;
+    font-family: 'Jockey One', sans-serif;
+    text-transform:uppercase;
+    color:black
+}
+h2 a
+{
+    font-family: 'Jockey One', sans-serif;
+    text-transform:uppercase;
+    color:black
+}
+
+
+
+h3
+{
+    font-size:.7em;
+}
+
+
+
+h4 {
+    font-size:1.5em;
+    font-family: 'Jockey One', sans-serif;
+    text-transform:uppercase;
+    color:white
+}
+
+
+h5 {
+    font-size:1.2em;
+    font-family: 'Jockey One', sans-serif;
+    text-transform:uppercase;
+    color:#1e170d
+}
+
+.ProductPager
+{
+    font-size:1.3em;
+    font-family: 'Jockey One', sans-serif;
+    text-transform:uppercase;
+    color:black
+}
+
+.ProductPager span
+{
+    letter-spacing:5px;
+    margin-left: 5px;
+}
+
+.ProductPager a
+{
+    font-size:1.1em;
+    font-family: 'Jockey One', sans-serif;
+    text-transform:uppercase;
+    letter-spacing: 4px;
+    color:#d52626
+}
+
+.PhotoBox
+{
+    border: solid 1px black;
+    margin: 0px 0px 20px 0px;
+    padding:0px;
+    font-size:1.2em;
+    text-align:center;
+}
+
+.PhotoBox2011
+{
+    margin:0px 0px 10px 0px; 
+    padding: 0px 0px 10px 0px; 
+    border: solid 1px black; 
+    background-color:#F4F3FA;
+    text-align:center;
+}
+.PhotoBox2011 img {
+    max-width:100%;
+}
+
+
+/*FOR THE OLD SITE: */
+.PageTitles
+{
+    text-align:left;    
+    padding: 3px;
+    font-weight:bold;
+    font-size:1.2em;
+    margin: 2px;
+}
+/*FOR THE OLD SITE: */
+.NewsTitles
+{
+    text-align:left;    
+    padding: 3px;
+    font-weight:bold;
+    font-size:1em;
+    margin: 2px;
+}
+
+.AlternateItem
+{
+    background-color:#F6F4F4;
+}
+
+.BuyButtonInput
+{
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size:.9em;
+    background-color: #ff0000;
+    color:#ffffff;
+}
+
+.BuyButton a
+{
+    text-transform: uppercase;
+    text-align:center;
+    font-weight:bold;
+    font-size:.9em;
+    background-color: #ff0000;
+    margin:0px 2px 1px 2px;
+    padding: 1px 2px 1px 2px;
+    color:#ffffff;
+}
+
+.BuyButton a:hover
+{
+    text-transform: uppercase;
+    text-align:center;
+    font-weight:bold;
+    font-size:.9em;
+    background-color: #ff0000;
+    margin:0px 2px 1px 2px;
+    padding: 1px 2px 1px 2px;
+    color:#f9fc02;
+}
+
+
+#MasonryWrapper {
+    margin-top:20px;
+    text-align:center;
+}
+.PhotoBox2012 {
+    padding: 4px; 
+    border: solid 1px #d6d6d6;
+    width: 280px;
+     margin: 15px 5px 5px 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display:inline-block;
+    font-size:.8em;
+}
+.SkaterCaption2012 {
+    float:left;
+    width: 70px;
+    text-align:center;
+}
+
+
+/* LAYOUT SHIT */
+
+body,
+	html {
+		margin:0;
+		padding:0;
+		color:#000;
+		background:#dddddd; 
+               /* background: url(http://www.skateparkoftampa.com/spot/images3/pro17-webwrap3.png) no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;*/
+        /*change the URL here to the full url of the new background image: */
+        /* background-image: url(http://www.skateparkoftampa.com/spot/images3/website_bg.jpg);  /* Default Gray Background */
+/*  background-image: url(http://www.skateparkoftampa.com/spot/images3/website-bg-pattern2.jpg); /*  Plain City Star Logo */
+ background-image: url(http://www.skateparkoftampa.com/spot/images3/spot-halloween.png);  /*  Event Background */
+      /*   background-image: url(http://www.skateparkoftampa.com/spot/images3/vans-nhs-wrap.png); /*  Event Background */
+         background-attachment: fixed; 
+	}
+	
+	#header {
+    	padding:0px;
+        background-color:#000;
+        <!--background-image: url(layout/headerbackground.gif);-->
+        background-repeat:repeat;
+        white-space:nowrap;
+	}
+	#headercart
+	{
+	    float:left;
+	    width:130px;
+	    text-align:center;
+	    background-color:#000;
+	    height: 59px;
+	    color:#ffffff;
+	    text-transform:uppercase;
+	    font-weight:bold;
+	    font-size: .8em;
+                white-space:nowrap;
+
+	}
+	
+	#headerfacebook
+	{
+	    float:left;
+	    padding: 0px 10px 0px 10px;
+	    height: 59px;
+                     background-color:#000;
+	    <!--background-image: url(layout/headerbackground.gif);-->
+        background-repeat:repeat;
+	    color:White;
+                white-space:nowrap;
+
+	}
+
+	#nav {
+		padding:5px 5px;
+		background:#000;
+		color:#ffffff;
+		font-family: 'Jockey One', sans-serif;
+		text-transform:uppercase;
+		font-weight:normal;
+		text-align:center;
+        border-top:solid 2px #ffffff;
+        border-bottom:7px solid #dddddd;
+                white-space:nowrap;
+
+	}
+	#nav ul {
+		margin:0;
+		padding:0;
+		list-style:none;
+		color:#ffffff;
+		font-family: 'Jockey One', sans-serif;
+		text-transform:uppercase;
+		font-weight:normal;
+                white-space:nowrap;
+
+	}
+	#nav li {
+		display:inline;
+		margin:10px;
+		padding:10px;
+		color:#ffffff;
+        font-family: 'Jockey One', sans-serif;
+        text-transform:uppercase;
+        font-weight:normal;
+                white-space:nowrap;
+
+	}
+	
+	#nav a
+	{
+	    color:#000;
+	    text-decoration:none;
+		color:#ffffff;
+        font-family: 'Jockey One', sans-serif;
+        text-transform:uppercase;
+        font-weight:normal;
+        font-size: 1.5em;
+                white-space:nowrap;
+
+	}
+	
+	#nav a:hover
+	{
+	    color:#000;
+	    text-decoration:none;
+		color:#bf1c1e;
+		text-transform:uppercase;
+		font-family: 'Jockey One', sans-serif;
+		font-weight:normal;
+		font-size: 1.5em;
+                white-space:nowrap;
+
+                             }
+
+
+
+
+
+
+
+	
+	#wrap {
+		margin:0 auto;
+        border-left: solid 2px white;
+        border-right: solid 2px white;
+		background:#dddddd;
+	}
+
+	/* wrap = main + (main padding * 2) + sidebar + (sidebar padding * 2) 
+    960 = 630 + 20 + 290 + 20
+    */
+
+	#main {
+		padding:10px;
+        margin-top: 110px;
+		background:#dddddd;
+	}
+    #mobilemain {
+        float:left;
+		width:630px;
+		padding:10px;
+        margin-top: 25px;
+		background:#dddddd;
+    }
+	
+	#sidebar {
+		padding:10px;
+        margin-top: 110px;
+		background:#dddddd;
+	}
+    #mobilesidebar {
+		float:right;
+		width:290px;
+		padding:10px;
+        margin-top: 25px;
+		background:#dddddd;
+	}
+	#footer {
+		clear:both;
+		padding:5px 10px;
+        background-image: url(layout/footerbackground2.gif);
+        background-repeat:repeat;
+        border-top: solid 2px white;
+        font-size:.7em;
+        color:#ffffff; 
+	}
+	#footer p {
+		margin:0;
+    }
+	* html #footer {
+		height:1px;
+	}
+
