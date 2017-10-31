@@ -62,7 +62,7 @@
         </asp:SqlDataSource>
         <asp:Repeater ID="rptNew" DataSourceID="sdsNew" runat="server">
         <ItemTemplate>
-                <div class="ProductBlock">
+                <div class="col-xs-12 col-sm-6 col-md-4 ProductBlock">
                 
                     <a 
                     title="<%#Eval("Name").ToString().Replace("\"", "") %> <%#Eval("Color").ToString().Replace("\"", "") %> <%#Eval("ShortDescr").ToString().Replace("\"", "") %>"
@@ -75,7 +75,7 @@
                             title="<%#Eval("Name").ToString().Replace("\"", "") %> <%#Eval("Color").ToString().Replace("\"", "") %> <%#Eval("ShortDescr").ToString().Replace("\"", "") %>"
                             href="p.aspx?ID=<%#Eval("ProductID") %>&CID=<%#Eval("ColorID") %>">
                         <%#Eval("Name")%> 
-                        <%#Eval("ShortDescr")%> <%#Eval("Color")%></a> <%#Eval("CurrentPrice", "{0:c}")%>
+                        <%#Eval("ShortDescr")%> <%#Eval("Color")%></a><br /> <%#Eval("CurrentPrice", "{0:c}")%>
                     </div>
                     <div class="ProductBlockTextAlert">
                         <%#Eval("SaleNote") %> <%#Eval("FreeShippingNote") %>
@@ -137,24 +137,26 @@
 
 <h1><a href="shoe.aspx">What's Your Shoe Size?</a></h1>
 <div class="BlogPost ShoeSizeGrid">
-    <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=6">5</a></div>
-    <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=7">5.5</a></div>
-    <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=8">6</a></div>
-    <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=9">6.5</a></div>
-    <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=10">7</a></div>
-    <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=11">7.5</a></div>
-    <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=12">8</a></div>
-    <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=13">8.5</a></div>
-    <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=14">9</a></div>
-    <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=15">9.5</a></div>
-    <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=16">10</a></div>
-    <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=17">10.5</a></div>
-    <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=18">11</a></div>
-    <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=19">11.5</a></div>
-    <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=20">12</a></div>
-    <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=22">13</a></div>
-    <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=24">14</a></div>
-    <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=26">15</a></div>
+    <div class="row">
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=6">5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=7">5.5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=8">6</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=9">6.5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=10">7</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=11">7.5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=12">8</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=13">8.5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=14">9</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=15">9.5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=16">10</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=17">10.5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=18">11</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=19">11.5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=20">12</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=22">13</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=24">14</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=26">15</a></div></div>
+        </div>
 </div>
 
 <Products:Categories runat="server" />
@@ -210,19 +212,19 @@ Enter your email: <input type="text" style="width:200px; font-size:18px; font-we
 <h2 style="text-transform:none;">STALK US ON SOCIAL MEDIA @SPoTTAMPA</h2>
 </br>
 <a target="_blank" href="http://facebook.com/spottampa">
-<img style="float:left; margin-left:4px;" src="http://skateparkoftampa.com/spot/images3/FACEBOOK-ICON.png" />
+<img  src="http://skateparkoftampa.com/spot/images3/FACEBOOK-ICON.png" />
 </a>
 <a target="_blank" href="http://twitter.com/spottampa">
-<img style="float:left; margin-left:4px;" src="http://skateparkoftampa.com/spot/images3/TWIT-ICON.png" />
+<img  src="http://skateparkoftampa.com/spot/images3/TWIT-ICON.png" />
 </a>
 <a target="_blank" href="http://instagram.com/spottampa">
-<img style="float:left; margin-left:4px;" src="http://skateparkoftampa.com/spot/images3/INSTA-ICON.png" />
+<img  src="http://skateparkoftampa.com/spot/images3/INSTA-ICON.png" />
 </a>
 <a target="_blank" href="http://youtube.com/spottampa">
-<img style="float:left; margin-left:4px;" src="http://skateparkoftampa.com/spot/images3/YOUTUBE-ICON.png" />
+<img  src="http://skateparkoftampa.com/spot/images3/YOUTUBE-ICON.png" />
 </a>
 
-<img style="float:left; margin-left:4px;" src="http://skateparkoftampa.com/spot/images3/SNAP-ICON.png" />
+<img  src="http://skateparkoftampa.com/spot/images3/SNAP-ICON.png" />
 
 </div>
 </div>
