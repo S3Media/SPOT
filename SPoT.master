@@ -42,6 +42,7 @@ valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
     <meta name="copyright" content="Copyright (c) 2012 Skatepark of Tampa">
     <meta name="viewport" content="width=980px">
     <meta name="apple-itunes-app" content="app-id=544443560">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link href="<%=strHTTPS %><%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>steezycorey.css" rel="stylesheet" type="text/css" />
     <link href="<%=strHTTPS %><%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>bootstrap.css" rel="stylesheet" type="text/css" />
@@ -201,21 +202,16 @@ valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
 <body>
 
 <div class="container" id="wrap">
-
-    <%if (mobileDevice.Equals("false"))
-      { %>
        <div id="fixedheader">
-    <%} else { %>
-       <div id="mobileheader">
-    <%}%>
 
-  <!-- 7/2/13 - fast hack to add fixed header that Schaefer requested -->
+
 	    <div id="header">
-            <div style="float:left;">
-            <a href="http://skateparkoftampa2.com/"><img src="http://skateparkoftampa2.com/spot/layout/header.png" /></a>
+            <div class="row">
+            <div class="col-md-8">
+            <a href="http://skateparkoftampa2.com/"><img src="http://skateparkoftampa2.com/spot/layout/header.png" class="img-responsive"/></a>
             </div>
 
-            <div id="headerfacebook">
+            <div class="col-md-2" id="headerfacebook">
                 <asp:Panel runat="server" ID="pnlFacebook">    
                 <div class="FacebookIFrame">
                 <!-- Facebook -->
@@ -231,11 +227,11 @@ valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
                 </asp:Panel>
             </div>
 
-            <div id="headercart">
+            <div class="col-md-2" id="headercart">
             <a href="https://skateparkoftampa.com/cart"><img src="https://skateparkoftampa2.com/spot/layout/carticon2.gif" class="CartIcon" /></a>
             <div id="CartSummary"><a href="cart.aspx" class="CartSummary"><%=strCart %></a></div>
             </div>
-            
+            </div>
             
         </div>
 	    <div id="nav">
@@ -303,65 +299,52 @@ valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
 
    
 
-	<%if (mobileDevice.Equals("false"))
-      { %>
+           <div class="row">
        <div class="col-md-8" id="main">
-    <%} else { %>
-       <div id="mobilemain">
-    <%}%>
 		<asp:ContentPlaceHolder id="cphMain" runat="server" />
 	</div>
-	<%if (mobileDevice.Equals("false"))
-      { %>
+
        <div class="col-md-4" id="sidebar">
-    <%} else { %>
-       <div id="mobilesidebar">
-    <%}%>
         <asp:ContentPlaceHolder id="cphSidebar" runat="server" />
 	</div>
+               </div>
 	<div id="footer">
-        <div style="float:left;">
+        <div class="row">
+        <div class="col-md-8">
             <div style="text-transform:none; font-weight:bold; color:#b4b6b9; padding: 10px 0px 6px 10px;">
             SPoT SKATE SHOP IS SKATEPARK OF TAMPA, ESTABLISHED 1993.  ONLINE SINCE 1997. </div>
             <div style="padding:10px 0px 10px 10px;">
             Our inventory online is live, in stock, and usually ships within 
             one business day.
             </div>
+            </div>
+            <div class="col-md-4">
+            <p>Email us at info@skateparkoftampa.com with any questions for a quick reply.</p>
+            <p>Skatepark of Tampa | 4215 East Columbus Drive | Tampa, Florida 33605 | (813) 621-6793 <br /><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/about">Privacy and Security Policy</a></p>
             
-            <div style="padding:10px 0px 10px 10px;">
-            Email us at info@skateparkoftampa.com with any questions for a quick reply.  <br />
-            Skatepark of Tampa | 4215 East Columbus Drive | Tampa, Florida 33605 | (813) 621-6793
-            </div>
-
-            <div style="padding:0px 0px 10px 10px;">
-            <a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/about">Privacy and Security Policy</a>
-            </div>
-        </div>
-        <div style="padding: 12px 0px 20px 200px;">
-            <a target="_blank" href="http://facebook.com/spottampa"><img style="float:left; margin-left: 5px;" src="layout/social_facebook.png" /></a>
-            <a target="_blank" href="http://twitter.com/spottampa"><img style="float:left; margin-left: 5px;" src="layout/social_twitter.png" /></a>
-            <a target="_blank" href="http://youtube.com/spottampa"><img style="float:left; margin-left: 5px;" src="layout/social_youtube.png" /></a>
-            <a target="_blank" href="https://plus.google.com/109787599007776960078/posts"><img style="float:left; margin-left: 5px;" src="layout/social_google.png" /></a>
-            <a target="_blank" href="http://instagram.com/spottampa"><img style="float:left; margin-left: 5px;" src="layout/social_insta.png" /></a>
-        </div>
-        <div style="text-transform:uppercase; font-weight:bold; color:#b4b6b9; padding: 0px 0px 3px 205px;">
-            Subscribe to the What's Up Column </div>
-        <div style="padding: 0px 0px 0px 205px;">
-            Daily news, antics, and other goodness.
-        </div>
-        <div style="padding: 0px 0px 3px 200px;">
-            <form style="background-color:transparent; width: 250px; border: solid 0px transparent;" 
+        <p>
+            <a target="_blank" href="http://facebook.com/spottampa"><img  src="layout/social_facebook.png" /></a>
+            <a target="_blank" href="http://twitter.com/spottampa"><img  src="layout/social_twitter.png" /></a>
+            <a target="_blank" href="http://youtube.com/spottampa"><img  src="layout/social_youtube.png" /></a>
+            <a target="_blank" href="https://plus.google.com/109787599007776960078/posts"><img  src="layout/social_google.png" /></a>
+            <a target="_blank" href="http://instagram.com/spottampa"><img  src="layout/social_insta.png" /></a>
+        </p>
+                <br />
+        <p style="text-transform:uppercase; font-weight:bold; color:#b4b6b9;">
+            Subscribe to the What's Up Column</p>
+                <p>Daily news, antics, and other goodness.</p>
+        <div>
+            <form style="background-color:transparent; border: solid 0px transparent;" 
                 action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" 
                 onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=spotwhatsup', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
-                <input type="text" style="width:180px; font-size:18px; color:#b4b6b9; margin:0px; padding:0px;" id="footerEmail" name="email" value="Your email address" /> 
-                <input style="font-size:14px; width:40px; height:23px; font-weight:bold;" type="submit" value="Go" />
+                <input type="text" style="font-size:18px; color:#b4b6b9; margin:0px; padding:0px;" id="footerEmail" name="email" value="Your email address" /> 
+                <input style="font-size:16px; width:40px; height:27px; font-weight:bold; color: #000;" type="submit" value="Go" />
                 <input type="hidden" value="spotwhatsup" name="uri"/><input type="hidden" name="loc" value="en_US"/>
             </form>
         </div>
 	</div>
-
-</div>
-
+            </div>
+    </div>
 <div id="DebugNotes" style="font-size:.6em;"></div>
 </body>
 
