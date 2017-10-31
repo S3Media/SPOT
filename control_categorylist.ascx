@@ -2,7 +2,7 @@
 <div class="BlogPost">
 <h1>Shop</h1>
     
-    <ul style="font-size:.8em;">
+    <ul>
             <li>
                 <a title="Skateboarding Accessories"
                 href="/accessories">
