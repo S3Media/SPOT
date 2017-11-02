@@ -108,14 +108,14 @@
     
     <div class="BlogPost">
     <h1>More Product Categories</h1>
-
+        <div class="text-align: center">
     <asp:SqlDataSource runat="server" ID="sdsFlagsMenu" ConnectionString="<%$ ConnectionStrings:CS %>"
     SelectCommand="SPOT2012ProductFlagList" SelectCommandType="StoredProcedure"
     EnableCaching="true" CacheDuration="10000" />
     <asp:Repeater ID="Repeater1" runat="server" DataSourceID="sdsFlagsMenu">
         <HeaderTemplate></HeaderTemplate>
         <ItemTemplate>
-            <div style="font-size:.8em; float:left; margin-right: 20px;">
+            <div style="font-size: 1em; float:left; margin-right: 20px;">
             <a title="<%# Eval("SearchTextDescription").ToString().Replace("\"", "")%>" 
 	            href="f.aspx?ID=<%# Eval("FlagID")%>">
                 <%# Eval("Description")%>
@@ -125,6 +125,7 @@
         <FooterTemplate></FooterTemplate>
     </asp:Repeater>
 </div>
+        </div>
 
 </div>
 
