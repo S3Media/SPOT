@@ -171,8 +171,10 @@
 
 
 <div class="BlogPost">
+    <div class="row">
+    <div class="col-md-8"><h1 class="product-title"><%=strTitle %></h1></div>
 
-<div style="float:right; padding-top:7px;">
+<div class="col-md-4" style="padding-top:28px; text-align: center;">
                 
         <span class="counter-fb-like">
             <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fskateparkoftampa.com%2Fspot%2Fp.aspx%3FID%3D<%=Request.QueryString["ID"] %>&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
@@ -181,10 +183,7 @@
             <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://skateparkoftampa.com/spot/p.aspx?ID=<%=Request.QueryString["ID"] %>" data-count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
         </span>
 </div>
-
-
-<h1><%=strTitle %></h1>
-
+        </div>
 <%=strLongDescription %>
 
 
@@ -199,16 +198,18 @@
             
             <div class="SizeSelectionGridMain" id="ColorID<%#Eval("ColorID") %>">
                 <div class="BlogPost ShoeSizeGrid" style="border-bottom: solid 0px white;">
-                    <div style="float:left;">
-                        <img style="margin:0px; padding:0px; height:450px; width:450px;" id="Main<%#Eval("ColorID") %>" 
+                    <div class="row">
+                    <div class="col-md-8">
+                        <img class="img-responsive img-center" id="Main<%#Eval("ColorID") %>" 
                         src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%#Eval("ColorID") %>_<%=Request.QueryString["ID"] %>.jpg" />
                     </div>
-                    <div>
+                    <div class="col-md-4">
                         <div style="font-weight:bold; text-align:center; font-size: 1.2em;"><%#Eval("CurrentPrice", "{0:c}") %></div> <%#Eval("SaleNote") %>
                             <div style="font-weight:bold; text-align:center;">
                             Color: <%#Eval("Color") %></div>
                             <div style="text-align:center;">
                             Sizes in Stock:</div>
+
                         <div>
                             <asp:Repeater runat="server" ID="rptSub">
                                 <ItemTemplate>
@@ -231,6 +232,7 @@
                         </div>
                         <div class="CartAddedAlert" id="<%#Eval("ColorID") %>_<%=Request.QueryString["ID"] %>">Click your size to add to your cart.</div>
                     </div>
+                </div>
 
                     <%#Eval("AlternateImages") %>
                     
@@ -379,11 +381,11 @@ SelectCommandType="StoredProcedure" ConnectionString="<%$ ConnectionStrings:CS %
     <h1>Related Products</h1>
 </HeaderTemplate>
 <ItemTemplate>
-    <div class="NewArrivalSmallBlock">
+    <div class="col-xs-6 col-md-3 NewArrivalSmallBlock">
     <a 
         href="/product/<%#Eval("RelatedProductID") %>/<%#Eval("ShortDescr").ToString().Replace("\"", "").Replace(" ", "_").Replace(":", "") %>">
-        <img style="float:left; margin-right:5px;" src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%# Eval("ColorID")%>_<%# Eval("RelatedProductID")%>thumb.jpg" />
-    </a>
+        <img  src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%# Eval("ColorID")%>_<%# Eval("RelatedProductID")%>thumb.jpg" />
+    </a><br />
     <a 
         href="/product/<%#Eval("RelatedProductID") %>/<%#Eval("ShortDescr").ToString().Replace("\"", "").Replace(" ", "_").Replace(":", "") %>">
         <%# Eval("ShortDescr")%>
@@ -509,13 +511,13 @@ ConnectionString="<%$ ConnectionStrings:CS %>">
 </div>
 <div style="text-align:center;">
     <a title="<%#Eval("FirstName").ToString().Replace("\"", "") %> <%#Eval("LastName").ToString().Replace("\"", "") %>" href="/skater/<%#Eval("SkaterID") %>/<%#Eval("FirstName").ToString().Replace("\"", "") %>_<%#Eval("LastName").ToString().Replace("\"", "") %>">
-    <img title="<%#Eval("FirstName").ToString().Replace("\"", "") %> <%#Eval("LastName").ToString().Replace("\"", "") %>" src="http://www.skateparkoftampa.com/spot/headshots/<%# Eval("SkaterID") %>.jpg" width="250" height="250" /></a>
+    <img class="img-responsive img-center" title="<%#Eval("FirstName").ToString().Replace("\"", "") %> <%#Eval("LastName").ToString().Replace("\"", "") %>" src="http://www.skateparkoftampa.com/spot/headshots/<%# Eval("SkaterID") %>.jpg" width="250" height="250" /></a>
 </div>
 </ItemTemplate>
 </asp:Repeater>
 
 <a href="/company/<%=strManufacturerID %>/<%=strManufacturer.Replace("\"", "").Replace(" ", "_") %>">
-    <img title="<%=strTitle %>" alt="<%=strTitle %>" src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/<%=strManufacturerID %>mfgr.jpg" style="width:280px;" />
+    <img class="img-responsive img-center" title="<%=strTitle %>" alt="<%=strTitle %>" src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/<%=strManufacturerID %>mfgr.jpg"  />
 </a>
 </div>
 
@@ -538,7 +540,7 @@ ConnectionString="<%$ ConnectionStrings:CS %>">
                 <%# Eval("Description")%>
             </a>
         </ItemTemplate>
-        <FooterTemplate> | </FooterTemplate>
+        <FooterTemplate>  </FooterTemplate>
     </asp:Repeater>
 </div>
 
