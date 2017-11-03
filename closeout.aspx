@@ -52,10 +52,10 @@
         <asp:Repeater ID="rptNew" DataSourceID="sdsNew" 
         runat="server">
         <ItemTemplate>
-                <div class="ProductBlock">
+                <div class="col-xs-6 col-sm-4 ProductBlock">
                 
                     <a title="<%#Eval("Name") %> <%#Eval("Color") %> <%#Eval("ShortDescr") %>" 
-                    href="/product/<%#Eval("ProductID") %>/<%#Eval("Name").ToString().Replace("\"", "").Replace(" ", "_") %>_<%#Eval("Color").ToString().Replace("\"", "").Replace(" ", "_").Replace("/", "") %>_<%#Eval("ShortDescr").ToString().Replace("\"", "").Replace(" ", "_") %>/&CID=<%#Eval("ColorID") %>"><img 
+                    href="/product/<%#Eval("ProductID") %>/<%#Eval("Name").ToString().Replace("\"", "").Replace(" ", "_") %>_<%#Eval("Color").ToString().Replace("\"", "").Replace(" ", "_").Replace("/", "") %>_<%#Eval("ShortDescr").ToString().Replace("\"", "").Replace(" ", "_") %>/&CID=<%#Eval("ColorID") %>"><img class="img-responsive"
                         title="<%#Eval("Name").ToString().Replace("\"", "") %> <%#Eval("Color").ToString().Replace("\"", "") %> <%#Eval("ShortDescr").ToString().Replace("\"", "") %>" 
                         width="190" height="190" 
                         src="http://skateparkoftampa.com/spot/productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" /></a>
@@ -64,7 +64,7 @@
                         <a title="<%#Eval("Name") %> <%#Eval("Color") %> <%#Eval("ShortDescr") %>" 
                             href="/product/<%#Eval("ProductID") %>/<%#Eval("Name").ToString().Replace("\"", "").Replace(" ", "_") %>_<%#Eval("Color").ToString().Replace("\"", "").Replace(" ", "_").Replace("/", "") %>_<%#Eval("ShortDescr").ToString().Replace("\"", "").Replace(" ", "_") %>/&CID=<%#Eval("ColorID") %>">
                         <%#Eval("Name")%> 
-                        <%#Eval("ShortDescr")%> <%#Eval("Color")%></a> <%#Eval("CurrentPrice", "{0:c}")%>
+                        <%#Eval("ShortDescr")%> <%#Eval("Color")%></a><br /> <%#Eval("CurrentPrice", "{0:c}")%><br />
                     </div>
                     <div class="ProductBlockTextAlert">
                         <%#Eval("SaleNote") %> <%#Eval("FreeShippingNote") %>
@@ -105,7 +105,7 @@
 
             <asp:Repeater runat="server" ID="rptMfgrs" DataSourceID="sdsMfgrs">
                 <ItemTemplate>
-                <div class="NewArrivalSmallBlock" style="height:90px;">
+                <div class="col-xs-6 col-sm-4 NewArrivalSmallBlock" style="height:90px;">
                     <div>
                         <a title="<%#Eval("Name").ToString().Replace("\"", "")%>" 
                         href="closeoutm.aspx?ID=<%# Eval("ManufacturerID")%>">
