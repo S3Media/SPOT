@@ -29,7 +29,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="cphMain" Runat="Server">
 
 
-<div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+<div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2>Contest Coverage</h2>
     
@@ -44,7 +44,7 @@
     </div>
 
 
-<div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+<div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2>Contest Results</h2>
     
@@ -63,7 +63,7 @@
 
 
 
-<div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+<div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2>Tampa Pro Results</h2>
     
@@ -80,7 +80,7 @@
 
 
 
-<div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+<div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2>Tampa Am Results</h2>
     
@@ -97,7 +97,7 @@
 
 
 
-<div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+<div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2>All Ages Contests</h2>
     
@@ -117,7 +117,7 @@
 
 
 
-    <div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+    <div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2>Closeout Items</h2>
     
@@ -132,7 +132,7 @@
     </div>
 
 
-    <div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+    <div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2 style="text-transform:none;">SPoT LIFE</h2>
     
@@ -147,7 +147,7 @@
     </div>
 
     
-    <div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+    <div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2 style="text-transform:none;">SPoT ON</h2>
     
@@ -164,7 +164,7 @@
 
 
 
-<div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+<div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2 style="text-transform:none;">DAMN AM</h2>
     
@@ -182,7 +182,7 @@
 
 
 
-    <div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+    <div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2>Articles</h2>
     
@@ -200,7 +200,7 @@
 
     
 
-    <div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+    <div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2>Skater Database</h2>
     
@@ -223,7 +223,7 @@
 
 
 
-    <div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+    <div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2>What's Up Column</h2>
     
@@ -238,7 +238,7 @@
     </div>
 
 
-    <div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+    <div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2>Boards for Bros</h2>
     
@@ -256,7 +256,7 @@
 
 
 
-        <div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+        <div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2>20 Year Anniversary</h2>
     
@@ -275,7 +275,7 @@
 
 
 
-<div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+<div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2>Tourist Missions</h2>
     
@@ -292,7 +292,7 @@
 
     
 
-    <div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+    <div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2 style="text-transform:none;">SPoT SKATE TEAM</h2>
     
@@ -307,7 +307,7 @@
     </div>
 
 
-<div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+<div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2 style="text-transform:none;">SPoT BMX TEAM</h2>
     
@@ -323,7 +323,7 @@
 
 
 
-<div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+<div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2 style="text-transform:none;">SPoT ROAST BMX RESULTS</h2>
     
@@ -340,7 +340,7 @@
 
 
 
-    <div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+    <div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
 
         <h2>Photos</h2>
@@ -360,7 +360,7 @@
 
 
     
-    <div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+    <div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2>Our Staff</h2>
     
@@ -374,7 +374,7 @@
         </div>
     </div>
 
-    <div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+    <div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2>DPTs</h2>
     
@@ -396,7 +396,7 @@
 
 
 
-<div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+<div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2 style="text-transform:none;">10 TRICKS & TWO CENTS</h2>
     
@@ -412,7 +412,7 @@
 
 
 
-<div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+<div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2 style="text-transform:none;">EOTM PARTIES</h2>
     
@@ -429,7 +429,7 @@
 
 
 
-<div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+<div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2>Product Watch</h2>
     
@@ -446,7 +446,7 @@
 
 
 
-<div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+<div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2>Skate Camp</h2>
     
@@ -461,7 +461,7 @@
     </div>
 
 
-<div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+<div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2>Tempster's Old Photos</h2>
     
@@ -477,7 +477,7 @@
 
 
 
-<div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+<div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2>Throwback Thursdays</h2>
     
@@ -492,7 +492,7 @@
     </div>
 
 
-<div class="col-xs-6 col-sm-3"><div class="BlogPost FeaturesItems">
+<div class=" col-sm-3"><div class="BlogPost FeaturesItems">
 
         <h2>Rent Our Mini Ramp</h2>
     
