@@ -183,22 +183,22 @@
 
 
 <asp:Panel runat="server" ID="pnlLogin" Visible="false">
-
-<div style="width:300px;float:left; padding-right:10px;">
+    <div class="row">
+<div class="col-md-5">
 
 
     <form method="post" action="login.aspx">
     <h2>Create New Account - US Orders</h2>
     <div id="ErrorMessage" class="ErrorMessages"></div>
-    <div style="text-align:right;">
+    <div>
     Email:
-    <input class="Checkout" type="email" id="txtEmailNew" name="txtEmailNew" value="<%=txtEmailNew %>" style="width:180px;" /><br />
-    First Name: <input type="text" class="Checkout" style="width:120px;" id="txtFirstName" value="<%=txtFirstName %>" name="txtFirstName" /><br />
-    Last Name: <input type="text" class="Checkout" style="width:120px;" id="txtLastName" value="<%=txtLastName %>" name="txtLastName" /><br />
-    Street: <input type="text" class="Checkout" style="width:180px;" id="txtAddress1" name="txtAddress1" value="<%=txtAddress1 %>" /><br />
-    Apt/Company: <input type="text" style="width:120px;" class="Checkout" id="txtAddress2" name="txtAddress2" value="<%=txtAddress2 %>" /><br />
-    City: <input type="text" style="width:140px;" class="Checkout" name="txtCity" id="txtCity" value="<%=txtCity %>" /><br />
-    State:  <select id="txtState" name="txtState" style="width:180px;" class="Checkout">
+    <input class="Checkout" type="email" id="txtEmailNew" name="txtEmailNew" value="<%=txtEmailNew %>" /><br />
+    First Name: <input type="text" class="Checkout" id="txtFirstName" value="<%=txtFirstName %>" name="txtFirstName" /><br />
+    Last Name: <input type="text" class="Checkout" id="txtLastName" value="<%=txtLastName %>" name="txtLastName" /><br />
+    Street: <input type="text" class="Checkout" id="txtAddress1" name="txtAddress1" value="<%=txtAddress1 %>" /><br />
+    Apt/Company: <input type="text" class="Checkout" id="txtAddress2" name="txtAddress2" value="<%=txtAddress2 %>" /><br />
+    City: <input type="text"  class="Checkout" name="txtCity" id="txtCity" value="<%=txtCity %>" /><br />
+    State:  <select id="txtState" name="txtState" class="Checkout">
             <option value="">Choose...</option>
             <option  value="AL">Alabama</option>
             <option  value="AK">Alaska</option>
@@ -255,11 +255,11 @@
     <div style="font-size:.8em;">
         International customers, please see below.
         </div>
-    Zip: <input type="text" style="width:80px;" class="Checkout" id="txtZip" name="txtZip" value="<%=txtZip %>" /><br />
-    Phone: <input type="text" style="width:150px;" class="Checkout" id="txtPhone" name="txtPhone" value="<%=txtPhone %>" /><br />
+    Zip: <input type="text" class="Checkout" id="txtZip" name="txtZip" value="<%=txtZip %>" /><br />
+    Phone: <input type="text" class="Checkout" id="txtPhone" name="txtPhone" value="<%=txtPhone %>" /><br />
     <div id="PasswordMatch" class="ErrorMessages"></div>
-    Choose Password: <input type="password" style="width:80px;" class="Checkout" id="txtPassword1" name="txtPassword1" value="<%=txtPassword1 %>" /><br />
-    Confirm Password: <input type="password" style="width:80px;" class="Checkout" id="txtPassword2" name="txtPassword2" value="<%=txtPassword2 %>" /><br />
+    Choose Password: <input type="password" class="Checkout" id="txtPassword1" name="txtPassword1" value="<%=txtPassword1 %>" /><br />
+    Confirm Password: <input type="password" class="Checkout" id="txtPassword2" name="txtPassword2" value="<%=txtPassword2 %>" /><br />
     </div>
     <input type="submit" class="BuyButtonInput" id="cmdSubmitNew" name="cmdSubmitNew" value="Create Account" />
     <br />
@@ -301,16 +301,16 @@
 </div>
 
 
-<div>
-    <form method="post" style="margin-left: 10px;">
+<div class="col-md-7">
+    <form method="post">
     <h2>Login</h2>
     If you already have an account with us, login here.
     
-    <div style="text-align:right; width:250px;">
-    Email: <input type="text" value="<%=Request["txtEmailLogin"] %>" class="Checkout" name="txtEmailLogin" id="txtEmailLogin" style="width:150px;" />
+    <div>
+    Email: <input type="text" value="<%=Request["txtEmailLogin"] %>" class="Checkout" name="txtEmailLogin" id="txtEmailLogin" />
     </div>
-    <div style="text-align:right; width:250px;">
-    Password: <input type="password" class="Checkout" value="<%=Request["txtPasswordLogin"] %>" name="txtPasswordLogin" id="txtPasswordLogin" style="width:100px;" />
+    <div>
+    Password: <input type="password" class="Checkout" value="<%=Request["txtPasswordLogin"] %>" name="txtPasswordLogin" id="txtPasswordLogin"  />
     </div>
     <input type="submit" value="Login and Checkout" />  
     <span style="font-size:.8em;">
@@ -319,7 +319,7 @@
     <div style="margin:0px; padding:0px; font-size:.7em;">Note: if you forgot your password, just put in your email address, click the button, and we will email it to you.</div>
     </form>
 </div>
-
+</div>
 </asp:Panel>
 
 
@@ -408,12 +408,12 @@
     <ul class="GridMfgs280"></HeaderTemplate>
 
     <ItemTemplate>
-            <li>
+            <div class="col-xs-3">
                 <a href="m.aspx?ID=<%#Eval("ManufacturerID") %>" title="<%#Eval("Name") %>">
-                <img src="http://www.skateparkoftampa.com/spot/productimages/<%#Eval("ManufacturerID") %>mfgrthumb.jpg"
+                <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/productimages/<%#Eval("ManufacturerID") %>mfgrthumb.jpg"
                  title="<%#Eval("Name") %>" />
                 </a>
-            </li>
+            </div>
     </ItemTemplate>
 
     <FooterTemplate></ul></div></FooterTemplate>
