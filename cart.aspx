@@ -191,13 +191,16 @@ from your cart that go out of stock.  Email <a href="mailto:info@skateparkoftamp
 <asp:Repeater runat="server" ID="rptCartRegular">
 	<HeaderTemplate><table width="100%"></HeaderTemplate>
 	<ItemTemplate>
-		<tr>
-			<td>
+		
 							
 				<div class="BlogPost">
+                    <div class="row">
+                    <div class="col-md-6">
 					<a href="p.aspx?ID=<%#Eval("ProductID") %>">
-					<img src="<%#Eval("Photo") %>" style="height:300px; width:300px; padding:10px; float:left;" />
+					<img class="img-responsive img-center" src="<%#Eval("Photo") %>"  />
 					</a>
+                        </div>
+                    <div class="col-md-6">
 					<div style="font-size:.8em;margin:0px;padding:0px;">Item #<%#Eval("InventoryID") %> </div>
 					<div style="font-size:1.1em; font-weight:bold;"><%#Eval("Manufacturer")%> <%#Eval("ShortDescr") %>
 					</div>
@@ -210,9 +213,9 @@ from your cart that go out of stock.  Email <a href="mailto:info@skateparkoftamp
 						<a href="cart.aspx?InventoryID=<%#Eval("InventoryID") %>&Quantity=-1"">Remove One</a>
 						<a href="cart.aspx?InventoryID=<%#Eval("InventoryID") %>&Quantity=-1000"">Delete</a>
 					</div>
+                        </div>
+                        </div>
 				</div>
-			</td>
-		</tr>
 	</ItemTemplate>
 	<FooterTemplate>
 	</table>
@@ -286,7 +289,7 @@ All orders over $59 without other offers like coupons get free UPS Ground shippi
 </div>
 
 <div>
-	Coupon Code: <input type="text" id="CID" name="CID" style="width:50px;" /> <input style="font-size: 1em;" type="submit" value="Apply" />
+	Coupon Code: <input type="text" id="CID" name="CID" /> <input style="font-size: 1em;" type="submit" value="Apply" />
 </div>
 
 
@@ -361,11 +364,11 @@ All orders over $59 without other offers like coupons get free UPS Ground shippi
 
     <form action="login.aspx" method="post">
     <h1>Returning Customers: Login</h1>
-    <div style="text-align:right;">
-    Email: <input type="email" class="Checkout" name="txtEmailLogin" id="txtEmailLogin" style="width:150px;" />
+    <div>
+    Email: <input type="email" class="Checkout" name="txtEmailLogin" id="txtEmailLogin"  />
     </div>
-    <div style="text-align:right;">
-    Password: <input type="password" class="Checkout" name="txtPasswordLogin" id="txtPasswordLogin" style="width:100px;" />
+    <div>
+    Password: <input type="password" class="Checkout" name="txtPasswordLogin" id="txtPasswordLogin"  />
     <input type="hidden" id="txtFrom" name="txtFrom" value="CartPage" />
     </div>
 
@@ -379,17 +382,17 @@ All orders over $59 without other offers like coupons get free UPS Ground shippi
     <form method="post" action="login.aspx">
     <h2>New Customers - United States</h2>
     <div id="ErrorMessage" class="ErrorMessages"></div>
-    <div style="text-align:right;">
+    <div>
     Email:
-    <input class="Checkout" type="email" id="txtEmailNew" name="txtEmailNew" style="width:180px;" /><br />
-    First Name: <input type="text" class="Checkout" style="width:120px;" id="txtFirstName" name="txtFirstName" /><br />
-    Last Name: <input type="text" class="Checkout" style="width:120px;" id="txtLastName" name="txtLastName" /><br />
-    Street: <input type="text" class="Checkout" style="width:180px;" id="txtAddress1" name="txtAddress1" /><br />
-    Apt/Company: <input type="text" style="width:120px;" class="Checkout" id="txtAddress2" name="txtAddress2" /><br />
-    City: <input type="text" style="width:140px;" class="Checkout" id="txtCity" name="txtCity" /><br />
+    <input class="Checkout" type="email" id="txtEmailNew" name="txtEmailNew" /><br />
+    First Name: <input type="text" class="Checkout"  id="txtFirstName" name="txtFirstName" /><br />
+    Last Name: <input type="text" class="Checkout"  id="txtLastName" name="txtLastName" /><br />
+    Street: <input type="text" class="Checkout"  id="txtAddress1" name="txtAddress1" /><br />
+    Apt/Company: <input type="text"  class="Checkout" id="txtAddress2" name="txtAddress2" /><br />
+    City: <input type="text" class="Checkout" id="txtCity" name="txtCity" /><br />
     State: 
     
-            <select id="txtState" name="txtState" style="width:180px;" class="Checkout">
+            <select id="txtState" name="txtState" class="Checkout">
             <option value="">Choose...</option>
             <option  value="AL">Alabama</option>
             <option  value="AK">Alaska</option>
@@ -446,11 +449,11 @@ All orders over $59 without other offers like coupons get free UPS Ground shippi
         <div style="font-size:.8em;">
         International customers, please see below.
         </div>
-    Zip: <input type="text" style="width:80px;" class="Checkout" id="txtZip" name="txtZip" /><br />
-    Phone: <input type="text" style="width:150px;" class="Checkout" id="txtPhone" name="txtPhone" /><br />
+    Zip: <input type="text" class="Checkout" id="txtZip" name="txtZip" /><br />
+    Phone: <input type="text" class="Checkout" id="txtPhone" name="txtPhone" /><br />
     <div id="PasswordMatch" class="ErrorMessages"></div>
-    Choose Password: <input type="password" style="width:80px;" class="Checkout" id="txtPassword1" name="txtPassword1" /><br />
-    Confirm Password: <input type="password" style="width:80px;" class="Checkout" id="txtPassword2" name="txtPassword2" /><br />
+    Choose Password: <input type="password" class="Checkout" id="txtPassword1" name="txtPassword1" /><br />
+    Confirm Password: <input type="password" class="Checkout" id="txtPassword2" name="txtPassword2" /><br />
     </div>
     <input type="submit" class="BuyButtonInput" id="cmdSubmitNew" name="cmdSubmitNew" value="Submit and Checkout" />
     <br />
