@@ -17,23 +17,7 @@
 
 <script src="jquery.masonry.min.js" type="text/javascript"></script>
 <script src="jquery.imagesloaded.min"></script>
-<script language="javascript" type="text/javascript">
 
-    $(document).ready(function () {
-
-        var $container = $('#MasonryWrapper');
-
-        $container.imagesLoaded(function () {
-            $container.masonry({
-                itemSelector: '.BlogPost',
-                columnWidth: 300
-            });
-        });
-
-
-    });
-
-</script>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphMain" Runat="Server">
@@ -48,19 +32,21 @@
 <asp:Repeater runat="server" ID="rptMonth" DataSourceID="sdsWhatsUp">
 <HeaderTemplate><h1>What's Up Posts Made <%=Request.QueryString["Month"] %>/<%=Request.QueryString["Year"] %></h1>
 
-    <div id="MasonryWrapper">
+    <div class="row" id="MasonryWrapper">
 
 </HeaderTemplate>
 <ItemTemplate>
-<div class="BlogPost" style="width:255px; margin:10px; padding:10px;">
+    <div class="col-sm-6">
+<div class="BlogPost">
     <div>
         <a href="w.aspx?ID=<%#Eval("WhatsNewID") %>"><img src="<%#Eval("Icon") %>" /></a>
     </div>
-    <h2 style="font-size:.9em;"><a href="w.aspx?ID=<%#Eval("WhatsNewID") %>"><%#Eval("Title") %></a></h2>
+    <h2><a href="w.aspx?ID=<%#Eval("WhatsNewID") %>"><%#Eval("Title") %></a></h2>
         <h3 class="PostInfo">Posted by <%#Eval("PostedBy") %><br /><%#Eval("DateAdded", "{0:D}") %></h3>
         
         
     </div>
+        </div>
 </ItemTemplate>
 <FooterTemplate>
     </div>
@@ -76,51 +62,68 @@
 <asp:SqlDataSource runat="server" ID="sdsYears" SelectCommand="SPOT2012WhatNewYearList" SelectCommandType="StoredProcedure"
  ConnectionString="<%$ConnectionStrings:CS %>" EnableCaching="true" CacheDuration="10000" />
 <asp:Repeater runat="server" DataSourceID="sdsYears">
-<HeaderTemplate><div class="BlogPost ShoeSizeGrid"></HeaderTemplate>
+<HeaderTemplate><div class="BlogPost"><div class="row"></HeaderTemplate>
 <ItemTemplate>
-    <div class="ProductBlock" style="height:120px; width: 190px; border: solid 1px black; padding:3px; margin: 3px;">
+    <div class="col-sm-6">
+    <div class="ProductBlock" style="height:165px; border: solid 1px black; padding:0px 25px 0px 10px; margin-bottom: 6px;">
     <h1><%#Eval("Year") %></h1>
-    <div style="clear:both;">
+        <div class="row">
+        <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=1&Year=<%#Eval("Year") %>">Jan</a>
         </div>
+            </div>
+        <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=2&Year=<%#Eval("Year") %>">Feb</a>
         </div>
+            </div>
+            <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=3&Year=<%#Eval("Year") %>">Mar</a>
-        </div>
+        </div></div>
+        <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=4&Year=<%#Eval("Year") %>">Apr</a>
-        </div>
+        </div></div>
+        <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=5&Year=<%#Eval("Year") %>">May</a>
-        </div>
+        </div></div>
+        <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=6&Year=<%#Eval("Year") %>">Jun</a>
-        </div>
+        </div></div>
+        <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=7&Year=<%#Eval("Year") %>">Jul</a>
-        </div>
+        </div></div>
+        <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=8&Year=<%#Eval("Year") %>">Aug</a>
-        </div>
+        </div></div>
+        <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=9&Year=<%#Eval("Year") %>">Sep</a>
-        </div>
+        </div></div>
+        <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=10&Year=<%#Eval("Year") %>">Oct</a>
-        </div>
+        </div></div>
+        <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=11&Year=<%#Eval("Year") %>">Nov</a>
-        </div>
+        </div></div>
+        <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=12&Year=<%#Eval("Year") %>">Dec</a>
-        </div>
+            </div>
+            </div>
     </div>
 </div>
+        </div>
 </ItemTemplate>
-<FooterTemplate></div></FooterTemplate>
+<FooterTemplate></div></div></FooterTemplate>
 </asp:Repeater>
 
 
