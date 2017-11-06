@@ -25,7 +25,7 @@
         Our inventory online is live, in stock, and usually ships within one business day.  <a href="http://skateparkoftampa.com/spot/a.aspx?ID=2304">Click here</a> for a photo tour of the shop.
         <div class="Ollie">
             <a href="http://skateparkoftampa.com/spot/a.aspx?ID=2304">
-           <img src="http://www.skateparkoftampa.com/spot/images3/shop2016-1.JPG" />
+           <img class="img-responsive" src="http://www.skateparkoftampa.com/spot/images3/shop2016-1.JPG" />
             </a>
         </div>
 </div>
@@ -74,7 +74,6 @@
 
 <div class="BlogPost">
 <h1>Holiday Hours & Special Events</h1>
-</br></br>
 
 
 <h2 style="text-transform:none">OPEN EARLY: COLUMBUS DAY - MONDAY, OCTOBER 9</h2>
@@ -250,7 +249,7 @@
 The course has changed every year since the 90's.  Photos of the <a href="http://skateparkoftampa.com/spot/a.aspx?ID=3038">2016-2017 course are here</a>.
 <div class="Ollie">
 <a href="http://www.skateparkoftampa.com/spot/article.aspx?id=3038">
-<img src="http://www.skateparkoftampa.com/spot/images3/2017-course-strip.png" />
+<img class="img-responsive" src="http://www.skateparkoftampa.com/spot/images3/2017-course-strip.png" />
 </a>
 </div>
 <h1>Course Rebuild Feature 2016-2017</h1>
@@ -339,7 +338,7 @@ The course has changed every year since the 90's.  Photos of the <a href="http:/
 
 <a href="http://skateparkoftampa.com/spot/a.aspx?ID=3275">
 
-<img src="http://www.skateparkoftampa.com/spot/images3/saltydog-miniramp17%20(1).png" />
+<img class="img-responsive" src="http://www.skateparkoftampa.com/spot/images3/saltydog-miniramp17%20(1).png" />
 
 </a>
 
@@ -459,7 +458,7 @@ The Transitions Art Gallery has been around in one form or another since the mid
 
 <a href="http://spottampa.com/transitions">
 
-<img src="http://www.skateparkoftampa.com/spot/images3/Transitions2017-7.jpg" />
+<img class="img-responsive" src="http://www.skateparkoftampa.com/spot/images3/Transitions2017-7.jpg" />
 
 </a>
 
@@ -493,7 +492,7 @@ We are skateboarders and caring individuals giving ALL kids a chance to have the
  In 2010, we opened a new SPoT Shop on 7th Avenue in Ybor City and The Bricks next door, our bar and cafe. In 2016, we moved SPoT Ybor back over to our main warehouse to make room for something bigger and better (coming soon). SPoT Ybor may be gone, but The Bricks continues to be our #1 Chill Spot for after parties, video premieres, art shows, and of course...great food. <a href="http://skateparkoftampa.com/spot/a.aspx?ID=2824">Here's a quick history lesson</a>. 
 <div class="Ollie">
     <a href="http://skateparkoftampa.com/spot/a.aspx?ID=2500">
-        <img src="http://www.skateparkoftampa.com/spot/images3/bricks-pan-1.png" />
+        <img class="img-responsive" src="http://www.skateparkoftampa.com/spot/images3/bricks-pan-1.png" />
     </a>
 </div>
 
@@ -519,17 +518,22 @@ The Bricks Hours & Location - Food. Coffee. Drinks. Music.
 
 <div class="BlogPost">
         <h1>Contact Info</h1>
+    <div class="row">
+        <div class="col-xs-6">
         Skatepark of Tampa<br />
         4215 E. Columbus Dr.<br />
         Tampa, FL 33605<br />
         (813) 621-6793<br />
         info@skateparkoftampa.com
-        <br /><br />
+        </div>
+        <div class="col-xs-6">
         The Bricks<br />
         1327 E. 7th Ave.<br />
         Ybor City, FL 33605<br />
         (813) 247-1214</br>
         TheBricksYbor.com
+            </div>
+    </div>
 </div>
 
 
@@ -539,19 +543,19 @@ The Bricks Hours & Location - Food. Coffee. Drinks. Music.
 <h2 style="text-transform:none;">STALK US ON SOCIAL MEDIA @SPoTTAMPA</h2>
 </br>
 <a target="_blank" href="http://facebook.com/spottampa">
-<img style="float:left; margin-left:4px;" src="http://spottampa.com/spot/images3/FACEBOOK-ICON.png" />
+<img src="http://spottampa.com/spot/images3/FACEBOOK-ICON.png" />
 </a>
 <a target="_blank" href="http://twitter.com/spottampa">
-<img style="float:left; margin-left:4px;" src="http://spottampa.com/spot/images3/TWIT-ICON.png" />
+<img src="http://spottampa.com/spot/images3/TWIT-ICON.png" />
 </a>
 <a target="_blank" href="http://instagram.com/spottampa">
-<img style="float:left; margin-left:4px;" src="http://spottampa.com/spot/images3/INSTA-ICON.png" />
+<img src="http://spottampa.com/spot/images3/INSTA-ICON.png" />
 </a>
 <a target="_blank" href="http://youtube.com/spottampa">
-<img style="float:left; margin-left:4px;" src="http://spottampa.com/spot/images3/YOUTUBE-ICON.png" />
+<img src="http://spottampa.com/spot/images3/YOUTUBE-ICON.png" />
 </a>
 
-<img style="float:left; margin-left:4px;" src="http://spottampa.com/spot/images3/SNAP-ICON.png" />
+<img src="http://spottampa.com/spot/images3/SNAP-ICON.png" />
 
 <div style="clear:both;"></div>
 </br>
