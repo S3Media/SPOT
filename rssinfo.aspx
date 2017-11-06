@@ -76,7 +76,7 @@
 action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" 
 onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=spotwhatsup', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
 <h1 style="text-transform:none">SUBSCRIBE TO THE SPoT WHAT'S UP BLOG</h1>
-Enter your email: <input type="text" style="width:200px; font-size:18px; font-weight:bold;" name="email"/> <input type="hidden" value="spotwhatsup" name="uri"/><input type="hidden" name="loc" value="en_US"/><input style="margin-top:2px; font-size:18px; font-weight:bold;" type="submit" value="Subscribe" />
+Enter your email: <input type="text" style="font-size:18px; font-weight:bold;" name="email"/> <input type="hidden" value="spotwhatsup" name="uri"/><input type="hidden" name="loc" value="en_US"/><input style="margin-top:2px; font-size:18px; font-weight:bold;" type="submit" value="Subscribe" />
 
 <a href="http://feedburner.google.com/fb/a/mailverify?uri=spotwhatsup&loc=en_US"><img src="http://feeds.feedburner.com/~fc/spotwhatsup?bg=FF3300&amp;fg=FFFFFF&amp;anim=0" height="26" width="88" style="border:0; padding-left:30px;" alt="" /></a>
 <div>
@@ -92,7 +92,7 @@ Enter your email: <input type="text" style="width:200px; font-size:18px; font-we
 action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" 
 onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=SPoTNewShoes&loc=en_US', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
 <h1>Get An Email Every Time We Add New Shoes</h1>
-Enter your email: <input type="text" style="width:200px; font-size:18px; font-weight:bold;" name="email"/> <input type="hidden" value="spotnewshoes" name="uri"/><input type="hidden" name="loc" value="en_US"/><input style="margin-top:2px; font-size:18px; font-weight:bold;" type="submit" value="Subscribe" />
+Enter your email: <input type="text" style="font-size:18px; font-weight:bold;" name="email"/> <input type="hidden" value="spotnewshoes" name="uri"/><input type="hidden" name="loc" value="en_US"/><input style="margin-top:2px; font-size:18px; font-weight:bold;" type="submit" value="Subscribe" />
 
 <a href="https://feedburner.google.com/fb/a/mailverify?uri=SPoTNewShoes&amp;loc=en_US"><img src="http://feeds.feedburner.com/~fc/SPoTNewShoes?bg=FF3300&amp;fg=FFFFFF&amp;anim=0" height="26" width="88" style="border:0; padding-left:30px;" alt="" /></a>
 <div>
@@ -110,7 +110,7 @@ Enter your email: <input type="text" style="width:200px; font-size:18px; font-we
 action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" 
 onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=SPoTNewProducts&amp;loc=en_US', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
 <h1>Get An Email Every Time We Add New Products</h1>
-Enter your email: <input type="text" style="width:200px; font-size:18px; font-weight:bold;" name="email"/> <input type="hidden" value="spotnewproducts" name="uri"/><input type="hidden" name="loc" value="en_US"/><input style="margin-top:2px; font-size:18px; font-weight:bold;" type="submit" value="Subscribe" />
+Enter your email: <input type="text" style=" font-size:18px; font-weight:bold;" name="email"/> <input type="hidden" value="spotnewproducts" name="uri"/><input type="hidden" name="loc" value="en_US"/><input style="margin-top:2px; font-size:18px; font-weight:bold;" type="submit" value="Subscribe" />
 
 <a href="https://feedburner.google.com/fb/a/mailverify?uri=SPoTNewProducts&amp;loc=en_US"><img src="http://feeds.feedburner.com/~fc/spotnewproducts?bg=FF3300&amp;fg=FFFFFF&amp;anim=0" height="26" width="88" style="border:0; padding-left:30px;" alt="" /></a>
 <div>
@@ -189,51 +189,68 @@ We have a few other mailing lists and RSS feeds that you can use to keep up with
 <asp:SqlDataSource runat="server" ID="sdsYears" SelectCommand="SPOT2012WhatNewYearList" SelectCommandType="StoredProcedure"
  ConnectionString="<%$ConnectionStrings:CS %>" EnableCaching="true" CacheDuration="10000" />
 <asp:Repeater ID="Repeater2" runat="server" DataSourceID="sdsYears">
-<HeaderTemplate><div class="BlogPost"></HeaderTemplate>
+<HeaderTemplate><div class="BlogPost"><div class="row"></HeaderTemplate>
 <ItemTemplate>
-    <div class="ProductBlock" style="height:120px; width: 190px; border: solid 1px black; padding:3px; margin: 3px;">
+    <div class="col-sm-6">
+    <div class="ProductBlock" style="height:165px; border: solid 1px black; padding:0px 25px 0px 10px; margin-bottom: 6px;">
     <h1><%#Eval("Year") %></h1>
-    <div style="clear:both;">
+        <div class="row">
+        <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=1&Year=<%#Eval("Year") %>">Jan</a>
         </div>
+            </div>
+        <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=2&Year=<%#Eval("Year") %>">Feb</a>
         </div>
+            </div>
+            <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=3&Year=<%#Eval("Year") %>">Mar</a>
-        </div>
+        </div></div>
+        <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=4&Year=<%#Eval("Year") %>">Apr</a>
-        </div>
+        </div></div>
+        <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=5&Year=<%#Eval("Year") %>">May</a>
-        </div>
+        </div></div>
+        <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=6&Year=<%#Eval("Year") %>">Jun</a>
-        </div>
+        </div></div>
+        <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=7&Year=<%#Eval("Year") %>">Jul</a>
-        </div>
+        </div></div>
+        <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=8&Year=<%#Eval("Year") %>">Aug</a>
-        </div>
+        </div></div>
+        <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=9&Year=<%#Eval("Year") %>">Sep</a>
-        </div>
+        </div></div>
+        <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=10&Year=<%#Eval("Year") %>">Oct</a>
-        </div>
+        </div></div>
+        <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=11&Year=<%#Eval("Year") %>">Nov</a>
-        </div>
+        </div></div>
+        <div class="col-xs-2">
         <div class="SizeSelectionGridItemSmall">
             <a href="whatsnew.aspx?Month=12&Year=<%#Eval("Year") %>">Dec</a>
-        </div>
+            </div>
+            </div>
     </div>
 </div>
+        </div>
 </ItemTemplate>
-<FooterTemplate></div></FooterTemplate>
+<FooterTemplate></div></div></FooterTemplate>
 </asp:Repeater>
 
 
@@ -245,19 +262,19 @@ We have a few other mailing lists and RSS feeds that you can use to keep up with
 <h2 style="text-transform:none;">STALK US ON SOCIAL MEDIA @SPoTTAMPA</h2>
 </br>
 <a target="_blank" href="http://facebook.com/spottampa">
-<img style="float:left; margin-left:4px;" src="http://spottampa.com/spot/images3/FACEBOOK-ICON.png" />
+<img src="http://spottampa.com/spot/images3/FACEBOOK-ICON.png" />
 </a>
 <a target="_blank" href="http://twitter.com/spottampa">
-<img style="float:left; margin-left:4px;" src="http://spottampa.com/spot/images3/TWIT-ICON.png" />
+<img src="http://spottampa.com/spot/images3/TWIT-ICON.png" />
 </a>
 <a target="_blank" href="http://instagram.com/spottampa">
-<img style="float:left; margin-left:4px;" src="http://spottampa.com/spot/images3/INSTA-ICON.png" />
+<img src="http://spottampa.com/spot/images3/INSTA-ICON.png" />
 </a>
 <a target="_blank" href="http://youtube.com/spottampa">
-<img style="float:left; margin-left:4px;" src="http://spottampa.com/spot/images3/YOUTUBE-ICON.png" />
+<img src="http://spottampa.com/spot/images3/YOUTUBE-ICON.png" />
 </a>
 
-<img style="float:left; margin-left:4px;" src="http://spottampa.com/spot/images3/SNAP-ICON.png" />
+<img  src="http://spottampa.com/spot/images3/SNAP-ICON.png" />
 
 <div style="clear:both;"></div>
 </br>
@@ -268,24 +285,26 @@ We have a few other mailing lists and RSS feeds that you can use to keep up with
 
     <h2><a href="shoe.aspx">What's Your Shoe Size?</a></h2>
 
-        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=6">5</a></div>
-        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=7">5.5</a></div>
-        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=8">6</a></div>
-        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=9">6.5</a></div>
-        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=10">7</a></div>
-        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=11">7.5</a></div>
-        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=12">8</a></div>
-        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=13">8.5</a></div>
-        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=14">9</a></div>
-        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=15">9.5</a></div>
-        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=16">10</a></div>
-        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=17">10.5</a></div>
-        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=18">11</a></div>
-        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=19">11.5</a></div>
-        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=20">12</a></div>
-        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=22">13</a></div>
-        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=24">14</a></div>
-        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=26">15</a></div>
+        <div class="row">
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=6">5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=7">5.5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=8">6</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=9">6.5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=10">7</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=11">7.5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=12">8</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=13">8.5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=14">9</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=15">9.5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=16">10</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=17">10.5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=18">11</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=19">11.5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=20">12</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=22">13</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=24">14</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=26">15</a></div></div>
+        </div>
 </div>
 
 <div class="BlogPost">
