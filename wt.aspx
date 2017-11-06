@@ -18,24 +18,7 @@
 
 
 <script src="jquery.masonry.min.js" type="text/javascript"></script>
-<script src="jquery.imagesloaded.min"></script>
-<script language="javascript" type="text/javascript">
-
-    $(document).ready(function () {
-
-        var $container = $('#MasonryWrapper');
-
-        $container.imagesLoaded(function () {
-            $container.masonry({
-                itemSelector: '.BlogPost',
-                columnWidth: 300
-            });
-        });
-
-
-    });
-
-</script>
+<script src="jquery.imagesloaded.min"></script>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphMain" Runat="Server">
@@ -50,16 +33,18 @@
 <asp:Repeater runat="server" ID="rptWhatsUp" DataSourceID="sdsWhatsUp">
 <HeaderTemplate>
 <h1>What's Up Posts Tagged: <%=strTitle %></h1>
-    <div id="MasonryWrapper">
+    <div class="row" id="MasonryWrapper">
 </HeaderTemplate>
 <ItemTemplate>
-<div class="BlogPost" style="width:255px; margin:10px; padding:10px;">
+    <div class="col-sm-6">
+<div class="BlogPost" style="height: 380px; margin-bottom:10px;">
     <h2><a href="w.aspx?ID=<%#Eval("WhatsNewID") %>"><%#Eval("Title") %></a></h2>
         <div>
             <a href="w.aspx?ID=<%#Eval("WhatsNewID") %>"><img src="<%#Eval("Icon") %>" /></a>
         </div>
         <h3 class="PostInfo">Posted by <%#Eval("PostedBy") %>, <%#Eval("DateAdded", "{0:D}") %> <%#Eval("DateAdded", "{0:t}") %></h3>
         
+    </div>
     </div>
 </ItemTemplate>
 <FooterTemplate>
