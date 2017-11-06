@@ -37,7 +37,7 @@
 <!-- MENU -->
 
 <div class="pro17menu">
-     <div class="textfloatleft">
+     <div class="col-sm-6">
           <h2>
           <ul style="color:#000000;">
 
@@ -66,11 +66,12 @@
 
 <div class="pro17results">  
 
-     <div class="textfloatleft">
-               <a href="http://spottampa.com/results"><img src="http://spottampa.com/spot/images3/podium-results.png" /></a>
-     </div>
+     <div class="row">
+         <div class="col-sm-6">
+               <a href="http://spottampa.com/results"><img class="img-responsive img-center" src="http://spottampa.com/spot/images3/podium-results.png" /></a>
+    </div>
   
-     <div class="textfloatright"> 
+     <div class="col-sm-6">
            <h2>     
            <ul style="color:#000000;">     
 
@@ -90,6 +91,7 @@
 <h1 id="spotlife"></h1>
      </div>
 </div>
+    </div>
 
 <!-- SPOTLIFE PANEL -->
 
@@ -99,48 +101,43 @@
 
 <div class="pro16contest">
 
-     <div class="imagebottom"><img src="http://www.skateparkoftampa.com/spot/images3/whale-right.png" /></div>
+     <div class="row">
 
-     <div class="textfloatleft">
-
-     <table style="align:center;">
-          <tr>
-	<th>
+     <div class="col-sm-4">
 	<a href="http://skateparkoftampa.com/spot/a.aspx?ID=3195"><img src="http://www.skateparkoftampa.com/spot/images3/spotlifepro17-practice.png" /></a>
                   </br>
                   <h5>Practice & Industry Contest</h5>
                   </br>
-	</th>
-	<th>
+	</div>
+         <div class="col-sm-4">
 	<a href="http://skateparkoftampa.com/spot/a.aspx?ID=3199"><img src="http://www.skateparkoftampa.com/spot/images3/spotlifepro17-quals.png" /></a>
                   </br>
                   <h5>Qualifiers</h5>
                   </br>
-	</th>
-	<th>
+	</div>
+         <div class="col-sm-4">
 	<a href="http://skateparkoftampa.com/spot/a.aspx?ID=3202"><img src="http://www.skateparkoftampa.com/spot/images3/spotlife-pro17-finals.png" /></a>
                   </br>
                   <h5>Semi Finals & Finals</h5>
                   </br>
-	</th>
-          </tr>
-          <tr>
-	<th>
+	</div>
+         <div class="col-sm-4">
 	<a href="http://skateparkoftampa.com/spot/a.aspx?ID=3204"><img src="http://www.skateparkoftampa.com/spot/images3/spotlifepro17-indybt.png" /></a>
                   </br>
                   <h5>Independent Best Trick</h5>
                   </br>
-	</th>
-	<th>
+	</div>
+         <div class="col-sm-4">
 	<a href="http://skateparkoftampa.com/spot/a.aspx?ID=3205"><img src="http://www.skateparkoftampa.com/spot/images3/spotlifepro17-ccj.png" /></a>
                   </br>
                   <h5>Converse Concrete Jam</h5>
                   </br>
-	</th>
-	
-     </table>
+	</div>
+         
+        
 <h1 id="photos"></h1>
-     </div>    
+     </div>  
+
 
 </div>
 
@@ -152,34 +149,30 @@
 
 <div class="pro16photos">
 
-     <div class="textfloatleft">
+     <div class="row">
 
-     <table>
-          <tr>
-	<th>
-	<a href="http://skateparkoftampa.com/spot/a.aspx?ID=3194"><img src="http://www.skateparkoftampa.com/spot/images3/practice-pro17-thumb.png" /></a>
+<div class="col-sm-4">
+	<a href="http://skateparkoftampa.com/spot/a.aspx?ID=3194"><img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/practice-pro17-thumb.png" /></a>
                   </br>
                   <h5>Practice & Industry Contest</h5>
                   </br>
-	</th>
-	<th>
-	<a href="http://skateparkoftampa.com/spot/a.aspx?ID=3198"><img src="http://www.skateparkoftampa.com/spot/images3/qual-pro17-thumb.png" /></a>
+    </div>
+<div class="col-sm-4">
+	<a href="http://skateparkoftampa.com/spot/a.aspx?ID=3198"><img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/qual-pro17-thumb.png" /></a>
                   </br>
                   <h5>Qualifiers & Best Trick</h5>
                   </br>
-	</th>
-	<th>
-	<a href="http://skateparkoftampa.com/spot/a.aspx?ID=3201"><img src="http://www.skateparkoftampa.com/spot/images3/finals-pro17-thumb.png" /></a>
+    </div>
+<div class="col-sm-4">
+	<a href="http://skateparkoftampa.com/spot/a.aspx?ID=3201"><img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/finals-pro17-thumb.png" /></a>
                   </br>
                   <h5>Semi Finals & Finals</h5>
                   </br>
-	</th>
-          </tr>
-
-     </table>
+    </div>
+<div class="col-sm-4">
 <h1 id="night"></h1>
      </div>
-
+         </div>
 </div>
 
 <!-- NIGHTTIME PANEL -->
@@ -190,32 +183,27 @@
 
 <div class="pro16photos">
 
-     <div class="textfloatleft">
+     <div class="row">
 
-     <table>
-          <tr>
-<th>
-	<a href="http://skateparkoftampa.com/spot/a.aspx?ID=3193"><img src="http://www.skateparkoftampa.com/spot/images3/pro17-thurs-event-night.png" /></a>
+<div class="col-sm-4">
+	<a href="http://skateparkoftampa.com/spot/a.aspx?ID=3193"><img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/pro17-thurs-event-night.png" /></a>
                   </br>
                   <h5>Welcome To Town Art Show</h5>
                   </br>
-	</th>
+</div>
 
-	<th>
-	<a href="http://skateparkoftampa.com/spot/a.aspx?ID=3196"><img src="http://www.skateparkoftampa.com/spot/images3/pro17-fri-event-night.png" /></a>
+<div class="col-sm-4">
+	<a href="http://skateparkoftampa.com/spot/a.aspx?ID=3196"><img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/pro17-fri-event-night.png" /></a>
                   </br>
                   <h5>Element Pro Party</h5>
                   </br>
-	</th>
-	<th>
-	<a href="http://skateparkoftampa.com/spot/a.aspx?ID=3200"><img src="http://www.skateparkoftampa.com/spot/images3/pro17-sat-event-night.png" /></a>
+</div>
+         <div class="col-sm-4">
+	<a href="http://skateparkoftampa.com/spot/a.aspx?ID=3200"><img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/pro17-sat-event-night.png" /></a>
                   </br>
                   <h5>Converse Concrete Jam</h5>
                   </br>
-	</th>
-	          </tr>
-
-     </table>
+</div>
 <h1 id="hash"></h1>
      </div>
 
@@ -229,32 +217,24 @@
 
 <div class="pro16hash">
 
-     <div class="textfloatleft">
+    
 
     <h5 style="text-transform:none">WE HAVE A COLLECTION OF PHOTOS FROM THE WEEKEND USING #TAMPAPRO, #SLSWORLDTOUR AND #SPoTTAMPA</h5>
 
      <a href="http://tagboard.com/tampapro">
 
-     <table>
-          <tr>
-	<th>
-	<img src="http://www.skateparkoftampa.com/spot/images3/pro17-tagboard1.png" />
-	</th>
-	<th>
-	<img src="http://www.skateparkoftampa.com/spot/images3/pro17-tagboard2.png" />
-	</th>
-	<th>
-	<img src="http://www.skateparkoftampa.com/spot/images3/pro17-tagboard3.png" />
-	</th>
-	<th>
-	<img src="http://www.skateparkoftampa.com/spot/images3/pro17-tagboard4.png" />
-	</th>
-          </tr>
-     </table>
+         <div class="row">
+	<div class="col-sm-3"><img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/pro17-tagboard1.png" /></div>
 
+	<div class="col-sm-3"><img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/pro17-tagboard2.png" /></div>
+
+	<div class="col-sm-3"><img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/pro17-tagboard3.png" /></div>
+
+	<div class="col-sm-3"><img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/pro17-tagboard4.png" /></div>
+
+             </div>
      </a>
 <h1 id="sponsors"></h1>
-     </div>
 
 </div>
 
@@ -271,12 +251,13 @@
 <div class="pro16photos imagebottom">
 
 <div class="textcenter doublespace" style="text-align:center"><h5 align="center">Thank You</br>
+
 Monster  •  NikeSB  •  SLS  •  Bronson Bearings  •  Independent Trucks  •  GoPro  •  Spitfire Wheels  •  Mob Grip  •  Converse  •  Beats by Dre  •  Jenkem  •  True Skate  •  Element  •  ETN  •  Todd Bratrud  •  PBR  •  Thomas Campbell  •  Ride Channel  •  TWS  •  Ray Barbee  •  Boards For Bros  •  Fred Mortagne  •  Arctic  •  Drowning Clowns</h5>
 
 </div>
 
 <h1 id="thanks"></h1>
-<img src="http://spottampa.com/spot/images3/pro17-logoline.png" />
+<img class="img-responsive img-center" src="http://spottampa.com/spot/images3/pro17-logoline.png" />
 
 
 
