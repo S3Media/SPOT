@@ -2,14 +2,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHead" Runat="Server">
 
-<script type="text/javascript" language="javascript">
-    $(document).ready(function () {
-
-        $("#sidebar").css('width', '450px');
-        $("#main").css('width', '450px');
-    });
-</script>
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphMain" Runat="Server">
 
@@ -52,7 +44,7 @@ SelectCommandType="storedProcedure" SelectCommand="SPOT2012SPoTEventsPast" />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphSidebar" Runat="Server">
 
-<h1 style="text-transform:none;">UPCOMING SPoT PRODUCTIONS AND DAMN AM EVENTS</h1>
+<h1>UPCOMING SPoT PRODUCTIONS AND DAMN AM EVENTS</h1>
 <asp:SqlDataSource ID="sdsUpcoming" runat="server" ConnectionString="<%$ ConnectionStrings:CS %>"
 SelectCommandType="storedProcedure" SelectCommand="SPOT2012SPoTEventsUpcoming" />
 <asp:Repeater runat="server" ID="rptUpcoming" DataSourceID="sdsUpcoming">
