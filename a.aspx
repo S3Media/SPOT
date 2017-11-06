@@ -101,21 +101,22 @@ ConnectionString="<%$ ConnectionStrings:CS %>">
 <h1><%=strTitle %></h1>
 <h3>Posted on <%=dtDatePosted.ToLongDateString() %> by <%=strAuthor %></h3>
 <div class="PostMediaStripSub">
-                
-        <span class="counter-fb-like">
+                <div class="row">
+        <div class="col-xs-3"><span class="counter-fb-like">
             <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fskateparkoftampa.com%2Fspot%2Fa.aspx%3FID%3D<%=Request.QueryString["ID"] %>&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe>
-        </span>
+        </span></div>
+                    <div class="col-xs-3">
         <span class="counter-twitter">
             <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://skateparkoftampa.com/spot/a.aspx?ID=<%=Request.QueryString["ID"] %>" data-count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-        </span>
-                    
+        </span></div>
+                <div class="col-xs-3">    
         <span class="counter-google-one">
             <g:plusone size="medium" href="http://skateparkoftampa.com/spot/a.aspx?ID=<%=Request.QueryString["ID"] %>"></g:plusone>
-        </span>
-        <span class="counter-stumble">
+        </span></div>
+        <div class="col-xs-3"><span class="counter-stumble">
             <script src="http://www.stumbleupon.com/hostedbadge.php?s=3&r=http://skateparkoftampa.com/spot/a.aspx?ID=<%=Request.QueryString["ID"] %>"></script>
-        </span>
-
+        </span></div>
+</div>
 </div>
 
     
@@ -127,19 +128,22 @@ ConnectionString="<%$ ConnectionStrings:CS %>">
     <div class="PostMediaStrip">
         <div class="PostMediaStripSub">
                 
-                <span class="counter-fb-like">
-                    <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fskateparkoftampa.com%2Fspot%2Fa.aspx%3FID%3D<%=Request.QueryString["ID"] %>&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe>
-                </span>
-                <span class="counter-twitter">
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://skateparkoftampa.com/spot/a.aspx?ID=<%=Request.QueryString["ID"] %>" data-count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                </span>
-                    
-                <span class="counter-google-one">
-                    <g:plusone size="medium" href="http://skateparkoftampa.com/spot/a.aspx?ID=<%=Request.QueryString["ID"] %>"></g:plusone>
-                </span>
-                <span class="counter-stumble">
-                    <script src="http://www.stumbleupon.com/hostedbadge.php?s=3&r=http://skateparkoftampa.com/spot/a.aspx?ID=<%=Request.QueryString["ID"] %>"></script>
-                </span>
+                <div class="row">
+        <div class="col-xs-3"><span class="counter-fb-like">
+            <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fskateparkoftampa.com%2Fspot%2Fa.aspx%3FID%3D<%=Request.QueryString["ID"] %>&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe>
+        </span></div>
+                    <div class="col-xs-3">
+        <span class="counter-twitter">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://skateparkoftampa.com/spot/a.aspx?ID=<%=Request.QueryString["ID"] %>" data-count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+        </span></div>
+                <div class="col-xs-3">    
+        <span class="counter-google-one">
+            <g:plusone size="medium" href="http://skateparkoftampa.com/spot/a.aspx?ID=<%=Request.QueryString["ID"] %>"></g:plusone>
+        </span></div>
+        <div class="col-xs-3"><span class="counter-stumble">
+            <script src="http://www.stumbleupon.com/hostedbadge.php?s=3&r=http://skateparkoftampa.com/spot/a.aspx?ID=<%=Request.QueryString["ID"] %>"></script>
+        </span></div>
+</div>
 
         </div>
     </div>
@@ -188,7 +192,7 @@ ConnectionString="<%$ ConnectionStrings:CS %>">
 
 <div class="BlogPost">
 <h1>Comments</h1>
-<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=106807979370947&amp;xfbml=1"></script><fb:comments href="http://www.skateparkoftampa.com/spot/a.aspx?ID=<%=Request.QueryString["ID"] %>" num_posts="5" width="620"></fb:comments>							
+<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=106807979370947&amp;xfbml=1"></script><fb:comments href="http://www.skateparkoftampa.com/spot/a.aspx?ID=<%=Request.QueryString["ID"] %>" num_posts="5" width="100%"></fb:comments>							
 </div>
 
 
@@ -209,7 +213,7 @@ Enter your email: <input type="text" style="width:200px; font-size:18px; font-we
 
 <div class="BlogPost ShoeSizeGrid">
     <h2>What's Your Shoe Size?</h2>
-    <div class="SizeSelectionGridItemSmall"><a title="Size 5 Skate Shoes in Stock Now" href="/5">5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 5.5 Skate Shoes in Stock Now" href="/5.5">5.5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 6 Skate Shoes in Stock Now" href="/6">6</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 6.5 Skate Shoes in Stock Now" href="/6.5">6.5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 7 Skate Shoes in Stock Now" href="/7">7</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 7.5 Skate Shoes in Stock Now" href="/7.5">7.5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 8 Skate Shoes in Stock Now" href="/8">8</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 8.5 Skate Shoes in Stock Now" href="/8.5">8.5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 9 Skate Shoes in Stock Now" href="/9">9</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 9.5 Skate Shoes in Stock Now" href="/9.5">9.5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 10 Skate Shoes in Stock Now" href="/10">10</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 10.5 Skate Shoes in Stock Now" href="/10.5">10.5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 11 Skate Shoes in Stock Now" href="/11">11</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 11.5 Skate Shoes in Stock Now" href="/11.5">11.5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 12 Skate Shoes in Stock Now" href="/12">12</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 13 Skate Shoes in Stock Now" href="/13">13</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 14 Skate Shoes in Stock Now" href="/14">14</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 15 Skate Shoes in Stock Now" href="/15">15</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 5 Skate Shoes in Stock Now" href="/5">5</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 5.5 Skate Shoes in Stock Now" href="/5.5">5.5</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 6 Skate Shoes in Stock Now" href="/6">6</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 6.5 Skate Shoes in Stock Now" href="/6.5">6.5</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 7 Skate Shoes in Stock Now" href="/7">7</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 7.5 Skate Shoes in Stock Now" href="/7.5">7.5</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 8 Skate Shoes in Stock Now" href="/8">8</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 8.5 Skate Shoes in Stock Now" href="/8.5">8.5</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 9 Skate Shoes in Stock Now" href="/9">9</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 9.5 Skate Shoes in Stock Now" href="/9.5">9.5</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 10 Skate Shoes in Stock Now" href="/10">10</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 10.5 Skate Shoes in Stock Now" href="/10.5">10.5</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 11 Skate Shoes in Stock Now" href="/11">11</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 11.5 Skate Shoes in Stock Now" href="/11.5">11.5</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 12 Skate Shoes in Stock Now" href="/12">12</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 13 Skate Shoes in Stock Now" href="/13">13</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 14 Skate Shoes in Stock Now" href="/14">14</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 15 Skate Shoes in Stock Now" href="/15">15</a></div></div></div>
 
 
 
@@ -223,7 +227,7 @@ Enter your email: <input type="text" style="width:200px; font-size:18px; font-we
 
 <div class="BlogPost">
 <h2>Article Archive by Category</h2>
-
+    <ul>
     <asp:SqlDataSource runat="server" ID="sdsCategories" ConnectionString="<%$ ConnectionStrings:CS %>" 
         EnableCaching="true" CacheDuration="9000"
         SelectCommand="SPOT2012ArticlesTagListing" SelectCommandType="StoredProcedure" />
@@ -236,12 +240,13 @@ Enter your email: <input type="text" style="width:200px; font-size:18px; font-we
     </ItemTemplate>
     <FooterTemplate></FooterTemplate>
     </asp:Repeater>
+        </ul>
 </div>
 
 <Products:Categories runat="server" />
 
 
-<div class="BlogPost" style="font-size:.8em;">
+<div class="BlogPost">
 <h1>In Stock, Immediate Shipping</h1>
     <asp:SqlDataSource runat="server" ID="sdsFlagsMenu" ConnectionString="<%$ ConnectionStrings:CS %>"
     SelectCommand="SPOT2012ProductFlagList" SelectCommandType="StoredProcedure"
