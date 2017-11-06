@@ -18,8 +18,8 @@
         //alert("shit");
         $("#sidebar").css("display", "none");
         $("#mobilesidebar").css("display", "none");
-        $("#main").css("width", "98%");
-        $("#mobilemain").css("width", "98%");
+        $("#main").css("width", "100%");
+        $("#mobilemain").css("width", "100%");
         
     });
 </script>
@@ -45,7 +45,7 @@ SelectCommand="SPOTGetEventsAllNewPast" SelectCommandType="StoredProcedure" />
                 :
                 <%# DataBinder.Eval(Container.DataItem, "EventDate")%>
             </h2>
-            <div style="margin-left: 10px;">
+            <div>
                 <%# DataBinder.Eval(Container.DataItem, "Description")%>
             </div>
         </div>
