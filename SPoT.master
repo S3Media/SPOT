@@ -45,7 +45,31 @@ valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link href="<%=strHTTPS %><%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>steezycorey.css" rel="stylesheet" type="text/css" />
+        
     <link href="<%=strHTTPS %><%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>bootstrap.css" rel="stylesheet" type="text/css" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>// When the user scrolls down 20px from the top of the document, show the button
+             window.onscroll = function () { scrollFunction() };
+
+             function scrollFunction() {
+                 if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                     document.getElementById("myBtn").style.display = "block";
+                 } else {
+                     document.getElementById("myBtn").style.display = "none";
+                 }
+             }
+
+             // When the user clicks on the button, scroll to the top of the document
+             function topFunction() {
+                 document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+                 document.documentElement.scrollTop = 0; // For IE and Firefox
+             }</script>
    <!--FAVICON INFO--> 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
@@ -202,7 +226,9 @@ valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
 <body>
 
 <div class="container" id="wrap">
+    <div class="row">
        <div id="fixedheader">
+
 
 
 	    <div id="header">
@@ -211,7 +237,7 @@ valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
             <a href="http://skateparkoftampa2.com/"><img src="http://skateparkoftampa2.com/spot/layout/header.png" class="img-responsive"/></a>
             </div>
 
-            <div class="col-md-2" id="headerfacebook">
+            <div class="hidden-xs col-sm-6 col-md-2" id="headerfacebook">
                 <asp:Panel runat="server" ID="pnlFacebook">    
                 <div class="FacebookIFrame">
                 <!-- Facebook -->
@@ -227,26 +253,58 @@ valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
                 </asp:Panel>
             </div>
 
-            <div class="col-md-2" id="headercart">
+            <div class="hidden-xs col-sm-6 col-md-2" id="headercart">
             <a href="https://skateparkoftampa.com/cart"><img src="https://skateparkoftampa2.com/spot/layout/carticon2.gif" class="CartIcon" /></a>
             <div id="CartSummary"><a href="cart.aspx" class="CartSummary"><%=strCart %></a></div>
             </div>
-            </div>
-            
+            </div> 
         </div>
-	    <div id="nav">
-		    <ul>
-			    <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/shoes_and_skateboards">New Shoes &amp; Gear</a></li>
-			    <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/skateboard_companies">Companies</a></li>
-          <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/closeout">Sale</a></li>
-			    <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/events">Events</a></li>
-			    <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/about">Info</a></li>
-                <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/features">Features</a></li>
-                <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/search">Search</a></li>
-		    </ul>
-	    </div>
 
-    
+            <nav class="navbar navbar-inverse">
+                <div class="navbar-header">
+                    <div class="row">
+                    <div class="col-xs-4 hidden-sm hidden-md hidden-lg" id="headerfacebook">
+                <asp:Panel runat="server" ID="Panel1">    
+                <div class="FacebookIFrame">
+                <!-- Facebook -->
+                <iframe src="<%=strHTTPS %>www.facebook.com/plugins/like.php?href=http://facebook.com/spottampa&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
+                </div>
+                </asp:Panel>
+                
+                <asp:Panel runat="server" ID="Panel2" Visible="false">    
+                <div class="FacebookIFrame">
+                <!-- Facebook -->
+                <iframe src="http://skateparkoftampa2.com/spot/layout/headerbackground.gif" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
+                </div>
+                </asp:Panel>
+            </div>
+
+            <div class="col-xs-4  hidden-sm hidden-md hidden-lg" id="headercart">
+            <a href="https://skateparkoftampa.com/cart"><img src="https://skateparkoftampa2.com/spot/layout/carticon2.gif" class="CartIcon" /></a>
+            <div id="CartSummary"><a href="cart.aspx" class="CartSummary"><%=strCart %></a></div>
+            </div>
+                    <div class="col-xs-4">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> 
+                        </button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="nav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/shoes_and_skateboards">New Shoes &amp; Gear</a></li>
+                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/skateboard_companies">Companies</a></li>
+                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/closeout">Sale</a></li>
+                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/events">Events</a></li>
+                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/about">Info</a></li>
+                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/features">Features</a></li>
+                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/search">Search</a></li>
+                    </ul>
+                </div>
+        </nav>
+    </div>
             
 
     <asp:Repeater runat="server" ID="rptAlert">
@@ -308,6 +366,7 @@ valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
         <asp:ContentPlaceHolder id="cphSidebar" runat="server" />
 	</div>
                </div>
+    <div class="row">
 	<div id="footer">
         <div class="row">
         <div class="col-md-8">
@@ -345,7 +404,10 @@ valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
 	</div>
             </div>
     </div>
+        </div>
 <div id="DebugNotes" style="font-size:.6em;"></div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </body>
 
 </html>
