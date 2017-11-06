@@ -79,8 +79,8 @@
 
     </div>
 </div>
-
-    <div style="float:left; width: 45%; margin-right:20px;">
+    <div class="row">
+    <div class="col-sm-6">
         This is the most complete list of all am and pro skaters that we know of.    
         Each profile contains <a href="r.aspx">contest results</a>, <a href="ph.aspx">photos</a>, 
         <a href="media.aspx">media coverage</a>, and more.  We have been maintaining this for over 12 years.
@@ -92,18 +92,21 @@
 
         <asp:Repeater runat="server" ID="rptList" DataSourceID="sdsList">
         <ItemTemplate>
-            <div class="SizeSelectionGridItemSmall">
-                <a href="sd.aspx?L=<%#Eval("Letter") %>" title="<%#Eval("Skaters") %> Skaters"><%#Eval("Letter") %></a>
+            <div class="col-xs-6 col-sm-2">
+                <div class="SizeSelectionGridItemSmall">
+                    <a href="sd.aspx?L=<%#Eval("Letter") %>" title="<%#Eval("Skaters") %> Skaters"><%#Eval("Letter") %></a>
+                </div>
             </div>
         </ItemTemplate>
         </asp:Repeater>
     </div>
-    <div style="float:left; width:48%">
+    <div class="col-sm-6">
         <h1>Most Viewed Skaters This Week</h1>
+        <div class="row">
         <asp:SqlDataSource runat="server" EnableCaching="true" CacheDuration="6000" ID="sdsViewed" SelectCommand="SPOT2012SkatersMostClicked" SelectCommandType="StoredProcedure" ConnectionString="<%$ConnectionStrings:CS %>" />
         <asp:Repeater runat="server" ID="rptViewed" DataSourceID="sdsViewed">
         <ItemTemplate>
-            <div style="float:left; width: 70px; text-align:center;">
+            <div class="col-xs-3 skaters">
                 <a href="http://skateparkoftampa.com/skater/<%#Eval("SkaterID") %>/<%#Eval("FirstName").ToString().Replace("\"", "") %>_<%#Eval("LastName").ToString().Replace("\"", "") %>" 
                 title="<%#Eval("FirstName").ToString().Replace("\"", "") %> <%#Eval("LastName").ToString().Replace("\"", "") %> Skateboarder Profile">
                 <img src="http://www.skateparkoftampa.com/spot/headshots/<%#Eval("SkaterID") %>thumb.jpg" 
@@ -112,7 +115,8 @@
         </ItemTemplate>
         </asp:Repeater>
     </div>
-
+        </div>
+    </div>
 </div>
 
 
@@ -126,16 +130,19 @@
     <asp:Repeater runat="server" ID="Repeater1" DataSourceID="sdsSkaters">
     <HeaderTemplate><h1>Last Names Starting With <%=Request.QueryString["L"] %></h1>
     <div class="BlogPost">
+        <div class="row">
     </HeaderTemplate>
     <ItemTemplate>
-        <div class="SizeSelectionGridItemSmall" style="width:140px;">
+        <div class="col-xs-6 col-sm-3">
+        <div class="SizeSelectionGridItemSmall">
             <a href="http://skateparkoftampa.com/skater/<%#Eval("SkaterID") %>/<%#Eval("SkaterName").ToString().Replace("\"", "").Replace(" ", "_") %>" 
             title="<%#Eval("SkaterName") %> Profile, Photos, Video, Contest Results, and More"><%#Eval("SkaterName") %></a>
         </div>
+            </div>
     </ItemTemplate>
     <FooterTemplate></div></FooterTemplate>
     </asp:Repeater>
-
+    </div>
 
 
     <div class="BlogPost">
@@ -145,9 +152,11 @@
 
         <asp:Repeater runat="server" ID="Repeater2" DataSourceID="sdsList">
         <ItemTemplate>
-            <div class="SizeSelectionGridItemSmall">
-                <a href="sd.aspx?L=<%#Eval("Letter") %>" title="<%#Eval("Skaters") %> Skaters"><%#Eval("Letter") %></a>
-            </div>
+            <div class="col-xs-2 col-sm-2">
+                <div class="SizeSelectionGridItemSmall">
+                    <a href="sd.aspx?L=<%#Eval("Letter") %>" title="<%#Eval("Skaters") %> Skaters"><%#Eval("Letter") %></a>
+                </div>
+                </div>
         </ItemTemplate>
         </asp:Repeater>
     </div>
@@ -173,7 +182,7 @@
     <asp:Repeater runat="server" ID="dlSkaters" Visible="false">
     <HeaderTemplate><h2><%=strTitle %>:</h2></HeaderTemplate>
     <ItemTemplate>
-        <div class="NotesAndTips" style="float:left; width:64px;">
+        <div class="NotesAndTips" >
             <div>
             <a href="http://skateparkoftampa.com/skater/<%#Eval("SkaterID") %>/<%#Eval("FirstName").ToString().Replace("\"", "") %>_<%#Eval("LastName").ToString().Replace("\"", "") %>">
                 <img title="<%#Eval("FirstName").ToString().Replace("\"", "") %> <%#Eval("LastName").ToString().Replace("\"", "") %> Skater Profile" 
