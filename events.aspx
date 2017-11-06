@@ -13,13 +13,6 @@
 <meta property="og:site_name" content="Skatepark of Tampa Skateboarding Events"/>
 <meta property="og:description" content="Skatepark of Tampa local, national, and worldwide skateboarding events. Skatepark of Tampa: A crusty little warehouse in Tampa, Florida with the best service and selection in skateboarding since 1993."/>
 
-<script type="text/javascript" language="javascript">
-    $(document).ready(function () {
-
-        $("#sidebar").css('width', '450px');
-        $("#main").css('width', '450px');
-    });
-</script>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphMain" Runat="Server">
@@ -105,7 +98,7 @@
                 :
                 <%# DataBinder.Eval(Container.DataItem, "EventDate")%>
             </h2>
-            <div style="margin-left: 10px;">
+            <div>
                 <%# DataBinder.Eval(Container.DataItem, "Description")%>
             </div>
         </div>
@@ -119,7 +112,7 @@
 
 <asp:Content ID="Content3" ContentPlaceHolderID="cphSidebar" Runat="Server">
 
-<h1 style="text-transform:none;">DAMN AM / SPoT EVENTS</h1>
+<h1>DAMN AM / SPoT EVENTS</h1>
 <div class="NotesAndTips">
 Skatepark of Tampa / Damn Am events are run by the staff from SPoT Skate Shop and Skatepark of Tampa. We run skateboarding events not just at SPoT, 
 but all around the world, delivering the Tampa Am and Pro vibe at each stop.
