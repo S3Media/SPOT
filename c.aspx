@@ -177,7 +177,7 @@
             <div>
                 <a title="<%#Eval("Name").ToString().Replace("\"", "")%> <%=strTitle %>" 
                 href="m.aspx?ID=<%# Eval("ManufacturerID")%>">
-                <img height="60" width="60" src="http://www.skateparkoftampa.com/spot/productimages/<%# Eval("ManufacturerID")%>mfgrthumb.jpg" title="<%#Eval("Name").ToString().Replace("\"", "")%> <%=strTitle %>" />
+                <img height="60" width="60" class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/productimages/<%# Eval("ManufacturerID")%>mfgrthumb.jpg" title="<%#Eval("Name").ToString().Replace("\"", "")%> <%=strTitle %>" />
                 </a>
             </div>
             <div class="NotesAndTips">
