@@ -17,7 +17,7 @@
     $(document).ready(function () {
         //alert("shit");
         $("#sidebar").css("display", "none");
-        $("#main").css("width", "940px");
+        $("#main").css("width", "100%");
     });
 </script>
 
@@ -33,37 +33,38 @@ A place is nothing without its staff.  Below is the crew that makes it happen ar
 <HeaderTemplate></HeaderTemplate>
 <ItemTemplate>
         <div class="BlogPost">
-        <table>
-        <tr>
-            <td valign="top">
-                <div style="width:160px;">
+        <div class="row">
+                <div class="col-sm-3 staff">
                 <h2><%#Eval("Employee") %></h2>
+
                 <a href="http://www.skateparkoftampa.com/spot/sk.aspx?ID=<%#Eval("SkaterID") %>">
-                <img src="http://www.skateparkoftampa.com/spot/headshots/<%#Eval("SkaterID") %>.jpg" style="width:150px;" />
+                <img src="http://www.skateparkoftampa.com/spot/headshots/<%#Eval("SkaterID") %>.jpg" class="img-responsive"/>
 	            </a>
                 </div>
-            </td>
-            <td valign="top">
-                <%#Eval("Notes") %>
-                Recommendations from <%#Eval("Employee") %>:
+
+           <div class="col-sm-9">
+               <div class="row">
+               <div class="col-sm-12"> <%#Eval("Notes") %></div>
+                   <div class="col-sm-12"> <h2>Recommendations from <%#Eval("Employee") %>:</h2></div>
 		        <asp:Repeater runat="server" ID="rptSub">
 			        <HeaderTemplate><table cellspacing="5" cellpadding="0"><tr></HeaderTemplate>
 			        <ItemTemplate>
-				        <td valign="top" align="center" width="70" style="font-size: .7em;">
-                            <div>
+				        
+                            <div class="col-xs-6 col-sm-4" style="text-align: center; height: 100px;">
                                 <a href="p.aspx?ID=<%#Eval("ProductID") %>&CID=<%#Eval("ColorID") %>">
-                                    <img src="http://www.skateparkoftampa.com/spot/productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>thumb.jpg" />
+                                    <img src="http://www.skateparkoftampa.com/spot/productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>thumb.jpg" class="img-responsive img-center"/>
                                 </a>
-                            </div>
+                            
+                        
                             <a href="p.aspx?ID=<%#Eval("ProductID") %>"><%#Eval("Name") %> <%#Eval("ShortDescr") %></a>
-                        </td>
+                            
+                        </div>
 			        </ItemTemplate>
 			        <FooterTemplate></tr></table></FooterTemplate>
 		        </asp:Repeater>
-	    
-            </td>
-        </tr>
-        </table>
+                   </div>
+               </div>
+            </div>
         </div>
 </ItemTemplate>
 
