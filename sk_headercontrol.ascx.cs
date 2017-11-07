@@ -12,6 +12,7 @@ public partial class sk_headercontrol : System.Web.UI.UserControl
     public string strTwitter;
     public string strInsta;
     public string strProductsMoreLink;
+    public string strImageURL;
 
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -50,6 +51,8 @@ public partial class sk_headercontrol : System.Web.UI.UserControl
                 ShowRandomProducts();
                 break;
         }
+
+        strImageURL = "http://www.skateparkoftampa.com/spot/headshots/" + Request.QueryString["ID"] + ".jpg";
     }
 
 
