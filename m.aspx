@@ -28,8 +28,10 @@
 
 
 <div class="BlogPost">
+    <div class="row">
+    <div class="col-md-8"><h1><%=strName %> Products in Stock Now</h1></div>
 
-<div style="float:right; padding-top:9px;">
+<div class="col-md-4" style="padding-top:28px; text-align: center;">
         <span class="counter-fb-like">
             <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fskateparkoftampa.com%2Fspot%2Fm.aspx%3FID%3D<%=Request.QueryString["ID"] %>&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
         </span>
@@ -37,8 +39,9 @@
             <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://skateparkoftampa.com/spot/m.aspx?ID=<%=Request.QueryString["ID"] %>" data-count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
         </span>
 </div>
+        </div>
 
-<h1><%=strName %> Products in Stock Now</h1>
+
     
 <%if (strName.Equals("Lakai"))
     { %>
@@ -146,6 +149,7 @@
 </asp:Repeater>
 
     <div id="NewArrivals">
+        <div class="row">
         <asp:SqlDataSource runat="server" ID="sdsNew"
         SelectCommand="SPOT2012ManufacturerProductsPaged" SelectCommandType="StoredProcedure"
         ConnectionString="<%$ ConnectionStrings:CS %>"
@@ -158,7 +162,7 @@
         <asp:Repeater ID="rptNew" DataSourceID="sdsNew" 
         runat="server">
         <ItemTemplate>
-                <div class="ProductBlock">
+                <div class="col-xs-6 col-sm-4 ProductBlock">
                 
                     <a title="<%#Eval("Name") %> <%#Eval("Color") %> <%#Eval("ShortDescr") %>" 
                     href="/product/<%#Eval("ProductID") %>/<%#Eval("Name").ToString().Replace("\"", "").Replace(" ", "_") %>_<%#Eval("Color").ToString().Replace("\"", "").Replace(" ", "_").Replace("/", "") %>_<%#Eval("ShortDescr").ToString().Replace("\"", "").Replace(" ", "_") %>/&CID=<%#Eval("ColorID") %>"><img 
@@ -180,6 +184,7 @@
                 </div>
             </ItemTemplate>
         </asp:Repeater>
+        </div>
     </div>
 
 
@@ -311,8 +316,8 @@
 <HeaderTemplate>
     <div class="BlogPost">
     <h1><%=strName %></h1>
-    <img title="<%=strName %>" alt="<%=strName %>" src="<%=strImageURL %>" style="width:280px;" />
-              <div>
+    <img class="img-responsive img-center" title="<%=strName %>" alt="<%=strName %>" src="<%=strImageURL %>" />
+              <div style="text-align: center;">
                     <span class="counter-fb-like">
                         <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fskateparkoftampa.com%2Fspot%2Fm.aspx%3FID%3D<%=Request.QueryString["ID"] %>&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe>
                     </span>
