@@ -2,7 +2,15 @@
 <%@ OutputCache Duration="500" VaryByParam="ID;T" %>
 
 <div class="BlogPost">
-    <div class="PostMediaStripSub" style="float:right;">
+    <div class="row">
+    <asp:SqlDataSource runat="server" ID="sdsSkaterInfo" EnableCaching="true" ConnectionString="<%$ConnectionStrings:CS %>" 
+        CacheDuration="4000" SelectCommand="SPOT2012SkaterInfo" SelectCommandType="StoredProcedure">
+    <SelectParameters><asp:QueryStringParameter Name="SkaterID"  QueryStringField="ID" /></SelectParameters>
+    </asp:SqlDataSource>
+    <asp:Repeater runat="server" DataSourceID="sdsSkaterInfo" ID="rptSkaterInfo">
+    <ItemTemplate>
+       <div class="col-sm-8"> <h1><%=strSkaterName %> Skater Profile</h1></div>
+        <div class="col-sm-4" style="text-align: center;">
             <span class="counter-fb-like">
                 <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fskateparkoftampa.com%2Fspot%2Fsk.aspx%3FID%3D<%=Request.QueryString["ID"] %>&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
             </span>
@@ -13,13 +21,11 @@
                 <g:plusone size="medium" href="http://skateparkoftampa.com/spot/sk.aspx?ID=<%=Request.QueryString["ID"] %>"></g:plusone>
             </span>
     </div>
-    <asp:SqlDataSource runat="server" ID="sdsSkaterInfo" EnableCaching="true" ConnectionString="<%$ConnectionStrings:CS %>" 
-        CacheDuration="4000" SelectCommand="SPOT2012SkaterInfo" SelectCommandType="StoredProcedure">
-    <SelectParameters><asp:QueryStringParameter Name="SkaterID"  QueryStringField="ID" /></SelectParameters>
-    </asp:SqlDataSource>
-    <asp:Repeater runat="server" DataSourceID="sdsSkaterInfo" ID="rptSkaterInfo">
-    <ItemTemplate>
-        <h1><%=strSkaterName %> Skater Profile</h1>
+        <div class="BlogPost ShoeSizeGrid hidden-md hidden-lg" id="MugShot">
+        <img class="img-responsive img-center MugShotProfile" src="<%=strImageURL%>"  alt="<%=strSkaterName.Replace("\"", "") %> Photo" 
+            title="<%=strSkaterName.Replace("\"", "") %> Photo" />
+</div>
+        <div class="col-sm-12">
         <p>
             Sponsors: <%#Eval("Sponsors") %><br />
             Hometown: <%#Eval("Hometown") %>, Stance: <%#Eval("Stance") %>, Age: <%#Eval("Age") %>, Status: <%#Eval("Status") %>
@@ -29,80 +35,90 @@
             <%#Eval("LastUpdate", "{0:D}") %> 
                 <a href="results_postcorrection.aspx?SkaterID=<%=Request["ID"] %>">Submit 
                 an Update</a></div>
+            </div>
     </ItemTemplate>
     </asp:Repeater>
 </div>
+    </div>
 
 <a name="SkaterTopMenu"></a>
 <div class="BlogPost">
-<h1>More on <%=strSkaterName %>: </h1>
+    <h1>More on <%=strSkaterName %>: </h1>
 
-    <div class="SkaterIconMenuItem">
+    <div class="col-xs-6 col-sm-3"><div class="SkaterIconMenuItem">
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Photos" class="SkInfo">
         <img src="app/icon_photos.png" />
     </a>
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Photos" class="SkInfo">
         PHOTOS
     </a>
-    </div>
+    </div></div>
     
-    <div class="SkaterIconMenuItem">
+    <div class="col-xs-6 col-sm-3"><div class="SkaterIconMenuItem">
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Coverage" class="SkInfo">
         <img src="app/icon_coverage.png" />
     </a>
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Coverage" class="SkInfo">
         COVERAGE
     </a>
-    </div>
+    </div></div>
 
-    <div class="SkaterIconMenuItem">
+    <div class="col-xs-6 col-sm-3"><div class="SkaterIconMenuItem">
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=News" class="SkInfo">
         <img src="app/icon_news.png" />
     </a>
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=News" class="SkInfo">
         NEWS
     </a>
-    </div>
+    </div></div>
 
-    <div class="SkaterIconMenuItem">
+    <div class="col-xs-6 col-sm-3"><div class="SkaterIconMenuItem">
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Results" class="SkInfo">
         <img src="app/icon_results.png" />
     </a>
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Results" class="SkInfo">
         RESULTS
     </a>
-    </div>
+    </div></div>
 
-    <div class="SkaterIconMenuItem">
+    <div class="col-xs-6 col-sm-3"><div class="SkaterIconMenuItem">
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Products" class="SkInfo">
         <img src="app/icon_products.png" />
     </a>
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Products" class="SkInfo">
         PRODUCTS
     </a>
-    </div>
+    </div></div>
 
-    <div class="SkaterIconMenuItem">
+    <div class="col-xs-6 col-sm-3"><div class="SkaterIconMenuItem">
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Tweets" class="SkInfo">
         <img src="app/icon_tweets.png" />
     </a>
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Tweets" class="SkInfo">
         TWEETS
     </a>
-    </div>
+    </div></div>
 
-    <div class="SkaterIconMenuItem">
+    <div class="col-xs-6 col-sm-3"><div class="SkaterIconMenuItem">
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Instagram" class="SkInfo">
         <img src="app/icon_insta.png" />
     </a>
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Instagram" class="SkInfo">
         INSTA
     </a>
-    </div>
+    </div></div>
+    <div class="col-xs-6 col-sm-3"><div class="SkaterIconMenuItem">
+    <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Mugs" class="SkInfo">
+        <img src="app/icon_mugs.png" />
+    </a>
+    <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Mugs" class="SkInfo">
+        MUGS
+    </a>
+    </div></div>
 
 <!--
 
-    <div class="SkaterIconMenuItem">
+    <div class="col-xs-6 col-sm-3"><div class="SkaterIconMenuItem">
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Mugs" class="SkInfo">
         <img src="app/icon_mugs.png" />
     </a>
@@ -256,8 +272,8 @@
             <div class="NotesAndTips" style="margin:0px; padding:0px;">Couldn't find any <%=strSkaterName %> products, but check out some random products from our Shop. Yeah, <%=strSkaterName %> probably shops here...</div>
         </HeaderTemplate>
         <ItemTemplate>
-                <div class="ProductBlock">
-                    <a href="/product/<%#Eval("ProductID") %>/<%#Eval("Name").ToString().Replace("\"", "").Replace(" ", "_") %>_<%#Eval("Color").ToString().Replace("\"", "").Replace(" ", "_").Replace("/", "") %>_<%#Eval("ShortDescr").ToString().Replace("\"", "").Replace(" ", "_") %>/&CID=<%#Eval("ColorID") %>"><img 
+                <div class="col-xs-6 col-sm-3 ProductBlock">
+                    <a href="/product/<%#Eval("ProductID") %>/<%#Eval("Name").ToString().Replace("\"", "").Replace(" ", "_") %>_<%#Eval("Color").ToString().Replace("\"", "").Replace(" ", "_").Replace("/", "") %>_<%#Eval("ShortDescr").ToString().Replace("\"", "").Replace(" ", "_") %>/&CID=<%#Eval("ColorID") %>"><img class="img-responsive img-center"
                         title="<%#Eval("Name") %> <%#Eval("Color") %> <%#Eval("ShortDescr") %>" width="190" height="190" 
                         src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" /></a>
                     <div class="ProductBlockText"><%#Eval("Name")%> 
@@ -332,7 +348,7 @@
 
 <div class="BlogPost">
 <h2><%=strSkaterName %> Comments</h2>
-    <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=106807979370947&amp;xfbml=1"></script><fb:comments href="http://www.skateparkoftampa.com/spot/sk.aspx?ID=<%=Request.QueryString["ID"] %>" num_posts="5" width="600"></fb:comments>							
+    <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=106807979370947&amp;xfbml=1"></script><fb:comments href="http://www.skateparkoftampa.com/spot/sk.aspx?ID=<%=Request.QueryString["ID"] %>" num_posts="5" width="100%"></fb:comments>							
 </div>				
 
 
@@ -340,76 +356,76 @@
 <div class="BlogPost">
 <h1>More on <%=strSkaterName %>: </h1>
 
-    <div class="SkaterIconMenuItem">
+    <div class="col-xs-6 col-sm-3"><div class="SkaterIconMenuItem">
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Photos" class="SkInfo">
         <img src="app/icon_photos.png" />
     </a>
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Photos" class="SkInfo">
         PHOTOS
     </a>
-    </div>
+    </div></div>
     
-    <div class="SkaterIconMenuItem">
+    <div class="col-xs-6 col-sm-3"><div class="SkaterIconMenuItem">
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Coverage" class="SkInfo">
         <img src="app/icon_coverage.png" />
     </a>
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Coverage" class="SkInfo">
         COVERAGE
     </a>
-    </div>
+    </div></div>
 
-    <div class="SkaterIconMenuItem">
+    <div class="col-xs-6 col-sm-3"><div class="SkaterIconMenuItem">
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=News" class="SkInfo">
         <img src="app/icon_news.png" />
     </a>
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=News" class="SkInfo">
         NEWS
     </a>
-    </div>
+    </div></div>
 
-    <div class="SkaterIconMenuItem">
+    <div class="col-xs-6 col-sm-3"><div class="SkaterIconMenuItem">
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Results" class="SkInfo">
         <img src="app/icon_results.png" />
     </a>
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Results" class="SkInfo">
         RESULTS
     </a>
-    </div>
+    </div></div>
 
-    <div class="SkaterIconMenuItem">
+    <div class="col-xs-6 col-sm-3"><div class="SkaterIconMenuItem">
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Products" class="SkInfo">
         <img src="app/icon_products.png" />
     </a>
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Products" class="SkInfo">
         PRODUCTS
     </a>
-    </div>
+    </div></div>
 
-    <div class="SkaterIconMenuItem">
+    <div class="col-xs-6 col-sm-3"><div class="SkaterIconMenuItem">
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Tweets" class="SkInfo">
         <img src="app/icon_tweets.png" />
     </a>
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Tweets" class="SkInfo">
         TWEETS
     </a>
-    </div>
+    </div></div>
 
-    <div class="SkaterIconMenuItem">
+    <div class="col-xs-6 col-sm-3"><div class="SkaterIconMenuItem">
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Instagram" class="SkInfo">
         <img src="app/icon_insta.png" />
     </a>
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Instagram" class="SkInfo">
         INSTA
     </a>
-    </div>
+    </div></div>
 
 
-    <div class="SkaterIconMenuItem">
+    <div class="col-xs-6 col-sm-3"><div class="SkaterIconMenuItem">
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Mugs" class="SkInfo">
         <img src="app/icon_mugs.png" />
     </a>
     <a href="/skater/<%=Request.QueryString["ID"] %>/<%=strSkaterName.Replace("\"", "").Replace(" ", "_") %>/?T=Mugs" class="SkInfo">
         MUGS
     </a>
-    </div>
+    </div></div>
 </div>
