@@ -17,15 +17,6 @@
 <!--WEBSITE TAKEOVER STYLESHEET FOR AM/PRO-->
 <link rel="stylesheet" href="http://www.skateparkoftampa2.com/tampapro/css/style-home.css">
 
-
-
-
-
-
-
-
-
-
 <script language="javascript" type="text/javascript">
 
     $(document).ready(function () {
@@ -70,41 +61,7 @@
 
 </asp:Content>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <asp:Content ID="Content1" ContentPlaceHolderID="cphMain" Runat="Server">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <asp:SqlDataSource runat="server" ID="sdsWhatsUp" ConnectionString="<%$ConnectionStrings:CS %>" SelectCommandType="StoredProcedure"
  SelectCommand="SPOT2012WhatsUpFrontPagePages" EnableCaching="true" CacheDuration="1000">
@@ -158,13 +115,13 @@ count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" 
 
 
     </div>
+
 </ItemTemplate>
 <FooterTemplate>
     
 </FooterTemplate>
+
 </asp:Repeater>
-
-
 
 
 
@@ -357,19 +314,19 @@ count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" 
 <h2 style="text-transform:none;">STALK US ON SOCIAL MEDIA @SPoTTAMPA</h2>
 </br>
 <a target="_blank" href="http://facebook.com/spottampa">
-<img style="float:left; margin-left:4px;" src="http://skateparkoftampa.com/spot/images3/FACEBOOK-ICON.png" />
+<img src="http://skateparkoftampa.com/spot/images3/FACEBOOK-ICON.png" />
 </a>
 <a target="_blank" href="http://twitter.com/spottampa">
-<img style="float:left; margin-left:4px;" src="http://skateparkoftampa.com/spot/images3/TWIT-ICON.png" />
+<img src="http://skateparkoftampa.com/spot/images3/TWIT-ICON.png" />
 </a>
 <a target="_blank" href="http://instagram.com/spottampa">
-<img style="float:left; margin-left:4px;" src="http://skateparkoftampa.com/spot/images3/INSTA-ICON.png" />
+<img src="http://skateparkoftampa.com/spot/images3/INSTA-ICON.png" />
 </a>
 <a target="_blank" href="http://youtube.com/spottampa">
-<img style="float:left; margin-left:4px;" src="http://skateparkoftampa.com/spot/images3/YOUTUBE-ICON.png" />
+<img src="http://skateparkoftampa.com/spot/images3/YOUTUBE-ICON.png" />
 </a>
 
-<img style="float:left; margin-left:4px;" src="http://skateparkoftampa.com/spot/images3/SNAP-ICON.png" />
+<img src="http://skateparkoftampa.com/spot/images3/SNAP-ICON.png" />
 
 <div style="clear:both;"></div>
 </br>
@@ -379,8 +336,8 @@ count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" 
 Subscribe to our Mailing Lists</a>
 </div>
 </div>
-
-
+    </div>
+   
 
 </asp:Content>
 
