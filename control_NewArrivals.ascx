@@ -61,8 +61,8 @@
         <asp:Repeater ID="rptNew" DataSourceID="sdsNew" 
         runat="server">
         <ItemTemplate>
-                <div class="col-xs-4 NewArrivalSmallBlock">
-                <a href="p.aspx?ID=<%#Eval("ProductID") %>&CID=<%#Eval("ColorID") %>"><img 
+                <div class="col-xs-6 col-sm-4 NewArrivalSmallBlock">
+                <a href="p.aspx?ID=<%#Eval("ProductID") %>&CID=<%#Eval("ColorID") %>"><img class="img-responsive img-center"
                     title="<%#Eval("Name") %> <%#Eval("Color") %> <%#Eval("ShortDescr") %>" width="60" height="60" 
                     src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>thumb.jpg" /></a>
                 <div class="NewArrivalSmallBlockText"><%#Eval("Name").ToString().ToUpper()%> </div>
