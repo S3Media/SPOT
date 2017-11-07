@@ -1,0 +1,90 @@
+html, body,
+
+html {
+		margin:0;
+		padding:0;
+		color:#000;
+                /* background: url(http://www.skateparkoftampa.com/spot/images3/STP-WRAP.png) no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover; */
+
+		 background:#dddddd;
+
+background-image: url(http://www.skateparkoftampa.com/spot/images3/spot-halloween.png); /*  Event Background  */
+        background-attachment: fixed;} 
+
+
+ #wrap, #sidebar {
+  background: #dddddd;
+}
+
+ #nav {
+  border-bottom: 7px solid #dddddd;
+}
+
+#main {
+  background: #dddddd;
+  margin-top: -20px;
+}
+
+#sidebar {
+    background: #dddddd;
+		float:right;
+		width:290px;
+		padding:10px;
+    margin-top: -20px;
+	}
+
+
+
+#tampa-pro-home
+
+ {
+  
+
+position: relative;
+  width: 940px;
+  margin-top: 117px;
+ margin-bottom: 10px; margin-left: 10px;
+  height: 288px;
+  background: #dddddd url('http://www.skateparkoftampa.com/spot/images3/Am17-Web-Banner-notlive.png') no-repeat scroll 0 0;
+}
+
+  
+
+#tampa-pro-home.pre-event .watch-cta {
+    background-position: 0 0;
+    left: 675px;
+    top: 89px;
+  }
+
+  #tampa-pro-home.pre-event .watch-cta:hover {
+    background-position: 0 -128px;
+  }
+
+  #tampa-pro-home.pre-event .tickets-cta {
+    background-position: 0 -64px;
+    left: 675px;
+    top: 153px;
+  }
+
+  #tampa-pro-home.pre-event .tickets-cta:hover {
+    background-position: 0 -192px;
+  }
+
+#tampa-pro-home.live-event .watch-cta {
+  display: block;
+  position: absolute;
+  width: 312px;
+  height: 64px;
+  left: 629px;
+  top: 153px;
+  text-indent: -9999px;
+  background: transparent url('../images/home-tout-cta-watch-live.jpg') no-repeat scroll 0 0;
+}
+
+  #tampa-pro-home.live-event .watch-cta:hover {
+    background-position: 0 -64px;
+  }
