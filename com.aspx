@@ -35,389 +35,391 @@
 <h1>Featured Companies</h1>
 
 </div>
+    <div class="row">
 
-
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Adidas</h2>
 
  <a href="http://skateparkoftampa.com/adidas">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/adidas-new-companies.jpg" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/adidas-new-companies.jpg" />
         </a>
 
 </div>
+    </div>
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Anti Hero</h2>
 
  <a href="http://skateparkoftampa.com/company/1089/Anti-Hero">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-antihero.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-antihero.png" />
         </a>
 
 </div>
+    </div>
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Baker</h2>
 
  <a href="http://skateparkoftampa.com/company/1071/Baker">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-baker.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-baker.png" />
         </a>
 
-</div>
+</div></div>
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Bones Swiss</h2>
 
  <a href="http://skateparkoftampa.com/company/1251/Bones">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-bonesb.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-bonesb.png" />
         </a>
 
-</div>
+</div></div>
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Bones Wheels</h2>
 
  <a href="http://skateparkoftampa.com/company/1244/Bones_Wheels">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-bonesw.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-bonesw.png" />
         </a>
 
-</div>
+</div></div>
 
 
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Bronson</h2>
 
  <a href="http://skateparkoftampa.com/company/5124/Bronson_Speed_Co.">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-bronson.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-bronson.png" />
         </a>
 
-</div>
+</div></div>
 
 
 
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Converse</h2>
 
  <a href="http://skateparkoftampa.com/company/1004/Converse">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-cons.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-cons.png" />
         </a>
 
-</div>
+</div></div>
 
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>DGK</h2>
 
  <a href="http://skateparkoftampa.com/company/1264/DGK">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-dgk.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-dgk.png" />
         </a>
 
-</div>
+</div></div>
 
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Dickies</h2>
 
  <a href="http://skateparkoftampa.com/company/5049/Dickies">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-dickies.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-dickies.png" />
         </a>
 
-</div>
+</div></div>
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Fucking Awesome</h2>
 
  <a href="http://skateparkoftampa.com/company/5111/Fucking_Awesome">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-fa.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-fa.png" />
         </a>
 
-</div>
+</div></div>
 
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Girl</h2>
 
  <a href="http://skateparkoftampa.com/company/1128/Girl">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-girl.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-girl.png" />
         </a>
 
-</div>
+</div></div>
 
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Huf</h2>
 
  <a href="http://skateparkoftampa.com/company/1570/HUF">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-huf.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-huf.png" />
         </a>
 
-</div>
+</div></div>
 
 
 
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Independent</h2>
 
  <a href="http://skateparkoftampa.com/company/1069/Independent">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-indy.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-indy.png" />
         </a>
 
-</div>
+</div></div>
 
 
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Krooked</h2>
 
  <a href="http://skateparkoftampa.com/company/1226/Krooked">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-krooked.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-krooked.png" />
         </a>
 
-</div>
+</div></div>
 
 
 
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Magenta</h2>
 
  <a href="http://skateparkoftampa.com/company/5036/Magenta">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-magenta.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-magenta.png" />
         </a>
 
-</div>
+</div></div>
 
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Mob</h2>
 
  <a href="http://skateparkoftampa.com/company/1386/Mob_Grip">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-mob.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-mob.png" />
         </a>
 
-</div>
+</div></div>
 
 
 
 
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Nike SB</h2>
 
  <a href="http://skateparkoftampa.com/company/1263/Nike">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-nike.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-nike.png" />
         </a>
 
-</div>
+</div></div>
 
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>OJ Wheels</h2>
 
  <a href="http://skateparkoftampa.com/company/1424/OJ_3">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-ojwheels.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-ojwheels.png" />
         </a>
 
-</div>
+</div></div>
 
 
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Polar</h2>
 
  <a href="http://skateparkoftampa.com/company/5081/Polar_Skateboards">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-polar.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-polar.png" />
         </a>
 
-</div>
+</div></div>
 
 
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Primitive</h2>
 
  <a href="http://skateparkoftampa.com/company/5101/Primitive_Skateboarding">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-primitive.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-primitive.png" />
         </a>
 
-</div>
+</div></div>
 
 
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Real</h2>
 
  <a href="http://skateparkoftampa.com/company/1074/Real">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-real.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-real.png" />
         </a>
 
-</div>
+</div></div>
 
 
 
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Santa Cruz</h2>
 
  <a href="http://skateparkoftampa.com/company/1092/Santa_Cruz">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-santacruz.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-santacruz.png" />
         </a>
 
-</div>
+</div></div>
 
 
 
 
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Spitfire</h2>
 
  <a href="http://skateparkoftampa.com/company/1150/Spitfire">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-spitfire.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-spitfire.png" />
         </a>
 
-</div>
+</div></div>
 
 
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2 style="text-transform:none;">SPoT</h2>
 
  <a href="http://skateparkoftampa.com/company/1065/Skatepark_of_Tampa">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-spot.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-spot.png" />
         </a>
 
-</div>
+</div></div>
 
 
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Theories Of Atlantis</h2>
 
  <a href="http://skateparkoftampa.com/company/5037/Theories">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-toa.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-toa.png" />
         </a>
 
-</div>
+</div></div>
 
 
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Thrasher</h2>
 
  <a href="http://skateparkoftampa.com/company/1094/Thrasher_Magazine">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-thrasher.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-thrasher.png" />
         </a>
 
-</div>
+</div></div>
 
 
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Thunder</h2>
 
  <a href="http://skateparkoftampa.com/company/1075/Thunder">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-thunder.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-thunder.png" />
         </a>
 
-</div>
+</div></div>
 
 
 
 
-<div class="BlogPost FeatCompanies">
+<div class="col-xs-6 col-sm-3"><div class="BlogPost FeatCompanies">
 
 <h2>Vans</h2>
 
  <a href="http://skateparkoftampa.com/company/1017/Vans">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/fc-vans.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/fc-vans.png" />
         </a>
 
-</div>
+</div></div>
 
 
-
+    </div>
 
 
 <!--
@@ -456,11 +458,11 @@ SelectCommandType="StoredProcedure" ConnectionString="<%$ConnectionStrings:CS %>
     EnableCaching="true" CacheDuration="3000" />
 <asp:Repeater runat="server" DataSourceID="sdsCompanies">
     <ItemTemplate>
-        <div class="CompanyDiv">
+        <div class="col-xs-6 col-sm-2 CompanyDiv">
             <a class="CompanyLinks" 
                 title="<%#Eval("Name").ToString().Replace("\"", "") %> in stock now."
                 href="/company/<%#Eval("ManufacturerID") %>/<%#Eval("Name").ToString().Replace("\"", "").Replace(" ", "_") %>">
-                <img style="float:left; margin-right: 4px;" src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/<%#Eval("ManufacturerID") %>mfgrsmallthumb.jpg" /></a>
+                <img class="img-responsive img-center"  src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/<%#Eval("ManufacturerID") %>mfgrsmallthumb.jpg" /></a>
             
             <a class="CompanyLinks" 
                 title="<%#Eval("Name").ToString().Replace("\"", "") %> in stock now."
