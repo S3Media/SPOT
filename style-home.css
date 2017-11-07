@@ -31,9 +31,6 @@ background-image: url(http://www.skateparkoftampa.com/spot/images3/spot-hallowee
 
 #sidebar {
     background: #dddddd;
-		float:right;
-		width:290px;
-		padding:10px;
     margin-top: -20px;
 	}
 
@@ -45,11 +42,11 @@ background-image: url(http://www.skateparkoftampa.com/spot/images3/spot-hallowee
   
 
 position: relative;
-  width: 940px;
   margin-top: 117px;
- margin-bottom: 10px; margin-left: 10px;
-  height: 288px;
+ margin-bottom: 10px;
+  height: 346px;
   background: #dddddd url('http://www.skateparkoftampa.com/spot/images3/Am17-Web-Banner-notlive.png') no-repeat scroll 0 0;
+  background-size: cover;
 }
 
   
