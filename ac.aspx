@@ -5,6 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="cphMain" Runat="Server">
 
     <h1><%=strTitle %></h1>
+    <div class="row">
     <asp:SqlDataSource runat="server" ID="sdsList" ConnectionString="<%$ ConnectionStrings:CS %>" 
      EnableCaching="true" CacheDuration="6000"
      SelectCommand="SPOT2012ArticlesTagListingDetail" SelectCommandType="StoredProcedure">
@@ -14,10 +15,10 @@
      </asp:SqlDataSource>
     <asp:Repeater runat="server" ID="rptList" DataSourceID="sdsList">
     <ItemTemplate>
-        <div class="BlogPost">
+        <div class="col-sm-4">
+        <div class="BlogPost contests">
             <a href="/article/<%# Eval("ArticleID")%>/<%# Eval("Description").ToString().Replace("\"","").Replace(" ", "_").Replace(":", "_") %>">
-            <img src="<%#Eval("Icon") %>" 
-                style="float:left; margin-right:10px;" />
+            <img class="img-responsive img-center" src="<%#Eval("Icon") %>" />
             </a>
             <h2><a href="/article/<%# Eval("ArticleID")%>/<%# Eval("Description").ToString().Replace("\"","").Replace(" ", "_").Replace(":", "_") %>"><%# Eval("Description")%></a></h2>
             <h3>
@@ -25,8 +26,10 @@
                 <%# Eval("LongDescription")%>
             </h3>
         </div>
+            </div>
     </ItemTemplate>
     </asp:Repeater>
+        </div>
 
 
 </asp:Content>
@@ -40,9 +43,11 @@
         <asp:Repeater runat="server" ID="rptYears" DataSourceID="sdsYears">
         <HeaderTemplate></HeaderTemplate>
         <ItemTemplate>
+            <div class="col-xs-6 col-sm-4">
             <div class="SizeSelectionGridItemSmall">
             <a href="al.aspx?Y=<%# Eval("Year") %>"><%# Eval("Year") %></a>
             </div>
+                </div>
         </ItemTemplate>
         <FooterTemplate></FooterTemplate>
         </asp:Repeater>
@@ -52,6 +57,7 @@
     <h1>Article Archive by Category</h1>
 
     <div class="BlogPost">
+        <ul>
         <asp:SqlDataSource runat="server" ID="sdsCategories" ConnectionString="<%$ ConnectionStrings:CS %>" 
          EnableCaching="true" CacheDuration="9000"
          SelectCommand="SPOT2012ArticlesTagListing" SelectCommandType="StoredProcedure" />
@@ -64,6 +70,7 @@
         </ItemTemplate>
         <FooterTemplate></FooterTemplate>
         </asp:Repeater>
+            </ul>
     </div>
 
 
