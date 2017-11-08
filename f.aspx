@@ -86,7 +86,7 @@
                 <div class="col-xs-6 col-sm-4 ProductBlock">
                 
                     <a href="p.aspx?ID=<%#Eval("ProductID") %>&CID=<%#Eval("ColorID") %>"><img 
-                        title="<%#Eval("Name") %> <%#Eval("Color") %> <%#Eval("ShortDescr") %>" width="190" height="190" 
+                        title="<%#Eval("Name") %> <%#Eval("Color") %> <%#Eval("ShortDescr") %>" class="img-responsive img-center"
                         src="http://www.skateparkoftampa.com/spot/productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" /></a>
                 
                     <div class="ProductBlockText"><%#Eval("Name")%> 
