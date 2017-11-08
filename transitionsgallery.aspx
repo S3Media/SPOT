@@ -32,7 +32,7 @@
 
 <!--Header-->
 
-<div style="line-height:150%" class="BlogPost">
+<div class="BlogPost">
 
 
 <div class="Ollie">
