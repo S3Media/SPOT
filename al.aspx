@@ -13,26 +13,7 @@
 <meta property="og:description" content="Skateboarding news, articles, photos, videos, and more. Skatepark of Tampa: A crusty little warehouse in Tampa, Florida with the best service and selection in skateboarding since 1993."/>
 
 <script src="jquery.masonry.min.js" type="text/javascript"></script>
-<script src="jquery.imagesloaded.min"></script>
-<script type="text/javascript">
-
-
-    $(document).ready(function () {
-            //alert('test');
-
-            var $container = $('#MasonryWrapper');
-
-            $container.imagesLoaded(function () {
-                $container.masonry({
-                    itemSelector: '.PhotoBox2012',
-                    columnWidth: 190
-                });
-            });
-            //alert('test');
-        });
-
-
-</script>
+<script src="jquery.imagesloaded.min"></script>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphMain" Runat="Server">
@@ -47,9 +28,10 @@
      </SelectParameters>
      </asp:SqlDataSource>
     <asp:Repeater runat="server" ID="rptList" DataSourceID="sdsList">
-        <HeaderTemplate><div class="BlogPost"><div id="MasonryWrapper"></HeaderTemplate>
+        <HeaderTemplate><div class="row"></HeaderTemplate>
         <ItemTemplate>
-        <div class="PhotoBox2012" style="width:160px; padding:5px;">
+        <div class="col-sm-4">
+        <div class="BlogPost contests">
             <a href="/article/<%# Eval("ArticleID")%>/<%# Eval("Description").ToString().Replace("\"","").Replace(" ", "_").Replace(":", "_") %>">
             <img src="<%#Eval("Icon") %>" />
             </a>
@@ -59,8 +41,9 @@
                 <%# Eval("LongDescription")%>
             </h3>
         </div>
+            </div>
     </ItemTemplate>
-        <FooterTemplate></div></div></FooterTemplate>
+        <FooterTemplate></div></FooterTemplate>
     </asp:Repeater>
 
 
@@ -97,19 +80,23 @@
         </form>
     <h1>Article Archive by Year</h1>
     <div class="BlogPost">
+        <div class="row">
         <asp:SqlDataSource runat="server" ID="sdsYears" ConnectionString="<%$ ConnectionStrings:CS %>" 
          EnableCaching="true" CacheDuration="9000"
          SelectCommand="SPOT2012ArticlesYearList" SelectCommandType="StoredProcedure" />
         <asp:Repeater runat="server" ID="rptYears" DataSourceID="sdsYears">
         <HeaderTemplate></HeaderTemplate>
         <ItemTemplate>
+            <div class="col-xs-6 col-sm-4">
             <div class="SizeSelectionGridItemSmall">
             <a href="al.aspx?Y=<%# Eval("Year") %>"><%# Eval("Year") %></a>
             </div>
+                </div>
         </ItemTemplate>
         <FooterTemplate></FooterTemplate>
         </asp:Repeater>
     </div>
+        </div>
 
 
     <h1>Article Archive by Category</h1>
