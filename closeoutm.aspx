@@ -19,7 +19,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="cphMain" Runat="Server">
 <div class="BlogPost">
     <h1>Sale / Closeout Items In Stock From <%=strTitle %></h1>
-
+    <div class="row">
     <asp:SqlDataSource runat="server" ID="sdsNew"
         SelectCommand="SPOT2012CloseoutProductsMfgr" SelectCommandType="StoredProcedure"
         ConnectionString="<%$ ConnectionStrings:CS %>"
@@ -31,7 +31,7 @@
         <asp:Repeater ID="rptNew" DataSourceID="sdsNew" 
         runat="server">
         <ItemTemplate>
-                <div class="ProductBlock">
+                <div class="col-xs-6 col-sm-4 ProductBlock">
                 
                     <a title="<%#Eval("Name") %> <%#Eval("Color") %> <%#Eval("ShortDescr") %>" 
                     href="/product/<%#Eval("ProductID") %>/<%#Eval("Name").ToString().Replace("\"", "").Replace(" ", "_") %>_<%#Eval("Color").ToString().Replace("\"", "").Replace(" ", "_").Replace("/", "") %>_<%#Eval("ShortDescr").ToString().Replace("\"", "").Replace(" ", "_") %>/&CID=<%#Eval("ColorID") %>"><img 
@@ -54,12 +54,13 @@
             </ItemTemplate>
         </asp:Repeater>
 </div>
+    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphSidebar" Runat="Server">
 
     <div class="BlogPost" style="text-align:center;">
         <a href="/company/<%=Request.QueryString["ID"] %>/<%=strTitle.Replace(" ", "_") %>">
-        <img style="width:280px;" src="http://skateparkoftampa.com/spot/productimages/<%=Request.QueryString["ID"] %>mfgr.jpg" />
+        <img class="img-responsive img-center" src="http://skateparkoftampa.com/spot/productimages/<%=Request.QueryString["ID"] %>mfgr.jpg" />
         </a>
         <a href="/company/<%=Request.QueryString["ID"] %>/<%=strTitle.Replace(" ", "_") %>">
             View All Items From <%=strTitle %>
@@ -75,10 +76,10 @@
             ConnectionString="<%$ ConnectionStrings:CS %>"
             EnableCaching="true" CacheDuration="2000"></asp:SqlDataSource>
 
-
+        <div class="row">
             <asp:Repeater runat="server" ID="rptMfgrs" DataSourceID="sdsMfgrs">
                 <ItemTemplate>
-                <div class="NewArrivalSmallBlock" style="height:90px;">
+                <div class="col-xs-6 col-sm-4 NewArrivalSmallBlock">
                     <div>
                         <a title="<%#Eval("Name").ToString().Replace("\"", "")%>" 
                         href="closeoutm.aspx?ID=<%# Eval("ManufacturerID")%>">
@@ -94,7 +95,7 @@
                 </div>
                 </ItemTemplate>
             </asp:Repeater>
-
+            </div>
         </div>
 
 </asp:Content>
