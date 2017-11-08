@@ -53,10 +53,10 @@ to see all feedback left in that month.
     <asp:Repeater runat="server" id="rptMonthList" DataSourceID="sdsMonthList">
 	    <HeaderTemplate><h1>View Customer Comments</h1><ul></HeaderTemplate>
         <ItemTemplate>
-            <li>
+            <div class="col-xs-6">
 		    <a href="feedb.aspx?Month=<%# DataBinder.Eval(Container.DataItem, "Month")%>&Year=<%# DataBinder.Eval(Container.DataItem, "Year")%>">
 		    <%# DataBinder.Eval(Container.DataItem, "Month")%>/<%# DataBinder.Eval(Container.DataItem, "Year")%></a>
-		    <!--(<%# DataBinder.Eval(Container.DataItem, "TotalItems")%> Items)--></li>
+		    <!--(<%# DataBinder.Eval(Container.DataItem, "TotalItems")%> Items)--></div>
 	    </ItemTemplate>
         <FooterTemplate></ul></FooterTemplate>
     </asp:Repeater>
