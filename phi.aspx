@@ -16,16 +16,6 @@
 <meta property="og:description" content="<%=strTitle %> photo at Skatepark of Tampa. All stuff shown is in stock with immediate shipping and great service. Email us at info@skateparkoftampa.com anytime for a quick response. Skatepark of Tampa: A crusty little warehouse in Tampa, Florida with the best service and selection in skateboarding since 1993."/>
 
 
-    <script language="javascript" type="text/javascript">
-
-        $(document).ready(function () {
-            //alert("shit");
-            $("#sidebar").css("display", "none");
-            $("#main").css("width", "97%");
-            $("#mobilesidebar").css("display", "none");
-            $("#mobilemain").css("width", "97%");
-        });
-</script>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphMain" Runat="Server">
@@ -77,7 +67,7 @@
     </div>
 
     <div style="text-align:center;">
-        <img alt="<%=strTitle.Replace("\"", "") %>" title="<%=strTitle.Replace("\"", "") %>" src="<%=strImageName %>" />
+        <img class="img-responsive img-center" alt="<%=strTitle.Replace("\"", "") %>" title="<%=strTitle.Replace("\"", "") %>" src="<%=strImageName %>" />
     </div>
     
 </div>
@@ -102,11 +92,18 @@ Enter your email: <input type="text" style="width:200px; font-size:18px; font-we
 
 
 
-<div style="width:31%; float:left; padding: 1%;">
+<div>
     
 
 
-    <asp:SqlDataSource runat="server" ID="sdsSkaterProfile" SelectCommand="SPOT2012SkaterProfileForImage" SelectCommandType="StoredProcedure" 
+
+
+
+</div>
+
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cphSidebar" Runat="Server">
+        <asp:SqlDataSource runat="server" ID="sdsSkaterProfile" SelectCommand="SPOT2012SkaterProfileForImage" SelectCommandType="StoredProcedure" 
     EnableCaching="true" CacheDuration="10000" ConnectionString="<%$ConnectionStrings:CS %>">
 <SelectParameters>
     <asp:QueryStringParameter Name="ImageID" QueryStringField="I" />
@@ -119,7 +116,7 @@ Enter your email: <input type="text" style="width:200px; font-size:18px; font-we
     <div class="BlogPost">
         <h2><a title="<%#Eval("SkaterName").ToString().Replace("\"", "") %> Skater Profile, Photos, News, Video, Coverage, and More" href="sk.aspx?ID=<%#Eval("SkaterID") %>"><%#Eval("SkaterName") %></a></h2>    
         <a title="<%#Eval("SkaterName").ToString().Replace("\"", "") %> Skater Profile, Photos, News, Video, Coverage, and More" href="sk.aspx?ID=<%#Eval("SkaterID") %>">
-            <img style="width:280px; height:280px;" src="<%#Eval("MugShot") %>" alt="<%#Eval("SkaterName").ToString().Replace("\"", "") %> Photo" 
+            <img class="img-responsive img-center" src="<%#Eval("MugShot") %>" alt="<%#Eval("SkaterName").ToString().Replace("\"", "") %> Photo" 
                 title="<%#Eval("SkaterName").ToString().Replace("\"", "") %> Skater Profile, Photos, News, Video, Coverage, and More" />
         </a>
         <h3 style="text-align:center;"><%#Eval("Sponsors") %></h3>
@@ -134,16 +131,16 @@ Enter your email: <input type="text" style="width:200px; font-size:18px; font-we
 </div>
 
 
-<div style="width:31%; float:left; padding: 1%;">
+<div>
     <WhatsNew:Summary ID="Summary1" runat="server" />
 </div>
 
-<div style="width:31%; padding: 1%;">
+<div>
 
 
 
 
-    <div class="BlogPost" style="font-size:.7em;">
+    <div class="BlogPost">
     <h1>In Stock, Immediate Shipping</h1>
         <asp:SqlDataSource runat="server" ID="sdsFlagsMenu" ConnectionString="<%$ ConnectionStrings:CS %>"
         SelectCommand="SPOT2012ProductFlagList" SelectCommandType="StoredProcedure"
@@ -172,13 +169,6 @@ Enter your email: <input type="text" style="width:200px; font-size:18px; font-we
 	    <FooterTemplate></div></FooterTemplate>
     </asp:Repeater>
 
-
-</div>
-
-</asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="cphSidebar" Runat="Server">
-
-
-
+    </div>
 </asp:Content>
 
