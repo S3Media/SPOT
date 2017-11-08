@@ -19,8 +19,8 @@
         //alert("shit");
         $("#sidebar").css("display", "none");
         $("#mobilesidebar").css("display", "none");
-        $("#main").css("width", "98%");
-        $("#mobilemain").css("width", "98%");
+        $("#main").css("width", "100%");
+        $("#mobilemain").css("width", "100%");
         
     });
 </script>
@@ -32,7 +32,7 @@
 
 <!--Header-->
 
-<div style="margin:2px;padding-left:30px;padding-top:30px;font-size:80%;line-height:150%" class="BlogPost">
+<div style="line-height:150%" class="BlogPost">
 
 
 <div class="Ollie">
@@ -54,12 +54,7 @@
 </div>
 
 </br></br>
-
-<table style="margin:0 auto;">
-
-<tr style="width:712px;">
-
-<th>
+    <div style="text-align: center;">
 
 What better way to break in the newly remodeled Transitions then at the 2017 Tampa Pro?
 </br>
@@ -69,167 +64,106 @@ The next night, Figgy, Nuge and Frecks' band, Arctic made the walls sweat with t
 </br></br>
 We'll add more show photos below as they come in, but for now check out what we have so far. Click on an image to enlarge it.
 
-</th>
-
-</tr>
-
-</table>
 
 </br></br>
 
 <div style="clear:both;"></div>
 
-<table style="margin:0 auto;">
-
-<tr style="float:left;">
-
-<th>
-
+        <div class="row">
+<div class="col-sm-6">
 <a href="http://skateparkoftampa.com/spot/phi.aspx?I=41394">
 
-<img style="width:350px;" src="http://skateparkoftampa.com/spot/images2011/21-It%20was%20so%20sick%20to.jpg" />
+<img class="img-responsive img-center" src="http://skateparkoftampa.com/spot/images2011/21-It%20was%20so%20sick%20to.jpg" />
 
 </a>
 
-<div style="font-weight:bold;text-align:left;">Ray Barbee - photo by Josh Bowser</div>
+<div style="font-weight:bold;">Ray Barbee - photo by Josh Bowser</div>
 
-</th>
+    </div>
 
-</tr>
 
-<tr style="float:left;margin-bottom:-9px;">
-
-<th>
-
+<div class="col-sm-6">
 <a href="http://skateparkoftampa.com/spot/phi.aspx?I=41399">
 
-<img style="width:350px;" src="http://skateparkoftampa.com/spot/images2011/30-ClownsSET(no%20caption).jpg" />
+<img class="img-responsive img-center" src="http://skateparkoftampa.com/spot/images2011/30-ClownsSET(no%20caption).jpg" />
 
 </a>
 
-<div style="font-weight:bold;text-align:left;">Drowning Clowns - photo by Josh Bowser</div>
+<div style="font-weight:bold;">Drowning Clowns - photo by Josh Bowser</div>
 
-
-</th>
-
-</tr>
-
-
-</table>
-
-<table style="margin:0 auto;">
-
-<tr style="float:left;">
-
-<th>
-
+    </div>
+</div>
+<div class="row">
+<div class="col-sm-6">
 <a href="http://skateparkoftampa.com/spot/phi.aspx?I=41471">
 
-<img style="width:350px;" src="http://skateparkoftampa.com/spot/images2011/37-SamShot-4.jpg" />
+<img class="img-responsive img-center" src="http://skateparkoftampa.com/spot/images2011/37-SamShot-4.jpg" />
 
 </a>
 
-<div style="font-weight:bold;text-align:left;">Tampa Pro mayhem - photo by Josh Bowser</div>
+<div style="font-weight:bold;">Tampa Pro mayhem - photo by Josh Bowser</div>
+    </div>
 
-</th>
 
-</tr>
 
-<tr style="float:left;margin-bottom:-9px;">
-
-<th>
-
+<div class="col-sm-6">
 <a href="http://skateparkoftampa.com/spot/phi.aspx?I=41474">
 
-<img style="width:350px;" src="http://skateparkoftampa.com/spot/images2011/40-Arctic2.jpg" />
+<img class="img-responsive img-center" src="http://skateparkoftampa.com/spot/images2011/40-Arctic2.jpg" />
 
 </a>
 
-<div style="font-weight:bold;text-align:left;">Arctic (Nuge) - photo by Josh Bowser</div>
+<div style="font-weight:bold;">Arctic (Nuge) - photo by Josh Bowser</div>
+    </div>
+    </div>
 
-
-</th>
-
-</tr>
-
-
-</table>
-
-<table style="margin:0 auto;">
-
-<tr style="float:left;">
-
-<th>
-
+        <div class="row">
+<div class="col-sm-6">
 <a href="http://skateparkoftampa.com/spot/phi.aspx?I=41477">
 
-<img style="width:350px;" src="http://skateparkoftampa.com/spot/images2011/44-Arcitc6.jpg" />
+<img class="img-responsive img-center" src="http://skateparkoftampa.com/spot/images2011/44-Arcitc6.jpg" />
 
 </a>
 
-<div style="font-weight:bold;text-align:left;">Arctic (Figgy) - photo by Josh Bowser</div>
+<div style="font-weight:bold;">Arctic (Figgy) - photo by Josh Bowser</div>
+    </div>
 
-</th>
-
-</tr>
-
-<tr style="float:left;margin-bottom:-9px;">
-
-<th>
-
+            <div class="col-sm-6">
 <a href="http://skateparkoftampa.com/spot/phi.aspx?I=41974">
 
-<img style="width:350px;" src="http://skateparkoftampa.com/spot/images2011\arctic2.jpg" />
+<img class="img-responsive img-center" src="http://skateparkoftampa.com/spot/images2011\arctic2.jpg" />
 
 </a>
 
-<div style="font-weight:bold;text-align:left;">Arctic with a fan - photo by Brian Mahar</div>
-
-
-</th>
-
-</tr>
-
-
-</table>
-
-<table style="margin:0 auto;">
-
-<tr style="float:left;">
-
-<th>
+<div style="font-weight:bold;">Arctic with a fan - photo by Brian Mahar</div>
+</div>
+</div>
+        <div class="row">
+<div class="col-sm-6">
 
 <a href="http://skateparkoftampa.com/spot/phi.aspx?I=41975">
 
-<img style="width:350px;" src="http://skateparkoftampa.com/spot/images2011\arctic3.jpg" />
+<img class="img-responsive img-center" src="http://skateparkoftampa.com/spot/images2011\arctic3.jpg" />
 
 </a>
 
-<div style="font-weight:bold;text-align:left;">Arctic crowd - photo by Brian Mahar</div>
+<div style="font-weight:bold;">Arctic crowd - photo by Brian Mahar</div>
+    </div>
+            
 
-</th>
+<div class="col-sm-6">
 
-</tr>
-
-<tr style="float:left;margin-bottom:-9px;">
-
-<th>
 
 <a href="http://skateparkoftampa.com/spot/phi.aspx?I=41976">
 
-<img style="width:350px;" src="http://skateparkoftampa.com/spot/images2011\DSC_1831.58bce7ef6dcab.jpg" />
+<img class="img-responsive img-center" src="http://skateparkoftampa.com/spot/images2011\DSC_1831.58bce7ef6dcab.jpg" />
 
 </a>
 
-<div style="font-weight:bold;text-align:left;">Samurai Shotgun - photo by Brian Mahar</div>
+<div style="font-weight:bold;">Samurai Shotgun - photo by Brian Mahar</div>
+    </div>
+</div>
 
-
-</th>
-
-</tr>
-
-
-</table>
 
 <!--
 
@@ -241,11 +175,11 @@ We'll add more show photos below as they come in, but for now check out what we 
 
 <a href="http://skateparkoftampa.com/spot/phi.aspx?I=41976">
 
-<img style="width:350px;" src="http://skateparkoftampa.com/spot/images2011\samurai2.jpg" />
+<img class="img-responsive img-center" src="http://skateparkoftampa.com/spot/images2011\samurai2.jpg" />
 
 </a>
 
-<div style="font-weight:bold;text-align:left;">Samurai Shotgun - photo by Brian Mahar</div>
+<div style="font-weight:bold;">Samurai Shotgun - photo by Brian Mahar</div>
 
 </th>
 
@@ -257,11 +191,11 @@ We'll add more show photos below as they come in, but for now check out what we 
 
 <a href="http://skateparkoftampa.com/spot/phi.aspx?I=41976">
 
-<img style="width:350px;" src="http://skateparkoftampa.com/spot/images2011\DSC_1831.58bce7ef6dcab.jpg" />
+<img class="img-responsive img-center" src="http://skateparkoftampa.com/spot/images2011\DSC_1831.58bce7ef6dcab.jpg" />
 
 </a>
 
-<div style="font-weight:bold;text-align:left;">Samurai Shotgun - photo by Brian Mahar</div>
+<div style="font-weight:bold;">Samurai Shotgun - photo by Brian Mahar</div>
 
 
 </th>
@@ -279,7 +213,7 @@ We'll add more show photos below as they come in, but for now check out what we 
 </br></br>
 
 
-
+</div>
 </div>
 
 
