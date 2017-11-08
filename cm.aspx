@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="cphMain" Runat="Server">
 <div class="BlogPost">
 <h1><%=strName%> <%=strCategory%> in Stock Now</h1>
-
+    <div class="row">
 <asp:SqlDataSource runat="server" ID="sdsList"
 SelectCommand="SPOT2012ManufacturerCategoryProducts" SelectCommandType="StoredProcedure"
 ConnectionString="<%$ ConnectionStrings:CS %>"
@@ -17,7 +17,7 @@ EnableCaching="true" CacheDuration="3000">
 </asp:SqlDataSource>
 <asp:Repeater runat="server" ID="rptList" DataSourceID="sdsList">
 <ItemTemplate>
-                <div class="ProductBlock">
+                <div class="col-xs-6 col-sm-4 ProductBlock">
                 
                     <a title="<%#Eval("Name") %> <%#Eval("Color") %> <%#Eval("ShortDescr") %>" 
                     href="p.aspx?ID=<%#Eval("ProductID") %>&CID=<%#Eval("ColorID") %>"><img 
@@ -40,6 +40,7 @@ EnableCaching="true" CacheDuration="3000">
 </asp:Repeater>
 
 </div>
+    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphSidebar" Runat="Server">
 
@@ -54,7 +55,7 @@ EnableCaching="true" CacheDuration="3000">
     <div class="BlogPost">
       <h1><%=strName %></h1>
     <a href="m.aspx?ID=<%=Request.QueryString["M"] %>">
-        <img title="<%=strName %>" alt="<%=strName %>" src="<%=strImageURL %>" style="width:280px;" />
+        <img title="<%=strName %>" alt="<%=strName %>" src="<%=strImageURL %>" class="img-responsive img-center" />
     </a>
           <div>
                     <span class="counter-fb-like">
