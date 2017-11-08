@@ -71,6 +71,7 @@
 
 
     <div id="NewArrivals">
+        <div class="row">
         <asp:SqlDataSource runat="server" ID="sdsNew"
             SelectCommand="SPOT2012FlagProductsNewArrivalsPaged" SelectCommandType="StoredProcedure"
             ConnectionString="<%$ ConnectionStrings:CS %>"
@@ -82,7 +83,7 @@
         </asp:SqlDataSource>
         <asp:Repeater ID="rptNew" DataSourceID="sdsNew" runat="server">
         <ItemTemplate>
-                <div class="ProductBlock">
+                <div class="col-xs-6 col-sm-4 ProductBlock">
                 
                     <a href="p.aspx?ID=<%#Eval("ProductID") %>&CID=<%#Eval("ColorID") %>"><img 
                         title="<%#Eval("Name") %> <%#Eval("Color") %> <%#Eval("ShortDescr") %>" width="190" height="190" 
@@ -100,6 +101,7 @@
             </ItemTemplate>
         </asp:Repeater>
     </div>
+        </div>
 
 
 
