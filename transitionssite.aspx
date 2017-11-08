@@ -19,8 +19,8 @@
         //alert("shit");
         $("#sidebar").css("display", "none");
         $("#mobilesidebar").css("display", "none");
-        $("#main").css("width", "98%");
-        $("#mobilemain").css("width", "98%");
+        $("#main").css("width", "100%");
+        $("#mobilemain").css("width", "100%");
         
     });
 </script>
@@ -30,7 +30,7 @@
 
 <!--Header-->
 
-<div style="margin:2px;padding-left:30px;padding-top:30px;font-size:80%;line-height:150%" class="BlogPost">
+<div style="line-height:150%" class="BlogPost">
 
 
 <div class="Ollie">
@@ -52,7 +52,7 @@
 </div>
 
 <div class="Ollie">
-<img src="http://www.skateparkoftampa.com/spot/images3/transitions-header.png" />
+<img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/transitions-header.png" />
 </div>
 
 </br>
