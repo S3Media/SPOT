@@ -19,8 +19,8 @@
         //alert("shit");
         $("#sidebar").css("display", "none");
         $("#mobilesidebar").css("display", "none");
-        $("#main").css("width", "98%");
-        $("#mobilemain").css("width", "98%");
+        $("#main").css("width", "100%");
+        $("#mobilemain").css("width", "100%");
         
     });
 </script>
@@ -36,126 +36,130 @@ Our current roster of rippers. Look for these dudes at our local contests and aw
 
 </div>
 
-
-<div class="BlogPost SpotTeam">
+    <div class="row">
+<div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>Abdias Rivera</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=5">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/abdias.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/abdias.png" />
         </a>
 
     </div>
+    </div>
 
 
-    <div class="BlogPost SpotTeam">
+    <div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>Alejandro Burnell</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=3713">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/alej.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/alej.png" />
         </a>
 
-    </div>
+    </div></div>
 
 
 
 
-<div class="BlogPost SpotTeam">
+<div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>Alex Johnson</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=5709">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/alex.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/alex.png" />
         </a>
 
-    </div>
+    </div></div>
 
 
 
 
 
-<div class="BlogPost SpotTeam">
+<div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>Allen Russell</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=9">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/allen-team-page.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/allen-team-page.png" />
         </a>
 
-    </div>
+    </div></div>
+        </div>
+    <div class="row">
 
 
 
-
-   <div class="BlogPost SpotTeam">
+   <div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>Brian Schaefer</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=1926">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/schaef.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/schaef.png" />
         </a>
 
-    </div>
+    </div></div>
 
 
-    <div class="BlogPost SpotTeam">
+    <div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>Cash Gaddes</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=7743">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/cash.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/cash.png" />
         </a>
 
-    </div>
+    </div></div>
 
     
-   <div class="BlogPost SpotTeam">
+   <div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>Clive Dixon</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=3123">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/clive.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/clive.png" />
         </a>
 
-    </div>
+    </div></div>
 
 
-<div class="BlogPost SpotTeam">
+<div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>Elissa Steamer</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=351">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/elissa.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/elissa.png" />
         </a>
 
-    </div>
+    </div></div>
+        </div>
+    <div class="row">
 
 
-<div class="BlogPost SpotTeam">
+<div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>Eric McKenney</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=5146">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/eric.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/eric.png" />
         </a>
 
-    </div>
+    </div></div>
 
 
 
 
 
-<div class="BlogPost SpotTeam">
+<div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>James Cobb</h2>
     
@@ -164,187 +168,195 @@ Our current roster of rippers. Look for these dudes at our local contests and aw
             <img src="http://www.skateparkoftampa.com/spot/images3/james.png" />
         </a>
 
-    </div>
+    </div></div>
 
 
 
 
 
-<div class="BlogPost SpotTeam">
+<div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>Jeff Lenoce</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=267">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/jeffl.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/jeffl.png" />
         </a>
 
-    </div>
+    </div></div>
 
 
 
 
 
-<div class="BlogPost SpotTeam">
+<div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>Jimmy Marcus</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=782">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/JIMMY-TEAMSHOT.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/JIMMY-TEAMSHOT.png" />
         </a>
 
-    </div>
+    </div></div>
+        </div>
+    <div class="row">
 
 
 
 
 
-<div class="BlogPost SpotTeam">
+<div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>Matt Milligan</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=295">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/milligan-team-page.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/milligan-team-page.png" />
         </a>
 
-    </div>
+    </div></div>
 
 
 
 
 
-<div class="BlogPost SpotTeam">
+<div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>Markus Jalaber</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=3638">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/markus.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/markus.png" />
         </a>
 
-    </div>
+    </div></div>
 
 
 
 
-<div class="BlogPost SpotTeam">
+<div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>Mike Frazier</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=298">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/headshots/298.jpg" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/headshots/298.jpg" />
         </a>
 
-    </div>
+    </div></div>
 
 
 
 
 
-<div class="BlogPost SpotTeam">
+<div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>Pat Stiener</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=724">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/pat.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/pat.png" />
         </a>
 
-    </div>
+    </div></div>
+        </div>
+    <div class="row">
 
 
 
-<div class="BlogPost SpotTeam">
+<div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>Paul Zitzer</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=310">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/paul.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/paul.png" />
         </a>
 
-    </div>
+    </div></div>
 
 
 
-<div class="BlogPost SpotTeam">
+<div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>Robby Kirkland</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=953">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/robby.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/robby.png" />
         </a>
 
-    </div>
+    </div></div>
 
 
-<div class="BlogPost SpotTeam">
+<div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>Sam Bellipanni</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=3924">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/sam.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/sam.png" />
         </a>
 
-    </div>
+    </div></div>
 
 
 
-<div class="BlogPost SpotTeam">
+<div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>Treshan O'Shaughnessy</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=4404">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/treshan.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/treshan.png" />
         </a>
 
-    </div>
+    </div></div>
+        </div>
+    <div class="row">
 
 
 
 
-<div class="BlogPost SpotTeam">
+<div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>Tyson Peterson</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=4203">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/tyson.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/tyson.png" />
         </a>
 
-    </div>
+    </div></div>
 
 
 
 
-<div class="BlogPost SpotTeam">
+<div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>Wes Box</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=5684">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/wes-box.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/wes-box.png" />
         </a>
 
-    </div>
+    </div></div>
 
 
-<div class="BlogPost SpotTeam">
+<div class="col-sm-3"><div class="BlogPost SpotTeam">
 
         <h2>Zion Wright</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=4018">
 
-            <img style="width:210px;" src="http://www.skateparkoftampa.com/spot/images3/zion.png" />
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/zion.png" />
         </a>
 
-    </div>
+    </div></div>
+        </div>
+    
 
 
 
