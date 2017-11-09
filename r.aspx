@@ -26,10 +26,13 @@
 <ItemTemplate>
         
     <div class="BlogPost">
+        <div class="row"><div class="col-sm-2">
         <a title="<%# Eval("ContestName").ToString().Replace("\"", "") %> Results" 
         href="/results/<%# Eval("ContestID") %>/<%# Eval("ContestName").ToString().Replace("\"", "").Replace(" ", "_") %>">
-            <img class="WhatsUpFloat" src="<%#Eval("Icon") %>" />
+            <img class="img-responsive img-center" src="<%#Eval("Icon") %>" />
         </a>
+            </div>
+            <div class="col-sm-10">
         <a style="font-weight:bold; color:Black;" 
             title="<%# Eval("ContestName").ToString().Replace("\"", "") %>" 
             href="/results/<%# Eval("ContestID") %>/<%# Eval("ContestName").ToString().Replace("\"", "").Replace(" ", "_") %>">
@@ -44,6 +47,8 @@
             <a href="/skater/<%#Eval("SecondID") %>/<%#Eval("Second").ToString().Replace("\"", "").Replace(" ", "_") %>"><%# Eval("Second") %></a>,
             <a href="/skater/<%#Eval("ThirdID") %>/<%#Eval("Third").ToString().Replace("\"", "").Replace(" ", "_") %>"><%# Eval("Third") %></a>
         </div>
+                </div>
+            </div>
     </div>
 </ItemTemplate>
 </asp:Repeater>
@@ -63,18 +68,21 @@
 
 <h1>Archives</h1>
 <div class="BlogPost">
-<div style="clear:both;">
 Select a year to see results: 
-</div>
+
+    <div class="row">
 <asp:SqlDataSource runat="server" ID="sdsYears" EnableCaching="true" CacheDuration="20000" SelectCommand="SPOT2012ResultsYearSummary" SelectCommandType="StoredProcedure" ConnectionString="<%$ConnectionStrings:CS %>" />
 <asp:Repeater runat="server" ID="rptYears" DataSourceID="sdsYears">
 <ItemTemplate>
-<div class="SizeSelectionGridItemSmall" style="width:40px;">
+    <div class="col-xs-6 col-sm-4">
+<div class="SizeSelectionGridItemSmall">
     <a href="r.aspx?Year=<%#Eval("Year") %>"><%#Eval("Year") %></a>
 </div>
+        </div>
 </ItemTemplate>
 </asp:Repeater>
 </div>
+    </div>
 
 
 
@@ -82,7 +90,8 @@ Select a year to see results:
 
 <div class="BlogPost">
     <h2>What's Your Shoe Size?</h2>
-    <div class="SizeSelectionGridItemSmall"><a title="Size 5 Skate Shoes in Stock Now" href="/5">5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 5.5 Skate Shoes in Stock Now" href="/5.5">5.5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 6 Skate Shoes in Stock Now" href="/6">6</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 6.5 Skate Shoes in Stock Now" href="/6.5">6.5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 7 Skate Shoes in Stock Now" href="/7">7</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 7.5 Skate Shoes in Stock Now" href="/7.5">7.5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 8 Skate Shoes in Stock Now" href="/8">8</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 8.5 Skate Shoes in Stock Now" href="/8.5">8.5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 9 Skate Shoes in Stock Now" href="/9">9</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 9.5 Skate Shoes in Stock Now" href="/9.5">9.5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 10 Skate Shoes in Stock Now" href="/10">10</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 10.5 Skate Shoes in Stock Now" href="/10.5">10.5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 11 Skate Shoes in Stock Now" href="/11">11</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 11.5 Skate Shoes in Stock Now" href="/11.5">11.5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 12 Skate Shoes in Stock Now" href="/12">12</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 13 Skate Shoes in Stock Now" href="/13">13</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 14 Skate Shoes in Stock Now" href="/14">14</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 15 Skate Shoes in Stock Now" href="/15">15</a></div></div>
+    <div class="row">
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 5 Skate Shoes in Stock Now" href="/5">5</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 5.5 Skate Shoes in Stock Now" href="/5.5">5.5</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 6 Skate Shoes in Stock Now" href="/6">6</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 6.5 Skate Shoes in Stock Now" href="/6.5">6.5</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 7 Skate Shoes in Stock Now" href="/7">7</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 7.5 Skate Shoes in Stock Now" href="/7.5">7.5</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 8 Skate Shoes in Stock Now" href="/8">8</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 8.5 Skate Shoes in Stock Now" href="/8.5">8.5</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 9 Skate Shoes in Stock Now" href="/9">9</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 9.5 Skate Shoes in Stock Now" href="/9.5">9.5</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 10 Skate Shoes in Stock Now" href="/10">10</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 10.5 Skate Shoes in Stock Now" href="/10.5">10.5</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 11 Skate Shoes in Stock Now" href="/11">11</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 11.5 Skate Shoes in Stock Now" href="/11.5">11.5</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 12 Skate Shoes in Stock Now" href="/12">12</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 13 Skate Shoes in Stock Now" href="/13">13</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 14 Skate Shoes in Stock Now" href="/14">14</a></div></div>    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a title="Size 15 Skate Shoes in Stock Now" href="/15">15</a></div></div>        </div></div>
 
 
 
