@@ -54,33 +54,36 @@
 <asp:Repeater runat="server" ID="rptList" OnItemDataBound="rptList_ItemDataBound">
         
 <ItemTemplate>
-<div class="BlogPost">
+<div class="BlogPost skater-results">
     <h1>
         <a href="/skater/<%#Eval("SkaterID") %>/<%#Eval("FirstName").ToString().Replace("\"", "").Replace(" ", "_") %>_<%#Eval("LastName").ToString().Replace("\"", "").Replace(" ", "_") %>"
              title="<%# Eval("FirstName").ToString().Replace("\"", "") %> <%# Eval("LastName").ToString().Replace("\"", "") %> Skateboarding Profile">
             <%# DataBinder.Eval(Container.DataItem, "Place")%>: <%# DataBinder.Eval(Container.DataItem, "FirstName")%> <%# DataBinder.Eval(Container.DataItem, "LastName")%>
         </a>
     </h1>
+    <div class="row">
+        <div class="col-sm-5">
     <a title="<%# Eval("FirstName").ToString().Replace("\"", "") %> <%# Eval("LastName").ToString().Replace("\"", "") %> Skateboarding Profile" href="/skater/<%#Eval("SkaterID") %>/<%#Eval("FirstName").ToString().Replace("\"", "").Replace(" ", "_") %>_<%#Eval("LastName").ToString().Replace("\"", "").Replace(" ", "_") %>">
-    <img alt="<%# Eval("FirstName").ToString().Replace("\"", "") %> <%# Eval("LastName").ToString().Replace("\"", "") %>" 
-    src="<%# DataBinder.Eval(Container.DataItem, "MugShot")%>" style="margin:10px; float:left; height:300px; width:300px;" /></a>
+    <img class="img-responsive img-center" alt="<%# Eval("FirstName").ToString().Replace("\"", "") %> <%# Eval("LastName").ToString().Replace("\"", "") %>" 
+    src="<%# DataBinder.Eval(Container.DataItem, "MugShot")%>"  style="margin-bottom: 10px;"/></a>
     
 
     <div>
         <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fskateparkoftampa.com%2Fspot%2Fsk.aspx%3FID%3D<%#Eval("SkaterID") %>&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe>
     </div>
-
+            </div>
+        <div class="col-sm-7">
     Sponsors: <%# DataBinder.Eval(Container.DataItem, "Sponsors")%><br />
     Hometown: <%# DataBinder.Eval(Container.DataItem, "City")%> <%# DataBinder.Eval(Container.DataItem, "State")%><br />
     Notes: <%# DataBinder.Eval(Container.DataItem, "Notes")%><br />
     <asp:Repeater runat="server" ID="rptProducts">
         <ItemTemplate>
             
-            <div style="float:left; width: 80px; margin: 5px; text-align:center; font-size:.7em;">
+            <div>
                 <a href="p.aspx?ID=<%#Eval("ProductID") %>&CID=<%#Eval("ColorID") %>">
                     <img title="<%#Eval("ShortDescr").ToString().Replace("\"", "")%> <%#Eval("Color").ToString().Replace("\"", "")%>" 
                         alt="<%#Eval("ShortDescr").ToString().Replace("\"", "")%> <%#Eval("Color").ToString().Replace("\"", "")%>" 
-                        src="<%#Eval("ImageURL") %>" style="width:60px;" />
+                        src="<%#Eval("ImageURL") %>"  />
                 </a>
             
             <a title="<%#Eval("ShortDescr").ToString().Replace("\"", "")%> <%#Eval("Color").ToString().Replace("\"", "")%>" 
@@ -89,9 +92,13 @@
                 <div><%#Eval("SaleNote") %> <%#Eval("FreeShippingNote") %> <%#Eval("InShopOnly")%></div> 
             
             </div>
+           
+            
         </ItemTemplate>
     </asp:Repeater>
 </div>
+        </div>
+    </div>
 </ItemTemplate>
 </asp:Repeater>
 
@@ -102,14 +109,14 @@
 
 <div class="BlogPost">
     <a href="http://itunes.apple.com/us/app/spot-skate-nerd/id544443560?ls=1&mt=8" target="_blank">
-        <img title="Skatepark of Tampa iPhone App, SPoT Skate Nerd" src="images3/spot_skate_nerd_iphone_app.png" />
+        <img class="img-responsive img-center" title="Skatepark of Tampa iPhone App, SPoT Skate Nerd" src="images3/spot_skate_nerd_iphone_app.png" />
     </a>
 </div>
 
 
 <h2>Comments About <%=strTitle %> Results</h2>
 <div class="BlogPost">
-    <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=106807979370947&amp;xfbml=1"></script><fb:comments href="http://www.skateparkoftampa.com/spot/skresult.aspx?ID=<%=Request.QueryString["ID"] %>" num_posts="5" width="280"></fb:comments>							
+    <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=106807979370947&amp;xfbml=1"></script><fb:comments href="http://www.skateparkoftampa.com/spot/skresult.aspx?ID=<%=Request.QueryString["ID"] %>" num_posts="5" width="100%"></fb:comments>							
 </div>				
 
 
