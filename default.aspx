@@ -88,6 +88,8 @@
 
             <div class="PostMediaStrip">
             <div class="PostMediaStripSub">
+                <div class="row">
+                <div class="col-xs-3">
                     <span class="counter-fb-like">
                         <iframe src="//www.facebook.com/plugins/like.php?href=<%# Server.UrlEncode(Eval("ShareLink").ToString()) 
 
@@ -97,19 +99,26 @@
 
 allowTransparency="true"></iframe>
                     </span>
+                    </div>
+                <div class="col-xs-3">
                     <span class="counter-twitter">
                         <a href="https://twitter.com/share" class="twitter-share-button" data-url="<%#Eval("ShareLink") %>" data-
 
 count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
                     </span>
-                    
+                    </div>
+                <div class="col-xs-3">
                     <span class="counter-google-one">
                         <g:plusone size="medium" href="<%#Eval("ShareLink") %>"></g:plusone>
                     </span>
+                    </div>
+                <div class="col-xs-3">
                     <span class="counter-stumble">
                         <script src="http://www.stumbleupon.com/hostedbadge.php?s=3&r=<%#Eval("ShareLink") %>"></script>
                     </span>
-
+                    </div>
+                
+                    </div>
             </div>
         </div>
 
