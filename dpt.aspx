@@ -113,14 +113,18 @@ ConnectionString="<%$ConnectionStrings:CS %>" EnableCaching="true" CacheDuration
 <HeaderTemplate><div class="BlogPost"><h1>Past Digital Product Tosses</h1>
 Below are past Digital Product Tosses.  Check back often or <a href="http://www.skateparkoftampa.com/spot/rssinfo.aspx">join our mailing list</a> to stay in touch.
 
-<div style="margin:15px;">
+
 </HeaderTemplate>
 <ItemTemplate>
+	 <%# (Container.ItemIndex + 2) % 2 == 0 ? "<div class='row'>" : string.Empty %>
+    <div class="col-sm-6">
 	<div class="BlogPost" style="border-bottom: solid 0px black;">
     <h2 style="margin:0px;"><a href="dpt.aspx?I=<%#Eval("DPTID") %>"><%#Eval("Title") %></a></h2>
 	<b>Ended on <%#Eval("EndDate", "{0:D}") %></b><br />
 	<%#Eval("MetaDescription") %>
     </div>
+        </div>
+    <%# (Container.ItemIndex + 2) % 2 == 1 ? "</div>" : string.Empty %>
 </ItemTemplate>
 <FooterTemplate></div></div></FooterTemplate>
 </asp:Repeater>
@@ -258,13 +262,32 @@ Below are past Digital Product Tosses.  Check back often or <a href="http://www.
 
 <div class="BlogPost">
 <a href="/dpt">
-<img src="http://skateparkoftampa.com/spot/images/dptfrontpageicon.jpg" />
+<img class="img-responsive img-center" src="http://skateparkoftampa.com/spot/images/dptfrontpageicon.jpg" />
 </a>
 </div>
 
 <div class="BlogPost">
     <h2>Looking for Shoes? Click Your Size</h2>
-    <div class="SizeSelectionGridItemSmall"><a title="Size 5 Skate Shoes in Stock Now" href="cz.aspx?ID=7&SID=6">5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 5.5 Skate Shoes in Stock Now" href="cz.aspx?ID=7&SID=7">5.5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 6 Skate Shoes in Stock Now" href="cz.aspx?ID=7&SID=8">6</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 6.5 Skate Shoes in Stock Now" href="cz.aspx?ID=7&SID=9">6.5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 7 Skate Shoes in Stock Now" href="cz.aspx?ID=7&SID=10">7</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 7.5 Skate Shoes in Stock Now" href="cz.aspx?ID=7&SID=11">7.5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 8 Skate Shoes in Stock Now" href="cz.aspx?ID=7&SID=12">8</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 8.5 Skate Shoes in Stock Now" href="cz.aspx?ID=7&SID=13">8.5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 9 Skate Shoes in Stock Now" href="cz.aspx?ID=7&SID=14">9</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 9.5 Skate Shoes in Stock Now" href="cz.aspx?ID=7&SID=15">9.5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 10 Skate Shoes in Stock Now" href="cz.aspx?ID=7&SID=16">10</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 10.5 Skate Shoes in Stock Now" href="cz.aspx?ID=7&SID=17">10.5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 11 Skate Shoes in Stock Now" href="cz.aspx?ID=7&SID=18">11</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 11.5 Skate Shoes in Stock Now" href="cz.aspx?ID=7&SID=19">11.5</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 12 Skate Shoes in Stock Now" href="cz.aspx?ID=7&SID=20">12</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 13 Skate Shoes in Stock Now" href="cz.aspx?ID=7&SID=22">13</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 14 Skate Shoes in Stock Now" href="cz.aspx?ID=7&SID=24">14</a></div>    <div class="SizeSelectionGridItemSmall"><a title="Size 15 Skate Shoes in Stock Now" href="cz.aspx?ID=7&SID=26">15</a></div></div>
+    <div class="row">
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=6">5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=7">5.5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=8">6</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=9">6.5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=10">7</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=11">7.5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=12">8</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=13">8.5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=14">9</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=15">9.5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=16">10</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=17">10.5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=18">11</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=19">11.5</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=20">12</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=22">13</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=24">14</a></div></div>
+    <div class="col-xs-2"><div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=26">15</a></div></div>
+        </div></div>
 
 <Products:Categories runat="server" />
 
