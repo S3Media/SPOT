@@ -33,19 +33,27 @@
 
 <div class="PostMediaStrip" style="border-bottom: solid 2px black;margin: 10px 0px 5px 0px;">
     <div class="PostMediaStripSub">
+        <div class="col-xs-3">
             <span class="counter-fb-like">
                 <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fskateparkoftampa.com%2Fspot%2Fskresult.aspx%3FID%3D<%=Request["ID"] %>&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe>
             </span>
+            </div>
+            <div class="col-xs-3">
             <span class="counter-twitter">
                 <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://skateparkoftampa.com/spot/skresult.aspx?ID=<%=Request["ID"] %>" data-count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
             </span>
+                </div>
+            <div class="col-xs-3">
                     
             <span class="counter-google-one">
                 <g:plusone size="medium" href="http://skateparkoftampa.com/spot/skresult.aspx?ID=<%=Request["ID"] %>"></g:plusone>
             </span>
+                </div>
+            <div class="col-xs-3">
             <span class="counter-stumble">
                 <script src="http://www.stumbleupon.com/hostedbadge.php?s=3&r=http://skateparkoftampa.com/spot/skresult.aspx?ID=<%=Request["ID"] %>"></script>
             </span>
+                </div>
 
     </div>
 </div>
@@ -158,6 +166,8 @@
         <FooterTemplate></ul></FooterTemplate>
     </asp:Repeater>
 </div>
+
+    </div>
 
 </asp:Content>
 
