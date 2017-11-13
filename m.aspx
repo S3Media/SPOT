@@ -45,16 +45,16 @@
     
 <%if (strName.Equals("Lakai"))
     { %>
-     <img src="http://www.skateparkoftampa.com/spot/images3/RILEY_HAWK_leaderboard.jpg" />
+     <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/RILEY_HAWK_leaderboard.jpg" />
     <%} %>
     
  <!--<%if (strName.Equals("Supra"))
     { %>
-    <img src="http://skateparkoftampa.com/spot/images3/supraxshakejunt.jpg" />
+    <img class="img-responsive img-center" src="http://skateparkoftampa.com/spot/images3/supraxshakejunt.jpg" />
     <%} %>-->
    <!-- <%if (strName.Equals("Matix"))
     { %>
-    <img src="http://skateparkoftampa.com/spot/images3/MATIX-HEADPHONES-aug14.jpg" />
+    <img class="img-responsive img-center" src="http://skateparkoftampa.com/spot/images3/MATIX-HEADPHONES-aug14.jpg" />
     <%} %>-->
     <%if (strName.Equals("New Balance Numeric"))
     { %>
@@ -66,64 +66,64 @@
     <%} %>  
     <%if (strName.Equals("Anti-Hero"))
     { %>
-    <img src="http://www.skateparkoftampa.com/spot/images3/AntiHero_600x150.gif" />
+    <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/AntiHero_600x150.gif" />
     <%} %>  
    <%if (strName.Equals("Volcom"))
     { %>
-    <img src="http://www.skateparkoftampa.com/spot/images3/AntiHero_600x150.gif" />
+    <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/AntiHero_600x150.gif" />
     <%} %>
 <%if (strName.Equals("Converse"))
     { %>
-    <img src="http://www.skateparkoftampa.com/spot/images3/CONS_FY18_SKATEPARKOFTAMPA_600x150_WO_CTA.jpg" />    <%} %>
+    <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/CONS_FY18_SKATEPARKOFTAMPA_600x150_WO_CTA.jpg" />    <%} %>
 <%if (strName.Equals("Theories"))
     { %>
-    <img src="http://www.skateparkoftampa.com/spot/images3/SpotTheoriesBanner.jpg" />
+    <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/SpotTheoriesBanner.jpg" />
     <%} %> 
 <%if (strName.Equals("Hopps"))
     { %>
-    <img src="http://www.skateparkoftampa.com/spot/images3/SpotHoppsBanner.jpg" />
+    <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/SpotHoppsBanner.jpg" />
     <%} %>             
 <%if (strName.Equals("Magenta"))
     { %>
-    <img src="http://www.skateparkoftampa.com/spot/images3/SpotMagentaBanner.jpg" />
+    <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/SpotMagentaBanner.jpg" />
     <%} %>            
 <%if (strName.Equals("Isle"))
     { %>
-    <img src="http://www.skateparkoftampa.com/spot/images3/SpotIsleBanner.jpg" />
+    <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/SpotIsleBanner.jpg" />
     <%} %>    
 <%if (strName.Equals("Polar Skateboards"))
     { %>
-    <img src="http://www.skateparkoftampa.com/spot/images3/SpotPolarBanner.jpg" />
+    <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/SpotPolarBanner.jpg" />
     <%} %>             
 <%if (strName.Equals("Traffic Skateboards"))
     { %>
-    <img src="http://www.skateparkoftampa.com/spot/images3/SpotTrafficBanner.jpg" />
+    <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/SpotTrafficBanner.jpg" />
     <%} %>             
 <%if (strName.Equals("Spitfire"))
     { %>
-     <img src="http://www.skateparkoftampa.com/spot/images3/spotfire.jpg" />  
+     <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/spotfire.jpg" />  
    <%} %>
 <%if (strName.Equals("Skatepark of Tampa"))
     { %>
-     <img src="http://www.skateparkoftampa.com/spot/images3/spotfire.jpg" />
+     <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/spotfire.jpg" />
 <%} %>
 <%if (strName.Equals("Alien Workshop"))
     { %>
-     <img src="http://www.skateparkoftampa.com/spot/images3/aw-banner16.png" />
+     <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/aw-banner16.png" />
 <%} %> 
 
 <%if (strName.Equals("Emerica"))
     { %>
-     <img src="http://www.skateparkoftampa.com/spot/images3/em-WinoG6-SPoT600x150.jpg" />
+     <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/em-WinoG6-SPoT600x150.jpg" />
 
 <%} %> 
 <%if (strName.Equals("Glassy Sunglasses"))
     { %>
-     <img src="http://www.skateparkoftampa.com/spot/images3/skatewarehouse banner2.jpg" />
+     <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/skatewarehouse banner2.jpg" />
 <%} %>  
 <%if (strName.Equals("eS Footwear"))
     { %>
-     <img src="http://www.skateparkoftampa.com/spot/images3/eS_SPOT_BANNER_NAUTICAL_F.jpg" />
+     <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/eS_SPOT_BANNER_NAUTICAL_F.jpg" />
 <%} %>  
 
 
