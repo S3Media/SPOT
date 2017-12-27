@@ -96,7 +96,16 @@ video {
     z-index: 9999;
     white-space: nowrap;
     width: 100%;
-    max-width: 1166px;
+    max-width: 1170px;
+    overflow: visible;
+}
+
+div#fixedheader div {
+    overflow: visible !important;
+}
+
+ul.dropdown-menu {
+    left: 20px;
 }
 
 .ErrorMessages {
@@ -116,12 +125,15 @@ video {
     font-weight: bold;
 }
 
-div {
+.BlogPost div {
     overflow: hidden;
 }
 
 .HotLinks {
-    font-size: .7em;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .FacebookIFrame {
@@ -133,7 +145,7 @@ div {
 }
 
 .CartSummary {
-    color: #ffffff;
+    color: #000000;
     font-size: .7em;
 }
 
@@ -164,17 +176,11 @@ div {
 }
 
 .MugShotProfile {
-    margin-right: 10px;
-    float: left;
 }
 
 .SkaterIconMenuItem {
-    float: left;
-    padding: .8%;
-    margin: .8%;
+    margin-bottom: 10px;
     text-align: center;
-    font-size: .7em;
-    width: 9%;
     background-color: #d6d6d6;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -190,15 +196,15 @@ div {
 }
 
 .PostMediaStrip {
-    border-top: solid 2px black;
+    border-top: solid 2px #dddddd;
     background-color: #ffffff;
-    margin: 25px -5px 0px -5px;
-    padding: 0px;
+    margin: 25px 0px 0px 0px;
     clear: both;
 }
 
 .PostMediaStripSub {
-    padding: 8px 0px 5px 10px;
+    padding: 8px 0px 5px 0px;
+    text-align: center;
 }
 
 .FeaturedCompany {
@@ -212,36 +218,23 @@ div {
 .CompanyDiv {
     margin: 0px;
     padding: 0px;
-    float: left;
-    width: 130px;
-    height: 40px;
+    height: 68px;
+    text-align: center;
 }
 
 .CompanyLinks {
-    font-size: .6em;
+    font-size: 1.1em;
 }
 
 .GridMfgs280 {
-    width: 290px;
-    text-align: center;
-    list-style-type: none;
     margin: 0px;
     padding: 0px;
 }
 
-    .GridMfgs280 li {
-        width: 60px;
-        float: left;
-        padding: 5px;
-        margin: 0px;
-        height: 60px;
-    }
-
 .NewArrivalSmallBlock {
-    padding: 11px;
-    margin: 0px;
+    padding: 5px;
     text-align: center;
-    font-size: .8em;
+    height: 110px;
 }
 
 .NewArrivalSmallBlockText {
@@ -249,6 +242,7 @@ div {
     text-align: center;
     padding: 0px;
     margin: 0px;
+    font-weight: bold;
 }
 
 .NewArrivalSmallBlockTextAlert {
@@ -265,7 +259,8 @@ div {
 }
 
 .ProductBlock {
-    height: 280px;
+    height: 290px;
+    text-align: center;
 }
 
     .ProductBlock img {
@@ -370,7 +365,7 @@ div {
     color: Red;
     padding: 5px 0px;
     margin-top: 5px;
-    min-width: 38px;
+    min-width: 37px;
     height: 30px;
 }
 
@@ -425,8 +420,7 @@ div {
 }
 
 .NotesAndTips {
-    font-size: .7em;
-    margin: 3px;
+    font-size: 1em;
 }
 
 input {
@@ -442,7 +436,8 @@ select {
 
 .Checkout {
     padding: 2px;
-    margin: 3px;
+    margin: 3px 0px;
+    width: 100%;
 }
 
 form {
@@ -450,7 +445,7 @@ form {
     border-top: solid 0px black;
     border-bottom: solid 0px black;
     background-color: #ffffff;
-    padding-left: 10px;
+    padding: 10px 15px 10px 15px;
 }
 
 .PaymentForm {
@@ -505,28 +500,19 @@ p {
 }
 
 .FeaturesItems {
-    float: left;
-    width: 221px;
     text-align: center;
-    margin: 2px;
-    padding: 5px;
+    padding: 10px;
     height: 350px;
 }
 
 .SpotTeam {
-    float: left;
-    width: 221px;
     text-align: center;
-    margin: 2px;
-    padding: 5px;
 }
 
 .FeatCompanies {
-    float: left;
-    width: 221px;
     text-align: center;
-    margin: 2px;
-    padding: 5px;
+    margin-bottom: 15px;
+    min-height: 218px;
 }
 
 
@@ -549,10 +535,12 @@ p {
 
 .pro17title {
     position: relative;
-    width: 940px;
     height: 144px;
     background-image: url("images3/PROTIX-BANNER17.png");
     background-repeat: no-repeat;
+    background-color: #f16631;
+    background-position: center;
+    background-size: contain;
 }
 
 .pro16menu {
@@ -565,10 +553,11 @@ p {
 
 .pro17menu {
     position: relative;
-    width: 940px;
-    height: 350px;
     background-image: url("images3/pro16-podium.png");
     background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: contain;
+    background-position: right;
 }
 
 .pro16results {
@@ -583,54 +572,51 @@ p {
 .pro17results {
     padding: 10px 20px 0px 20px;
     position: relative;
-    width: 900px;
     height: 340px;
     background-image: url("images3/turtle-right17.png");
     background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: contain;
+    background-position: right;
 }
 
 .pro16contest {
     padding: 10px 20px 10px 20px;
     position: relative;
-    width: 900px;
-    height: 550px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    background-image: url("images3/whale-right.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    text-align: center;
 }
 
 .pro16photos {
     padding: 10px 20px 10px 20px;
     position: relative;
-    width: 900px;
-    height: 290px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .pro16hash {
     padding: 10px 20px 10px 20px;
     position: relative;
-    width: 900px;
-    height: 310px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
 }
 
-.textcenter {
-    position: relative;
-    margin: 20px;
-    max-width: 870px;
-    padding: 10px 10px 10px 10px;
-}
+    .pro16hash img {
+        margin-bottom: 5px;
+    }
 
 .textfloatleft {
     position: absolute;
     top: 20px;
     left: 20px;
-    max-width: 870px;
     padding: 10px 10px 10px 10px;
 }
 
@@ -638,7 +624,6 @@ p {
     position: absolute;
     top: 20px;
     left: 470px;
-    max-width: 870px;
     padding: 10px 10px 10px 10px;
 }
 
@@ -716,23 +701,15 @@ p {
 }
 
 .counter-twitter {
-    margin-bottom: 1.4em;
-    margin-left: 0em;
 }
 
 .counter-fb-like {
-    margin-bottom: 1.6em;
-    margin-left: 0.5em;
 }
 
 .counter-google-one {
-    margin-bottom: 1.4em;
-    margin-left: 0.2em;
 }
 
 .counter-stumble {
-    margin-bottom: 1.4em;
-    margin-left: 0.2em;
 }
 
 .instagram-placeholder {
@@ -823,7 +800,7 @@ h1 {
     }
 
 h2 {
-    font-size: 1.3em;
+    font-size: 1.6em;
     font-family: 'Jockey One', sans-serif;
     text-transform: uppercase;
     color: black
@@ -892,6 +869,8 @@ h5 {
 
     .PhotoBox2011 img {
         max-width: 100%;
+        height: auto;
+        margin: 0px 0px 5px 0px !important;
     }
 
 
@@ -923,31 +902,26 @@ h5 {
 .BuyButtonInput {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: .9em;
+    font-size: 1em;
     background-color: #ff0000;
     color: #ffffff;
+    padding: 3px 6px;
 }
 
 .BuyButton a {
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
-    font-size: .9em;
+    font-size: 1em;
     background-color: #ff0000;
     margin: 0px 2px 1px 2px;
-    padding: 1px 2px 1px 2px;
+    padding: 4px 6px;
     color: #ffffff;
 }
 
     .BuyButton a:hover {
-        text-transform: uppercase;
-        text-align: center;
-        font-weight: bold;
-        font-size: .9em;
-        background-color: #ff0000;
-        margin: 0px 2px 1px 2px;
-        padding: 1px 2px 1px 2px;
         color: #f9fc02;
+        text-decoration: none;
     }
 
 #MasonryWrapper {
@@ -956,15 +930,17 @@ h5 {
 }
 
 .PhotoBox2012 {
-    padding: 4px;
     border: solid 1px #d6d6d6;
-    width: 280px;
-    margin: 15px 5px 5px 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    display: inline-block;
-    font-size: .8em;
+    font-size: 1em;
+    min-height: 300px;
+    margin-bottom: 15px;
 }
+
+    .PhotoBox2012 img {
+        max-width: 100%;
+        height: auto;
+        margin: 0px !important;
+    }
 
 .SkaterCaption2012 {
     float: left;
@@ -981,58 +957,109 @@ html {
     padding: 0;
     color: #000;
     background: #dddddd;
-    /* background: url(http://www.skateparkoftampa.com/spot/images3/pro17-webwrap3.png) no-repeat center center fixed;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;*/
-    /*change the URL here to the full url of the new background image: */
-    /* background-image: url(http://www.skateparkoftampa.com/spot/images3/website_bg.jpg);  /* Default Gray Background */
-    /*  background-image: url(http://www.skateparkoftampa.com/spot/images3/website-bg-pattern2.jpg); /*  Plain City Star Logo */
-    background-image: url(http://www.skateparkoftampa.com/spot/images3/spot-halloween.png);
-    /*  Event Background */
-    /*   background-image: url(http://www.skateparkoftampa.com/spot/images3/vans-nhs-wrap.png); /*  Event Background */
-    background-attachment: fixed;
+    background: url(http://www.skateparkoftampa.com/spot/images3/spot-xmas-wrap.png) no-repeat center center fixed !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    overflow-x: hidden;
 }
 
 #header {
     padding: 0px;
-    background-color: #000;
+    background-color: #fff;
     <!-- background-image: url(layout/headerbackground.gif);
     --> background-repeat: repeat;
     white-space: nowrap;
 }
 
 #headercart {
-    text-align: center;
-    background-color: #000;
-    height: 59px;
-    color: #ffffff;
+    text-align: right;
+    color: #000000;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: .8em;
+    font-size: 1.2em;
     white-space: nowrap;
+    padding-right: 15px;
+    padding-top: 10px;
 }
 
 #headerfacebook {
     height: 59px;
-    background-color: #000;
     <!-- background-image: url(layout/headerbackground.gif);
     --> background-repeat: repeat;
     color: White;
     white-space: nowrap;
 }
 
+.slider {
+    padding-top: 110px;
+}
+
+.home-cats {
+    margin-top: 20px;
+}
+
+.home-cats img {
+    margin-bottom: 10px;
+}
+
+.home-cats a {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.home-cats .more {
+margin-top: 20px;
+
+}
+a.more {
+    color: #fff;
+    background-color: #000;
+    padding: 5px 20px;
+}
+    a.more:hover {
+    text-decoration: none;
+    color: #fff;
+    } 
+    
+    .more-cat-sec {
+        height: 50px;
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 45px;
+    }
+.navbar-default .navbar-toggle {
+    border-color: #000 !important;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    border-color: #000;
+    background-color: #fff !important;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #000 !important;
+} 
+
+.navbar {
+    margin-bottom: 0px !important;
+}
+
+.navbar-default {
+    background-color: #fff !important;
+}
+
 #nav {
     padding: 5px 5px;
-    background: #000;
+    background: #fff;
     color: #ffffff;
     font-family: 'Jockey One', sans-serif;
     text-transform: uppercase;
     font-weight: normal;
     text-align: center;
-    border-top: solid 2px #ffffff;
+    border-top: none;
     white-space: nowrap;
+    border-bottom: none !important;
 }
 
     #nav ul {
@@ -1046,52 +1073,58 @@ html {
         white-space: nowrap;
     }
 
+
+    /* #nav li:not(:first-child) {
+        padding-left: 20px;
+    } */
+
     #nav li {
-        display: inline;
-        padding-left: 52px;
         color: #ffffff;
         font-family: 'Jockey One', sans-serif;
         text-transform: uppercase;
         font-weight: normal;
         white-space: nowrap;
+        padding-left: 50px;
     }
 
-    #nav a {
+.dropdown-menu li {
+    padding-left: 0px !important;
+}
+
+#nav a {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Jockey One', sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 1.5em;
+    white-space: nowrap;
+}
+
+    #nav a:hover {
         color: #000;
         text-decoration: none;
-        color: #ffffff;
-        font-family: 'Jockey One', sans-serif;
+        color: #bf1c1e;
         text-transform: uppercase;
+        font-family: 'Jockey One', sans-serif;
         font-weight: normal;
         font-size: 1.5em;
         white-space: nowrap;
     }
 
-        #nav a:hover {
-            color: #000;
-            text-decoration: none;
-            color: #bf1c1e;
-            text-transform: uppercase;
-            font-family: 'Jockey One', sans-serif;
-            font-weight: normal;
-            font-size: 1.5em;
-            white-space: nowrap;
-        }
-
-#wrap {
-    border-left: solid 2px white;
-    border-right: solid 2px white;
-    background: #dddddd;
+#sidebar {
+    background: #ffffff !important;
+    border-left: 1px solid #dddddd;
 }
 
-
-/* wrap = main + (main padding * 2) + sidebar + (sidebar padding * 2) 
-    960 = 630 + 20 + 290 + 20
-    */
+#wrap,
+#sidebar {
+    background: #ffffff !important;
+}
 
 #main {
     margin-top: 110px;
-    background: #dddddd;
+    background: #ffffff !important;
 }
 
 #mobilemain {
@@ -1164,10 +1197,31 @@ html {
         background-color: #555;
         /* Add a dark-grey background on hover */
     }
+
 .img-center {
-margin-left: auto;
-margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.search input {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.skaters {
+    margin-bottom: 10px;
+}
+
+.contests {
+    text-align: center;
+    height: 260px;
+    margin-top: 0px;
+}
+
+.trans-info img {
+    margin-bottom: 10px;
+}
+
 
 /*==================================================
 =            Bootstrap 3 Media Queries             =
@@ -1190,10 +1244,12 @@ margin-right: auto;
     #nav li {
         padding-left: 33px;
     }
+
     #sidebar {
         margin-top: 110px;
+        border-left: 1px solid #ddd;
     }
-    }
+}
 
 
 /* Medium Devices, Desktops */
@@ -1202,10 +1258,12 @@ margin-right: auto;
     #fixedheader {
         max-width: 981px;
     }
+
     #sidebar {
         margin-top: 110px;
+        border-left: 1px solid #ddd;
     }
-    }
+}
 
 
 /* Small Devices, Tablets */
@@ -1214,18 +1272,45 @@ margin-right: auto;
     #fixedheader {
         max-width: 746px;
     }
+
     #main {
-    margin-top: 175px;
+        margin-top: 175px;
     }
+
     #nav li {
         padding-left: 3px;
     }
+
     .BlogPost img {
         margin-left: auto;
         margin-right: auto;
     }
+
     .product-title {
-    text-align: center;
+        text-align: center;
+    }
+
+    #sidebar {
+        margin-top: 0px;
+        border-left: 1px solid #ddd;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+
+    input#t {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .ProductBlock {
+        height: 290px;
+    }
+
+    .staff img {
+        width: 100%;
     }
 }
 
@@ -1234,17 +1319,67 @@ margin-right: auto;
 
 @media only screen and (max-width: 480px) {
     #fixedheader {
-        max-width: 411px;
+        max-width: 416px;
     }
-    .BlogPost img {
-        margin-left: auto;
-        margin-right: auto;
+
+    #main {
+        margin-top: 0px;
     }
+
+    .BlogPost {
+        padding: 10px;
+    }
+
+        .BlogPost img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
     .product-title {
         text-align: center;
     }
+
     #sidebar {
-    margin-top: 0px;
+        margin-top: 0px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #tampa-pro-home {
+        height: 120px !important;
+        background-size: contain !important;
+    }
+
+    .WhatsUpFloat {
+        float: none;
+        margin-right: 0px;
+    }
+
+        .WhatsUpFloat img {
+            width: 100%;
+        }
+
+    .skater-results {
+        text-align: center;
+    }
+    .logo{
+        padding-top: 10px;
+    }
+    #headercart{
+        padding-top: 15px;
+    }
+    
+    nav.navbar.navbar-default {
+        height: 0px;
+        min-height: 0px;
+    }
+    .slider {
+    padding-top: 50px;
+    }
+    div#nav {
+    border-bottom: 3px solid #000 !important;
     }
 }
 
@@ -1256,6 +1391,7 @@ margin-right: auto;
         margin-left: auto;
         margin-right: auto;
     }
+
     .product-title {
         text-align: center;
     }
