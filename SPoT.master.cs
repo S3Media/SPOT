@@ -23,7 +23,7 @@ public partial class SPoT : System.Web.UI.MasterPage
         {
             strFacebookXML = " xmlns:fb=\"http://ogp.me/ns/fb#\"";
             pnlLiveWebcast.Visible = true;
-            pnlFacebookLiveStream.Visible = true;
+            pnlFacebookLiveStream.Visible = false;
         }
 
         DateTime dateStart = new DateTime(2012, 3, 25, 6, 0, 0); //6am
@@ -33,7 +33,7 @@ public partial class SPoT : System.Web.UI.MasterPage
         {
             strFacebookXML = " xmlns:fb=\"http://ogp.me/ns/fb#\"";
             pnlLiveWebcast.Visible = true;
-            pnlFacebookLiveStream.Visible = true;
+            pnlFacebookLiveStream.Visible = false;
         }
         
          * 
@@ -43,8 +43,7 @@ public partial class SPoT : System.Web.UI.MasterPage
         if (Request.ServerVariables["HTTPS"] == "on")
         {
             strHTTPS = "https://";
-            pnlFacebook.Visible = false;
-            pnlFacebookHTTPS.Visible = true;
+            
         }
         else
         {
