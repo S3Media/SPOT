@@ -1327,7 +1327,7 @@ a.more {
     }
 
     .BlogPost {
-        padding: 10px;
+        padding: 40px 10px 10px 10px;
     }
 
         .BlogPost img {
@@ -1381,6 +1381,16 @@ a.more {
     div#nav {
     border-bottom: 3px solid #000 !important;
     }
+    li.dropdown.open {
+        background-color: #e7e7e7;
+    }
+    .dropdown li {
+    text-align: center;
+    }
+    .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .dropdown-menu .dropdown-header {
+        padding: 9px 0px 9px 0px !important;
+    }
+
 }
 
 
