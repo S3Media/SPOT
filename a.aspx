@@ -166,7 +166,7 @@ ConnectionString="<%$ ConnectionStrings:CS %>">
         <div class="BlogPost MasonryWrapper">
     </HeaderTemplate>
     <ItemTemplate>
-        <div class="PhotoBox2012">
+        <div class="PhotoBox2012 test">
 		<h2><a href="/article/<%# Eval("ArticleID")%>/<%# Eval("Description").ToString().Replace("\"","").Replace(" ", "_").Replace(":", "_") %>"><%# Eval("Description")%></a></h2>
 			<h3>by <%# Eval("Category")%> on <%# Eval("DateAdded", "{0:D}")%></h3>
 			
@@ -200,7 +200,7 @@ ConnectionString="<%$ ConnectionStrings:CS %>">
 action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" 
 onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=spotwhatsup', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
 <h2>Subscribe to the SPoT What's Up Blog</h2>
-Enter your email: <input type="text" style="width:200px; font-size:18px; font-weight:bold;" name="email"/> <input type="hidden" value="spotwhatsup" name="uri"/><input type="hidden" name="loc" value="en_US"/><input style="margin-top:2px; font-size:18px; font-weight:bold;" type="submit" value="Subscribe" />
+Enter your email: <input type="text" style="font-size:18px; font-weight:bold;" name="email"/> <input type="hidden" value="spotwhatsup" name="uri"/><input type="hidden" name="loc" value="en_US"/><input style="margin-top:2px; font-size:18px; font-weight:bold;" type="submit" value="Subscribe" />
 
 <a href="http://feedburner.google.com/fb/a/mailverify?uri=spotwhatsup&loc=en_US"><img src="http://feeds.feedburner.com/~fc/spotwhatsup?bg=FF3300&amp;fg=FFFFFF&amp;anim=0" height="26" width="88" style="border:0; padding-left:30px;" alt="" /></a></form>
 
