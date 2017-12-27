@@ -15,23 +15,23 @@
     
     <!-- Google Analytics Content Experiment code -->
 <script>    function utmx_section() { } function utmx() { } (function () {
-        var 
-k = '1784457-0', d = document, l = d.location, c = d.cookie;
+        var
+            k = '1784457-0', d = document, l = d.location, c = d.cookie;
         if (l.search.indexOf('utm_expid=' + k) > 0) return;
         function f(n) {
             if (c) {
                 var i = c.indexOf(n + '='); if (i > -1) {
                     var j = c.
-indexOf(';', i); return escape(c.substring(i + n.length + 1, j < 0 ? c.
-length : j))
-                } 
-            } 
+                        indexOf(';', i); return escape(c.substring(i + n.length + 1, j < 0 ? c.
+                            length : j))
+                }
+            }
         } var x = f('__utmx'), xx = f('__utmxx'), h = l.hash; d.write(
-'<sc' + 'ript src="' + 'http' + (l.protocol == 'https:' ? 's://ssl' :
-'://www') + '.google-analytics.com/ga_exp.js?' + 'utmxkey=' + k +
-'&utmx=' + (x ? x : '') + '&utmxx=' + (xx ? xx : '') + '&utmxtime=' + new Date().
-valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
-'" type="text/javascript" charset="utf-8"><\/sc' + 'ript>')
+            '<sc' + 'ript src="' + 'http' + (l.protocol == 'https:' ? 's://ssl' :
+                '://www') + '.google-analytics.com/ga_exp.js?' + 'utmxkey=' + k +
+            '&utmx=' + (x ? x : '') + '&utmxx=' + (xx ? xx : '') + '&utmxtime=' + new Date().
+                valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
+            '" type="text/javascript" charset="utf-8"><\/sc' + 'ript>')
     })();
 </script><script>             utmx('url', 'A/B');</script>
 <!-- End of Google Analytics Content Experiment code -->
@@ -48,11 +48,38 @@ valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
         
     <link href="<%=strHTTPS %><%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>bootstrap.css" rel="stylesheet" type="text/css" />
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    		<!-- LOAD JQUERY LIBRARY -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+		
+		<!-- LOADING FONTS AND ICONS -->
+		<link href="http://fonts.googleapis.com/css?family=Raleway%3A400%2C800%2C500" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+
+		
+		<link rel="stylesheet" type="text/css" href="revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+		<link rel="stylesheet" type="text/css" href="revolution/fonts/font-awesome/css/font-awesome.css">
+		
+		<!-- REVOLUTION STYLE SHEETS -->
+		<link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+		<!-- REVOLUTION LAYERS STYLES -->
+		
+
+			<link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+			
+			<!-- REVOLUTION NAVIGATION STYLES -->
+			<link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
+			
+
+			
+					<!-- REVOLUTION JS FILES -->
+		<script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
     <script>// When the user scrolls down 20px from the top of the document, show the button
              window.onscroll = function () { scrollFunction() };
@@ -82,16 +109,15 @@ valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Jockey+One" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet" type="text/css">
-    <!-- JQUERY -->
-    <script src="<%=strHTTPS %>ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+
 
     <!-- For G+ Button -->
     <script type="text/javascript">
-        (function () {
-            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-            po.src = 'https://apis.google.com/js/plusone.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-        })();
+             (function () {
+                 var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                 po.src = 'https://apis.google.com/js/plusone.js';
+                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+             })();
     </script>
 
     
@@ -218,8 +244,8 @@ valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
             }
         }
 
-        
-        
+
+
 
     </script></head>
 
@@ -233,78 +259,68 @@ valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
 
 	    <div id="header">
             <div class="row">
-            <div class="col-md-8">
-            <a href="http://skateparkoftampa2.com/"><img src="http://skateparkoftampa2.com/spot/layout/header.png" class="img-responsive"/></a>
-            </div>
-
-            <div class="hidden-xs col-sm-6 col-md-2" id="headerfacebook">
-                <asp:Panel runat="server" ID="pnlFacebook">    
-                <div class="FacebookIFrame">
-                <!-- Facebook -->
-                <iframe src="<%=strHTTPS %>www.facebook.com/plugins/like.php?href=http://facebook.com/spottampa&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
-                </div>
-                </asp:Panel>
-                
-                <asp:Panel runat="server" ID="pnlFacebookHTTPS" Visible="false">    
-                <div class="FacebookIFrame">
-                <!-- Facebook -->
-                <iframe src="http://skateparkoftampa2.com/spot/layout/headerbackground.gif" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
-                </div>
-                </asp:Panel>
-            </div>
-
-            <div class="hidden-xs col-sm-6 col-md-2" id="headercart">
-            <a href="https://skateparkoftampa.com/cart"><img src="https://skateparkoftampa2.com/spot/layout/carticon2.gif" class="CartIcon" /></a>
-            <div id="CartSummary"><a href="cart.aspx" class="CartSummary"><%=strCart %></a></div>
-            </div>
-            </div> 
-        </div>
-
-            <nav class="navbar navbar-inverse">
+                <div class="col-xs-3 hidden-sm hidden-md hidden-lg">
+                    <nav class="navbar navbar-default">
                 <div class="navbar-header">
-                    <div class="row">
-                    <div class="col-xs-4 hidden-sm hidden-md hidden-lg" id="headerfacebook">
-                <asp:Panel runat="server" ID="Panel1">    
-                <div class="FacebookIFrame">
-                <!-- Facebook -->
-                <iframe src="<%=strHTTPS %>www.facebook.com/plugins/like.php?href=http://facebook.com/spottampa&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
-                </div>
-                </asp:Panel>
-                
-                <asp:Panel runat="server" ID="Panel2" Visible="false">    
-                <div class="FacebookIFrame">
-                <!-- Facebook -->
-                <iframe src="http://skateparkoftampa2.com/spot/layout/headerbackground.gif" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
-                </div>
-                </asp:Panel>
-            </div>
 
-            <div class="col-xs-4  hidden-sm hidden-md hidden-lg" id="headercart">
-            <a href="https://skateparkoftampa.com/cart"><img src="https://skateparkoftampa2.com/spot/layout/carticon2.gif" class="CartIcon" /></a>
-            <div id="CartSummary"><a href="cart.aspx" class="CartSummary"><%=strCart %></a></div>
-            </div>
-                    <div class="col-xs-4">
+                    <div class="pull-right">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span> 
                         </button>
                         </div>
-                        </div>
                     </div>
+                        </nav>
+
+                </div>
+            <div class="col-xs-6 col-sm-9">
+            <a href="http://skateparkoftampa2.com/"><img src="http://skateparkoftampa2.com/spot/layout/header.png" class="img-responsive logo"/></a>
+            </div>
+                <div class="col-xs-3">
+
+                                <div id="headercart">
+            <div id="CartSummary"><a href="cart.aspx" class="CartSummary"><i class="fa fa-shopping-cart"></i> <%=strCart %></a></div>
+            </div>
+                </div>
+                </div>
+            <div class="row">
+                <div class="col-sm-12">
+                            <nav class="navbar navbar-default">
                     <div class="collapse navbar-collapse" id="nav">
                     <ul class="nav navbar-nav">
-                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/shoes_and_skateboards">New Shoes &amp; Gear</a></li>
-                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/skateboard_companies">Companies</a></li>
+                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/shoes_and_skateboards">Shop</a></li>
+                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/skateboard_companies">Brands</a></li>
                         <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/closeout">Sale</a></li>
-                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/events">Events</a></li>
-                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/about">Info</a></li>
+
+                        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Events
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/a.aspx?ID=3003">TAMPA AM</a></li>
+          <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/damnamtags">DAMN AM</a></li>
+          <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/a.aspx?ID=2987">TAMPA PRO</a></li>
+        </ul>
+      </li>
+                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/about">Hours</a></li>
+                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/about">Camps</a></li>
                         <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/features">Features</a></li>
                         <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/search">Search</a></li>
                     </ul>
                 </div>
         </nav>
-    </div>
+
+</div>
+            </div> 
+        </div>
+
+
+           </div>
+
+
+
+
+
             
 
     <asp:Repeater runat="server" ID="rptAlert">
@@ -340,7 +356,6 @@ valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
 
     </asp:Panel>
 
-
     <asp:ContentPlaceHolder runat="server" ID="cphHega"></asp:ContentPlaceHolder>
 
     <%//if (mobileDevice.Equals("false"))
@@ -348,14 +363,6 @@ valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
        </div>
     <%//} %>
 
-<!--Tampa Am/Pro Changes-->
-    <a href="http://spottampa.com/tampaam">
-      <div id="tampa-pro-home">
-      </div>
-    </a>
-
-
-   
 
            <div class="row">
        <div class="col-md-8" id="main">
@@ -366,6 +373,7 @@ valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
         <asp:ContentPlaceHolder id="cphSidebar" runat="server" />
 	</div>
                </div>
+
     <div class="row">
 	<div id="footer">
         <div class="row">
@@ -405,9 +413,11 @@ valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
             </div>
     </div>
         </div>
+    </div>
 <div id="DebugNotes" style="font-size:.6em;"></div>
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </body>
+
 
 </html>
