@@ -90,7 +90,12 @@ video {
     vertical-align: baseline;
     font-family: Arial;
 }
-
+a {
+    color:#000;
+}
+    a:hover {
+        color: #b70909;
+    }
 #fixedheader {
     position: fixed;
     z-index: 9999;
@@ -98,12 +103,19 @@ video {
     width: 100%;
     max-width: 1170px;
     overflow: visible;
+    border-bottom: 2px solid #000;
+}
+h1, h2, h3, h4, h5 {
+font-weight: bold;
 }
 
 div#fixedheader div {
     overflow: visible !important;
 }
-
+.logo {
+    margin-left: auto;
+    margin-right: 26%;
+}
 ul.dropdown-menu {
     left: 20px;
 }
@@ -126,7 +138,7 @@ ul.dropdown-menu {
 }
 
 .BlogPost div {
-    overflow: hidden;
+    
 }
 
 .HotLinks {
@@ -196,7 +208,6 @@ ul.dropdown-menu {
 }
 
 .PostMediaStrip {
-    border-top: solid 2px #dddddd;
     background-color: #ffffff;
     margin: 25px 0px 0px 0px;
     clear: both;
@@ -205,6 +216,11 @@ ul.dropdown-menu {
 .PostMediaStripSub {
     padding: 8px 0px 5px 0px;
     text-align: center;
+}
+a.MorePosts {
+    background: #827e7e;
+    color: #fff !important;
+    padding: 3px 10px;
 }
 
 .FeaturedCompany {
@@ -256,6 +272,9 @@ ul.dropdown-menu {
 
 #NewArrivals {
     width: 100%;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 35px;
 }
 
 .ProductBlock {
@@ -452,23 +471,23 @@ form {
     margin: 0;
     border: solid 0px black;
     padding: 0px;
-    background-color: #dddddd;
 }
 
 a:visted {
     text-decoration: none;
     color: #974040;
 }
-
-a {
-    text-decoration: none;
-    color: #d52626;
+.BlogPost div a {
+color: #000;
+}
+span.price {
+font-weight: bold;
 }
 
-    a:hover {
-        text-decoration: none;
-        color: #974040;
-    }
+a:hover {
+    text-decoration: none;
+    color: #974040;
+}
 
 p {
     padding: 10px;
@@ -514,7 +533,14 @@ p {
     margin-bottom: 15px;
     min-height: 218px;
 }
-
+input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+input[type="text"] {
+    border: 1px solid #000;
+}
 
 /* TAMPA PRO 2016 PAGE ADDITIONS */
 
@@ -788,26 +814,26 @@ p {
 
 h1 {
     font-size: 1.5em;
-    font-family: 'Jockey One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     color: black
 }
 
     h1 a {
-        font-family: 'Jockey One', sans-serif;
+        font-family: 'Poppins', sans-serif;
         text-transform: uppercase;
         color: black
     }
 
 h2 {
     font-size: 1.6em;
-    font-family: 'Jockey One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     color: black
 }
 
     h2 a {
-        font-family: 'Jockey One', sans-serif;
+        font-family: 'Poppins', sans-serif;
         text-transform: uppercase;
         color: black
     }
@@ -818,21 +844,21 @@ h3 {
 
 h4 {
     font-size: 1.5em;
-    font-family: 'Jockey One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     color: white
 }
 
 h5 {
     font-size: 1.2em;
-    font-family: 'Jockey One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     color: #1e170d
 }
 
 .ProductPager {
     font-size: 1.3em;
-    font-family: 'Jockey One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     color: black;
     text-align: center;
@@ -845,7 +871,7 @@ h5 {
 
     .ProductPager a {
         font-size: 1.1em;
-        font-family: 'Jockey One', sans-serif;
+        font-family: 'Poppins', sans-serif;
         text-transform: uppercase;
         letter-spacing: 4px;
         color: #d52626
@@ -903,7 +929,7 @@ h5 {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1em;
-    background-color: #ff0000;
+    background-color: #b80b10;
     color: #ffffff;
     padding: 3px 6px;
 }
@@ -912,11 +938,12 @@ h5 {
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
-    font-size: 1em;
-    background-color: #ff0000;
-    margin: 0px 2px 1px 2px;
-    padding: 4px 6px;
-    color: #ffffff;
+    font-size: 0.9em;
+    background-color: #b80b10;
+    margin: 6px 0px 0px 0px;
+    padding: 10px 0px;
+    color: #ffffff !important;
+    display: block;
 }
 
     .BuyButton a:hover {
@@ -957,12 +984,9 @@ html {
     padding: 0;
     color: #000;
     background: #dddddd;
-    background: url(http://www.skateparkoftampa.com/spot/images3/spot-xmas-wrap.png) no-repeat center center fixed !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-    background-size: cover !important;
-    overflow-x: hidden;
+    background-image: url(http://www.skateparkoftampa.com/spot/images3/vans-wrap.png) !important;
+    background-attachment: fixed;
+    
 }
 
 #header {
@@ -971,6 +995,7 @@ html {
     <!-- background-image: url(layout/headerbackground.gif);
     --> background-repeat: repeat;
     white-space: nowrap;
+    padding-top: 8px;
 }
 
 #headercart {
@@ -993,13 +1018,24 @@ html {
 }
 
 .slider {
-    padding-top: 110px;
+    padding-top: 105px;
 }
-
+#home-cat-grey-bg {
+    background-color: #ededed;
+    padding-bottom: 20px;
+}
+.home-cat {
+    margin-top: 10px;
+}
 .home-cats {
-    margin-top: 20px;
+ padding-top: 15px;
 }
-
+#home-cat-title {
+    background-color: #827e7e;
+    color: #fff;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
 .home-cats img {
     margin-bottom: 10px;
 }
@@ -1012,6 +1048,28 @@ html {
 .home-cats .more {
 margin-top: 20px;
 
+}
+.social-home {
+margin-top: 20px;
+}
+    .social-home a {
+        color: #000;
+    }
+.social-home .fa {
+    font-size: 32px;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+.shipping-banner {
+margin-top: 20px;
+margin-bottom: 55px;
+}
+.shipping-banner-title {
+    background-color: #b70909;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 500;
 }
 a.more {
     color: #fff;
@@ -1053,7 +1111,7 @@ a.more {
     padding: 5px 5px;
     background: #fff;
     color: #ffffff;
-    font-family: 'Jockey One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     font-weight: normal;
     text-align: center;
@@ -1067,7 +1125,7 @@ a.more {
         padding: 0;
         list-style: none;
         color: #ffffff;
-        font-family: 'Jockey One', sans-serif;
+        font-family: 'Poppins', sans-serif;
         text-transform: uppercase;
         font-weight: normal;
         white-space: nowrap;
@@ -1080,11 +1138,11 @@ a.more {
 
     #nav li {
         color: #ffffff;
-        font-family: 'Jockey One', sans-serif;
+        font-family: 'Poppins', sans-serif;
         text-transform: uppercase;
         font-weight: normal;
         white-space: nowrap;
-        padding-left: 50px;
+        padding-left: 52px;
     }
 
 .dropdown-menu li {
@@ -1094,11 +1152,11 @@ a.more {
 #nav a {
     color: #000;
     text-decoration: none;
-    font-family: 'Jockey One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    font-weight: normal;
-    font-size: 1.5em;
+    font-size: 1.2em;
     white-space: nowrap;
+    font-weight: bold;
 }
 
     #nav a:hover {
@@ -1106,11 +1164,14 @@ a.more {
         text-decoration: none;
         color: #bf1c1e;
         text-transform: uppercase;
-        font-family: 'Jockey One', sans-serif;
-        font-weight: normal;
-        font-size: 1.5em;
+        font-family: 'Poppins', sans-serif;
         white-space: nowrap;
     }
+a.home.viewmore {
+    color: #fff;
+    background-color: #000;
+    padding: 5px 15px;
+}
 
 #sidebar {
     background: #ffffff !important;
@@ -1149,15 +1210,27 @@ a.more {
 }
 
 #footer {
-    clear: both;
-    padding: 5px 10px;
-    background-image: url(layout/footerbackground2.gif);
-    background-repeat: repeat;
-    border-top: solid 2px white;
+    padding: 20px 18px 65px 40px;
     font-size: 1em;
-    color: #ffffff;
+    color: #000000;
+    background-color: #dedede;
 }
-
+.footer-deliver {
+margin-top: 25px;
+margin-bottom: 10px;
+}
+.footer-social .fa {
+    color: #000;
+    font-size: 19px;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin-top: 20px;
+}
+form.footer-form {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
     #footer p {
         margin: 0;
     }
@@ -1173,15 +1246,15 @@ a.more {
     /* Fixed/sticky position */
     bottom: 20px;
     /* Place the button at the bottom of the page */
-    right: 30px;
-    /* Place the button 30px from the right */
+    right: 20px;
+    /* Place the button 20px from the right */
     z-index: 99;
     /* Make sure it does not overlap */
     border: none;
     /* Remove borders */
     outline: none;
     /* Remove outline */
-    background-color: red;
+    background-color: #b70909;
     /* Set a background color */
     color: white;
     /* Text color */
@@ -1318,12 +1391,28 @@ a.more {
 /* Extra Small Devices, Phones */
 
 @media only screen and (max-width: 480px) {
+    .BlogPost input[type="text"] {
+        width: 100% !important;
+        height: 35px;
+        margin-bottom: 6px;
+    }
+    .BlogPost input[type="submit"] {
+        width: 100%;
+    }
+    
+    .footer-deliver {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div#overflow-fix {
+        overflow-x: hidden;
+    }
     #fixedheader {
         max-width: 416px;
     }
 
     #main {
-        margin-top: 0px;
+        margin-top: 70px;
     }
 
     .BlogPost {
@@ -1334,7 +1423,14 @@ a.more {
             margin-left: auto;
             margin-right: auto;
         }
-
+    .logo {
+        padding-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home-slider {
+        margin-top: 60px;
+    }
     .product-title {
         text-align: center;
     }
@@ -1364,9 +1460,6 @@ a.more {
     .skater-results {
         text-align: center;
     }
-    .logo{
-        padding-top: 10px;
-    }
     #headercart{
         padding-top: 15px;
     }
@@ -1390,14 +1483,37 @@ a.more {
     .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .dropdown-menu .dropdown-header {
         padding: 9px 0px 9px 0px !important;
     }
-
-}
-
-
-/* Custom, iPhone Retina */
-
-@media only screen and (max-width: 320px) {
-    .BlogPost img {
+    #footer {
+        padding: 20px 0px;
+        text-align: center;
+    }
+    .cart {
+    text-align: center;
+    }
+    .checkout-cart-title {
+        font-size: 2em;
+        line-height: 1em;
+    }
+    .cart-id-number {
+        font-size: 1.2em;
+    }
+    .cart-price {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    input.BuyButtonInput {
+        width: 100%;
+        margin-top: 5px;
+    }
+    .shipping-address {
+    text-transform: uppercase;
+    }
+    .order-summary{
+        padding: 30px 0px;
+    }
+    /* Custom, iPhone Retina */
+    @media only screen and (max-width: 320px) {
+        .BlogPost img {
         margin-left: auto;
         margin-right: auto;
     }

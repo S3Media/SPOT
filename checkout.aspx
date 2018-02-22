@@ -36,7 +36,7 @@
     <ItemTemplate>
         
         <h1>Verify Your Shipping Address</h1>
-        <div class="BlogPost">
+        <div class="shipping-address">
             <%#Eval("FirstName") %> <%#Eval("LastName") %>
             <br />
             <%#Eval("Address") %>
@@ -55,16 +55,17 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="cphSidebar" Runat="Server">
-
+<div class="cart">
 <Products:Cart runat="server" />
+    </div>
 
 
 
 
-<div class="BlogPost">
+<!--<div class="BlogPost">
 
 
-<h1>Continue Shopping</h1>
+ <h1>Continue Shopping</h1>
 
     <asp:SqlDataSource runat="server" ID="sdsCategoryMenu" ConnectionString="<%$ ConnectionStrings:CS %>"
     SelectCommand="SPOT2012CategoryList" SelectCommandType="StoredProcedure"
@@ -87,7 +88,7 @@
 
     <h1><a href="shoe.aspx">What's Your Shoe Size?</a></h1>
 
-        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=6">5</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=7">5.5</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=8">6</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=9">6.5</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=10">7</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=11">7.5</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=12">8</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=13">8.5</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=14">9</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=15">9.5</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=16">10</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=17">10.5</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=18">11</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=19">11.5</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=20">12</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=22">13</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=24">14</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=26">15</a></div></div>
+        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=6">5</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=7">5.5</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=8">6</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=9">6.5</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=10">7</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=11">7.5</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=12">8</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=13">8.5</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=14">9</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=15">9.5</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=16">10</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=17">10.5</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=18">11</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=19">11.5</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=20">12</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=22">13</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=24">14</a></div>        <div class="SizeSelectionGridItemSmall"><a href="cz.aspx?ID=7&SID=26">15</a></div></div> -->
 
 </asp:Content>
 

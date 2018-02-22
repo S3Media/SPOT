@@ -73,7 +73,7 @@
                     title="<%#Eval("Name").ToString().Replace("\"", "") %> <%#Eval("Color").ToString().Replace("\"", "") %> <%#Eval("ShortDescr").ToString().Replace("\"", "") %>" 
                     href="p.aspx?ID=<%#Eval("ProductID") %>&CID=<%#Eval("ColorID") %>">
                         <%#Eval("Name")%> 
-                        <%#Eval("ShortDescr")%> <%#Eval("Color")%></a> <%#Eval("CurrentPrice", "{0:c}")%>
+                        <%#Eval("ShortDescr")%> <%#Eval("Color")%></a> <br /><span class="price"> <%#Eval("CurrentPrice", "{0:c}")%></span>
                     </div>
                     <div class="ProductBlockTextAlert">
                         <%#Eval("SaleNote") %> <%#Eval("FreeShippingNote") %>

@@ -37,7 +37,7 @@
 <!-- End of Google Analytics Content Experiment code -->
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>SPoT Skate Shop at Skatepark of Tampa</title>
+    <title>SPoT Skate Shop at Skate Park of Tampa</title>
     <base href="<%=strHTTPS %><%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>" target="_top" />
     <meta name="copyright" content="Copyright (c) 2012 Skatepark of Tampa">
     <meta name="viewport" content="width=980px">
@@ -50,9 +50,10 @@
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    		<!-- LOAD JQUERY LIBRARY -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
-		
+		    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 		<!-- LOADING FONTS AND ICONS -->
 		<link href="http://fonts.googleapis.com/css?family=Raleway%3A400%2C800%2C500" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
 
@@ -76,12 +77,13 @@
 		<script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
 		<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
 
-
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    
 
-    <script>// When the user scrolls down 20px from the top of the document, show the button
+
+    <script>// When the user scrolls down  from the top of the document, show the button
              window.onscroll = function () { scrollFunction() };
 
              function scrollFunction() {
@@ -109,6 +111,7 @@
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Jockey+One" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
 
 
     <!-- For G+ Button -->
@@ -250,6 +253,7 @@
     </script></head>
 
 <body>
+    <div id="overflow-fix">
 
 <div class="container" id="wrap">
     <div class="row">
@@ -279,9 +283,9 @@
             </div>
                 <div class="col-xs-3">
 
-                                <div id="headercart">
-            <div id="CartSummary"><a href="cart.aspx" class="CartSummary"><i class="fa fa-shopping-cart"></i> <%=strCart %></a></div>
-            </div>
+                                <a href="cart.aspx" class="CartSummary"><div id="headercart">
+            <div id="CartSummary"><i class="fa fa-shopping-cart"></i> <%=strCart %></div>
+            </div></a>
                 </div>
                 </div>
             <div class="row">
@@ -297,13 +301,14 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Events
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
+            <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/events">Local Events</a></li>
           <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/a.aspx?ID=3003">TAMPA AM</a></li>
           <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/damnamtags">DAMN AM</a></li>
           <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/a.aspx?ID=2987">TAMPA PRO</a></li>
         </ul>
       </li>
-                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/about">Hours</a></li>
-                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/about">Camps</a></li>
+                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/about">Info</a></li>
+                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/about#hours">Hours</a></li>
                         <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/features">Features</a></li>
                         <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/search">Search</a></li>
                     </ul>
@@ -378,37 +383,30 @@
 	<div id="footer">
         <div class="row">
         <div class="col-md-8">
-            <div style="text-transform:none; font-weight:bold; color:#b4b6b9; padding: 10px 0px 6px 10px;">
-            SPoT SKATE SHOP IS SKATEPARK OF TAMPA, ESTABLISHED 1993.  ONLINE SINCE 1997. </div>
-            <div style="padding:10px 0px 10px 10px;">
-            Our inventory online is live, in stock, and usually ships within 
-            one business day.
-            </div>
-            </div>
-            <div class="col-md-4">
-            <p>Email us at info@skateparkoftampa.com with any questions for a quick reply.</p>
-            <p>Skatepark of Tampa | 4215 East Columbus Drive | Tampa, Florida 33605 | (813) 621-6793 <br /><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/about">Privacy and Security Policy</a></p>
-            
-        <p>
-            <a target="_blank" href="http://facebook.com/spottampa"><img  src="layout/social_facebook.png" /></a>
-            <a target="_blank" href="http://twitter.com/spottampa"><img  src="layout/social_twitter.png" /></a>
-            <a target="_blank" href="http://youtube.com/spottampa"><img  src="layout/social_youtube.png" /></a>
-            <a target="_blank" href="https://plus.google.com/109787599007776960078/posts"><img  src="layout/social_google.png" /></a>
-            <a target="_blank" href="http://instagram.com/spottampa"><img  src="layout/social_insta.png" /></a>
-        </p>
-                <br />
-        <p style="text-transform:uppercase; font-weight:bold; color:#b4b6b9;">
-            Subscribe to the What's Up Column</p>
-                <p>Daily news, antics, and other goodness.</p>
+                <p><strong>SIGN UP FOR OUR EMAIL BLASTS</strong></p>
         <div>
-            <form style="background-color:transparent; border: solid 0px transparent;" 
+            <form style="background-color:transparent; border: solid 0px transparent;" class="footer-form" 
                 action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" 
                 onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=spotwhatsup', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
-                <input type="text" style="font-size:18px; color:#b4b6b9; margin:0px; padding:0px;" id="footerEmail" name="email" value="Your email address" /> 
-                <input style="font-size:16px; width:40px; height:27px; font-weight:bold; color: #000;" type="submit" value="Go" />
+                <input type="text" style="font-size:18px; color:#b4b6b9; margin:0px; padding:0px; border: 1px solid #000;" id="footerEmail" name="email" value="" /> 
+                <input style="font-size:16px; width:40px; height:27px; font-weight:bold; color: #fff; background-color: #000; border: 1px solid #000;" type="submit" value="Go" />
                 <input type="hidden" value="spotwhatsup" name="uri"/><input type="hidden" name="loc" value="en_US"/>
             </form>
+            <p>Win free stuff and be in the know first about <br />sales, discounts, upcoming contests, and <br />SPoT news.</p>
+            <img src="http://skateparkoftampa2.com/spot/imagescorey/wedeliver.png" class="footer-deliver img-responsive"/>
         </div>
+            </div>
+            <div class="col-md-4">
+                <p><strong>SKATEPARK OF TAMPA</strong><br />4215 East Columbus Dr.<br />Tampa FL 33605<br />813.621.6793</p>
+                <p><strong>EMAIL US AT</strong> <br />info@skateparkoftampa.com<br /> with any questions for a quick reply.</p>
+                <div class="footer-social">
+       <a href="https://www.instagram.com/spottampa/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/spottampa"><i class="fa fa-facebook-f"></i></a>
+        <a href="https://twitter.com/spottampa"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.youtube.com/spottampa"><i class="fa fa-youtube"></i></a>
+        <a href=""><i class="fa fa-snapchat-ghost"></i></a>
+                    </div>
+        
 	</div>
             </div>
     </div>
@@ -416,7 +414,8 @@
     </div>
 <div id="DebugNotes" style="font-size:.6em;"></div>
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+        </div>
 </body>
 
 

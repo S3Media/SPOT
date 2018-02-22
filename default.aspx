@@ -58,7 +58,7 @@
 <asp:Content ContentPlaceHolderID="cphHega" runat="server">
 
 				<!-- SLIDER EXAMPLE -->
-		<section class="slider">
+		<section class="home-slider">
 			<article class="content">
 			
 
@@ -103,7 +103,7 @@
 			data-responsive_offset="on" 
 			data-responsive="off"
 			data-frames='[{"from":"opacity:0;","speed":1500,"to":"o:1;","delay":750,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"ease":"nothing"}]'
-			data-textAlign="['center','center','center','center']"
+			data-textAlign="['left','left','left','left']"
 			data-paddingtop="[0,0,0,0]"
 			data-paddingright="[0,0,0,0]"
 			data-paddingbottom="[0,0,0,0]"
@@ -116,8 +116,8 @@
 		<div class="tp-caption NotGeneric-Title   tp-resizeme" 
 			 id="slide-2898-layer-1" 
 			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-			 data-y="['middle','middle','middle','middle']" data-voffset="['-70','0','-22','-29']" 
-						data-fontsize="['70','70','70','40']"
+			 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','-22','-29']" 
+						data-fontsize="['70','70','70','50']"
 			data-lineheight="['70','70','70','50']"
 			data-width="none"
 			data-height="none"
@@ -128,18 +128,18 @@
 
 			data-frames='[{"from":"z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0px;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"}]'
 			data-textAlign="['left','left','left','left']"
-			data-paddingtop="[0,0,0,0]"
+			data-paddingtop="[10,10,10,10]"
 			data-paddingright="[0,0,0,0]"
 			data-paddingbottom="[10,10,10,10]"
 			data-paddingleft="[0,0,0,0]"
 
-			style="z-index: 7; white-space: nowrap;text-transform:left;">Skate Park of Tampa </div>
+			style="z-index: 7; white-space: nowrap;text-transform:left;">Skatepark of Tampa </div>
 
 		<!-- LAYER NR. 4 -->
 		<div class="tp-caption NotGeneric-SubTitle   tp-resizeme" 
 			 id="slide-2898-layer-4" 
 			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-			 data-y="['middle','middle','middle','middle']" data-voffset="['-10','52','28','13']" 
+			 data-y="['middle','middle','middle','middle']" data-voffset="['52','52','28','13']" 
 						data-width="none"
 			data-height="none"
 			data-whitespace="nowrap"
@@ -160,7 +160,7 @@
 		<div class="tp-caption Hero-Button rev-btn " 
 			 id="slide-2898-layer-7" 
 			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-			 data-y="['middle','middle','middle','middle']" data-voffset="['70','124','80','65']" 
+			 data-y="['middle','middle','middle','middle']" data-voffset="['124','124','80','65']" 
 						data-width="none"
 			data-height="none"
 			data-whitespace="nowrap"
@@ -201,7 +201,7 @@
                         responsiveLevels: [1240, 1024, 778, 480],
                         visibilityLevels: [1240, 1024, 778, 480],
                         gridwidth: [1240, 1024, 778, 480],
-                        gridheight: [400, 300, 300, 270],
+                        gridheight: [600, 500, 400, 270],
                         lazyType: "none",
                         parallax: {
                             type: "scroll",
@@ -236,66 +236,80 @@
 
 				</article>
 		</section>
-
+        <div class="row text-center">
+        <div class="col-sm-12">
+            <h1 id="home-cat-title">POPULAR CATEGORIES</h1>
+        </div>
+            </div>
+    <div id="home-cat-grey-bg">
     <div class="row text-center home-cats">
-        <h1>MOST POPULAR CATEGORIES</h1>
-        <div class="col-sm-3">
-            <a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/shoes">
+        <div class="col-sm-3 home-cat">
+            <a href="/shoes">
                 <img src="http://skateparkoftampa2.com/spot/imagescorey/shoes.jpg" class="img-responsive img-center"/>
                 <span>SHOES</span>
             </a>
         </div>
-        <div class="col-sm-3">
-            <a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/skateboard-decks">
+        <div class="col-sm-3 home-cat">
+            <a href="/boards">
                 <img src="http://skateparkoftampa2.com/spot/imagescorey/decks.jpg" class="img-responsive img-center"/>
                 <span>DECKS</span>
             </a>
         </div> 
-        <div class="col-sm-3">
-            <a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/trucks">
+        <div class="col-sm-3 home-cat">
+            <a href="/trucks">
                 <img src="http://skateparkoftampa2.com/spot/imagescorey/trucks.jpg" class="img-responsive img-center"/>
                 <span>TRUCKS</span>
             </a>
         </div> 
-        <div class="col-sm-3">
-            <a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/wheels">
+        <div class="col-sm-3 home-cat">
+            <a href="/wheels">
                 <img src="http://skateparkoftampa2.com/spot/imagescorey/wheels.jpg" class="img-responsive img-center"/>
                 <span>WHEELS</span>
             </a>
         </div> 
     </div>
-    <div class="row text-center home-cats bottom">
-    <div class="col-sm-3">
-        <a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/bearings">
-            <img src="http://skateparkoftampa2.com/spot/imagescorey/bearings.jpg" class="img-responsive img-center"/>
-            <span>BEARINGS</span>
+    <div class="row text-center home-cats">
+    <div class="col-sm-3 home-cat">
+        <a href="/tshirts">
+            <img src="http://skateparkoftampa2.com/spot/imagescorey/clothing.jpg" class="img-responsive img-center"/>
+            <span>CLOTHING</span>
         </a>
     </div>
-    <div class="col-sm-3">
-        <a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>">
+    <div class="col-sm-3 home-cat">
+        <a href="/pads_and_helmets">
             <img src="http://skateparkoftampa2.com/spot/imagescorey/safety.jpg" class="img-responsive img-center"/>
             <span>SAFETY</span>
         </a>
     </div> 
-    <div class="col-sm-3">
-        <a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/accessories">
+    <div class="col-sm-3 home-cat">
+        <a href="/accessories">
             <img src="http://skateparkoftampa2.com/spot/imagescorey/accessories.jpg" class="img-responsive img-center"/>
             <span>ACCESSORIES</span>
         </a>
     </div> 
-    <div class="col-sm-3">
-        <a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/skateboards">
+    <div class="col-sm-3 home-cat">
+        <a href="/skateboards">
             <img src="http://skateparkoftampa2.com/spot/imagescorey/completes.jpg" class="img-responsive img-center"/>
             <span>COMPLETES</span>
         </a>
     </div> 
-
 </div>
-            <div class="row more-cat-sec">
-            <div class="col-sm-12">
-        <h2><a class="more" href="http://skateparkoftampa2.com/shoes_and_skateboards">View More Categories</a></h2>
-                </div>
-            </div>
+     <!-- <div class="row text-center" style="height: 100px; margin-top: 37px;">
+        <h2><a href="http://skateparkoftampa2.com/shoes_and_skateboards" class="home viewmore">View More Categories</a></h2>
+            </div> -->
+        </div>
+    <div class="text-center social-home">
+        <a href="https://www.instagram.com/spottampa/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/spottampa"><i class="fa fa-facebook-f"></i></a>
+        <a href="https://twitter.com/spottampa"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.youtube.com/spottampa"><i class="fa fa-youtube"></i></a>
+        <a href=""><i class="fa fa-snapchat-ghost"></i></a>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 shipping-banner text-center">
+            <h5 class="shipping-banner-title">FREE SHIPPING ON ORDERS OVER $60</h5>
+        </div>
+    </div>
 
 </asp:Content>
 
@@ -373,7 +387,7 @@
 
 <div class="BlogPost">
 
-<h2>Upcoming Contests 2017</h2>
+<h2>Upcoming Contests 2018</h2>
 
 <div style="font-weight:bold;">
 
@@ -545,7 +559,9 @@ count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" 
 
 
 
-<div class="BlogPost">
+<!-- 
+    removed per chris request 2-22-2018
+    <div class="BlogPost">
 <div class="Ollie">
 <h2 style="text-transform:none;">STALK US ON SOCIAL MEDIA @SPoTTAMPA</h2>
 </br>
@@ -571,7 +587,7 @@ count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" 
 </br>
 Subscribe to our Mailing Lists</a>
 </div>
-</div>
+</div> -->
 
    
 

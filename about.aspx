@@ -25,6 +25,7 @@
         Our inventory online is live, in stock, and usually ships within one business day.  <a href="http://skateparkoftampa.com/spot/a.aspx?ID=2304">Click here</a> for a photo tour of the shop.
         <div class="Ollie">
             <a href="http://skateparkoftampa.com/spot/a.aspx?ID=2304">
+                 <a id="hours"></a>
            <img class="img-responsive" src="http://www.skateparkoftampa.com/spot/images3/shop2016-1.JPG" />
             </a>
         </div>

@@ -33,129 +33,26 @@
         <asp:Label runat="server" ID="lblMessage" />
     </div>
 <asp:Panel runat="server" ID="pnlPayment">
-    <div class="BlogPost">
-        
-        <table>
-            <tr>
-                <td valign="top" width="420">
-                    <h1>Payment Information</h1>                   
-                        <table>
-			                <tr>
-			                    <td colspan="2">Card Type:
-			                    <div style="font-size:.7em;">
-                                <input type="radio" style="margin:0px 0px 0px 10px;" name="cardtype" /> Visa
-			                    <input type="radio" style="margin:0px 0px 0px 10px;" name="cardtype" /> Mastercard
-			                    <input type="radio" style="margin:0px 0px 0px 10px;" name="cardtype" /> AMEX
-			                    <input type="radio" style="margin:0px 0px 0px 10px;" name="cardtype" /> Discover
-                                </div>
-			                    </td>
-			                </tr>
-							<tr>
-                                <td colspan="2">
-                                    <img src="http://skateparkoftampa.com/spot/images5/cards.jpg" />
-                                </td>
-                            </tr>
-			                <tr>
-				                <td width="140">Card Number</td>
-				                <td width="280"><asp:TextBox Runat="server" ID="x_Card_Num" style="width:160px"/>
-				                </td>
-			                </tr>
-			                <tr>
-				                <td colspan="2">Expire 
-					                Month: 
-					                <asp:DropDownList runat="server" id="x_Exp_Date_MONTHPORTION">
-						                <asp:ListItem value="01">01 - Jan</asp:ListItem>
-						                <asp:ListItem value="02">02 - Feb</asp:ListItem>
-						                <asp:ListItem value="03">03 - Mar</asp:ListItem>
-						                <asp:ListItem value="04">04 - Apr</asp:ListItem>
-						                <asp:ListItem value="05">05 - May</asp:ListItem>
-						                <asp:ListItem value="06">06 - Jun</asp:ListItem>
-						                <asp:ListItem value="07">07 - Jul</asp:ListItem>
-						                <asp:ListItem value="08">08 - Aug</asp:ListItem>
-						                <asp:ListItem value="09">09 - Sep</asp:ListItem>
-						                <asp:ListItem value="10">10 - Oct</asp:ListItem>
-						                <asp:ListItem value="11">11 - Nov</asp:ListItem>
-						                <asp:ListItem value="12">12 - Dec</asp:ListItem>
-					                </asp:DropDownList>
-					                Year:
-					                <asp:DropDownList runat="server" id="x_Exp_Date_YEARPORTION" />
-				                </td>
-			                </tr>
-			                <tr>
-				                <td colspan="2">Card Security Code
-    				                <asp:TextBox style="width:50px" runat="server" id="x_card_code"/> 
-                                    <a href="cvv2numberdisplay.gif" id="CVV2">?</a>
-				                </td>
-			                </tr>
-			                </table>
-    
-                            <asp:Button ID="Button1" runat="server" Text="Submit Order" 
-                            CssClass="BuyButton" style="padding:10px; background-color: #ff0000; 
-                                color:#ffffff; font-size:1.1em; float:left;" OnClick="cmdSubmit" />        
-
-                            
-
-                            
-
-                            <div style="clear:both;"></div>
-
-                            <div style="font-size:.6em;">
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" 
-                                    ControlToValidate="x_Card_Num" ErrorMessage="Enter your credit card number, please." CssClass="ErrorMessages" />
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="x_card_code" ErrorMessage="Please enter the three digit security code from the back of your card. For American Express, it's the four digits on the front of the card." CssClass="ErrorMessages" />
-                            </div>
-
-                            <h1>Optional Notes</h1>
-                            You can add a note about your order here:
-                            <br /><asp:TextBox runat="server" ID="txtOrderNote" Width="250px" MaxLength="200" />
-                            <asp:Label runat="server" ID="lblBillingNote" style="color:Red;" />
-                            
-                            <h1>Security Notes</h1>
-                            <ul style="font-size:.8em; margin: 0px 5px 0px 5px;">
-                                <li>We do not save credit card information.</li>
-                                <li>For security reasons, we don't offer this option.</li>
-                                <li>Your information is never sold or given away. We've been here since 1993 and online since 1997. Email info@skateparkoftampa.com for a quick reply to any questions.</li>
-                                <li><!-- (c) 2005, 2012. Authorize.Net is a registered trademark of CyberSource Corporation --> <div class="AuthorizeNetSeal"> <script type="text/javascript" language="javascript">                                                                                                                                                                   var ANS_customer_id = "8da780be-c547-4d14-b0e3-3ee2fbfba8ba";</script> <script type="text/javascript" language="javascript" src="//verify.authorize.net/anetseal/seal.js" ></script> <a href="http://www.authorize.net/" id="AuthorizeNetText" target="_blank">Online Payment System</a> </div></li>
-                                <li><img style="margin-top:10px;" src="https://seal.networksolutions.com/images/basicrecgreen.gif" /></li>
-                            </ul>
-
-
-
-<!--
-SiteSeal Html Builder Code:
-Shows the logo at URL https://seal.networksolutions.com/images/basicrecgreen.gif
-Logo type is  ("NETSB")
-//-->
-<!--
-<script language="JavaScript" type="text/javascript">    SiteSeal("https://seal.networksolutions.com/images/basicrecgreen.gif", "NETSB", "none");</script>
-//-->
-
-
-                </td>
-                <td valign="top" width="210">
-                            
-                    <div style="clear:both;" id="CVV2Display"></div>
-
-                    <h1>Credit Card Billing Address</h1>
+    <div class="BlogPost">     
+        <h1>Credit Card Billing Address</h1>
                     <div class="NotesAndTips">Note: this has to mach what's on file at the credit card company. Change it here if necessary. We will still ship to your shipping address.</div>
-
                     <div>
-                        First Name: <br /> <asp:TextBox runat="server" style="width:100px;" id="txtFirstName" />
+                        <h5>First Name:</h5> <asp:TextBox runat="server" style="width:100px;" id="txtFirstName" />
                     </div>
                     <div>
-                        Last Name: <br /> <asp:TextBox runat="server" style="width:100px;" id="txtLastName" />
+                        <h5>Last Name: </h5> <asp:TextBox runat="server" style="width:100px;" id="txtLastName" />
                     </div>
                     <div>
-                        Billing Street Address: <br /> <asp:TextBox runat="server" style="width:250px;" id="txtAddress" />
+                       <h5> Billing Street Address: </h5> <asp:TextBox runat="server" style="width:250px;" id="txtAddress" />
                     </div>
                     <div>
-                        Company/ Apt#: <br /> <asp:TextBox runat="server" style="width:250px;" id="txtCompany" />
+                       <h5> Company/ Apt#: </h5><asp:TextBox runat="server" style="width:250px;" id="txtCompany" />
                     </div>
                     <div>
-                        Billing City: <br /> <asp:TextBox runat="server" ID="txtCity" style="width:80px;" />
+                       <h5> Billing City: </h5> <asp:TextBox runat="server" ID="txtCity" style="width:80px;" />
                     </div>
                     <div>
-                    State: <br /> <asp:DropDownList runat="server" ID="txtState">
+                   <h5> State: </h5> <asp:DropDownList runat="server" ID="txtState">
                         <asp:ListItem Value="">Choose State</asp:ListItem>
                         <asp:ListItem Value="AL">Alabama</asp:ListItem>
                         <asp:ListItem Value="AK">Alaska</asp:ListItem>
@@ -214,11 +111,11 @@ Logo type is  ("NETSB")
                     </div>
                     
                     <div>
-                        Billing Zip Code <br /> <asp:TextBox runat="server" ID="txtZip" style="width:50px;" />
+                      <h5>  Billing Zip Code </h5> <asp:TextBox runat="server" ID="txtZip" style="width:50px;" />
                     </div>
 
                     <div>
-                        Phone: <br /> <asp:TextBox runat="server" ID="txtPhone" style="width:100px;" />
+                       <h5> Phone:</h5><asp:TextBox runat="server" ID="txtPhone" style="width:100px;" />
                     </div>
 
                                                     <asp:RequiredFieldValidator CssClass="ErrorMessages" ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtFirstName" ErrorMessage="Please enter First Name." />
@@ -228,17 +125,85 @@ Logo type is  ("NETSB")
                                 <asp:RequiredFieldValidator CssClass="ErrorMessages" ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtZip" ErrorMessage="Please enter your billing zip code." />
                                 <asp:RequiredFieldValidator CssClass="ErrorMessages" ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtAddress" ErrorMessage="Please enter your billing street address." />
 
-              
-                </td>
 
-            </tr>
-        </table>
+                    <h1>Payment Information</h1>                   
+			                    <h5>Card Type:</h5>
+			                    <div style="font-size:.7em;">
+                                <input type="radio" style="margin:0px 0px 0px 10px;" name="cardtype" /> Visa
+			                    <input type="radio" style="margin:0px 0px 0px 10px;" name="cardtype" /> Mastercard
+			                    <input type="radio" style="margin:0px 0px 0px 10px;" name="cardtype" /> AMEX
+			                    <input type="radio" style="margin:0px 0px 0px 10px;" name="cardtype" /> Discover
+                                </div>
+                                    <img src="http://skateparkoftampa.com/spot/images5/cards.jpg" />
+   
+				                <h5>Card Number</h5>
+				                <asp:TextBox Runat="server" ID="x_Card_Num" style="width:160px"/>
+                                 <h5> Expire Month: </h5>
+					                <asp:DropDownList runat="server" id="x_Exp_Date_MONTHPORTION">
+						                <asp:ListItem value="01">01 - Jan</asp:ListItem>
+						                <asp:ListItem value="02">02 - Feb</asp:ListItem>
+						                <asp:ListItem value="03">03 - Mar</asp:ListItem>
+						                <asp:ListItem value="04">04 - Apr</asp:ListItem>
+						                <asp:ListItem value="05">05 - May</asp:ListItem>
+						                <asp:ListItem value="06">06 - Jun</asp:ListItem>
+						                <asp:ListItem value="07">07 - Jul</asp:ListItem>
+						                <asp:ListItem value="08">08 - Aug</asp:ListItem>
+						                <asp:ListItem value="09">09 - Sep</asp:ListItem>
+						                <asp:ListItem value="10">10 - Oct</asp:ListItem>
+						                <asp:ListItem value="11">11 - Nov</asp:ListItem>
+						                <asp:ListItem value="12">12 - Dec</asp:ListItem>
+					                </asp:DropDownList>
+					                <h5>Year:</h5>
+					                <asp:DropDownList runat="server" id="x_Exp_Date_YEARPORTION" />
+
+				                <h5>Card Security Code <a href="cvv2numberdisplay.gif" id="CVV2">&#128712;</a></h5>
+    				                <asp:TextBox style="width:50px" runat="server" id="x_card_code"/> 
+                                    
+    
+                            <asp:Button ID="Button1" runat="server" Text="Submit Order" 
+                            CssClass="BuyButton" style="margin-top: 20px; padding:10px; background-color: #b80b10; 
+                                color:#ffffff; font-size:1.1em; float:left;" OnClick="cmdSubmit" />        
+
+                          
+
+                            
 
 
+
+<!--
+SiteSeal Html Builder Code:
+Shows the logo at URL https://seal.networksolutions.com/images/basicrecgreen.gif
+Logo type is  ("NETSB")
+//-->
+<!--
+<script language="JavaScript" type="text/javascript">    SiteSeal("https://seal.networksolutions.com/images/basicrecgreen.gif", "NETSB", "none");</script>
+//-->
+         
+                    <div style="clear:both;" id="CVV2Display"></div>
     </div>
 </asp:Panel>
 <asp:Label runat="server" ID="lblGeneralError" />
 
+    <div style="font-size:.6em;">
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" 
+                                    ControlToValidate="x_Card_Num" ErrorMessage="Enter your credit card number, please." CssClass="ErrorMessages" />
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="x_card_code" ErrorMessage="Please enter the three digit security code from the back of your card. For American Express, it's the four digits on the front of the card." CssClass="ErrorMessages" />
+                            </div>
+    <div class="BlogPost">
+                            <h1>Optional Notes</h1>
+                            <h5>You can add a note about your order here:</h5>
+                            <br /><asp:TextBox runat="server" ID="txtOrderNote" MaxLength="200" />
+                            <asp:Label runat="server" ID="lblBillingNote" style="color:Red;" />
+                            
+                            <h1>Security Notes</h1>
+                            <ul style="font-size:.8em; margin: 0px 5px 0px 5px;">
+                                <li>We do not save credit card information.</li>
+                                <li>For security reasons, we don't offer this option.</li>
+                                <li>Your information is never sold or given away. We've been here since 1993 and online since 1997. Email info@skateparkoftampa.com for a quick reply to any questions.</li>
+                                <li><!-- (c) 2005, 2012. Authorize.Net is a registered trademark of CyberSource Corporation --> <div class="AuthorizeNetSeal"> <script type="text/javascript" language="javascript">                                                                                                                                                                   var ANS_customer_id = "8da780be-c547-4d14-b0e3-3ee2fbfba8ba";</script> <script type="text/javascript" language="javascript" src="//verify.authorize.net/anetseal/seal.js" ></script> <a href="http://www.authorize.net/" id="AuthorizeNetText" target="_blank">Online Payment System</a> </div></li>
+                                <li><img style="margin-top:10px;" src="https://seal.networksolutions.com/images/basicrecgreen.gif" /></li>
+                            </ul>
+        </div>
 
 </form>
 
@@ -410,4 +375,3 @@ Logo type is  ("NETSB")
 </div>
 
 </asp:Content>
-

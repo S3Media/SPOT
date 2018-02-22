@@ -384,7 +384,7 @@ SelectCommandType="StoredProcedure" ConnectionString="<%$ ConnectionStrings:CS %
     <div class="col-xs-6 col-md-3 NewArrivalSmallBlock">
     <a 
         href="/product/<%#Eval("RelatedProductID") %>/<%#Eval("ShortDescr").ToString().Replace("\"", "").Replace(" ", "_").Replace(":", "") %>">
-        <img  src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%# Eval("ColorID")%>_<%# Eval("RelatedProductID")%>thumb.jpg" />
+        <img class="img-responsive img-center" src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%# Eval("ColorID")%>_<%# Eval("RelatedProductID")%>thumb.jpg" />
     </a><br />
     <a 
         href="/product/<%#Eval("RelatedProductID") %>/<%#Eval("ShortDescr").ToString().Replace("\"", "").Replace(" ", "_").Replace(":", "") %>">
@@ -407,7 +407,7 @@ onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=SPoTNewS
 <h1>Get An Email Every Time We Add New Shoes</h1>
 Enter your email: <input type="text" style="width:200px; font-size:18px; font-weight:bold;" name="email"/> <input type="hidden" value="spotnewshoes" name="uri"/><input type="hidden" name="loc" value="en_US"/><input style="margin-top:2px; font-size:18px; font-weight:bold;" type="submit" value="Subscribe" />
 
-<a href="https://feedburner.google.com/fb/a/mailverify?uri=SPoTNewShoes&amp;loc=en_US"><img src="http://feeds.feedburner.com/~fc/SPoTNewShoes?bg=FF3300&amp;fg=FFFFFF&amp;anim=0" height="26" width="88" style="border:0; padding-left:30px;" alt="" /></a>
+<a href="https://feedburner.google.com/fb/a/mailverify?uri=SPoTNewShoes&amp;loc=en_US"><img src="http://feeds.feedburner.com/~fc/SPoTNewShoes?bg=FF3300&amp;fg=FFFFFF&amp;anim=0" height="26" width="88" style="border:0;" alt="" /></a>
 <div>
     Most of you are here to check out new shoes.  Who isn't a fan of new kicks?  We will send you a summary of all new shoes
 
@@ -425,7 +425,7 @@ onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=SPoTNew
 <h1>Get An Email Every Time We Add New Products</h1>
 Enter your email: <input type="text" style="width:200px; font-size:18px; font-weight:bold;" name="email"/> <input type="hidden" value="spotnewproducts" name="uri"/><input type="hidden" name="loc" value="en_US"/><input style="margin-top:2px; font-size:18px; font-weight:bold;" type="submit" value="Subscribe" />
 
-<a href="https://feedburner.google.com/fb/a/mailverify?uri=SPoTNewProducts&amp;loc=en_US"><img src="http://feeds.feedburner.com/~fc/spotnewproducts?bg=FF3300&amp;fg=FFFFFF&amp;anim=0" height="26" width="88" style="border:0; padding-left:30px;" alt="" /></a>
+<a href="https://feedburner.google.com/fb/a/mailverify?uri=SPoTNewProducts&amp;loc=en_US"><img src="http://feeds.feedburner.com/~fc/spotnewproducts?bg=FF3300&amp;fg=FFFFFF&amp;anim=0" height="26" width="88" style="border:0;" alt="" /></a>
 <div>
     We are constantly getting new products in. Stay on top of them by subscribing here.
 </div>

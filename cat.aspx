@@ -52,6 +52,7 @@
 
 
     <div id="NewArrivals">
+        <div class="row">
         <asp:SqlDataSource runat="server" ID="sdsNew"
             SelectCommand="SPOT2012NewArrivalsProductsNewArrivalsPaged" SelectCommandType="StoredProcedure"
             ConnectionString="<%$ ConnectionStrings:CS %>"
@@ -62,11 +63,11 @@
         </asp:SqlDataSource>
         <asp:Repeater ID="rptNew" DataSourceID="sdsNew" runat="server">
         <ItemTemplate>
-                <div class="col-xs-12 col-sm-6 col-md-4 ProductBlock">
+                <div class="col-xs-6 col-sm-4 ProductBlock">
                 
                     <a 
                     title="<%#Eval("Name").ToString().Replace("\"", "") %> <%#Eval("Color").ToString().Replace("\"", "") %> <%#Eval("ShortDescr").ToString().Replace("\"", "") %>"
-                    href="p.aspx?ID=<%#Eval("ProductID") %>&CID=<%#Eval("ColorID") %>"><img 
+                    href="p.aspx?ID=<%#Eval("ProductID") %>&CID=<%#Eval("ColorID") %>"><img class="img-responsive"
                         title="<%#Eval("Name").ToString().Replace("\"", "") %> <%#Eval("Color").ToString().Replace("\"", "") %> <%#Eval("ShortDescr").ToString().Replace("\"", "") %>" width="190" height="190" 
                         src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" /></a>
                 
@@ -75,7 +76,7 @@
                             title="<%#Eval("Name").ToString().Replace("\"", "") %> <%#Eval("Color").ToString().Replace("\"", "") %> <%#Eval("ShortDescr").ToString().Replace("\"", "") %>"
                             href="p.aspx?ID=<%#Eval("ProductID") %>&CID=<%#Eval("ColorID") %>">
                         <%#Eval("Name")%> 
-                        <%#Eval("ShortDescr")%> <%#Eval("Color")%></a><br /> <%#Eval("CurrentPrice", "{0:c}")%>
+                        <%#Eval("ShortDescr")%> <%#Eval("Color")%></a><br /><span class="price"> <%#Eval("CurrentPrice", "{0:c}")%></span><br />
                     </div>
                     <div class="ProductBlockTextAlert">
                         <%#Eval("SaleNote") %> <%#Eval("FreeShippingNote") %>
@@ -86,7 +87,7 @@
             </ItemTemplate>
         </asp:Repeater>
     </div>
-
+        </div>
     <div id="loadmoreajaxloader" class="BlogPost" style="clear:both; text-align:center; display:none;"><img src="ajaxloadingmore.gif" /> Loading More... <img src="ajaxloadingmore.gif" /></div>
 
 
