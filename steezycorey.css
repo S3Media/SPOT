@@ -987,9 +987,8 @@ html {
     padding: 0;
     color: #000;
     background: #dddddd;
-    background-image: url(http://www.skateparkoftampa.com/spot/images3/vans-wrap.png) !important;
+    background-image: url(http://www.skateparkoftampa.com/spot/images3/website-bg-pattern2.jpg) !important;
     background-attachment: fixed;
-    
 }
 
 #header {
@@ -1394,6 +1393,12 @@ form.footer-form {
     }
 
     .staff img {
+        width: 100%;
+    }
+    select#ctl00_cphMain_x_Exp_Date_MONTHPORTION {
+        width: 100%;
+    }
+    select#ctl00_cphMain_x_Exp_Date_YEARPORTION{
         width: 100%;
     }
 }

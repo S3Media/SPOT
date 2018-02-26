@@ -199,6 +199,7 @@ from your cart that go out of stock.  Email <a href="mailto:info@skateparkoftamp
 					<a href="p.aspx?ID=<%#Eval("ProductID") %>">
 					<img class="img-responsive img-center" src="<%#Eval("Photo") %>"  />
 					</a>
+                        <hr class="visible-xs"/>
                         </div>
                     <div class="col-md-6">
 					<div style="font-size:.8em;margin:0px;padding:0px;">Item #<%#Eval("InventoryID") %> </div>
@@ -238,7 +239,7 @@ from your cart that go out of stock.  Email <a href="mailto:info@skateparkoftamp
 					<div style="font-size:1.1em; font-weight:bold;"><%#Eval("Manufacturer")%> <%#Eval("ShortDescr") %>
 					</div>
 					Regular Price: <%#Eval("RegularPrice", "{0:c}") %><br />
-					<span style="color:red;">Sale Discount: <%#Eval("CalculatedSaleDiscount", "{0:c}")%><br />
+					<span style="color:#b80b10;">Sale Discount: <%#Eval("CalculatedSaleDiscount", "{0:c}")%><br />
 					Coupon Discount: <%#Eval("CalculatedCouponDiscount", "{0:c}") %></span><br />
 					Your Price: <b><%#Eval("YourPriceUnit", "{0:c}")%></b><br />
 					<b>Quantity: <%#Eval("Quantity") %></b>
@@ -277,7 +278,7 @@ Your Total Price: <%# Eval("LineTotalTotal", "{0:c}")%>
 
 <%# Eval("FreeShipping")%>
 
-<div style="margin:0px; padding:0px; color:Red; text-align:center;">
+<div style="margin:0px; padding:0px; color:#b80b10; text-align:center;">
 <%=strCouponApplyFeedback %>
 </div>
 
@@ -313,16 +314,16 @@ All orders over $59 without other offers like coupons get free UPS Ground shippi
 		<td align="right" width="100"><%# Eval("TotalRegularPrice", "{0:c}")%></td>
 	</tr>
 	<tr>
-		<td align="right" style="color:Red;">Sale Discounts</td>
-		<td align="right" style="color:Red;" width="100"><%# Eval("SaleDiscountTotal", "{0:c}")%></td>
+		<td align="right" style="color:#b80b10;">Sale Discounts</td>
+		<td align="right" style="color:#b80b10;" width="100"><%# Eval("SaleDiscountTotal", "{0:c}")%></td>
 	</tr>
 	<tr>
-		<td align="right" style="color:Red;">Coupon Discounts</td>
-		<td align="right" style="color:Red;" width="100"><%# Eval("CouponDiscountTotal", "{0:c}")%></td>
+		<td align="right" style="color:#b80b10;">Coupon Discounts</td>
+		<td align="right" style="color:#b80b10;" width="100"><%# Eval("CouponDiscountTotal", "{0:c}")%></td>
 	</tr>
 	<tr>
-		<td align="right" style="color:Red;">Total Discounts</td>
-		<td align="right" style="color:Red;" width="100"><%# Eval("TotalDiscount", "{0:c}")%></td>
+		<td align="right" style="color:#b80b10;">Total Discounts</td>
+		<td align="right" style="color:#b80b10;" width="100"><%# Eval("TotalDiscount", "{0:c}")%></td>
 	</tr>
 	<tr>
 		<td align="right">Your Total Price</td>
@@ -333,7 +334,7 @@ All orders over $59 without other offers like coupons get free UPS Ground shippi
     
     <%=strCouponSummary %>
 
-    <div style="margin:0px; padding:0px; color:Red; text-align:center;">
+    <div style="margin:0px; padding:0px; color:#b80b10; text-align:center;">
         <%=strCouponApplyFeedback %>
     </div>
 
