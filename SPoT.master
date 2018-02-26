@@ -40,9 +40,8 @@
     <title>SPoT Skate Shop at Skate Park of Tampa</title>
     <base href="<%=strHTTPS %><%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>" target="_top" />
     <meta name="copyright" content="Copyright (c) 2012 Skatepark of Tampa">
-    <meta name="viewport" content="width=980px">
     <meta name="apple-itunes-app" content="app-id=544443560">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     
     <link href="<%=strHTTPS %><%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>steezycorey.css" rel="stylesheet" type="text/css" />
         
