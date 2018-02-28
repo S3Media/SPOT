@@ -957,6 +957,8 @@ h5 {
 #MasonryWrapper {
     margin-top: 20px;
     text-align: center;
+    height: auto !important;
+    position: initial !important;
 }
 
 .PhotoBox2012 {
@@ -965,11 +967,19 @@ h5 {
     min-height: 300px;
     margin-bottom: 15px;
 }
+    .PhotoBox2012.masonry-brick {
+        position: initial !important;
+        float: left;
+        width: 48%;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
 
     .PhotoBox2012 img {
-        max-width: 100%;
         height: auto;
         margin: 0px !important;
+        width: 100%;
+        display: block;
     }
 
 .SkaterCaption2012 {

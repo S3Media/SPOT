@@ -73,13 +73,13 @@
 
     function validateEmail() {
 
-        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-        var address = $("#txtEmailNew").attr('value');
-        if (!reg.test(address)) {
-            return false;
-        }
-        else {
-            return true;
+      //  var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+      //  var address = $("#txtEmailNew").attr('value');
+      //  if (!reg.test(address)) {
+      //      return false;
+      //  }
+      //  else {
+      //      return true;
         }
     }
 

@@ -66,27 +66,27 @@
 <!-- START REVOLUTION SLIDER 5.4.1 auto mode -->
 	<div id="rev_slider_1078_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
 <ul>	<!-- SLIDE  -->
-	<li data-index="rs-3045" data-transition="boxslide" data-link="/tickets" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="../../assets/images/datcolor-100x50.jpg"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Tampa Pro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+	<li data-index="rs-3045" data-transition="slideleft" data-link="/tickets" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="../../assets/images/datcolor-100x50.jpg"  data-rotate="0"  data-fstransition="fade"  data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Tampa Pro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 		<!-- MAIN IMAGE -->
 		<img src="http://skateparkoftampa2.com/spot/imagescorey/pro18-slider-image.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 	</li>
     <!-- SLIDE  -->
-	<li data-index="rs-3046" data-transition="slotslide-vertical" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="../../assets/images/datcolor-100x50.jpg"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="MOB" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+	<li data-index="rs-3046" data-transition="slideleft" data-link="/company/1386/Mob_Grip" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="../../assets/images/datcolor-100x50.jpg"  data-rotate="0"   data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="MOB" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 		<!-- MAIN IMAGE -->
 		<img src="http://skateparkoftampa2.com/spot/imagescorey/mob-grip-slider.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 	</li>
     <!-- SLIDE  -->
-	<li data-index="rs-3047" data-transition="boxfade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="../../assets/images/datcolor-100x50.jpg"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Wheels" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+	<li data-index="rs-3047" data-transition="slideleft" data-link="/company/1424/OJ_3" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="../../assets/images/datcolor-100x50.jpg"  data-rotate="0"   data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Wheels" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 		<!-- MAIN IMAGE -->
 		<img src="http://skateparkoftampa2.com/spot/imagescorey/oj-wheels-slider.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 	</li>
     <!-- SLIDE  -->
-	<li data-index="rs-3048" data-transition="slotslide-horizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="../../assets/images/datcolor-100x50.jpg"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Santa Cruz" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+	<li data-index="rs-3048" data-transition="slideleft" data-link="/company/1092/Santa_Cruz" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="../../assets/images/datcolor-100x50.jpg"  data-rotate="0"   data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Santa Cruz" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 		<!-- MAIN IMAGE -->
 		<img src="http://skateparkoftampa2.com/spot/imagescorey/santa-cruz-skateboards-slider.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 	</li>
 </ul>
-<div class="tp-bannertimer" style="height: 7px; background-color: rgba(255, 255, 255, 0.25);"></div>	</div>
+<div class="tp-bannertimer" style="height: 7px; background-color: rgba(000, 000, 000, 0.25);"></div>	</div>
 </div><!-- END REVOLUTION SLIDER -->
 		<script type="text/javascript">
             var tpj = jQuery;

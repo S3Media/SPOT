@@ -19,7 +19,7 @@
         //alert("shit");
         $("#sidebar").css("display", "none");
         $("#mobilesidebar").css("display", "none");
-        $("#main").css("width", "98%");
+        $("#main").css("width", "100%");
         $("#mobilemain").css("width", "98%");
     });
 </script>

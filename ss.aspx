@@ -11,44 +11,43 @@ Search through it all right here.
 <form method="get" action="ss.aspx">
     <h2>Search Products</h2>
     Search our store by entering a keyword for the company and product you're looking for. You can also include a size and color filter if you want.
-    <div class="table-responsive">
-    <table>
-        <tr>
-            <td align="right">Brand/Company:</td>
-            <td><input type="text" style="width:100px;" id="m" name="m" value="<%=Request["m"] %>" /></td>
-            <td align="right">Product:</td>
-            <td><input type="text" style="width:100px;" id="t" name="t" value="<%=Request["t"] %>" /></td>
-        </tr>
-        <tr>
-            <td align="right">Size:</td>
-            <td><input type="text" style="width:100px;" id="s" name="s" value="<%=Request["s"] %>" /></td>
-            <td align="right">Color:</td>
-            <td><input type="text" style="width:100px;" id="c" name="c" value="<%=Request["c"] %>" /></td>
-        </tr>
-    </table>
-    </div>
+    <div class="row search">
+    <div class="col-sm-6">
 
+            Brand/Company:
+            <input type="text" id="m" name="m" value="<%=Request["m"] %>" /></div>
+        <div class="col-sm-6">
+            Product:
+<input type="text" id="t" name="t" value="<%=Request["t"] %>" /></div>
+        <div class="col-sm-6">
+            Size:
+            <input type="text" id="s" name="s" value="<%=Request["s"] %>" /></div>
+        <div class="col-sm-6">
+            Color:
+            <input type="text" id="c" name="c" value="<%=Request["c"] %>" />
+    </div>
+        </div>
     <input type="hidden" id="SearchType" name="SearchType"  value="Products" />
     <input type="submit" id="SearchProducts" name="SearchProducts" value="Search Store" />
 
         <h2><%=strTitle %></h2>
         <div style="color:Red; font-weight:bold;"><%=strTitleProduct%></div>
-        <asp:DataList runat="server" ID="dlProducts" Visible="false" RepeatDirection="Horizontal" RepeatColumns="9" CellSpacing="0" CellPadding="0">
-        <HeaderTemplate></HeaderTemplate>
+    <div class="row">
+        <asp:ListView runat="server" ID="dlProducts" Visible="false" >
         <ItemTemplate>
-            <div class="NotesAndTips">
+            <div class="col-xs-4 ProductBlock">
                 <div>
                 <a target="_blank" href="p.aspx?ID=<%#Eval("ProductID") %>&CID=<%#Eval("ColorID") %>">
-                    <img title="<%#Eval("Name").ToString().Replace("\"", "") %>: <%#Eval("ShortDescr").ToString().Replace("\"", "") %>" 
-                        src="http://www.skateparkoftampa.com/spot/productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>thumb.jpg" />
+                    <img title="<%#Eval("Name").ToString().Replace("\"", "") %>: <%#Eval("ShortDescr").ToString().Replace("\"", "") %>" class="img-responsive img-center"
+                        src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" />
                 </a>
                 </div>
                 <a target="_blank" title="<%#Eval("Name").ToString().Replace("\"", "") %>: <%#Eval("ShortDescr").ToString().Replace("\"", "") %>" 
                     href="p.aspx?ID=<%#Eval("ProductID") %>&CID=<%#Eval("ColorID") %>"><%#Eval("Name") %>: <%#Eval("ShortDescr") %></a>
             </div>
         </ItemTemplate>
-        </asp:DataList>
-
+        </asp:ListView>
+        </div>
 
     <div class="NotesAndTips">
         We have tons of <a href="cat.aspx">products</a> and <a href="com.aspx">brands</a>.  Sometimes it's just easier to browse, but if you're looking for something specific, we're here to help.

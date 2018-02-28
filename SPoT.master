@@ -50,11 +50,11 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 		    <script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 		<!-- LOADING FONTS AND ICONS -->
-		<link href="http://fonts.googleapis.com/css?family=Raleway%3A400%2C800%2C500" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+		<link href="https://fonts.googleapis.com/css?family=Raleway%3A400%2C800%2C500" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
 
 		
 		<link rel="stylesheet" type="text/css" href="revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
@@ -301,9 +301,9 @@
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
             <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/events">Local Events</a></li>
-          <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/a.aspx?ID=3003">TAMPA AM</a></li>
-          <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/damnamtags">DAMN AM</a></li>
-          <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/a.aspx?ID=2987">TAMPA PRO</a></li>
+          <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/eventspot.aspx?I=176">TAMPA AM</a></li>
+          <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/a.aspx?ID=3262">DAMN AM</a></li>
+          <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/eventspot.aspx?I=171">TAMPA PRO</a></li>
         </ul>
       </li>
                         <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/about">Info</a></li>

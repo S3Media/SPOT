@@ -138,7 +138,7 @@
 
 <h1>Search Photos</h1>
 <form method="get" action="ph.aspx">
-<input type="text" id="t" name="t" value="<%=Request.QueryString["t"] %>" style="width:100px;" />
+<input type="text" id="t" name="t" value="<%=Request.QueryString["t"] %>" style="width:80%;" />
 <input type="submit" value="Search" />
 
 </form>

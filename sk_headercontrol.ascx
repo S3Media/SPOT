@@ -244,7 +244,7 @@
             <div class="NotesAndTips" style="margin:0px; padding:0px;">Support Pro Skaters by buying their gear. Here's all the <%=strSkaterName %> stuff we sell.</div>
         </HeaderTemplate>
         <ItemTemplate>
-                <div class="ProductBlock">
+                <div class="col-xs-6 col-sm-4 ProductBlock">
                     <a href="/product/<%#Eval("ProductID") %>/<%#Eval("Name").ToString().Replace("\"", "").Replace(" ", "_") %>_<%#Eval("Color").ToString().Replace("\"", "").Replace(" ", "_").Replace("/", "") %>_<%#Eval("ShortDescr").ToString().Replace("\"", "").Replace(" ", "_") %>/&CID=<%#Eval("ColorID") %>"><img 
                         title="<%#Eval("Name") %> <%#Eval("Color") %> <%#Eval("ShortDescr") %>" width="190" height="190" 
                         src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" /></a>
@@ -272,7 +272,7 @@
             <div class="NotesAndTips" style="margin:0px; padding:0px;">Couldn't find any <%=strSkaterName %> products, but check out some random products from our Shop. Yeah, <%=strSkaterName %> probably shops here...</div>
         </HeaderTemplate>
         <ItemTemplate>
-                <div class="col-xs-6 col-sm-3 ProductBlock">
+                <div class="col-xs-6 col-sm-4 ProductBlock">
                     <a href="/product/<%#Eval("ProductID") %>/<%#Eval("Name").ToString().Replace("\"", "").Replace(" ", "_") %>_<%#Eval("Color").ToString().Replace("\"", "").Replace(" ", "_").Replace("/", "") %>_<%#Eval("ShortDescr").ToString().Replace("\"", "").Replace(" ", "_") %>/&CID=<%#Eval("ColorID") %>"><img class="img-responsive img-center"
                         title="<%#Eval("Name") %> <%#Eval("Color") %> <%#Eval("ShortDescr") %>" width="190" height="190" 
                         src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" /></a>
