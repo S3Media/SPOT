@@ -1,31 +1,31 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="control_NewArrivals.ascx.cs" Inherits="control_NewArrivals" %>
 <script type="text/javascript">
 
-    $(document).ready(function () {
+  //  $(document).ready(function () {
         //if they have javascript, show the NewArrivalsPages menu
-        $(".NewArrivalsPagesLink").click(function (e) {
-            e.preventDefault();
+     //   $(".NewArrivalsPagesLink").click(function (e) {
+       //     e.preventDefault();
             //fill the NewArrivals div with the page they clicked
             //alert($(this).attr("href"));
-            $(".NewArrivalsPagesLink").css('color', '#d52626');
+       //     $(".NewArrivalsPagesLink").css('color', '#d52626');
             //set link clicked to green
-            $(this).css('color', 'green');
+        //    $(this).css('color', 'green');
 
-            $.ajax({
-                url: "ajax/products_new_arrivals.aspx?P=" + $(this).html(),
-                error: function () {
+         //   $.ajax({
+         //       url: "ajax/products_new_arrivals.aspx?P=" + $(this).html(),
+          //      error: function () {
                     //$("#" + DivID).html("Error");
-                },
-                success: function (data) {
+           //     },
+           //     success: function (data) {
                     //alert(data);
-                    $("#NewArrivals").html(data);
-                },
-                type: "get"
-            });
+            //        $("#NewArrivals").html(data);
+            //    },
+            //    type: "get"
+          //  });
 
-        });
+     //   });
 
-    });
+ //   });
 
 </script>
 <!--
@@ -61,10 +61,10 @@
         <asp:Repeater ID="rptNew" DataSourceID="sdsNew" 
         runat="server">
         <ItemTemplate>
-                <div class="col-xs-6 col-sm-4 NewArrivalSmallBlock" style="min-height:225px;">
+                <div class="col-xs-6 col-sm-4 NewArrivalSmallBlock">
                 <a href="p.aspx?ID=<%#Eval("ProductID") %>&CID=<%#Eval("ColorID") %>"><img class="img-responsive img-center"
                     title="<%#Eval("Name") %> <%#Eval("Color") %> <%#Eval("ShortDescr") %>" width="150" height="150" 
-                    src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" /></a>
+                    src="https://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" /></a>
                 <div class="NewArrivalSmallBlockText"><%#Eval("Name").ToString().ToUpper()%> </div>
                 <div class="NewArrivalSmallBlockTextAlert">
                     <%#Eval("SaleNote") %> <%#Eval("FreeShippingNote") %>
@@ -76,11 +76,11 @@
 
     <div class="ProductPager">
     More New Stuff: 
-    <a class="NewArrivalsPagesLink" href="new.aspx?P=1"> 1</a> 
-    <a class="NewArrivalsPagesLink" href="new.aspx?P=2"> 2</a> 
-    <a class="NewArrivalsPagesLink" href="new.aspx?P=3"> 3</a> 
-    <a class="NewArrivalsPagesLink" href="new.aspx?P=4"> 4</a> 
-    <a class="NewArrivalsPagesLink" href="new.aspx?P=5"> 5</a>
+    <a class="NewArrivalsPagesLink" href="cat.aspx?P=1"> 1</a> 
+    <a class="NewArrivalsPagesLink" href="cat.aspx?P=2"> 2</a> 
+    <a class="NewArrivalsPagesLink" href="cat.aspx?P=3"> 3</a> 
+    <a class="NewArrivalsPagesLink" href="cat.aspx?P=4"> 4</a> 
+    <a class="NewArrivalsPagesLink" href="cat.aspx?P=5"> 5</a>
     </div>
 
 </div>

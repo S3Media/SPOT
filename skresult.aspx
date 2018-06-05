@@ -31,32 +31,6 @@
 
 <h1><%=strTitle %> Results</h1>
 
-<div class="PostMediaStrip" style="border-bottom: solid 2px black;margin: 10px 0px 5px 0px;">
-    <div class="PostMediaStripSub">
-        <div class="col-xs-3">
-            <span class="counter-fb-like">
-                <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fskateparkoftampa.com%2Fspot%2Fskresult.aspx%3FID%3D<%=Request["ID"] %>&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe>
-            </span>
-            </div>
-            <div class="col-xs-3">
-            <span class="counter-twitter">
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://skateparkoftampa.com/spot/skresult.aspx?ID=<%=Request["ID"] %>" data-count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-            </span>
-                </div>
-            <div class="col-xs-3">
-                    
-            <span class="counter-google-one">
-                <g:plusone size="medium" href="http://skateparkoftampa.com/spot/skresult.aspx?ID=<%=Request["ID"] %>"></g:plusone>
-            </span>
-                </div>
-            <div class="col-xs-3">
-            <span class="counter-stumble">
-                <script src="http://www.stumbleupon.com/hostedbadge.php?s=3&r=http://skateparkoftampa.com/spot/skresult.aspx?ID=<%=Request["ID"] %>"></script>
-            </span>
-                </div>
-
-    </div>
-</div>
 
 
 <asp:Repeater runat="server" ID="rptList" OnItemDataBound="rptList_ItemDataBound">
@@ -76,9 +50,7 @@
     src="<%# DataBinder.Eval(Container.DataItem, "MugShot")%>"  style="margin-bottom: 10px;"/></a>
     
 
-    <div>
-        <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fskateparkoftampa.com%2Fspot%2Fsk.aspx%3FID%3D<%#Eval("SkaterID") %>&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe>
-    </div>
+
             </div>
         <div class="col-sm-7">
     Sponsors: <%# DataBinder.Eval(Container.DataItem, "Sponsors")%><br />
@@ -115,16 +87,10 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphSidebar" Runat="Server">
 
-<div class="BlogPost">
-    <a href="http://itunes.apple.com/us/app/spot-skate-nerd/id544443560?ls=1&mt=8" target="_blank">
-        <img class="img-responsive img-center" title="Skatepark of Tampa iPhone App, SPoT Skate Nerd" src="images3/spot_skate_nerd_iphone_app.png" />
-    </a>
-</div>
-
-
+<br />
 <h2>Comments About <%=strTitle %> Results</h2>
 <div class="BlogPost">
-    <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=106807979370947&amp;xfbml=1"></script><fb:comments href="http://www.skateparkoftampa.com/spot/skresult.aspx?ID=<%=Request.QueryString["ID"] %>" num_posts="5" width="100%"></fb:comments>							
+    <div id="fb-root"></div><script src="https://connect.facebook.net/en_US/all.js#appId=106807979370947&amp;xfbml=1"></script><fb:comments href="https://skateparkoftampa.com/spot/skresult.aspx?ID=<%=Request.QueryString["ID"] %>" num_posts="5" width="100%"></fb:comments>							
 </div>				
 
 
@@ -167,7 +133,7 @@
     </asp:Repeater>
 </div>
 
-    </div>
+
 
 </asp:Content>
 

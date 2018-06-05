@@ -5,11 +5,11 @@
 <meta name="description" content="<%=strTitle %>: Click for full details. SPoT Productions is a division of Skatepark of Tampa: A crusty little warehouse in Tampa, Florida with the best service and selection in skateboarding since 1993.">
 <meta itemprop="name" content="<%=strTitle %>, SPoT Productions at Skatepark of Tampa">
 <meta itemprop="description" content="<%=strTitle %>: Click for full details. SPoT Productions is a division of Skatepark of Tampa: A crusty little warehouse in Tampa, Florida with the best service and selection in skateboarding since 1993.">
-<meta itemprop="image" content="http://skateparkoftampa.com/spot/spotevents/<%=Request.QueryString["I"] %>.jpg">
+<meta itemprop="image" content="https://skateparkoftampa.com/spot/spotevents/<%=Request.QueryString["I"] %>.jpg">
 
 <meta property="og:title" content="<%=strTitle %>, SPoT Productions at Skatepark of Tampa"/>
 <meta property="og:type" content="article"/>
-<meta property="og:image" content="http://skateparkoftampa.com/spot/spotevents/<%=Request.QueryString["I"] %>.jpg"/>
+<meta property="og:image" content="https://skateparkoftampa.com/spot/spotevents/<%=Request.QueryString["I"] %>.jpg"/>
 <meta property="og:site_name" content="SPoT, Skatepark of Tampa"/>
 <meta property="og:description" content="<%=strTitle %>: Click for full details. SPoT Productions is a division of Skatepark of Tampa: A crusty little warehouse in Tampa, Florida with the best service and selection in skateboarding since 1993."/>
 
@@ -28,7 +28,7 @@
 <ItemTemplate>
     
 
-    <div class="BlogPost">
+    <div class="BlogPost li-fix">
     <h1><%=strTitle%></h1>
         <div class="BlogText">
             <%#Eval("FullDescription") %>
@@ -36,32 +36,6 @@
         </div>
     </div>
 
-<div class="BlogPost">
-
-
-<div class="PostMediaStrip">
-        <div class="PostMediaStripSub">
-                
-                <div class="row">
-        <div class="col-xs-3"><span class="counter-fb-like">
-            <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fskateparkoftampa.com%2Fspot%2Fa.aspx%3FID%3D<%=Request.QueryString["ID"] %>&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe>
-        </span></div>
-                    <div class="col-xs-3">
-        <span class="counter-twitter">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://skateparkoftampa.com/spot/a.aspx?ID=<%=Request.QueryString["ID"] %>" data-count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-        </span></div>
-                <div class="col-xs-3">    
-        <span class="counter-google-one">
-            <g:plusone size="medium" href="http://skateparkoftampa.com/spot/a.aspx?ID=<%=Request.QueryString["ID"] %>"></g:plusone>
-        </span></div>
-        <div class="col-xs-3"><span class="counter-stumble">
-            <script src="http://www.stumbleupon.com/hostedbadge.php?s=3&r=http://skateparkoftampa.com/spot/a.aspx?ID=<%=Request.QueryString["ID"] %>"></script>
-        </span></div>
-</div>
-
-        </div>
-    </div>
-    </div>
 
 </ItemTemplate>
 </asp:Repeater>
@@ -75,20 +49,20 @@
 
 <div class="BlogPost">
 <h1>Comments</h1>
-<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=106807979370947&amp;xfbml=1"></script><fb:comments href="http://www.skateparkoftampa.com/spot/eventspot.aspx?I=<%=Request.QueryString["I"] %>" num_posts="5" width="100%"></fb:comments>							
+<div id="fb-root"></div><script src="https://connect.facebook.net/en_US/all.js#appId=106807979370947&amp;xfbml=1"></script><fb:comments href="https://skateparkoftampa.com/spot/eventspot.aspx?I=<%=Request.QueryString["I"] %>" num_posts="5" width="100%"></fb:comments>							
 </div>
 
 <div class="BlogPost">
-<img class="img-responsive img-center" src="http://skateparkoftampa.com/spot/spotevents/<%=Request.QueryString["I"] %>.jpg" />
+<img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/spotevents/<%=Request.QueryString["I"] %>.jpg" />
 </div>
 
 <form 
-action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" 
-onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=spotwhatsup', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" 
+onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=spotwhatsup', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
 <h2>Subscribe for Updates</h2>
 Enter your email: <input type="text" font-size:18px; font-weight:bold;" name="email"/> <input type="hidden" value="spotwhatsup" name="uri"/><input type="hidden" name="loc" value="en_US"/><input style="margin-top:2px; font-size:18px; font-weight:bold;" type="submit" value="Subscribe" />
 
-<a href="http://feedburner.google.com/fb/a/mailverify?uri=spotwhatsup&loc=en_US"><img src="http://feeds.feedburner.com/~fc/spotwhatsup?bg=FF3300&amp;fg=FFFFFF&amp;anim=0" height="26" width="88" style="border:0; padding-left:30px;" alt="" /></a></form>
+<a href="https://feedburner.google.com/fb/a/mailverify?uri=spotwhatsup&loc=en_US"><img src="https://feeds.feedburner.com/~fc/spotwhatsup?bg=FF3300&amp;fg=FFFFFF&amp;anim=0" height="26" width="88" style="border:0; padding-left:30px;" alt="" /></a></form>
 
     
 

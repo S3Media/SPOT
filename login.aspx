@@ -5,11 +5,11 @@
 <meta name="description" content="All stuff shown is in stock with immediate shipping and great service. Email us at info@skateparkoftampa.com anytime for a quick response. Skatepark of Tampa: A crusty little warehouse in Tampa, Florida with the best service and selection in skateboarding since 1993.">
 <meta itemprop="name" content="Create an Account at SPoT Skate Shop">
 <meta itemprop="description" content="All stuff shown is in stock with immediate shipping and great service. Email us at info@skateparkoftampa.com anytime for a quick response.">
-<meta itemprop="image" content="http://www.skateparkoftampa.com/spot/images3/circlecity450.jpg">
+<meta itemprop="image" content="https://www.skateparkoftampa.com/spot/images3/circlecity450.jpg">
 
 <meta property="og:title" content="Your Account at SPoT Skate Shop"/>
 <meta property="og:type" content="company"/>
-<meta property="og:image" content="http://www.skateparkoftampa.com/spot/images3/circlecity450.jpg"/>
+<meta property="og:image" content="https://www.skateparkoftampa.com/spot/images3/circlecity450.jpg"/>
 <meta property="og:site_name" content="Your Account at SPoT Skate Shop"/>
 <meta property="og:description" content="Skatepark of Tampa: A crusty little warehouse in Tampa, Florida with the best service and selection in skateboarding since 1993."/>
 
@@ -184,6 +184,24 @@
 
 <asp:Panel runat="server" ID="pnlLogin" Visible="false">
     <div class="row">
+        <div class="col-md-7">
+    <form method="post">
+    <h2>Login</h2>
+    If you already have an account with us, login here.
+    
+    <div>
+    Email: <input type="text" value="<%=Request["txtEmailLogin"] %>" class="Checkout" name="txtEmailLogin" id="txtEmailLogin" />
+    </div>
+    <div>
+    Password: <input type="password" class="Checkout" value="<%=Request["txtPasswordLogin"] %>" name="txtPasswordLogin" id="txtPasswordLogin"  />
+    </div>
+    <input type="submit" value="Login and Checkout" />  
+    <span style="font-size:.8em;">
+    <input type="checkbox" style="margin-right:0px; padding:0px;" id="chkSave" name="chkSave" /> Save Login
+    </span>
+    <div style="margin:0px; padding:0px; font-size:.7em;">Note: if you forgot your password, just put in your email address, click the button, and we will email it to you.</div>
+    </form>
+</div>
 <div class="col-md-5">
 
 
@@ -299,26 +317,6 @@
     </form>
 
 </div>
-
-
-<div class="col-md-7">
-    <form method="post">
-    <h2>Login</h2>
-    If you already have an account with us, login here.
-    
-    <div>
-    Email: <input type="text" value="<%=Request["txtEmailLogin"] %>" class="Checkout" name="txtEmailLogin" id="txtEmailLogin" />
-    </div>
-    <div>
-    Password: <input type="password" class="Checkout" value="<%=Request["txtPasswordLogin"] %>" name="txtPasswordLogin" id="txtPasswordLogin"  />
-    </div>
-    <input type="submit" value="Login and Checkout" />  
-    <span style="font-size:.8em;">
-    <input type="checkbox" style="margin-right:0px; padding:0px;" id="chkSave" name="chkSave" /> Save Login
-    </span>
-    <div style="margin:0px; padding:0px; font-size:.7em;">Note: if you forgot your password, just put in your email address, click the button, and we will email it to you.</div>
-    </form>
-</div>
 </div>
 </asp:Panel>
 
@@ -410,7 +408,7 @@
     <ItemTemplate>
             <div class="col-xs-3">
                 <a href="m.aspx?ID=<%#Eval("ManufacturerID") %>" title="<%#Eval("Name") %>">
-                <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/productimages/<%#Eval("ManufacturerID") %>mfgrthumb.jpg"
+                <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/productimages/<%#Eval("ManufacturerID") %>mfgrthumb.jpg"
                  title="<%#Eval("Name") %>" />
                 </a>
             </div>

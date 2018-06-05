@@ -52,7 +52,7 @@ public partial class sk_headercontrol : System.Web.UI.UserControl
                 break;
         }
 
-        strImageURL = "http://www.skateparkoftampa.com/spot/headshots/" + Request.QueryString["ID"] + ".jpg";
+        strImageURL = "https://skateparkoftampa.com/spot/headshots/" + Request.QueryString["ID"] + ".jpg";
     }
 
 
@@ -78,7 +78,7 @@ public partial class sk_headercontrol : System.Web.UI.UserControl
             if (strInsta != "" && strInsta != null)
             {
                 XmlDataSource xmlSource = new XmlDataSource();
-                xmlSource.DataFile = "http://statigr.am/feed/" + strInsta;
+                xmlSource.DataFile = "https://statigr.am/feed/" + strInsta;
                 xmlSource.XPath = "rss/channel/item";
                 rptInsta.DataSource = xmlSource;
                 rptInsta.DataBind();
@@ -87,7 +87,7 @@ public partial class sk_headercontrol : System.Web.UI.UserControl
             else
             {
                 pnlInsta.Visible = false;
-                lblMessage.Text = "No Instagram found for " + strSkaterName + ".<br />Check out all pros and ams on Instagram at <a href=\"http://skateparkoftampa.com/insta\">skateparkoftampa.com/Insta</a>";
+                lblMessage.Text = "No Instagram found for " + strSkaterName + ".<br />Check out all pros and ams on Instagram at <a href=\"https://skateparkoftampa.com/insta\">skateparkoftampa.com/Insta</a>";
                 lblMessage.CssClass = "ErrorMessages";
             }
         }
@@ -198,7 +198,7 @@ public partial class sk_headercontrol : System.Web.UI.UserControl
         if (rptSkaterNews.Items.Count < 1)
         {
             rptSkaterNews.Visible = false;
-            lblMessage.Text = "There was no skater news found for " + strSkaterName + ".<br />Get all the daily skate news and videos at <a href=\"http://skateparkoftampa.com/news\">skateparkoftampa.com/News</a>";
+            lblMessage.Text = "There was no skater news found for " + strSkaterName + ".<br />Get all the daily skate news and videos at <a href=\"https://skateparkoftampa.com/news\">skateparkoftampa.com/News</a>";
             lblMessage.CssClass = "ErrorMessages";
         }
     }

@@ -57,30 +57,35 @@
 		<link href="https://fonts.googleapis.com/css?family=Raleway%3A400%2C800%2C500" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
 
 		
-		<link rel="stylesheet" type="text/css" href="revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-		<link rel="stylesheet" type="text/css" href="revolution/fonts/font-awesome/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="<%=strHTTPS %><%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+		<link rel="stylesheet" type="text/css" href="<%=strHTTPS %><%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>revolution/fonts/font-awesome/css/font-awesome.css">
 		
 		<!-- REVOLUTION STYLE SHEETS -->
-		<link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+		<link rel="stylesheet" type="text/css" href="<%=strHTTPS %><%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>revolution/css/settings.css">
 		<!-- REVOLUTION LAYERS STYLES -->
 		
 
-			<link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+			<link rel="stylesheet" type="text/css" href="<%=strHTTPS %><%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>revolution/css/layers.css">
 			
 			<!-- REVOLUTION NAVIGATION STYLES -->
-			<link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
+			<link rel="stylesheet" type="text/css" href="<%=strHTTPS %><%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>revolution/css/navigation.css">
 			
 
 			
 					<!-- REVOLUTION JS FILES -->
-		<script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
-		<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+		<script type="text/javascript" src="<%=strHTTPS %><%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>revolution/js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="<%=strHTTPS %><%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+
+        <script type="text/javascript" src="<%=strHTTPS %><%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>revolution/js/extensions/revolution.extension.video.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    
+    
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
     <script>// When the user scrolls down  from the top of the document, show the button
              window.onscroll = function () { scrollFunction() };
@@ -99,11 +104,11 @@
                  document.documentElement.scrollTop = 0; // For IE and Firefox
              }</script>
    <!--FAVICON INFO--> 
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="apple-touch-icon" sizes="180x180" href="https://skateparkoftampa.com/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://skateparkoftampa.com/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://skateparkoftampa.com/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://skateparkoftampa.com/manifest.json">
+<link rel="mask-icon" href="https://skateparkoftampa.com/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="theme-color" content="#ffffff">
         
 
@@ -249,7 +254,8 @@
 
 
 
-    </script></head>
+    </script>
+</head>
 
 <body>
     <div id="overflow-fix">
@@ -278,7 +284,7 @@
 
                 </div>
             <div class="col-xs-6 col-sm-9">
-            <a href="http://skateparkoftampa2.com/"><img src="http://skateparkoftampa2.com/spot/layout/header.png" class="img-responsive logo"/></a>
+            <a href="https://skateparkoftampa.com/"><img src="https://skateparkoftampa.com/spot/layout/header.png" class="img-responsive logo"/></a>
             </div>
                 <div class="col-xs-3">
 
@@ -292,24 +298,52 @@
                             <nav class="navbar navbar-default">
                     <div class="collapse navbar-collapse" id="nav">
                     <ul class="nav navbar-nav">
-                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/shoes_and_skateboards">Shop</a></li>
-                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/skateboard_companies">Brands</a></li>
-                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/closeout">Sale</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/shoes_and_skateboards">New Arrivals</a></li>
+                                <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/shoes">Shoes</a></li>
+                                <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/boards">Decks</a></li>
+                                <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/trucks">Trucks</a></li>
+                                <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/wheels">Wheels</a></li>
+                                <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/tshirts">Clothing</a></li>
+                                <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/pads_and_helmets">Safety</a></li>
+                                <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/accessories">Accessories</a></li>
+                                <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/skateboards">Completes</a></li>
+                            </ul>
+                      </li>                  
+                        <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/skateboard_companies">Brands</a></li>
+                        <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/closeout">Sale</a></li>
 
                         <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Events
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-            <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/events">Local Events</a></li>
-          <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/eventspot.aspx?I=176">TAMPA AM</a></li>
-          <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/a.aspx?ID=3262">DAMN AM</a></li>
-          <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/eventspot.aspx?I=171">TAMPA PRO</a></li>
-        </ul>
-      </li>
-                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/about">Info</a></li>
-                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/about#hours">Hours</a></li>
-                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/features">Features</a></li>
-                        <li><a href="http://<%=Request.ServerVariables["HTTP_HOST"] %>/search">Search</a></li>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Events
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/events">Local Events</a></li>
+                                <li><a href="https://boards4bros.org/upcoming-events" target="_blank">Boards for Bros</a></li>
+                                <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/eventspot.aspx?I=176">TAMPA AM</a></li>
+                                <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/damnam">DAMN AM</a></li>
+                                <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/a.aspx?ID=3625">SLS EVENTS</a></li>                 
+                               <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/eventspot.aspx?I=171">TAMPA PRO</a></li>
+                            </ul>
+                      </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Info
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/contact.aspx">Contact</a></li>
+                                <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/hours.aspx">Hours</a></li> 
+                                <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/shipping.aspx">Shipping/Returns</a></li>
+                                <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/rates.aspx">Rates</a></li> 
+                                <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/waiver/default.aspx">Fill out a waiver</a></li>
+                                <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/spot/a.aspx?ID=1295">Directions</a></li>
+                                <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/about">All Info</a></li> 
+                            </ul>
+                        </li>                      
+                        <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/camp">Skate Camp</a></li>
+                        <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/features">Features</a></li>
+                        <li><a href="https://<%=Request.ServerVariables["HTTP_HOST"] %>/search">Search</a></li>
                     </ul>
                 </div>
         </nav>
@@ -385,14 +419,14 @@
                 <p><strong>SIGN UP FOR OUR EMAIL BLASTS</strong></p>
         <div>
             <form style="background-color:transparent; border: solid 0px transparent;" class="footer-form" 
-                action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" 
-                onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=spotwhatsup', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+                action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" 
+                onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=spotwhatsup', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
                 <input type="text" style="font-size:18px; color:#b4b6b9; margin:0px; padding:0px; border: 1px solid #000;" id="footerEmail" name="email" value="" /> 
                 <input style="font-size:16px; width:40px; height:27px; font-weight:bold; color: #fff; background-color: #000; border: 1px solid #000;" type="submit" value="Go" />
                 <input type="hidden" value="spotwhatsup" name="uri"/><input type="hidden" name="loc" value="en_US"/>
             </form>
             <p>Win free stuff and be in the know first about <br />sales, discounts, upcoming contests, and <br />SPoT news.</p>
-            <img src="http://skateparkoftampa2.com/spot/imagescorey/wedeliver.png" class="footer-deliver img-responsive"/>
+            <img src="https://skateparkoftampa.com/spot/imageshome/wedeliver.png" class="footer-deliver img-responsive"/>
         </div>
             </div>
             <div class="col-md-4">
@@ -403,7 +437,7 @@
         <a href="https://www.facebook.com/spottampa"><i class="fa fa-facebook-f"></i></a>
         <a href="https://twitter.com/spottampa"><i class="fa fa-twitter"></i></a>
         <a href="https://www.youtube.com/spottampa"><i class="fa fa-youtube"></i></a>
-        <a href=""><i class="fa fa-snapchat-ghost"></i></a>
+       
                     </div>
         
 	</div>

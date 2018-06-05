@@ -28,6 +28,7 @@ public partial class cart : System.Web.UI.Page
     public bool blnEmptyCart = true;
     public string strWeight;
     public string strZip;
+    public string strState;
 
     public string strShippingOptions;
     public string strShippingErrorExplanation;
@@ -317,6 +318,7 @@ public partial class cart : System.Web.UI.Page
             strWeight = "1";
         }
         strZip = _db.ExecuteScalar("SPOT2012CustomerZipCode", DecryptString(Request.Cookies["WhoDat"].Value)).ToString();
+        strState = _db.ExecuteScalar("SPOT_2018CustomerState", DecryptString(Request.Cookies["WhoDat"].Value)).ToString();
         //now, the fucked up procedure of getting shipping rates from UPS:
         GetUPSRates();
         //here, I'm logging customers that made it to this page so later on, I can compare who made it here and didn't place an order
@@ -361,7 +363,7 @@ public partial class cart : System.Web.UI.Page
         {
 
             String strXMLToSend;
-            strXMLToSend = "<?xml version=\"1.0\"?><AccessRequest xml:lang=\"en-US\"><AccessLicenseNumber>FB7FC1F1759BCF82</AccessLicenseNumber><UserId>robmeronek</UserId><Password>laymeoff</Password></AccessRequest>";
+            strXMLToSend = "<?xml version=\"1.0\"?><AccessRequest xml:lang=\"en-US\"><AccessLicenseNumber>8D435E22518C8888</AccessLicenseNumber><UserId>spotshipping</UserId><Password>D0ntSt3al!</Password></AccessRequest>";
             strXMLToSend += "<?xml version=\"1.0\"?>" +
                 "<RatingServiceSelectionRequest xml:lang=\"en-US\">" +
                 "<Request><TransactionReference><CustomerContext>Rating and Service</CustomerContext>" +
@@ -504,7 +506,12 @@ public partial class cart : System.Web.UI.Page
                                 //old line had a dollar added to it like this:
                                 //strRadioOption += ((Double.Parse(r.Value) * 1.3) + 1).ToString("c");
                                 //changed for 2012 and took out the buck, we get ups discounts now and can lower shipping
-                                strRadioOption += ((Double.Parse(r.Value) * 1.3)).ToString("c");
+                                //2018 halved shipping price to compete with competition
+                                //2018 Removed * 1.3 or 30% add on
+                                strRadioOption += ((Double.Parse(r.Value) / 2)).ToString("c");
+
+                                //strRadioOption += ((Double.Parse(r.Value) * 1.3 / 2)).ToString("c");
+                                //strRadioOption += ((Double.Parse(r.Value))).ToString("c");
                             }
                             else
                             {
@@ -516,7 +523,10 @@ public partial class cart : System.Web.UI.Page
                                 else
                                 {
                                     //otherwise, just give them normal cost for non-ground shipping options
-                                    strRadioOption += ((Double.Parse(r.Value) * 1.3)).ToString("c");
+                                    //in 2018, removed 1.3 multiplier
+
+                                    //strRadioOption += ((Double.Parse(r.Value) * 1.3)).ToString("c");
+                                    strRadioOption += ((Double.Parse(r.Value))).ToString("c");
                                 }
                             }
 
@@ -530,13 +540,20 @@ public partial class cart : System.Web.UI.Page
                                 march 30, 2010: free shipping over $49 returned
                                  * june 4, 2012: free shipping over $59 adjusted
                                  */
-                                if (fltCartTotal > 59 && blnHasCouponDiscount == false)
+                                if (fltCartTotal > 59 && blnHasCouponDiscount == false && strState != "AK" && strState != "HI")
                                 {
                                     strRadioOption = "<input checked='true' type='radio' name = 'Rates' value =',UPS Ground,0'>FREE UPS Ground Shipping, $0.00</option><br />";
+                                    strRadioOption += "<input type='radio' name = 'Rates' value =',In Store Pickup,0'>In Store Pickup, $0.00</option><br />";
+                                }
+                                else if (strState == "HI" || strState == "AK")
+                                {
+                                    strRadioOption = "<input checked='true' type='radio' name = 'Rates' value =',UPS Ground,35'>UPS Ground Shipping, $35.00</option><br />";
+                                    strRadioOption += "<input type='radio' name = 'Rates' value =',In Store Pickup,0'>In Store Pickup, $0.00</option><br />";
                                 }
                                 else
                                 {
                                     strRadioOption = "<input checked='true' type='radio' name = 'Rates' value ='," + strRadioOption + ",'>" + strRadioOption + "</option><br />";
+                                    strRadioOption += "<input type='radio' name = 'Rates' value =',In Store Pickup,0'>In Store Pickup, $0.00</option><br />";
                                 }
 
 

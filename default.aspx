@@ -6,16 +6,25 @@
 <meta name="description" content="Skatepark of Tampa. A crusty little warehouse in Tampa, Florida with the best service and selection in skateboarding since 1993.">
 <meta itemprop="name" content="SPoT Skate Shop at Skatepark of Tampa">
 <meta itemprop="description" content="SPoT Skate Shop at Skatepark of Tampa: A crusty little skateboard hut in Tampa established in 1993. All stuff shown is in stock with immediate shipping and great service. Email us at info@skateparkoftampa.com anytime for a quick response.">
-<meta itemprop="image" content="http://www.skateparkoftampa2.com/spot/images3/circlecity450.jpg">
+<meta itemprop="image" content="https://skateparkoftampa.com/spot/images3/circlecity450.jpg">
 
 <meta property="og:title" content="SPoT Skate Shop at Skatepark of Tampa"/>
 <meta property="og:type" content="company"/>
-<meta property="og:image" content="http://www.skateparkoftampa2.com/spot/images3/circlecity450.jpg"/>
+<meta property="og:image" content="https://skateparkoftampa.com/spot/images3/circlecity450.jpg"/>
 <meta property="og:site_name" content="SPoT Skate Shop at Skatepark of Tampa"/>
 <meta property="og:description" content="Skatepark of Tampa: A crusty little warehouse in Tampa, Florida with the best service and selection in skateboarding since 1993."/>
 
-<!--WEBSITE TAKEOVER STYLESHEET FOR AM/PRO-->
-<link rel="stylesheet" href="http://www.skateparkoftampa2.com/tampapro/css/style-home.css">
+<!--WEBSITE TAKEOVER STYLESHEET FOR AM/PRO
+-->
+    <style>
+        #main {
+        margin-top: 0px;
+        }
+        #sidebar {
+        margin-top: 0px;
+        }
+
+    </style>
 
 <script language="javascript" type="text/javascript">
 
@@ -57,7 +66,7 @@
 
 <asp:Content ContentPlaceHolderID="cphHega" runat="server">
 
-				<!-- SLIDER EXAMPLE -->
+<!-- SLIDER EXAMPLE -->
 		<section class="home-slider">
 			<article class="content">
 			
@@ -65,27 +74,45 @@
 <div id="rev_slider_1078_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="classic4export" data-source="gallery" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
 <!-- START REVOLUTION SLIDER 5.4.1 auto mode -->
 	<div id="rev_slider_1078_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
-<ul>	<!-- SLIDE  -->
-	<li data-index="rs-3045" data-transition="slideleft" data-link="/tickets" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="../../assets/images/datcolor-100x50.jpg"  data-rotate="0"  data-fstransition="fade"  data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Tampa Pro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-		<!-- MAIN IMAGE -->
-		<img src="http://skateparkoftampa2.com/spot/imagescorey/pro18-slider-image.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-	</li>
-    <!-- SLIDE  -->
-	<li data-index="rs-3046" data-transition="slideleft" data-link="/company/1386/Mob_Grip" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="../../assets/images/datcolor-100x50.jpg"  data-rotate="0"   data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="MOB" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-		<!-- MAIN IMAGE -->
-		<img src="http://skateparkoftampa2.com/spot/imagescorey/mob-grip-slider.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-	</li>
-    <!-- SLIDE  -->
-	<li data-index="rs-3047" data-transition="slideleft" data-link="/company/1424/OJ_3" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="../../assets/images/datcolor-100x50.jpg"  data-rotate="0"   data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Wheels" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-		<!-- MAIN IMAGE -->
-		<img src="http://skateparkoftampa2.com/spot/imagescorey/oj-wheels-slider.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-	</li>
-    <!-- SLIDE  -->
-	<li data-index="rs-3048" data-transition="slideleft" data-link="/company/1092/Santa_Cruz" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="../../assets/images/datcolor-100x50.jpg"  data-rotate="0"   data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Santa Cruz" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-		<!-- MAIN IMAGE -->
-		<img src="http://skateparkoftampa2.com/spot/imagescorey/santa-cruz-skateboards-slider.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-	</li>
-</ul>
+<ul>	
+
+
+<!-- SLIDE  -->
+<li data-index="rs-3044" data-transition="slideleft" data-link="https://skateparkoftampa.com/nike" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="https://skateparkoftampa.com/spot/assets/images/datcolor-100x50.jpg"  data-rotate="0"  data-fsmasterspeed="1500" data-fstransition="fade" data-fsslotamount="7" data-saveperformance="off"  data-title="SB Ishod Dunk Decon" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		
+		<img src="https://skateparkoftampa.com/spot/images3/SB-ISHOD-DECON.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+</li>
+
+
+<!-- SLIDE  -->
+<li data-index="rs-3045" data-transition="slideleft" data-link="https://skateparkoftampa.com/company/1065/Skatepark_of_Tampa" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="https://skateparkoftampa.com/spot/assets/images/datcolor-100x50.jpg"  data-rotate="0"  data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Dirty South Skateboarding Capsule" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		
+		<img src="https://skateparkoftampa.com/spot/images3/DSS-SLIDER.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+</li>
+
+
+
+<!-- SLIDE  -->
+<li data-index="rs-3046" data-transition="slideleft" data-link="https://skateparkoftampa.com/camp" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="https://skateparkoftampa.com/spot/assets/images/datcolor-100x50.jpg"  data-rotate="0"  data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="SPoT Skate Camp" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		
+		<img src="https://skateparkoftampa.com/spot/images3/camp-main-button.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+</li>
+
+
+
+
+<!-- SLIDE  -->
+<li data-index="rs-3047" data-transition="slideleft" data-link="https://skateparkoftampa.com/company/1017/Vans" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="https://skateparkoftampa.com/spot/assets/images/datcolor-100x50.jpg"  data-rotate="0"  data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Vans Era Dill" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		
+		<img src="https://skateparkoftampa.com/spot/images3/VANS-ERA-DILL.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+</li>
+
+
+
+
+
+
+    </ul>
 <div class="tp-bannertimer" style="height: 7px; background-color: rgba(000, 000, 000, 0.25);"></div>	</div>
 </div><!-- END REVOLUTION SLIDER -->
 		<script type="text/javascript">
@@ -101,7 +128,7 @@
                         jsFileLocation: "revolution/js/",
                         sliderLayout: "auto",
                         dottedOverlay: "none",
-                        delay: 9000,
+                        delay: 5000,
                         navigation: {
                             keyboardNavigation: "off",
                             keyboard_direction: "horizontal",
@@ -153,7 +180,7 @@
                                 h_offset: 0,
                                 v_offset: 30,
                                 space: 5,
-                                
+
                             }
                         },
                         viewPort: {
@@ -164,8 +191,8 @@
                         },
                         responsiveLevels: [1240, 1024, 778, 480],
                         visibilityLevels: [1240, 1024, 778, 480],
-                        gridwidth: [1170, 1024, 778, 250],
-                        gridheight: [377, 377, 377, 160],
+                        gridwidth: [1170, 1024, 778, 600],
+                        gridheight: [377, 325, 250, 200],
                         lazyType: "none",
                         parallax: {
                             type: "mouse",
@@ -208,25 +235,25 @@
     <div class="row text-center home-cats">
         <div class="col-sm-3 home-cat">
             <a href="/shoes">
-                <img src="http://skateparkoftampa2.com/spot/imagescorey/shoes.jpg" class="img-responsive img-center"/>
+                <img src="https://skateparkoftampa.com/spot/imageshome/shoes.jpg" class="img-responsive img-center"/>
                 <span>SHOES</span>
             </a>
         </div>
         <div class="col-sm-3 home-cat">
             <a href="/boards">
-                <img src="http://skateparkoftampa2.com/spot/imagescorey/decks.jpg" class="img-responsive img-center"/>
+                <img src="https://skateparkoftampa.com/spot/imageshome/decks.jpg" class="img-responsive img-center"/>
                 <span>DECKS</span>
             </a>
         </div> 
         <div class="col-sm-3 home-cat">
             <a href="/trucks">
-                <img src="http://skateparkoftampa2.com/spot/imagescorey/trucks.jpg" class="img-responsive img-center"/>
+                <img src="https://skateparkoftampa.com/spot/imageshome/trucks.jpg" class="img-responsive img-center"/>
                 <span>TRUCKS</span>
             </a>
         </div> 
         <div class="col-sm-3 home-cat">
             <a href="/wheels">
-                <img src="http://skateparkoftampa2.com/spot/imagescorey/wheels.jpg" class="img-responsive img-center"/>
+                <img src="https://skateparkoftampa.com/spot/imageshome/wheels.jpg" class="img-responsive img-center"/>
                 <span>WHEELS</span>
             </a>
         </div> 
@@ -234,31 +261,31 @@
     <div class="row text-center home-cats">
     <div class="col-sm-3 home-cat">
         <a href="/tshirts">
-            <img src="http://skateparkoftampa2.com/spot/imagescorey/clothing.jpg" class="img-responsive img-center"/>
+            <img src="https://skateparkoftampa.com/spot/imageshome/clothing.jpg" class="img-responsive img-center"/>
             <span>CLOTHING</span>
         </a>
     </div>
     <div class="col-sm-3 home-cat">
         <a href="/pads_and_helmets">
-            <img src="http://skateparkoftampa2.com/spot/imagescorey/safety.jpg" class="img-responsive img-center"/>
+            <img src="https://skateparkoftampa.com/spot/imageshome/safety.jpg" class="img-responsive img-center"/>
             <span>SAFETY</span>
         </a>
     </div> 
     <div class="col-sm-3 home-cat">
         <a href="/accessories">
-            <img src="http://skateparkoftampa2.com/spot/imagescorey/accessories.jpg" class="img-responsive img-center"/>
+            <img src="https://skateparkoftampa.com/spot/imageshome/accessories.jpg" class="img-responsive img-center"/>
             <span>ACCESSORIES</span>
         </a>
     </div> 
     <div class="col-sm-3 home-cat">
         <a href="/skateboards">
-            <img src="http://skateparkoftampa2.com/spot/imagescorey/completes.jpg" class="img-responsive img-center"/>
+            <img src="https://skateparkoftampa.com/spot/imageshome/completes.jpg" class="img-responsive img-center"/>
             <span>COMPLETES</span>
         </a>
     </div> 
 </div>
      <!-- <div class="row text-center" style="height: 100px; margin-top: 37px;">
-        <h2><a href="http://skateparkoftampa2.com/shoes_and_skateboards" class="home viewmore">View More Categories</a></h2>
+        <h2><a href="https://skateparkoftampa.com/shoes_and_skateboards" class="home viewmore">View More Categories</a></h2>
             </div> -->
         </div>
     <div class="text-center social-home">
@@ -266,7 +293,6 @@
         <a href="https://www.facebook.com/spottampa"><i class="fa fa-facebook-f"></i></a>
         <a href="https://twitter.com/spottampa"><i class="fa fa-twitter"></i></a>
         <a href="https://www.youtube.com/spottampa"><i class="fa fa-youtube"></i></a>
-        <a href=""><i class="fa fa-snapchat-ghost"></i></a>
     </div>
     <div class="row">
         <div class="col-sm-12 shipping-banner text-center">
@@ -277,30 +303,23 @@
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphMain" Runat="Server">
-
+    <div class="home">
     <Products:NewArrivals runat="server" />
-
+        </div>
 </asp:Content>
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="cphSidebar" Runat="Server">
 
+
+
 <div class="BlogPost">
 
-<h2>SPoT Roast BMX Contest</h2>
+<h2>SUMMER HOURS BEGIN</h2>
 
-<div style="font-weight:bold;">
-
-<ul>
-
-<li><a href="http://skateparkoftampa.com/results/1506/SPoT_Roast_BMX_Contest_2017_-_9-12_Division_(Am)">12 & Under Results</a></li>
-<li><a href="http://skateparkoftampa.com/results/1507/SPoT_Roast_BMX_Contest_2017_-_13-15_Division_(Am)">13-15 Results</a></li>
-<li><a href="http://skateparkoftampa.com/results/1508/SPoT_Roast_BMX_Contest_2017_-_16-29_Division_(Am)">16-29 Results</a></li>
-<li><a href="http://skateparkoftampa.com/results/1509/SPoT_Roast_BMX_Contest_2017_-_30_and_Up_Division">30 & Up Results</a></li>
-<li><a href="http://skateparkoftampa.com/results/1523/SPoT_Roast_High_Air_2017">SPoT Roast High Air Results</a></li>
-<li><a href="http://skateparkoftampa.com/results/1516/SPoT_Roast_BMX_Contest_2017_-_Pro_Division">Pro Qualifier Results</a></li>
-<li><a href="http://skateparkoftampa.com/results/1524/SPoT_Roast_BMX_Contest_2017_-_Pro_Finals">Pro Finals Results</a></li>
-<li><a href="http://skateparkoftampa.com/spot/a.aspx?ID=3343">Contest Info</a></li>
+<ul style="font-weight:bold;">
+<li><a style="text-decoration:underline;" href="https://skateparkoftampa.com/spot/hours.aspx">June 4 - August 3</a></li>
+<li><a style="text-decoration:underline;" href="https://skateparkoftampa.com/spot/hours.aspx">More info</a></li>
 
 </ul>
 
@@ -308,63 +327,72 @@
 
 
 
-</div>
-
-
-
-
-
-
-<!--
-
 <div class="BlogPost">
 
-<h2>Harvest Jam</h2>
+<h2>SKATE CAMPS AVAILABLE</h2>
 
-<div style="font-weight:bold;">
-
-
-<ul>
-
-<li><a href="http://skateparkoftampa.com/spot/a.aspx?ID=3365">Contest Info</a></li>
-<li><a href="http://skateparkoftampa.com/results/1483/Harvest_Jam_8_&_Under_Division">8 & Under Results</a></li>
-<li><a href="http://skateparkoftampa.com/results/1482/Harvest_Jam_9-12_Division">9 to 12 Results</a></li>
-<li><a href="http://skateparkoftampa.com/results/1484/Harvest_Jam_13-15_Division">13 to 15 Results 	 </a></li>
-<li><a href="http://skateparkoftampa.com/results/1485/Harvest_Jam_16_&_Up_Division">16 & 29 Results</a></li>
-<li><a href="http://skateparkoftampa.com/results/1518/Harvest_Jam_30_&_Up">30 & Up Results</a></li>
-<li><a href="http://skateparkoftampa.com/results/1487/Harvest_Jam_Sponsored_Division">Sponsored Qualifiers Results</a></li>
-<li><a href="http://skateparkoftampa.com/results/1517/Harvest_Jam_Sponsored_Finals">Sponsored Finals Results</a></li>
-<li><a href="http://skateparkoftampa.com/results/1519/Harvest_Jam_Just_for_Showing_Up">Just for Showing Up</a></li>
-
+<ul style="font-weight:bold;">
+<li><a style="text-decoration:underline;" href="https://skateparkoftampa.com/camp">June 4 - August 3</a></li>
+<li><a style="text-decoration:underline;" href="https://skateparkoftampa.com/camp">Click here for more info</a></li>
 </ul>
 
-</div>
-
-
 
 </div>
 
-
--->
 
 
 <div class="BlogPost">
 
-<h2>Upcoming Contests 2018</h2>
+<h2>Best Foot Forward Results</h2>
 
-<div style="font-weight:bold;">
-
-<ul>
-
-<li><a href="http://skateparkoftampa.com/spot/eventspot.aspx?I=157">Tampa Am - November 9-12</a></li>
+<ul style="font-weight:bold;">
+<li><a style="text-decoration:underline;" href="https://skateparkoftampa.com/results/1606/Best_Foot_Forward_Qualifiers_Results">Qualifiers</a></li>
+<li><a style="text-decoration:underline;" href="https://skateparkoftampa.com/results/1607/Best_Foot_Forward_Finals_Results">Finals</a></li>
 
 </ul>
 
+
+
 </div>
 
 
 
+
+
+<div class="BlogPost">
+
+<h2>SLS World Tour Results</h2>
+
+<ul style="font-weight:bold;">
+<li><a style="text-decoration:underline;" href="https://skateparkoftampa.com/results/1604/Street_League_Pro_Open_London_Women%E2%80%99s_Finals_Results">Women's Finals</a></li>
+<li><a style="text-decoration:underline;" href="https://skateparkoftampa.com/results/1603/Street_League_Pro_Open_London_Qualifiers_Results">Men's Qualifiers</a></li>
+<li><a style="text-decoration:underline;" href="https://skateparkoftampa.com/results/1609/Street_League_Pro_Open_London_Finals_Results">Men's Finals</a></li>
+
+
+</ul>
+
+
+
 </div>
+
+
+
+
+<div class="BlogPost" style="border-bottom:1px solid #dddddd;">
+
+<h2>Upcoming Contests</h2>
+
+<ul style="font-weight:bold;">
+<li><a style="text-decoration:underline;" href="https://skateparkoftampa.com/spot/a.aspx?ID=3579">School's Out Jam - June 9</a></li>
+<li><a style="text-decoration:underline;" href="https://skateparkoftampa.com/spot/a.aspx?ID=3615">Nike SB Go Skate Day - June 21</a></li>
+<li><a style="text-decoration:underline;" href="https://skateparkoftampa.com/spot/eventspot.aspx?I=183">Damn Am Barcelona - June 22-24</a></li>
+</ul>
+
+
+
+</div>
+
+
 
 
 
@@ -382,8 +410,8 @@
 
 <ItemTemplate>
 
-<div class="BlogPost">
-    <h1><a href="/post/<%#Eval("WhatsNewID") %>/<%#Eval("Title").ToString().Replace("\"", "").Replace(" ", "_") %>"><%#Eval("Title") %></a></h1>
+<div class="BlogPost home-post">
+    <h1><%#Eval("Title") %></h1>
         
         <h3 class="PostInfo">Posted by <%#Eval("PostedBy") %>, <%#Eval("DateAdded", "{0:D}") %> <%#Eval("DateAdded", "{0:t}") %></h3>
         <div class="BlogText">
@@ -419,7 +447,7 @@ count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" 
                     </div>
                 <div class="col-xs-3">
                     <span class="counter-stumble">
-                        <script src="http://www.stumbleupon.com/hostedbadge.php?s=3&r=<%#Eval("ShareLink") %>"></script>
+                      <!--  <script src="stumbleupon.com/hostedbadge.php?s=3&r=<%#Eval("ShareLink") %>"></script>-->
                     </span>
                     </div>
                 
@@ -440,7 +468,7 @@ count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" 
 
 
 <!--<div class="BlogPost">
-    <h2 style="text-transform:none;"><a href="http://instagram.com/spottampa">FOLLOW US ON INSTAGRAM @SPoTTAMPA</a></h2>
+    <h2 style="text-transform:none;"><a href="https://instagram.com/spottampa">FOLLOW US ON INSTAGRAM @SPoTTAMPA</a></h2>
 
     <div id="InstagramBlock"></div>
     <script>
@@ -477,7 +505,7 @@ count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" 
         
 </div>
 
-    <div id="loadmoreajaxloader" class="BlogPost" style="clear:both; text-align:center; display:none;"><img src="ajaxloadingmore.gif" /> Loading More... <img src="ajaxloadingmore.gif" /></div>
+    <div id="loadmoreajaxloader" class="BlogPost" style="clear:both; text-align:center; display:none;"><img src="https://skateparkoftampa.com/ajaxloadingmore.gif" /> Loading More... <img src="https://skateparkoftampa.com/ajaxloadingmore.gif" /></div>
 
     
 <div class="BlogPost" id="PagePostNoScript">
@@ -506,21 +534,21 @@ count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" 
 <!-- <Products:Categories runat="server" /> -->
 
 
-
+<!--
 
 
 <div class="BlogPost">
-<div class="Ollie"><a href="http://skateparkoftampa.com/spot/dpt.aspx?I=290" >
+<div class="Ollie"><a href="https://skateparkoftampa.com/spot/dpt.aspx?I=291" >
 
-<img src="http://www.skateparkoftampa.com/spot/images3/DPT-OJWheels.jpg" /></a>
+<img src="https://skateparkoftampa.com/spot/images3/DPT_Lowcard.jpg" /></a>
 <br />
 <h2>Win This Digital Product Toss!</h2>
-<a href="http://skateparkoftampa.com/spot/dpt.aspx?I=290">OJ Wheels + Tampa Am Weekend Passes</a>
+<a href="https://skateparkoftampa.com/spot/dpt.aspx?I=291">Lowcard Hats & Arcade Belt</a>
 </div> 
 </div>
 
 
-
+-->
 
 <!-- 
     removed per chris request 2-22-2018
@@ -528,25 +556,25 @@ count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" 
 <div class="Ollie">
 <h2 style="text-transform:none;">STALK US ON SOCIAL MEDIA @SPoTTAMPA</h2>
 </br>
-<a target="_blank" href="http://facebook.com/spottampa">
-<img src="http://skateparkoftampa.com/spot/images3/FACEBOOK-ICON.png" />
+<a target="_blank" href="https://facebook.com/spottampa">
+<img src="https://skateparkoftampa.com/spot/images3/FACEBOOK-ICON.png" />
 </a>
-<a target="_blank" href="http://twitter.com/spottampa">
-<img src="http://skateparkoftampa.com/spot/images3/TWIT-ICON.png" />
+<a target="_blank" href="https://twitter.com/spottampa">
+<img src="https://skateparkoftampa.com/spot/images3/TWIT-ICON.png" />
 </a>
-<a target="_blank" href="http://instagram.com/spottampa">
-<img src="http://skateparkoftampa.com/spot/images3/INSTA-ICON.png" />
+<a target="_blank" href="https://instagram.com/spottampa">
+<img src="https://skateparkoftampa.com/spot/images3/INSTA-ICON.png" />
 </a>
-<a target="_blank" href="http://youtube.com/spottampa">
-<img src="http://skateparkoftampa.com/spot/images3/YOUTUBE-ICON.png" />
+<a target="_blank" href="https://youtube.com/spottampa">
+<img src="https://skateparkoftampa.com/spot/images3/YOUTUBE-ICON.png" />
 </a>
 
-<img src="http://skateparkoftampa.com/spot/images3/SNAP-ICON.png" />
+<img src="https://skateparkoftampa.com/spot/images3/SNAP-ICON.png" />
 
 <div style="clear:both;"></div>
 </br>
 
-<a href="http://skateparkoftampa.com/subscribe">Want more?
+<a href="https://skateparkoftampa.com/subscribe">Want more?
 </br>
 Subscribe to our Mailing Lists</a>
 </div>

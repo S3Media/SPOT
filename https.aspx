@@ -33,23 +33,23 @@
         <asp:Label runat="server" ID="lblMessage" />
     </div>
 <asp:Panel runat="server" ID="pnlPayment">
-    <div class="BlogPost">     
+    <div class="BlogPost finalpay">     
         <h1>Credit Card Billing Address</h1>
                     <div class="NotesAndTips">Note: this has to mach what's on file at the credit card company. Change it here if necessary. We will still ship to your shipping address.</div>
                     <div>
-                        <h5>First Name:</h5> <asp:TextBox runat="server" style="width:100px;" id="txtFirstName" />
+                        <h5>First Name:</h5> <asp:TextBox runat="server"  id="txtFirstName" />
                     </div>
                     <div>
-                        <h5>Last Name: </h5> <asp:TextBox runat="server" style="width:100px;" id="txtLastName" />
+                        <h5>Last Name: </h5> <asp:TextBox runat="server" id="txtLastName" />
                     </div>
                     <div>
-                       <h5> Billing Street Address: </h5> <asp:TextBox runat="server" style="width:250px;" id="txtAddress" />
+                       <h5> Billing Street Address: </h5> <asp:TextBox runat="server" id="txtAddress" />
                     </div>
                     <div>
-                       <h5> Company/ Apt#: </h5><asp:TextBox runat="server" style="width:250px;" id="txtCompany" />
+                       <h5> Company/ Apt#: </h5><asp:TextBox runat="server"  id="txtCompany" />
                     </div>
                     <div>
-                       <h5> Billing City: </h5> <asp:TextBox runat="server" ID="txtCity" style="width:80px;" />
+                       <h5> Billing City: </h5> <asp:TextBox runat="server" ID="txtCity"  />
                     </div>
                     <div>
                    <h5> State: </h5> <asp:DropDownList runat="server" ID="txtState">
@@ -111,11 +111,11 @@
                     </div>
                     
                     <div>
-                      <h5>  Billing Zip Code </h5> <asp:TextBox runat="server" ID="txtZip" style="width:50px;" />
+                      <h5>  Billing Zip Code </h5> <asp:TextBox runat="server" ID="txtZip"  />
                     </div>
 
                     <div>
-                       <h5> Phone:</h5><asp:TextBox runat="server" ID="txtPhone" style="width:100px;" />
+                       <h5> Phone:</h5><asp:TextBox runat="server" ID="txtPhone" />
                     </div>
 
                                                     <asp:RequiredFieldValidator CssClass="ErrorMessages" ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtFirstName" ErrorMessage="Please enter First Name." />
@@ -134,10 +134,10 @@
 			                    <input type="radio" style="margin:0px 0px 0px 10px;" name="cardtype" /> AMEX
 			                    <input type="radio" style="margin:0px 0px 0px 10px;" name="cardtype" /> Discover
                                 </div>
-                                    <img src="http://skateparkoftampa.com/spot/images5/cards.jpg" />
+                                    <img src="https://skateparkoftampa.com/spot/images5/cards.jpg" />
    
 				                <h5>Card Number</h5>
-				                <asp:TextBox Runat="server" ID="x_Card_Num" style="width:160px"/>
+				                <asp:TextBox Runat="server" ID="x_Card_Num" />
                                  <h5> Expire Month: </h5>
 					                <asp:DropDownList runat="server" id="x_Exp_Date_MONTHPORTION">
 						                <asp:ListItem value="01">01 - Jan</asp:ListItem>
@@ -157,8 +157,11 @@
 					                <asp:DropDownList runat="server" id="x_Exp_Date_YEARPORTION" />
 
 				                <h5>Card Security Code <a href="cvv2numberdisplay.gif" id="CVV2">&#128712;</a></h5>
-    				                <asp:TextBox style="width:50px" runat="server" id="x_card_code"/> 
-                                    
+    				                <asp:TextBox  runat="server" id="x_card_code"/> 
+                                  <h1>Optional Notes</h1>
+                            <h5>You can add a note about your order here:</h5>
+                            <br /><asp:TextBox runat="server" ID="txtOrderNote" MaxLength="200" />
+                            <asp:Label runat="server" ID="lblBillingNote" style="color:Red;" />  
     
                             <asp:Button ID="Button1" runat="server" Text="Submit Order" 
                             CssClass="BuyButton" style="margin-top: 20px; padding:10px; background-color: #b80b10; 
@@ -190,10 +193,7 @@ Logo type is  ("NETSB")
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="x_card_code" ErrorMessage="Please enter the three digit security code from the back of your card. For American Express, it's the four digits on the front of the card." CssClass="ErrorMessages" />
                             </div>
     <div class="BlogPost">
-                            <h1>Optional Notes</h1>
-                            <h5>You can add a note about your order here:</h5>
-                            <br /><asp:TextBox runat="server" ID="txtOrderNote" MaxLength="200" />
-                            <asp:Label runat="server" ID="lblBillingNote" style="color:Red;" />
+                            
                             
                             <h1>Security Notes</h1>
                             <ul style="font-size:.8em; margin: 0px 5px 0px 5px;">

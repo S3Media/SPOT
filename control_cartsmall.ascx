@@ -6,13 +6,14 @@
     <asp:Repeater runat="server" ID="rptCartRegular">
 	    <HeaderTemplate><table width="100%"></HeaderTemplate>
 	    <ItemTemplate>
-		    <tr>
-			    <td>
 							
-				    <div>
+				    <div class="row">
+                        <div class="col-sm-6">
 					    <a href="p.aspx?ID=<%#Eval("ProductID") %>">
 					    <img src="<%#Eval("Photo") %>" style="height:auto; width:100%;" />
 					    </a>
+                            </div>
+                        <div class="col-sm-6">
 					    <div class="cart-id-number">Item #<%#Eval("InventoryID") %> </div>
 					    <div class="checkout-cart-title"><%#Eval("Manufacturer")%> <%#Eval("ShortDescr") %>
 					    </div>
@@ -25,9 +26,9 @@
 						    <a href="cart.aspx?InventoryID=<%#Eval("InventoryID") %>&Quantity=-1"">Remove One</a>
 						    <a href="cart.aspx?InventoryID=<%#Eval("InventoryID") %>&Quantity=-1000"">Delete</a>
 					    </div>
+                            </div>
 				    </div>
-			    </td>
-		    </tr>
+
 	    </ItemTemplate>
 	    <FooterTemplate>
 	    </table>
@@ -37,15 +38,17 @@
     <asp:Repeater runat="server" ID="rptCartDiscount">
 	    <HeaderTemplate>
 
-	    <table width="100%"></HeaderTemplate>
+	    </HeaderTemplate>
 	    <ItemTemplate>
-		    <tr>
-			    <td>
+
 							
-				    <div>
+				    <div class="row">
+                        <div class="col-sm-6">
 					    <a href="p.aspx?ID=<%#Eval("ProductID") %>">
 					    <img src="<%#Eval("Photo") %>" style="height:auto; width:100%;" />
 					    </a>
+                            </div>
+                        <div class="col-sm-6">
 					    <div class="cart-id-number">Item #<%#Eval("InventoryID") %> </div>
 					    <div class="checkout-cart-title"><%#Eval("Manufacturer")%> <%#Eval("ShortDescr") %>
 					    </div>
@@ -63,13 +66,12 @@
 						    <a href="cart.aspx?InventoryID=<%#Eval("InventoryID") %>&Quantity=-1000"">Delete</a>
 					    </div>
 				    </div>
+                        </div>
 
-			    </td>
-		    </tr>
 	    </ItemTemplate>
 
 	    <FooterTemplate>
-	    </table>
+
 	    </FooterTemplate>
     </asp:Repeater>
 
@@ -86,7 +88,7 @@
     Total Items: <%# Eval("TotalItems")%><br />
     Your Total Price: <%# Eval("LineTotalTotal", "{0:c}")%>
 
-    <%# Eval("FreeShipping")%>
+    
 
 
     </div>

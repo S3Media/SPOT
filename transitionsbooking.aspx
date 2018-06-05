@@ -42,7 +42,7 @@
 
 
 <ul style="list-style-type: none;margin: 0;padding: 0;overflow: hidden;display:block;text-align:center;">
-<li style="display:inline;padding-left:0px;font-weight:bold;"><a href="/spot/transitionssite.aspx">CALENDAR</a></li>
+
 <li style="display:inline;padding-left:15px;font-weight:bold;"><a href="/spot/transitionscontact.aspx">INFO</a></li>
 <li style="display:inline;padding-left:15px;font-weight:bold;"><a href="/spot/transitionsgallery.aspx">GALLERY</a></li>
 <li style="display:inline;padding-left:15px;font-weight:bold;color:grey;">CONTACT</li>

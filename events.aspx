@@ -14,6 +14,20 @@
 <meta property="og:description" content="Skatepark of Tampa local, national, and worldwide skateboarding events. Skatepark of Tampa: A crusty little warehouse in Tampa, Florida with the best service and selection in skateboarding since 1993."/>
 
 
+<script language="javascript" type="text/javascript">
+
+    $(document).ready(function () {
+        //alert("shit");
+        $("#sidebar").css("display", "none");
+        $("#mobilesidebar").css("display", "none");
+        $("#main").css("width", "98%");
+        $("#mobilemain").css("width", "98%");
+        
+    });
+</script>
+
+
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphMain" Runat="Server">
 
@@ -23,57 +37,44 @@
 <h1>Skatepark of Tampa Events / Local</h1>
 
 
+<div class="BlogPost event-pg">
+            <h2>
+                Summer Hours Begin
+                :
+                June 4 - August 3, 2018
+            </h2>
+            <div style="margin-left: 10px;">
+                School's out...come skate!
+<br><br>
+<a href="https://skateparkoftampa.com/spot/hours.aspx">
+<div class="Button">More Info</div></a>
+            </div>
+        </div>
+
+
+<div class="BlogPost event-pg">
+            <h2>
+                Skate Camps Available
+                :
+                June 4 - August 3, 2018
+            </h2>
+            <div style="margin-left: 10px;">
+                Come spend your Summer learning how to skate instead of making birdhouses
+<br><br>
+<a href="https://skateparkoftampa.com/camp">
+<div class="Button">Details & Registration</div></a>
+            </div>
+        </div>
 
 
 
-<div class="BlogPost">
-
-<h2>SPoT Regular Hours - August 10 - November 20</h2>
-<a style="font-weight:bold;" href="http://spottampa.com/about">Details &#8594</a>
-</div>
-
-
-<!--
-
-
-<div class="BlogPost">
-
-<h2>SPoT Summer Hours - May 29 - August 9</h2>
-
-<ul>
-<li>
-            Monday - Thursday: 8am - 10pm
-            <ul>
-                <li>Wednesday: BMX welcome all day</li>
-            </ul>
-        </li>
-        <li>
-            Friday: 8am - 11pm
-        </li>
-        <li>Saturday: 10am - 11pm</li>
-        <li>Sunday: Two Sessions
-            <ul>
-                <li>First Session: 9am - 12pm / 12 + under only</li>
-                <li>Second Session: 12pm - 10pm</li>
-                <li>BMX welcome from 7pm to 10pm / $6</li>
-                <li>Skateboard lessons available - 9am</li>
-            </ul>
-        </li>
-</ul>
-
-<h3>*Hours are subject to change due to holidays and special events</h3>
-
-</div>
-
--->
 
 <asp:Repeater runat="server" ID="rptEventsCurrentYear">
+
     <ItemTemplate>
 
 
-
-
-        <div class="BlogPost">
+        <div class="BlogPost event-pg">
             <h2>
                 <%# DataBinder.Eval(Container.DataItem, "Title")%>
                 :
@@ -92,7 +93,7 @@
         <%=strNextYearTitle %>
     </HeaderTemplate>
     <ItemTemplate>
-        <div class="BlogPost">
+        <div class="BlogPost event-pg">
             <h2>
                 <%# DataBinder.Eval(Container.DataItem, "Title")%>
                 :
@@ -110,9 +111,10 @@
 
 </asp:Content>
 
+
 <asp:Content ID="Content3" ContentPlaceHolderID="cphSidebar" Runat="Server">
 
-<h1>DAMN AM / SPoT EVENTS</h1>
+<h1 style="text-transform:none;">DAMN AM / SPoT EVENTS</h1>
 <div class="NotesAndTips">
 Skatepark of Tampa / Damn Am events are run by the staff from SPoT Skate Shop and Skatepark of Tampa. We run skateboarding events not just at SPoT, 
 but all around the world, delivering the Tampa Am and Pro vibe at each stop.
@@ -121,12 +123,15 @@ but all around the world, delivering the Tampa Am and Pro vibe at each stop.
 <div class="BlogPost">
 
 <h2>About Damn Am</h2>
-The Damn Am is a global amateur skateboarding contest series. Established in 2001 by Skatepark of Tampa (SPoT), the series built on the success of Tampa Am by taking that experience on the road. Over 5000 skaters have participated in Damn Am events, including most of today’s top professionals. The Damn Am series serves as the only qualifier to both Tampa Am and the SLS Pro Open. In its 16-year history it has become the number one amateur skateboarding contest series in the world. Want to know more about the series and what it takes to enter? <a href="http://skateparkoftampa.com/spot/a.aspx?ID=3262">Click here</a> 
+The Damn Am is a global amateur skateboarding contest series. Established in 2001 by Skatepark of Tampa (SPoT), the series built on the success of Tampa Am by taking that experience on the road. Over 5000 skaters have participated in Damn Am events, including most of today’s top professionals. The Damn Am series serves as the only qualifier to both Tampa Am and the SLS Pro Open. In its 17-year history it has become the number one amateur skateboarding contest series in the world. Want to know more about the series and what it takes to enter? <a href="http://skateparkoftampa.com/spot/a.aspx?ID=3262">Click here</a> 
 
 
 </div>
 
 <asp:Repeater runat="server" ID="rptUpcoming">
+
+
+
 <ItemTemplate>
 
 
@@ -137,7 +142,7 @@ The Damn Am is a global amateur skateboarding contest series. Established in 200
 
 
 
-        <div class="BlogPost">
+        <div class="BlogPost event-pg">
             <h2>
             <a href="eventspot.aspx?I=<%# DataBinder.Eval(Container.DataItem, "EventID")%>"><%# DataBinder.Eval(Container.DataItem, "Title")%></a>
             </h2>
@@ -166,7 +171,7 @@ The Damn Am is a global amateur skateboarding contest series. Established in 200
         <%=strNextYearTitle %>
     </HeaderTemplate>
 <ItemTemplate>
-        <div class="BlogPost">
+        <div class="BlogPost event-pg">
             <h2>
             <a href="eventspot.aspx?I=<%# DataBinder.Eval(Container.DataItem, "EventID")%>"><%# DataBinder.Eval(Container.DataItem, "Title")%></a>
             </h2>
@@ -191,6 +196,7 @@ The Damn Am is a global amateur skateboarding contest series. Established in 200
 [<a href="events_pastspotlight.aspx">View All Past Skatepark of Tampa / Damn Am Events</a>]
 </FooterTemplate>
 </asp:Repeater>
+
 
 </asp:Content>
 

@@ -6,7 +6,7 @@
 <meta name="description" content="<%=strTitle %>. All stuff shown is in stock with immediate shipping and great service. Email us at info@skateparkoftampa.com anytime for a quick response. Skatepark of Tampa: A crusty little warehouse in Tampa, Florida with the best service and selection in skateboarding since 1993.">
 <meta itemprop="name" content="<%=strTitle %> at SPoT Skate Shop">
 <meta itemprop="description" content="<%=strTitle %>. All stuff shown is in stock with immediate shipping and great service. Email us at info@skateparkoftampa.com anytime for a quick response.">
-<meta itemprop="image" content="http://www.skateparkoftampa.com/spot/images3/circlecity450.jpg">
+<meta itemprop="image" content="https://skateparkoftampa.com/spot/images3/circlecity450.jpg">
 
 <meta property="og:title" content="<%=strTitle %> at SPoT Skate Shop"/>
 <meta property="og:site_name" content="SPoT Skate Shop at Skatepark of Tampa <%=strCategory %>"/>
@@ -100,7 +100,7 @@
                 
                     <a href="p.aspx?ID=<%#Eval("ProductID") %>&CID=<%#Eval("ColorID") %>"><img class="img-responsive img-center"
                         title="<%#Eval("Name") %> <%#Eval("Color") %> <%#Eval("ShortDescr") %>" width="190" height="190" 
-                        src="http://www.skateparkoftampa.com/spot/productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" /></a>
+                        src="https://skateparkoftampa.com/spot/productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" /></a>
                 
                     <div class="ProductBlockText"><%#Eval("Name")%> 
                         <%#Eval("ShortDescr")%> <%#Eval("Color")%> <%#Eval("CurrentPrice", "{0:c}")%>
@@ -193,7 +193,7 @@
                 <a title="<%#Eval("Name").ToString().Replace("\"", "")%> size <%=strSize %> <%=strCategory %> in Stock Now" 
                 href="cz.aspx?ID=<%=Request.QueryString["ID"] %>&SID=<%=Request.QueryString["SID"] %>&M=<%# Eval("ManufacturerID")%>">
                 <img height="60" width="60" class="img-responsive img-center"
-                src="http://www.skateparkoftampa.com/spot/productimages/<%# Eval("ManufacturerID")%>mfgrthumb.jpg" 
+                src="https://skateparkoftampa.com/spot/productimages/<%# Eval("ManufacturerID")%>mfgrthumb.jpg" 
                 title="<%#Eval("Name").ToString().Replace("\"", "")%> size <%=strSize %> <%=strCategory %> in Stock Now" />
                 </a>
             </div>

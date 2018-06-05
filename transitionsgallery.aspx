@@ -45,7 +45,7 @@
 
 
 <ul style="list-style-type: none;margin: 0;padding: 0;overflow: hidden;display:block;text-align:center;">
-<li style="display:inline;padding-left:0px;font-weight:bold;"><a href="/spot/transitionssite.aspx">CALENDAR</a></li>
+
 <li style="display:inline;padding-left:15px;font-weight:bold;color:grey;"><a href="/spot/transitionscontact.aspx">INFO</a>
 <li style="display:inline;padding-left:15px;font-weight:bold;color:grey;">GALLERY</a></li>
 <li style="display:inline;padding-left:15px;font-weight:bold;"><a href="/spot/transitionsbooking.aspx">CONTACT</a></li>

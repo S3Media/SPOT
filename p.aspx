@@ -5,11 +5,11 @@
 <meta name="description" content="<%=strTitle %>: <%=strLongDescriptionMeta %> All stuff shown is in stock with immediate shipping and great service. Email us at info@skateparkoftampa.com anytime for a quick response. Skatepark of Tampa: A crusty little warehouse in Tampa, Florida with the best service and selection in skateboarding since 1993.">
 <meta itemprop="name" content="<%=strTitle %> in stock at SPoT Skate Shop">
 <meta itemprop="description" content="<%=strLongDescriptionMeta %> All stuff shown is in stock with immediate shipping and great service. Email us at info@skateparkoftampa.com anytime for a quick response.">
-<meta itemprop="image" content="http://skateparkoftampa.com/spot/<%=strImageURL %>">
+<meta itemprop="image" content="https://skateparkoftampa.com/spot/<%=strImageURL %>">
 
 <meta property="og:title" content="<%=strTitle %> in stock at SPoT Skate Shop"/>
 <meta property="og:type" content="product"/>
-<meta property="og:image" content="http://skateparkoftampa.com/spot/<%=strImageURL %>"/>
+<meta property="og:image" content="https://skateparkoftampa.com/spot/<%=strImageURL %>"/>
 <meta property="og:site_name" content="SPoT Skate Shop at Skatepark of Tampa"/>
 <meta property="og:description" content="<%=strTitle %>: <%=strLongDescriptionMeta %> All stuff shown is in stock with immediate shipping and great service. Email us at info@skateparkoftampa.com anytime for a quick response. Skatepark of Tampa: A crusty little warehouse in Tampa, Florida with the best service and selection in skateboarding since 1993."/>
 
@@ -22,6 +22,9 @@
     $(document).ready(function () {
 
         //$("#" + getParameterByName("CID"))
+        var strColor = "<%=Request.QueryString["CID"] %>";
+
+        $("#ColorID" + strColor).appendTo("#TopDiv");
 
         $("#ColorID" + getParameterByName("CID")).appendTo("#TopDiv");
 
@@ -68,17 +71,17 @@
                         //alert(strReply[0]);
                         //in some browsers, somehow strSizeDescription is null, causing an error, so leave it out if so
                         if (strSizeDescription == null) {
-                            $("#" + divToShow).html(strReply[0] + "<br />Items in your cart: " + strReply[1] + ". Total: " + strReply[2] + "<br /><a href=\"cart.aspx\">View Your Cart</a> or <a href=\"checkout.aspx\">Checkout Now</a>");
+                            $("#" + divToShow).html(strReply[0] + "<br />Items in your cart: " + strReply[1] + ". <br />Total: " + strReply[2] + "<br /><a class='white' href=\"cart.aspx\"><div class='SizeSelectionGridItemNonNumeric'>View Your Cart</div></a> <a class='white' href=\"checkout.aspx\"><div class='SizeSelectionGridItemNonNumeric'>Checkout Now</div></a>");
                             
                         }
                         else {
                             if (strSizeDescription == "ADD TO CART") {
-                                $("#" + divToShow).html(strReply[0] + "<br />Items in your cart: " + strReply[1] + ". Total: " + strReply[2] + "<br /><a href=\"cart.aspx\">View Your Cart</a> or <a href=\"checkout.aspx\">Checkout Now</a>");
+                                $("#" + divToShow).html(strReply[0] + "<br />Items in your cart: " + strReply[1] + ". <br />Total: " + strReply[2] + "<br /><a class='white' href=\"cart.aspx\"><div class='SizeSelectionGridItemNonNumeric'>View Your Cart</div></a> <a class='white' href=\"checkout.aspx\"><div class='SizeSelectionGridItemNonNumeric'>Checkout Now</div></a>");
                                 
                             }
                             else {
                                 
-                                $("#" + divToShow).html("Size " + strSizeDescription + ": " + strReply[0] + "<br />Items in your cart: " + strReply[1] + ". Total: " + strReply[2] + "<br /><a href=\"cart.aspx\">View Your Cart</a> or <a href=\"checkout.aspx\">Checkout Now</a>");
+                                $("#" + divToShow).html("Size " + strSizeDescription + ": " + strReply[0] + "<br />Items in your cart: " + strReply[1] + ". <br />Total: " + strReply[2] + "<br /><a class='white' href=\"cart.aspx\"><div class='SizeSelectionGridItemNonNumeric'>View Your Cart</div></a><a class='white' href=\"checkout.aspx\"><div class='SizeSelectionGridItemNonNumeric'>Checkout Now</div></a>");
                             }
                         }
 
@@ -141,7 +144,7 @@
             var strColorID = this.id.substring(this.id.indexOf("_") + 8, this.id.length);
             //alert(strColorwayPhotoID);
             //alert(strColorID);
-            $("#Main" + strColorID).attr("src", "http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>ProductColorwayImages/" + strColorwayPhotoID + ".jpg");
+            $("#Main" + strColorID).attr("src", "https://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>ProductColorwayImages/" + strColorwayPhotoID + ".jpg");
                 
         });
 
@@ -152,7 +155,7 @@
             var strColorID = this.id.substring(4, this.id.length);
             //alert(strColorwayPhotoID);
             //alert(strColorID);
-            $("#" + this.id).attr("src", "http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/" + strColorID + "_" + strProductID + ".jpg");
+            $("#" + this.id).attr("src", "https://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/" + strColorID + "_" + strProductID + ".jpg");
                 
         });
 
@@ -172,17 +175,9 @@
 
 <div class="BlogPost">
     <div class="row">
-    <div class="col-md-8"><h1 class="product-title"><%=strTitle %></h1></div>
+    <div class="col-md-12"><h1 class="product-title"><%=strTitle %></h1></div>
 
-<div class="col-md-4" style="padding-top:28px; text-align: center;">
-                
-        <span class="counter-fb-like">
-            <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fskateparkoftampa.com%2Fspot%2Fp.aspx%3FID%3D<%=Request.QueryString["ID"] %>&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
-        </span>
-        <span class="counter-twitter">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://skateparkoftampa.com/spot/p.aspx?ID=<%=Request.QueryString["ID"] %>" data-count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-        </span>
-</div>
+
         </div>
 <%=strLongDescription %>
 
@@ -201,7 +196,7 @@
                     <div class="row">
                     <div class="col-md-8">
                         <img class="img-responsive img-center" id="Main<%#Eval("ColorID") %>" 
-                        src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%#Eval("ColorID") %>_<%=Request.QueryString["ID"] %>.jpg" />
+                        src="https://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%#Eval("ColorID") %>_<%=Request.QueryString["ID"] %>.jpg" />
                     </div>
                     <div class="col-md-4">
                         <div style="font-weight:bold; text-align:center; font-size: 1.2em;"><%#Eval("CurrentPrice", "{0:c}") %></div> <%#Eval("SaleNote") %>
@@ -344,7 +339,7 @@ SelectCommandType="StoredProcedure" ConnectionString="<%$ ConnectionStrings:CS %
 <ItemTemplate>
 <div class="BlogPost" style="text-align:center;">
     <h2><%# Eval("Description")%></h2>
-    <img src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/<%# Eval("AlternateImageID")%>.jpg" />
+    <img src="https://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/<%# Eval("AlternateImageID")%>.jpg" />
 </div>
 </ItemTemplate>
 </asp:Repeater>
@@ -358,7 +353,7 @@ SelectCommandType="StoredProcedure" ConnectionString="<%$ ConnectionStrings:CS %
     This week, AlBow aka MP3J broke down the differences in types of skateboards.  Some are for tricks, some are for cruising.
     Get a quick lesson here:
     <div class="Ollie">
-        <iframe src="http://player.vimeo.com/video/57398785?title=0&amp;byline=0&amp;portrait=0&amp;color=cc0000" width="800" height="450" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        <iframe src="https://player.vimeo.com/video/57398785?title=0&amp;byline=0&amp;portrait=0&amp;color=cc0000" width="800" height="450" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     </div>
 </div>
 </asp:Panel>-->
@@ -377,14 +372,14 @@ SelectCommandType="StoredProcedure" ConnectionString="<%$ ConnectionStrings:CS %
 <asp:Repeater runat="server" ID="rptRelated" DataSourceID="sdsRelated">
 <HeaderTemplate>
     
-    <div class="BlogPost">
+    <div class="BlogPost related-products">
     <h1>Related Products</h1>
 </HeaderTemplate>
 <ItemTemplate>
     <div class="col-xs-6 col-md-3 NewArrivalSmallBlock">
     <a 
         href="/product/<%#Eval("RelatedProductID") %>/<%#Eval("ShortDescr").ToString().Replace("\"", "").Replace(" ", "_").Replace(":", "") %>">
-        <img class="img-responsive img-center" src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%# Eval("ColorID")%>_<%# Eval("RelatedProductID")%>thumb.jpg" />
+        <img class="img-responsive img-center" src="https://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%# Eval("ColorID")%>_<%# Eval("RelatedProductID")%>thumb.jpg" />
     </a><br />
     <a 
         href="/product/<%#Eval("RelatedProductID") %>/<%#Eval("ShortDescr").ToString().Replace("\"", "").Replace(" ", "_").Replace(":", "") %>">
@@ -402,12 +397,12 @@ SelectCommandType="StoredProcedure" ConnectionString="<%$ ConnectionStrings:CS %
 <div class="BlogPost">
 
 <form 
-action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" 
-onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=SPoTNewShoes&loc=en_US', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" 
+onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=SPoTNewShoes&loc=en_US', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
 <h1>Get An Email Every Time We Add New Shoes</h1>
 Enter your email: <input type="text" style="width:200px; font-size:18px; font-weight:bold;" name="email"/> <input type="hidden" value="spotnewshoes" name="uri"/><input type="hidden" name="loc" value="en_US"/><input style="margin-top:2px; font-size:18px; font-weight:bold;" type="submit" value="Subscribe" />
 
-<a href="https://feedburner.google.com/fb/a/mailverify?uri=SPoTNewShoes&amp;loc=en_US"><img src="http://feeds.feedburner.com/~fc/SPoTNewShoes?bg=FF3300&amp;fg=FFFFFF&amp;anim=0" height="26" width="88" style="border:0;" alt="" /></a>
+<a href="https://feedburner.google.com/fb/a/mailverify?uri=SPoTNewShoes&amp;loc=en_US"><img src="https://feeds.feedburner.com/~fc/SPoTNewShoes?bg=FF3300&amp;fg=FFFFFF&amp;anim=0" height="26" width="88" style="border:0;" alt="" /></a>
 <div>
     Most of you are here to check out new shoes.  Who isn't a fan of new kicks?  We will send you a summary of all new shoes
 
@@ -420,12 +415,12 @@ Enter your email: <input type="text" style="width:200px; font-size:18px; font-we
 
 
 <form 
-action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" 
+action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" 
 onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=SPoTNewProducts&amp;loc=en_US', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
 <h1>Get An Email Every Time We Add New Products</h1>
 Enter your email: <input type="text" style="width:200px; font-size:18px; font-weight:bold;" name="email"/> <input type="hidden" value="spotnewproducts" name="uri"/><input type="hidden" name="loc" value="en_US"/><input style="margin-top:2px; font-size:18px; font-weight:bold;" type="submit" value="Subscribe" />
 
-<a href="https://feedburner.google.com/fb/a/mailverify?uri=SPoTNewProducts&amp;loc=en_US"><img src="http://feeds.feedburner.com/~fc/spotnewproducts?bg=FF3300&amp;fg=FFFFFF&amp;anim=0" height="26" width="88" style="border:0;" alt="" /></a>
+<a href="https://feedburner.google.com/fb/a/mailverify?uri=SPoTNewProducts&amp;loc=en_US"><img src="https://feeds.feedburner.com/~fc/spotnewproducts?bg=FF3300&amp;fg=FFFFFF&amp;anim=0" height="26" width="88" style="border:0;" alt="" /></a>
 <div>
     We are constantly getting new products in. Stay on top of them by subscribing here.
 </div>
@@ -511,13 +506,13 @@ ConnectionString="<%$ ConnectionStrings:CS %>">
 </div>
 <div style="text-align:center;">
     <a title="<%#Eval("FirstName").ToString().Replace("\"", "") %> <%#Eval("LastName").ToString().Replace("\"", "") %>" href="/skater/<%#Eval("SkaterID") %>/<%#Eval("FirstName").ToString().Replace("\"", "") %>_<%#Eval("LastName").ToString().Replace("\"", "") %>">
-    <img class="img-responsive img-center" title="<%#Eval("FirstName").ToString().Replace("\"", "") %> <%#Eval("LastName").ToString().Replace("\"", "") %>" src="http://www.skateparkoftampa.com/spot/headshots/<%# Eval("SkaterID") %>.jpg" width="250" height="250" /></a>
+    <img class="img-responsive img-center" title="<%#Eval("FirstName").ToString().Replace("\"", "") %> <%#Eval("LastName").ToString().Replace("\"", "") %>" src="https://skateparkoftampa.com/spot/headshots/<%# Eval("SkaterID") %>.jpg" width="250" height="250" /></a>
 </div>
 </ItemTemplate>
 </asp:Repeater>
 
 <a href="/company/<%=strManufacturerID %>/<%=strManufacturer.Replace("\"", "").Replace(" ", "_") %>">
-    <img class="img-responsive img-center" title="<%=strTitle %>" alt="<%=strTitle %>" src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/<%=strManufacturerID %>mfgr.jpg"  />
+    <img class="img-responsive img-center" title="<%=strTitle %>" alt="<%=strTitle %>" src="https://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/<%=strManufacturerID %>mfgr.jpg"  />
 </a>
 </div>
 

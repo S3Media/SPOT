@@ -39,7 +39,7 @@ Search through it all right here.
                 <div>
                 <a target="_blank" href="p.aspx?ID=<%#Eval("ProductID") %>&CID=<%#Eval("ColorID") %>">
                     <img title="<%#Eval("Name").ToString().Replace("\"", "") %>: <%#Eval("ShortDescr").ToString().Replace("\"", "") %>" class="img-responsive img-center"
-                        src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" />
+                        src="https://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" />
                 </a>
                 </div>
                 <a target="_blank" title="<%#Eval("Name").ToString().Replace("\"", "") %>: <%#Eval("ShortDescr").ToString().Replace("\"", "") %>" 

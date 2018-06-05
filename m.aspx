@@ -29,32 +29,23 @@
 
 <div class="BlogPost">
     <div class="row">
-    <div class="col-md-8"><h1><%=strName %> Products in Stock Now</h1></div>
-
-<div class="col-md-4" style="padding-top:28px; text-align: center;">
-        <span class="counter-fb-like">
-            <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fskateparkoftampa.com%2Fspot%2Fm.aspx%3FID%3D<%=Request.QueryString["ID"] %>&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
-        </span>
-        <span class="counter-twitter">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://skateparkoftampa.com/spot/m.aspx?ID=<%=Request.QueryString["ID"] %>" data-count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-        </span>
-</div>
+    <div class="col-md-12"><h1><%=strName %> Products in Stock Now</h1></div>
         </div>
 
 
     
 <%if (strName.Equals("Lakai"))
     { %>
-     <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/RILEY_HAWK_leaderboard.jpg" />
+     <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/RILEY_HAWK_leaderboard.jpg" />
     <%} %>
     
  <!--<%if (strName.Equals("Supra"))
     { %>
-    <img class="img-responsive img-center" src="http://skateparkoftampa.com/spot/images3/supraxshakejunt.jpg" />
+    <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/supraxshakejunt.jpg" />
     <%} %>-->
    <!-- <%if (strName.Equals("Matix"))
     { %>
-    <img class="img-responsive img-center" src="http://skateparkoftampa.com/spot/images3/MATIX-HEADPHONES-aug14.jpg" />
+    <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/MATIX-HEADPHONES-aug14.jpg" />
     <%} %>-->
     <%if (strName.Equals("New Balance Numeric"))
     { %>
@@ -66,64 +57,64 @@
     <%} %>  
     <%if (strName.Equals("Anti-Hero"))
     { %>
-    <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/AntiHero_600x150.gif" />
+    <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/AntiHero_600x150.gif" />
     <%} %>  
    <%if (strName.Equals("Volcom"))
     { %>
-    <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/AntiHero_600x150.gif" />
+    <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/AntiHero_600x150.gif" />
     <%} %>
 <%if (strName.Equals("Converse"))
     { %>
-    <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/CONS_FY18_SKATEPARKOFTAMPA_600x150_WO_CTA.jpg" />    <%} %>
+    <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/SU18_SkateparkOfTampa_ConsSkate_Purple_Digital_NO_CTA_600x150.jpg" />    <%} %>
 <%if (strName.Equals("Theories"))
     { %>
-    <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/SpotTheoriesBanner.jpg" />
+    <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/SpotTheoriesBanner.jpg" />
     <%} %> 
 <%if (strName.Equals("Hopps"))
     { %>
-    <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/SpotHoppsBanner.jpg" />
+    <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/SpotHoppsBanner.jpg" />
     <%} %>             
 <%if (strName.Equals("Magenta"))
     { %>
-    <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/SpotMagentaBanner.jpg" />
+    <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/SpotMagentaBanner.jpg" />
     <%} %>            
 <%if (strName.Equals("Isle"))
     { %>
-    <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/SpotIsleBanner.jpg" />
+    <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/SpotIsleBanner.jpg" />
     <%} %>    
 <%if (strName.Equals("Polar Skateboards"))
     { %>
-    <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/SpotPolarBanner.jpg" />
+    <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/SpotPolarBanner.jpg" />
     <%} %>             
 <%if (strName.Equals("Traffic Skateboards"))
     { %>
-    <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/SpotTrafficBanner.jpg" />
+    <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/SpotTrafficBanner.jpg" />
     <%} %>             
 <%if (strName.Equals("Spitfire"))
     { %>
-     <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/spotfire.jpg" />  
+     <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/spotfire.jpg" />  
    <%} %>
 <%if (strName.Equals("Skatepark of Tampa"))
     { %>
-     <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/spotfire.jpg" />
+     <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/spotfire.jpg" />
 <%} %>
 <%if (strName.Equals("Alien Workshop"))
     { %>
-     <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/aw-banner16.png" />
+     <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/aw-banner16.png" />
 <%} %> 
 
 <%if (strName.Equals("Emerica"))
     { %>
-     <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/em-WinoG6-SPoT600x150.jpg" />
+     <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/em-WinoG6-SPoT600x150.jpg" />
 
 <%} %> 
 <%if (strName.Equals("Glassy Sunglasses"))
     { %>
-     <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/skatewarehouse banner2.jpg" />
+     <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/skatewarehouse banner2.jpg" />
 <%} %>  
 <%if (strName.Equals("eS Footwear"))
     { %>
-     <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/eS_SPOT_BANNER_NAUTICAL_F.jpg" />
+     <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/eS_SPOT_BANNER_NAUTICAL_F.jpg" />
 <%} %>  
 
 
@@ -168,7 +159,7 @@
                     href="/product/<%#Eval("ProductID") %>/<%#Eval("Name").ToString().Replace("\"", "").Replace(" ", "_") %>_<%#Eval("Color").ToString().Replace("\"", "").Replace(" ", "_").Replace("/", "") %>_<%#Eval("ShortDescr").ToString().Replace("\"", "").Replace(" ", "_") %>/&CID=<%#Eval("ColorID") %>"><img 
                         title="<%#Eval("Name").ToString().Replace("\"", "") %> <%#Eval("Color").ToString().Replace("\"", "") %> <%#Eval("ShortDescr").ToString().Replace("\"", "") %>" 
                         class="img-responsive img-center"
-                        src="http://skateparkoftampa.com/spot/productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" /></a>
+                        src="https://skateparkoftampa.com/spot/productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" /></a>
                 
                     <div class="ProductBlockText">
                         <a title="<%#Eval("Name") %> <%#Eval("Color") %> <%#Eval("ShortDescr") %>" 
@@ -221,7 +212,7 @@
 <div class="BlogPost ShoeSizeGrid">
 <div style="float:left; padding: 2px; text-align:center;">
     <a href="ms.aspx?ID=<%=Request.QueryString["ID"] %>&SBID=1">
-    <img src="http://skateparkoftampa.com/spot/images3/vanssubclassic.gif" />
+    <img src="https://skateparkoftampa.com/spot/images3/vanssubclassic.gif" />
     <br />
     Classics
     </a>
@@ -229,7 +220,7 @@
 
 <div style="float:left; padding: 2px; text-align:center;">
     <a href="ms.aspx?ID=<%=Request.QueryString["ID"] %>&SBID=2">
-    <img src="http://skateparkoftampa.com/spot/images3/vanssubcore.gif" />
+    <img src="https://skateparkoftampa.com/spot/images3/vanssubcore.gif" />
     <br />
     Pro Skate
     </a>
@@ -237,7 +228,7 @@
 
 <div style="float:left; padding: 2px; text-align:center;">
     <a href="ms.aspx?ID=<%=Request.QueryString["ID"] %>&SBID=3">
-    <img src="http://skateparkoftampa.com/spot/images3/vanssubotw.gif" />
+    <img src="https://skateparkoftampa.com/spot/images3/vanssubotw.gif" />
     <br />
     OTW
     </a>
@@ -245,7 +236,7 @@
 
 <div style="float:left; padding: 2px; text-align:center;">
     <a href="ms.aspx?ID=<%=Request.QueryString["ID"] %>&SBID=4">
-    <img src="http://skateparkoftampa.com/spot/images3/vanssubsurf.gif" />
+    <img src="https://skateparkoftampa.com/spot/images3/vanssubsurf.gif" />
     <br />
     Surf
     </a>
@@ -253,7 +244,7 @@
 
 <div style="float:left; padding: 2px; text-align:center;">
     <a href="ms.aspx?ID=<%=Request.QueryString["ID"] %>&SBID=5">
-    <img src="http://skateparkoftampa.com/spot/images3/vanssubwomen.gif" />
+    <img src="https://skateparkoftampa.com/spot/images3/vanssubwomen.gif" />
     <br />
     Womens
     </a>
@@ -261,7 +252,7 @@
 
 <div style="float:left; padding: 2px; text-align:center;">
     <a href="ms.aspx?ID=<%=Request.QueryString["ID"] %>&SBID=7">
-    <img src="http://skateparkoftampa.com/spot/images3/vanssubcaliforniacollection.gif" />
+    <img src="https://skateparkoftampa.com/spot/images3/vanssubcaliforniacollection.gif" />
     <br />
     California<br />Collection
     </a>
@@ -317,14 +308,6 @@
     <div class="BlogPost">
     <h1><%=strName %></h1>
     <img class="img-responsive img-center" title="<%=strName %>" alt="<%=strName %>" src="<%=strImageURL %>" />
-              <div style="text-align: center;">
-                    <span class="counter-fb-like">
-                        <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fskateparkoftampa.com%2Fspot%2Fm.aspx%3FID%3D<%=Request.QueryString["ID"] %>&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe>
-                    </span>
-                    <span class="counter-twitter">
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://skateparkoftampa.com/spot/m.aspx?ID=<%=Request.QueryString["ID"] %>" data-count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                    </span>
-            </div>
     </div>
     <div class="BlogPost">
         <h1><%=strName %> Categories</h1>
@@ -345,7 +328,7 @@
 <%if (strName.Equals("NEFF")){ %>
     <div class="BlogPost">
         <h1>Get Hooked Up!</h1>
-            <img src="http://skateparkoftampa.com/spot/images2011/neff.jpg"/>
+            <img src="https://skateparkoftampa.com/spot/images2011/neff.jpg"/>
     </div>
 <%}%>
 

@@ -39,7 +39,7 @@ SelectCommand="SPOTGetEventsAllNewPast" SelectCommandType="StoredProcedure" />
 <asp:Repeater runat="server" ID="rptEvents" DataSourceID="sdsEvents">
     
 <ItemTemplate>
-        <div class="BlogPost">
+        <div class="BlogPost event-pg">
             <h2>
                 <%# DataBinder.Eval(Container.DataItem, "Title")%>
                 :

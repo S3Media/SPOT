@@ -78,14 +78,6 @@
 </HeaderTemplate>
 <ItemTemplate>
 <div class="BlogPost">        
-<div class="PostMediaStripSub" style="float:right;">
-        <span class="counter-fb-like">
-            <iframe src="//www.facebook.com/plugins/like.php?href=<%# Server.UrlEncode(Eval("ShareLink").ToString()) %>&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
-        </span>
-        <span class="counter-twitter">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="<%#Eval("ShareLink") %>" data-count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-        </span>
-</div>
 <h1><a href="w.aspx?ID=<%#Eval("WhatsNewID") %>"><%#Eval("Title") %></a></h1>
     <h3 class="PostInfo">Posted by <%#Eval("PostedBy") %>, <%#Eval("DateAdded", "{0:D}") %> <%#Eval("DateAdded", "{0:t}") %></h3>
     <div class="BlogText">
@@ -241,7 +233,7 @@ Enter your email: <input type="text" style="width:200px; font-size:18px; font-we
     
 <div class="BlogPost">
     <h2><a href="whatsnew.aspx" class="MorePosts">More Blog Posts</a></h2>
-    <a href="whatsnew.aspx" class="MorePosts">VIEW MORE POSTS</a> or you can view the <a href="whatsnew.aspx">entire What's Up Blog archives</a>.
+
 </div>
 
 

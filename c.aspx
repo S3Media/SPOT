@@ -7,10 +7,10 @@
 <meta name="description" content="Skateboarding <%=strTitle %>. All stuff shown is in stock with immediate shipping and great service. Email us at info@skateparkoftampa.com anytime for a quick response. Skatepark of Tampa: A crusty little warehouse in Tampa, Florida with the best service and selection in skateboarding since 1993.">
 <meta itemprop="name" content="Skateboarding <%=strTitle %> in stock at SPoT Skate Shop">
 <meta itemprop="description" content="Skateboarding <%=strTitle %> in stock at SPoT Skate Shop. All stuff shown is in stock with immediate shipping and great service. Email us at info@skateparkoftampa.com anytime for a quick response.">
-<meta itemprop="image" content="http://www.skateparkoftampa.com/spot/images3/circlecity450.jpg">
+<meta itemprop="image" content="https://skateparkoftampa.com/spot/images3/circlecity450.jpg">
 <meta property="og:title" content="<%=strTitle %> in stock at SPoT Skate Shop"/>
 <meta property="og:type" content="product"/>
-<meta property="og:image" content="http://www.skateparkoftampa.com/spot/images3/circlecity450.jpg"/>
+<meta property="og:image" content="https://skateparkoftampa.com/spot/images3/circlecity450.jpg"/>
 <meta property="og:site_name" content="SPoT Skate Shop at Skatepark of Tampa"/>
 <meta property="og:description" content="Skateboarding <%=strTitle %>. All stuff shown is in stock with immediate shipping and great service. Email us at info@skateparkoftampa.com anytime for a quick response. Skatepark of Tampa: A crusty little warehouse in Tampa, Florida with the best service and selection in skateboarding since 1993."/>
 
@@ -48,7 +48,7 @@
 
 
 
-    <div id="NewArrivals">
+
         <asp:SqlDataSource runat="server" ID="sdsNew"
             SelectCommand="SPOT2012CategoryProductsNewArrivalsPaged" SelectCommandType="StoredProcedure"
             ConnectionString="<%$ ConnectionStrings:CS %>"
@@ -63,10 +63,10 @@
                 <div class="col-xs-6 col-sm-4 ProductBlock">
                 
                     <a 
-                    title="<%#Eval("Name").ToString().Replace("\"", "") %> <%#Eval("Color").ToString().Replace("\"", "") %> <%#Eval("ShortDescr").ToString().Replace("\"", "") %>" 
-                    href="p.aspx?ID=<%#Eval("ProductID") %>&CID=<%#Eval("ColorID") %>"><img class="img-responsive img-center"
+                    title="<%#Eval("Name").ToString().Replace("\"", "") %> <%#Eval("Color").ToString().Replace("\"", "") %> <%#Eval("ShortDescr").ToString().Replace("\"", "") %>"
+                    href="http://www.skateparkoftampa2.com/<%#Eval("Unique_URL") %>"><img class="img-responsive img-center"
                         title="<%#Eval("Name").ToString().Replace("\"", "") %> <%#Eval("Color").ToString().Replace("\"", "") %> <%#Eval("ShortDescr").ToString().Replace("\"", "") %>" width="190" height="190" 
-                        src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" /></a>
+                        src="https://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" /></a>
                 
                     <div class="ProductBlockText">
                     <a 
@@ -83,7 +83,7 @@
                 </div>
             </ItemTemplate>
         </asp:Repeater>
-    </div>
+
     
     <div id="loadmoreajaxloader" class="BlogPost" style="clear:both; text-align:center; display:none;"><img src="ajaxloadingmore.gif" /> Loading More... <img src="ajaxloadingmore.gif" /></div>
 
@@ -173,11 +173,11 @@
         <h1><%=strTitle %> in Stock Now:</h1>
     </HeaderTemplate>
     <ItemTemplate>
-        <div class="col-xs-6 col-sm-4 NewArrivalSmallBlock">
+        <div class="col-xs-6 col-sm-4 NewArrivalSmallBlock tall">
             <div>
                 <a title="<%#Eval("Name").ToString().Replace("\"", "")%> <%=strTitle %>" 
                 href="m.aspx?ID=<%# Eval("ManufacturerID")%>">
-                <img height="60" width="60" class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/productimages/<%# Eval("ManufacturerID")%>mfgrthumb.jpg" title="<%#Eval("Name").ToString().Replace("\"", "")%> <%=strTitle %>" />
+                <img height="60" width="60" class="img-responsive img-center" src="https://skateparkoftampa.com/spot/productimages/<%# Eval("ManufacturerID")%>mfgrthumb.jpg" title="<%#Eval("Name").ToString().Replace("\"", "")%> <%=strTitle %>" />
                 </a>
             </div>
             <div class="NotesAndTips">

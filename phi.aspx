@@ -44,27 +44,6 @@
     <div style="margin-bottom: 10px;">
         <%=strCaption %>
     </div>
-    
-
-
-    <div class="PostMediaStrip">
-        <div class="PostMediaStripSub">
-                <span class="counter-fb-like">
-                    <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fskateparkoftampa.com%2Fspot%2Fphi.aspx%3FI%3D<%=intImageID %>&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe>
-                </span>
-                <span class="counter-twitter">
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://skateparkoftampa.com/spot/phi.aspx?I=<%=intImageID %>" data-count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                </span>
-                    
-                <span class="counter-google-one">
-                    <g:plusone size="medium" href="http://skateparkoftampa.com/spot/phi.aspx?I=<%=intImageID %>"></g:plusone>
-                </span>
-                <span class="counter-stumble">
-                    <script src="http://www.stumbleupon.com/hostedbadge.php?s=3&r=http://skateparkoftampa.com/spot/phi.aspx?I=<%=intImageID %>"></script>
-                </span>
-
-        </div>
-    </div>
 
     <div style="text-align:center;">
         <img class="img-responsive img-center" alt="<%=strTitle.Replace("\"", "") %>" title="<%=strTitle.Replace("\"", "") %>" src="<%=strImageName %>" />
@@ -88,18 +67,6 @@ Enter your email: <input type="text" style="width:200px; font-size:18px; font-we
 
 <a href="http://feedburner.google.com/fb/a/mailverify?uri=spotwhatsup&loc=en_US"><img src="http://feeds.feedburner.com/~fc/spotwhatsup?bg=FF3300&amp;fg=FFFFFF&amp;anim=0" height="26" width="88" style="border:0; padding-left:30px;" alt="" /></a></form>
 
-
-
-
-
-<div>
-    
-
-
-
-
-
-</div>
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphSidebar" Runat="Server">
@@ -128,17 +95,10 @@ Enter your email: <input type="text" style="width:200px; font-size:18px; font-we
 <Products:NewArrivals ID="NewArrivals1" runat="server" />
 
 
-</div>
-
 
 <div>
     <WhatsNew:Summary ID="Summary1" runat="server" />
 </div>
-
-<div>
-
-
-
 
     <div class="BlogPost">
     <h1>In Stock, Immediate Shipping</h1>
@@ -169,6 +129,6 @@ Enter your email: <input type="text" style="width:200px; font-size:18px; font-we
 	    <FooterTemplate></div></FooterTemplate>
     </asp:Repeater>
 
-    </div>
+
 </asp:Content>
 

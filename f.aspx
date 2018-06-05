@@ -87,7 +87,7 @@
                 
                     <a href="p.aspx?ID=<%#Eval("ProductID") %>&CID=<%#Eval("ColorID") %>"><img 
                         title="<%#Eval("Name") %> <%#Eval("Color") %> <%#Eval("ShortDescr") %>" class="img-responsive img-center"
-                        src="http://www.skateparkoftampa.com/spot/productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" /></a>
+                        src="https://skateparkoftampa.com/spot/productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" /></a>
                 
                     <div class="ProductBlockText"><%#Eval("Name")%> 
                         <%#Eval("ShortDescr")%> <%#Eval("Color")%> <%#Eval("CurrentPrice", "{0:c}")%>

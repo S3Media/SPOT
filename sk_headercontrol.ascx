@@ -11,15 +11,7 @@
     <ItemTemplate>
        <div class="col-sm-8"> <h1><%=strSkaterName %> Skater Profile</h1></div>
         <div class="col-sm-4" style="text-align: center;">
-            <span class="counter-fb-like">
-                <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fskateparkoftampa.com%2Fspot%2Fsk.aspx%3FID%3D<%=Request.QueryString["ID"] %>&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
-            </span>
-            <span class="counter-twitter">
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://skateparkoftampa.com/spot/sk.aspx?ID=<%=Request.QueryString["ID"] %>" data-count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-            </span>
-            <span class="counter-google-one">
-                <g:plusone size="medium" href="http://skateparkoftampa.com/spot/sk.aspx?ID=<%=Request.QueryString["ID"] %>"></g:plusone>
-            </span>
+           
     </div>
         <div class="BlogPost ShoeSizeGrid hidden-md hidden-lg" id="MugShot">
         <img class="img-responsive img-center MugShotProfile" src="<%=strImageURL%>"  alt="<%=strSkaterName.Replace("\"", "") %> Photo" 
@@ -149,7 +141,7 @@
                         height:300px; margin-bottom:20px; text-align:center;">
                         <div class="NotesAndTips">
 			                <img style="width:280px; height:280px;" 
-                                src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>headshots/<%#Eval("MugShotID") %>mug.jpg" />
+                                src="https://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>headshots/<%#Eval("MugShotID") %>mug.jpg" />
                                 <br />
 			                    Date: <%#Eval("DateAndTimeTaken")%>
 		                </div>
@@ -220,7 +212,7 @@
             <div>
                 <a href="phi.aspx?I=<%# Eval("ImageID")%>">
                 <img style="height:80px; width:80px;" title="<%#Eval("Title").ToString().Replace("\"", "") %>" 
-                    src="http://www.skateparkoftampa.com/spot/<%# Eval("ImageName").ToString().Replace(".gif", "small.gif").Replace(".jpg", "small.jpg") %>" />
+                    src="https://www.skateparkoftampa.com/spot/<%# Eval("ImageName").ToString().Replace(".gif", "small.gif").Replace(".jpg", "small.jpg") %>" />
                 </a>
             </div>
             <div style="font-size:.7em;">
@@ -247,7 +239,7 @@
                 <div class="col-xs-6 col-sm-4 ProductBlock">
                     <a href="/product/<%#Eval("ProductID") %>/<%#Eval("Name").ToString().Replace("\"", "").Replace(" ", "_") %>_<%#Eval("Color").ToString().Replace("\"", "").Replace(" ", "_").Replace("/", "") %>_<%#Eval("ShortDescr").ToString().Replace("\"", "").Replace(" ", "_") %>/&CID=<%#Eval("ColorID") %>"><img 
                         title="<%#Eval("Name") %> <%#Eval("Color") %> <%#Eval("ShortDescr") %>" width="190" height="190" 
-                        src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" /></a>
+                        src="https://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" /></a>
                     <div class="ProductBlockText"><%#Eval("Name")%> 
                         <%#Eval("ShortDescr")%> <%#Eval("Color")%> <%#Eval("CurrentPrice", "{0:c}")%>
                     </div>
@@ -275,7 +267,7 @@
                 <div class="col-xs-6 col-sm-4 ProductBlock">
                     <a href="/product/<%#Eval("ProductID") %>/<%#Eval("Name").ToString().Replace("\"", "").Replace(" ", "_") %>_<%#Eval("Color").ToString().Replace("\"", "").Replace(" ", "_").Replace("/", "") %>_<%#Eval("ShortDescr").ToString().Replace("\"", "").Replace(" ", "_") %>/&CID=<%#Eval("ColorID") %>"><img class="img-responsive img-center"
                         title="<%#Eval("Name") %> <%#Eval("Color") %> <%#Eval("ShortDescr") %>" width="190" height="190" 
-                        src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" /></a>
+                        src="https://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" /></a>
                     <div class="ProductBlockText"><%#Eval("Name")%> 
                         <%#Eval("ShortDescr")%> <%#Eval("Color")%> <%#Eval("CurrentPrice", "{0:c}")%>
                     </div>
@@ -320,8 +312,8 @@
         <h1>Tweets from <%=strSkaterName %> (@<%=strTwitter %> on Twitter)</h1>
         <div class="BlogPost">
             <div id="twitter_update_list"></div>
-            <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-            <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/<%=strTwitter %>.json?callback=twitterCallback2&count=30"></script>
+            <script type="text/javascript" src="https://twitter.com/javascripts/blogger.js"></script>
+            <script type="text/javascript" src="https://twitter.com/statuses/user_timeline/<%=strTwitter %>.json?callback=twitterCallback2&count=30"></script>
         </div>
     </asp:Panel>
     
@@ -348,7 +340,7 @@
 
 <div class="BlogPost">
 <h2><%=strSkaterName %> Comments</h2>
-    <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=106807979370947&amp;xfbml=1"></script><fb:comments href="http://www.skateparkoftampa.com/spot/sk.aspx?ID=<%=Request.QueryString["ID"] %>" num_posts="5" width="100%"></fb:comments>							
+    <div id="fb-root"></div><script src="https://connect.facebook.net/en_US/all.js#appId=106807979370947&amp;xfbml=1"></script><fb:comments href="https://www.skateparkoftampa.com/spot/sk.aspx?ID=<%=Request.QueryString["ID"] %>" num_posts="5" width="100%"></fb:comments>							
 </div>				
 
 

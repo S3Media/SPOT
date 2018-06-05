@@ -2,7 +2,7 @@
 <div class="BlogPost">
 <h1>Shop</h1>
     
-    <ul>
+    <ul class="shop-cats-list">
             <li>
                 <a title="Skateboarding Accessories"
                 href="/accessories">

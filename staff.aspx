@@ -5,10 +5,10 @@
 <meta name="description" content="Skatepark of Tampa staff recommended products.  All stuff shown is in stock with immediate shipping and great service. Email us at info@skateparkoftampa.com anytime for a quick response. Skatepark of Tampa: A crusty little warehouse in Tampa, Florida with the best service and selection in skateboarding since 1993.">
 <meta itemprop="name" content="SPoT Skate Shop Staff Recommendations in stock at SPoT Skate Shop">
 <meta itemprop="description" content="All stuff shown is in stock with immediate shipping and great service. Email us at info@skateparkoftampa.com anytime for a quick response.">
-<meta itemprop="image" content="http://www.skateparkoftampa.com/spot/images3/circlecity450.jpg">
+<meta itemprop="image" content="https://skateparkoftampa.com/spot/images3/circlecity450.jpg">
 
 <meta property="og:title" content="SPoT Staff Recommendations in stock at SPoT Skate Shop"/>
-<meta property="og:image" content="http://www.skateparkoftampa.com/spot/images3/circlecity450.jpg"/>
+<meta property="og:image" content="https://skateparkoftampa.com/spot/images3/circlecity450.jpg"/>
 <meta property="og:site_name" content="SPoT Skate Shop at Skatepark of Tampa"/>
 <meta property="og:description" content="SPoT Skate Shop staff recommended products. All stuff shown is in stock with immediate shipping and great service. Email us at info@skateparkoftampa.com anytime for a quick response. Skatepark of Tampa: A crusty little warehouse in Tampa, Florida with the best service and selection in skateboarding since 1993."/>
 
@@ -37,8 +37,8 @@ A place is nothing without its staff.  Below is the crew that makes it happen ar
                 <div class="col-sm-3 staff">
                 <h2><%#Eval("Employee") %></h2>
 
-                <a href="http://www.skateparkoftampa.com/spot/sk.aspx?ID=<%#Eval("SkaterID") %>">
-                <img src="http://www.skateparkoftampa.com/spot/headshots/<%#Eval("SkaterID") %>.jpg" class="img-responsive"/>
+                <a href="https://skateparkoftampa.com/spot/sk.aspx?ID=<%#Eval("SkaterID") %>">
+                <img src="https://skateparkoftampa.com/spot/headshots/<%#Eval("SkaterID") %>.jpg" class="img-responsive"/>
 	            </a>
                 </div>
 
@@ -52,7 +52,7 @@ A place is nothing without its staff.  Below is the crew that makes it happen ar
 				        
                             <div class="col-xs-6 col-sm-4" style="text-align: center; height: 100px;">
                                 <a href="p.aspx?ID=<%#Eval("ProductID") %>&CID=<%#Eval("ColorID") %>">
-                                    <img src="http://www.skateparkoftampa.com/spot/productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>thumb.jpg" class="img-responsive img-center"/>
+                                    <img src="https://skateparkoftampa.com/spot/productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>thumb.jpg" class="img-responsive img-center"/>
                                 </a>
                             
                         

@@ -9,7 +9,7 @@
 <meta itemprop="image" content="<%=strImageURL %>">
 <meta property="og:title" content="<%=strSkaterName %> Skateboarder Profile"/>
 <meta property="og:type" content="profile"/>
-<meta property="og:URL" content="http://skateparkoftampa.com/spot/sk.aspx?ID=<%=Request.QueryString["ID"] %>"/>
+<meta property="og:URL" content="https://skateparkoftampa.com/spot/sk.aspx?ID=<%=Request.QueryString["ID"] %>"/>
 <meta property="og:image" content="<%=strImageURL %>"/>
 <meta property="og:site_name" content="SPoT Skate Shop at Skatepark of Tampa"/>
 <meta property="og:description" content="<%=strSkaterName %>: Photos, video, contest history, magazine coverage, and more. Skatepark of Tampa: A crusty little warehouse in Tampa, Florida with the best service and selection in skateboarding since 1993."/>
@@ -54,8 +54,8 @@
         $("#frmSearch").bind("keypress", function (e) {
             //alert(e.keyCode);
             if (e.keyCode == 13) {
-                //$(this).find('input[type=submit]:first').click();
-                //alert('you pressed enter, value of text is ' + $('#t').attr('value'));
+                $(this).find('input[type=submit]:first').click();
+                alert('you pressed enter, value of text is ' + $('#t').val());
                 ShowSearch();
                 e.preventDefault();
             }
@@ -65,7 +65,7 @@
             ShowSearch();
         });
         function ShowSearch() {
-            var strSearchText = $("#t").attr("value");
+            var strSearchText = $('#t').val();
             if (strSearchText.length > 2) {
                 $.ajax({
                     url: "ajax/ajax_skatersearchresults.aspx?t=" + strSearchText + "&SearchType=Skaters&ID=<%=Request["ID"] %>",
@@ -102,12 +102,12 @@
 <h1>Other Skater Links</h1>
 
     <ul style="font-size:.9em;">
-        <li><a title="Skateboarder Database" href="http://skateparkoftampa.com/skaters">Full Skater Database</a> - 6000+ skater profiles.</li>
-        <li><a title="Pro and Am Skateboarders on Instagram" href="http://skateparkoftampa.com/pro_skateboarders_instagram">Skateboarders on Instagram</a> - browse your favorite pros and ams on Instagram.</li>
-        <li><a title="Skateboarding News and Coverage" href="http://skateparkoftampa.com/news">Skate News and Videos</a> - daily skate news and videos from around the web.</li>
-        <li><a title="Skateboarding Media Coverage" href="http://skateparkoftampa.com/media">Media Coverage</a> - we log all major magazine coverage by skater and photographer.</li>
-        <li><a title="Skateboard Photographers" href="http://skateparkoftampa.com/spot/cp.aspx">Skate Photographers</a> - we log all major magazine coverage by skater and photographer.</li>
-        <li><a title="Skateboard Contest Results" href="http://skateparkoftampa.com/results">Contest Results</a> - over a decade's worth of contest history.</li>
+        <li><a title="Skateboarder Database" href="https://skateparkoftampa.com/skaters">Full Skater Database</a> - 6000+ skater profiles.</li>
+        <li><a title="Pro and Am Skateboarders on Instagram" href="https://skateparkoftampa.com/pro_skateboarders_instagram">Skateboarders on Instagram</a> - browse your favorite pros and ams on Instagram.</li>
+        <li><a title="Skateboarding News and Coverage" href="https://skateparkoftampa.com/news">Skate News and Videos</a> - daily skate news and videos from around the web.</li>
+        <li><a title="Skateboarding Media Coverage" href="https://skateparkoftampa.com/media">Media Coverage</a> - we log all major magazine coverage by skater and photographer.</li>
+        <li><a title="Skateboard Photographers" href="https://skateparkoftampa.com/spot/cp.aspx">Skate Photographers</a> - we log all major magazine coverage by skater and photographer.</li>
+        <li><a title="Skateboard Contest Results" href="https://skateparkoftampa.com/results">Contest Results</a> - over a decade's worth of contest history.</li>
     </ul>
         
 </div>
@@ -128,7 +128,7 @@
 <div class="BlogPost">
     <h1>Download Our App</h1>
     Download Skatepark of Tampa's Skate Nerd app
-    <a href="http://itunes.apple.com/us/app/spot-skate-nerd/id544443560?ls=1&mt=8" target="_blank">
+    <a href="https://itunes.apple.com/us/app/spot-skate-nerd/id544443560?ls=1&mt=8" target="_blank">
         for iphone
     </a>
     and 

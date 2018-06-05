@@ -56,7 +56,7 @@ Our current roster of rippers. Look for these dudes at our local contests and aw
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=3713">
 
-            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/alej.png" />
+            <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/alejandro-burnell-team.jpg" />
         </a>
 
     </div></div>
@@ -124,10 +124,24 @@ Our current roster of rippers. Look for these dudes at our local contests and aw
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=3123">
 
-            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/clive.png" />
+            <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/clive-dixon-team.jpg" />
         </a>
 
     </div></div>
+
+
+   <div class="col-sm-3"><div class="BlogPost SpotTeam">
+
+        <h2>Derick Glancy</h2>
+    
+        <a href="https://skateparkoftampa.com/spot/sk.aspx?ID=5543">
+
+            <img class="img-responsive img-center" src="https://www.skateparkoftampa.com/spot/images3/derick-g-team.jpg" />
+        </a>
+
+    </div></div>
+        </div>
+    <div class="row">
 
 
 <div class="col-sm-3"><div class="BlogPost SpotTeam">
@@ -140,8 +154,6 @@ Our current roster of rippers. Look for these dudes at our local contests and aw
         </a>
 
     </div></div>
-        </div>
-    <div class="row">
 
 
 <div class="col-sm-3"><div class="BlogPost SpotTeam">
@@ -165,7 +177,7 @@ Our current roster of rippers. Look for these dudes at our local contests and aw
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=4424">
 
-            <img src="http://www.skateparkoftampa.com/spot/images3/james.png" />
+            <img src="https://skateparkoftampa.com/spot/images3/james-cobb-team.jpg" />
         </a>
 
     </div></div>
@@ -185,6 +197,8 @@ Our current roster of rippers. Look for these dudes at our local contests and aw
 
     </div></div>
 
+        </div>
+    <div class="row">
 
 
 
@@ -195,15 +209,21 @@ Our current roster of rippers. Look for these dudes at our local contests and aw
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=782">
 
-            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/JIMMY-TEAMSHOT.png" />
+            <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/jimmy-marcus-team.jpg" />
         </a>
 
     </div></div>
-        </div>
-    <div class="row">
 
+<div class="col-sm-3"><div class="BlogPost SpotTeam">
 
+        <h2>Kris Clayton</h2>
+    
+        <a href="https://skateparkoftampa.com/spot/sk.aspx?ID=6664">
 
+            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/kris-clayton.jpg" />
+        </a>
+
+    </div></div>
 
 
 <div class="col-sm-3"><div class="BlogPost SpotTeam">
@@ -227,7 +247,21 @@ Our current roster of rippers. Look for these dudes at our local contests and aw
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=3638">
 
-            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/markus.png" />
+            <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/markus-jalaber-team.jpg" />
+        </a>
+
+    </div></div>
+
+        </div>
+    <div class="row">
+
+<div class="col-sm-3"><div class="BlogPost SpotTeam">
+
+        <h2>Marse Farmer</h2>
+    
+        <a href="https://skateparkoftampa.com/spot/sk.aspx?ID=4989">
+
+            <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/marse-farmer-team.jpg" />
         </a>
 
     </div></div>
@@ -241,7 +275,7 @@ Our current roster of rippers. Look for these dudes at our local contests and aw
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=298">
 
-            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/headshots/298.jpg" />
+            <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/mike-frazier-team.jpg" />
         </a>
 
     </div></div>
@@ -260,8 +294,6 @@ Our current roster of rippers. Look for these dudes at our local contests and aw
         </a>
 
     </div></div>
-        </div>
-    <div class="row">
 
 
 
@@ -277,6 +309,8 @@ Our current roster of rippers. Look for these dudes at our local contests and aw
     </div></div>
 
 
+        </div>
+    <div class="row">
 
 <div class="col-sm-3"><div class="BlogPost SpotTeam">
 
@@ -305,22 +339,6 @@ Our current roster of rippers. Look for these dudes at our local contests and aw
 
 <div class="col-sm-3"><div class="BlogPost SpotTeam">
 
-        <h2>Treshan O'Shaughnessy</h2>
-    
-        <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=4404">
-
-            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/treshan.png" />
-        </a>
-
-    </div></div>
-        </div>
-    <div class="row">
-
-
-
-
-<div class="col-sm-3"><div class="BlogPost SpotTeam">
-
         <h2>Tyson Peterson</h2>
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=4203">
@@ -339,11 +357,13 @@ Our current roster of rippers. Look for these dudes at our local contests and aw
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=5684">
 
-            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/wes-box.png" />
+            <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/wes-box-team.jpg" />
         </a>
 
     </div></div>
 
+        </div>
+    <div class="row">
 
 <div class="col-sm-3"><div class="BlogPost SpotTeam">
 
@@ -351,11 +371,13 @@ Our current roster of rippers. Look for these dudes at our local contests and aw
     
         <a href="http://skateparkoftampa.com/spot/sk.aspx?ID=4018">
 
-            <img class="img-responsive img-center" src="http://www.skateparkoftampa.com/spot/images3/zion.png" />
+            <img class="img-responsive img-center" src="https://skateparkoftampa.com/spot/images3/zion-wright-team.jpg" />
         </a>
 
     </div></div>
+
         </div>
+
     
 
 

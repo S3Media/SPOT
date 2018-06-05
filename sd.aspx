@@ -60,46 +60,31 @@
 
 
 <div class="BlogPost">
-<h1>Full Skater List</h1>
-<div class="PostMediaStrip">
-    <div class="PostMediaStripSub">
-            <span class="counter-fb-like">
-                <iframe src="//www.facebook.com/plugins/like.php?href=http://skateparkoftampa.com/pro_skateboarders_instagram&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe>
-            </span>
-            <span class="counter-twitter">
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://skateparkoftampa.com/pro_skateboarders_instagram" data-count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-            </span>
-                    
-            <span class="counter-google-one">
-                <g:plusone size="medium" href="http://skateparkoftampa.com/pro_skateboarders_instagram"></g:plusone>
-            </span>
-            <span class="counter-stumble">
-                <script src="http://www.stumbleupon.com/hostedbadge.php?s=3&r=http://skateparkoftampa.com/pro_skateboarders_instagram"></script>
-            </span>
-
-    </div>
-</div>
     <div class="row">
     <div class="col-sm-6">
+        <h1>Full Skater List</h1>
         This is the most complete list of all am and pro skaters that we know of.    
         Each profile contains <a href="r.aspx">contest results</a>, <a href="ph.aspx">photos</a>, 
         <a href="media.aspx">media coverage</a>, and more.  We have been maintaining this for over 12 years.
         <br /><br />
 
-        Select a letter to see last names start with that letter:<br />
+        Select a letter to see last names start with that letter:
+        <div class="row">
         <asp:SqlDataSource runat="server" ID="sdsList" ConnectionString="<%$ ConnectionStrings:CS %>"
          SelectCommand="SPOT2012SkatersLastNameGrouping" SelectCommandType="StoredProcedure" EnableCaching="true" CacheDuration="10000" />
 
         <asp:Repeater runat="server" ID="rptList" DataSourceID="sdsList">
         <ItemTemplate>
             <div class="col-xs-6 col-sm-2">
-                <div class="SizeSelectionGridItemSmall">
+                <div class="SizeSelectionGridItemSmall name">
                     <a href="sd.aspx?L=<%#Eval("Letter") %>" title="<%#Eval("Skaters") %> Skaters"><%#Eval("Letter") %></a>
                 </div>
             </div>
         </ItemTemplate>
         </asp:Repeater>
+            </div>
     </div>
+        <div class="clearfix visible-xs"></div>
     <div class="col-sm-6">
         <h1>Most Viewed Skaters This Week</h1>
         <div class="row">
@@ -133,7 +118,7 @@
         <div class="row">
     </HeaderTemplate>
     <ItemTemplate>
-        <div class="col-xs-6 col-sm-3">
+        <div class="col-xs-6 col-sm-4 skaternames">
         <div class="SizeSelectionGridItemSmall">
             <a href="http://skateparkoftampa.com/skater/<%#Eval("SkaterID") %>/<%#Eval("SkaterName").ToString().Replace("\"", "").Replace(" ", "_") %>" 
             title="<%#Eval("SkaterName") %> Profile, Photos, Video, Contest Results, and More"><%#Eval("SkaterName") %></a>

@@ -22,7 +22,7 @@ EnableCaching="true" CacheDuration="3000">
                     <a title="<%#Eval("Name") %> <%#Eval("Color") %> <%#Eval("ShortDescr") %>" 
                     href="p.aspx?ID=<%#Eval("ProductID") %>&CID=<%#Eval("ColorID") %>"><img 
                         title="<%#Eval("Name") %> <%#Eval("Color") %> <%#Eval("ShortDescr") %>" width="190" height="190" 
-                        src="http://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" /></a>
+                        src="https://<%=Request.ServerVariables["HTTP_HOST"] %><%=ConfigurationSettings.AppSettings["SPoTFolder"] %>productimages/colors/<%#Eval("ColorID") %>_<%#Eval("ProductID") %>.jpg" /></a>
                 
                     <div class="ProductBlockText">
                         <a title="<%#Eval("Name") %> <%#Eval("Color") %> <%#Eval("ShortDescr") %>" 
@@ -62,7 +62,7 @@ EnableCaching="true" CacheDuration="3000">
                         <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fskateparkoftampa.com%2Fspot%2Fm.aspx%3FID%3D<%=Request.QueryString["ID"] %>&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=128422270572394" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe>
                     </span>
                     <span class="counter-twitter">
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://skateparkoftampa.com/spot/m.aspx?ID=<%=Request.QueryString["ID"] %>" data-count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://skateparkoftampa.com/spot/m.aspx?ID=<%=Request.QueryString["ID"] %>" data-count="horizontal" data-via="SPoTTampa">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
                     </span>
             </div>
 
@@ -86,7 +86,7 @@ EnableCaching="true" CacheDuration="3000">
 <%if (strName.Equals("NEFF")){ %>
     <div class="BlogPost">
         <h1>Get Hooked Up!</h1>
-            <img src="http://skateparkoftampa.com/spot/images2011/neff.jpg"/>
+            <img src="https://skateparkoftampa.com/spot/images2011/neff.jpg"/>
     </div>
 <%}%>
 

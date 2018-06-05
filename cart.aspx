@@ -4,11 +4,11 @@
 <meta name="description" content="All stuff shown is in stock with immediate shipping and great service. Email us at info@skateparkoftampa.com anytime for a quick response. Skatepark of Tampa: A crusty little warehouse in Tampa, Florida with the best service and selection in skateboarding since 1993.">
 <meta itemprop="name" content="Your Shopping Cart at SPoT Skate Shop">
 <meta itemprop="description" content="All stuff shown is in stock with immediate shipping and great service. Email us at info@skateparkoftampa.com anytime for a quick response.">
-<meta itemprop="image" content="http://www.skateparkoftampa.com/spot/images3/circlecity450.jpg">
+<meta itemprop="image" content="https://www.skateparkoftampa.com/spot/images3/circlecity450.jpg">
 
 <meta property="og:title" content="Your Shopping Cart at SPoT Skate Shop"/>
 <meta property="og:type" content="company"/>
-<meta property="og:image" content="http://www.skateparkoftampa.com/spot/images3/circlecity450.jpg"/>
+<meta property="og:image" content="https://www.skateparkoftampa.com/spot/images3/circlecity450.jpg"/>
 <meta property="og:site_name" content="Your Shopping Cart at SPoT Skate Shop"/>
 <meta property="og:description" content="Skatepark of Tampa: A crusty little warehouse in Tampa, Florida with the best service and selection in skateboarding since 1993."/>
 
@@ -45,11 +45,11 @@
 
         $("#cmdSubmitNew").click(function (event) {
             //alert(validateEmail());
-            if (validateEmail() == false) {
-                event.preventDefault();
-                $("#ErrorMessage").html('Please enter a valid email address.');
-                $("#txtEmailNew").focus();
-            }
+          //  if (validateEmail() == false) {
+           //     event.preventDefault();
+           //     $("#ErrorMessage").html('Please enter a valid email address.');
+           //     $("#txtEmailNew").focus();
+         //   }
             if (passwordMatch() == false) {
 
                 event.preventDefault();
@@ -180,9 +180,36 @@
 <a href="checkout.aspx">Checkout</a> 
 <a href="email.aspx">Save/Send Your Cart</a>
 <a href="login.aspx">My Account</a>
+    <form name="icForm" id="icForm" method="post" action="https://www.internationalcheckout.com/cart.php">
+        <asp:SqlDataSource runat="server" ID="sdsIntl" SelectCommand="SPOT2012CartInternationalCheckout"
+             SelectCommandType="StoredProcedure" ConnectionString="<%$ConnectionStrings:CS %>">
+            <SelectParameters><asp:CookieParameter Name="CartID" CookieName="CartID" /></SelectParameters>
+        </asp:SqlDataSource>
+        <asp:Repeater runat="server" ID="rptIntl" DataSourceID="sdsIntl">
+            <ItemTemplate>
+                <input type="hidden" name="ItemDescription<%#Eval("RowNumber") %>"
+                     value="<%# Server.HtmlEncode(Eval("ItemDescription").ToString()) %>" />
+                <input type="hidden" name="ItemSKU<%#Eval("RowNumber") %>"
+                    value="<%#Eval("InventoryID") %>" />
+                <input type="hidden" name="ItemSize<%#Eval("RowNumber") %>"
+                    value=""<%# Server.HtmlEncode(Eval("Size").ToString()) %>" />
+                <input type="hidden" name="ItemColor<%#Eval("RowNumber") %>"
+                    value=""<%# Server.HtmlEncode(Eval("Color").ToString()) %>" />
+                <input type="hidden" name="ItemQuantity<%#Eval("RowNumber") %>"
+                    value="<%#Eval("Quantity") %>" />
+                <input type="hidden" name="ItemPrice<%#Eval("RowNumber") %>"
+                    value="<%#Eval("YourPriceUnit") %>" />
+                <input type="hidden" name="ItemImage<%#Eval("RowNumber") %>"
+                    value="<%#Eval("Photo") %>" />
+                
+            </ItemTemplate>
+        </asp:Repeater>
+        <input type="hidden" name="p" value="skateparkoftampa" />
+        <input type="submit" class="ICButton"  value="International Checkout" />
+    </form>
 </div>
 
-<div class="BlogPost" style="font-size:.8em;">
+<div class="BlogPost" >
 Quantities in your cart are limited to what's in stock, so you can't add more than what we have in stock for a certain item.  We also automatically remove items
 from your cart that go out of stock.  Email <a href="mailto:info@skateparkoftampa.com">info@skateparkoftampa.com</a> for a quick reply to any questions you have.
 </div>
@@ -203,12 +230,12 @@ from your cart that go out of stock.  Email <a href="mailto:info@skateparkoftamp
                         </div>
                     <div class="col-md-6">
 					<div style="font-size:.8em;margin:0px;padding:0px;">Item #<%#Eval("InventoryID") %> </div>
-					<div style="font-size:1.1em; font-weight:bold;"><%#Eval("Manufacturer")%> <%#Eval("ShortDescr") %>
+					<div style=" font-weight:bold;"><%#Eval("Manufacturer")%> <%#Eval("ShortDescr") %>
 					</div>
 					Your Price: <%#Eval("YourPriceUnit", "{0:c}")%><br />
 					<b>Quantity: <%#Eval("Quantity") %></b>
                     <%#Eval("MaxQtyAlert") %> <%#Eval("LastOneAlert")%>
-					<div style="font-size:1.1em; font-weight:bold;">Total: <%#Eval("LineTotal", "{0:c}")%></div>
+					<div style=" font-weight:bold;">Total: <%#Eval("LineTotal", "{0:c}")%></div>
 					<div class="BuyButton">
 						<a href="cart.aspx?InventoryID=<%#Eval("InventoryID") %>&Quantity=1">Add One</a> 
 						<a href="cart.aspx?InventoryID=<%#Eval("InventoryID") %>&Quantity=-1"">Remove One</a>
@@ -226,17 +253,19 @@ from your cart that go out of stock.  Email <a href="mailto:info@skateparkoftamp
 <asp:Repeater runat="server" ID="rptCartDiscount">
 	<HeaderTemplate>
 
-	<table width="100%"></HeaderTemplate>
-	<ItemTemplate>
-		<tr>
-			<td>
-							
+</HeaderTemplate>
+	<ItemTemplate>			
 				<div class="BlogPost">
+                    <div class="row">
+                    <div class="col-md-6">
 					<a href="p.aspx?ID=<%#Eval("ProductID") %>">
-					<img src="<%#Eval("Photo") %>" style="height:300px; width:300px; padding:10px; float:left;" />
+					<img src="<%#Eval("Photo") %>" class="img-responsive img-center" />
 					</a>
+                        <hr class="visible-xs"/>
+                        </div>
+                    <div class="col-md-6">
 					<div style="font-size:.8em;margin:0px;padding:0px;">Item #<%#Eval("InventoryID") %> </div>
-					<div style="font-size:1.1em; font-weight:bold;"><%#Eval("Manufacturer")%> <%#Eval("ShortDescr") %>
+					<div style=" font-weight:bold;"><%#Eval("Manufacturer")%> <%#Eval("ShortDescr") %>
 					</div>
 					Regular Price: <%#Eval("RegularPrice", "{0:c}") %><br />
 					<span style="color:#b80b10;">Sale Discount: <%#Eval("CalculatedSaleDiscount", "{0:c}")%><br />
@@ -245,20 +274,18 @@ from your cart that go out of stock.  Email <a href="mailto:info@skateparkoftamp
 					<b>Quantity: <%#Eval("Quantity") %></b>
                     <%#Eval("MaxQtyAlert") %> <%#Eval("LastOneAlert")%>
                     <br />
-					<div style="font-size:1.1em; font-weight:bold;">Total: <%#Eval("LineTotal", "{0:c}")%></div>
+					<div style=" font-weight:bold;">Total: <%#Eval("LineTotal", "{0:c}")%></div>
 					<div class="BuyButton">
 						<a href="cart.aspx?InventoryID=<%#Eval("InventoryID") %>&Quantity=1">Add One</a> 
 						<a href="cart.aspx?InventoryID=<%#Eval("InventoryID") %>&Quantity=-1"">Remove One</a>
 						<a href="cart.aspx?InventoryID=<%#Eval("InventoryID") %>&Quantity=-1000"">Delete</a>
 					</div>
 				</div>
-
-			</td>
-		</tr>
+                        </div>
+                        </div>
 	</ItemTemplate>
 
 	<FooterTemplate>
-	</table>
 	</FooterTemplate>
 </asp:Repeater>
 
@@ -282,7 +309,7 @@ Your Total Price: <%# Eval("LineTotalTotal", "{0:c}")%>
 <%=strCouponApplyFeedback %>
 </div>
 
-<div style="font-size:.7em;padding:0px;margin:0px; text-align:center;">
+<div>
 Shipping and taxes are based on your cart weight and zip code. You will be shown these amounts when checking out before you pay.
 
 Free shipping cannot be combined with any other offers like coupons.
@@ -338,7 +365,7 @@ All orders over $59 without other offers like coupons get free UPS Ground shippi
         <%=strCouponApplyFeedback %>
     </div>
 
-    <div style="font-size:.7em;padding:0px;margin:0px; text-align:center;">
+    <div>
     Shipping and taxes are based on your cart weight and zip code. You will be shown these amounts when checking out before you pay.
     If you have a coupon code, you can't combine it with
     any other offers such as free shipping over $59 or other coupons.  Sorry, no double dipping.  Thanks for shopping with us!</div>
@@ -374,10 +401,10 @@ All orders over $59 without other offers like coupons get free UPS Ground shippi
     </div>
 
     <input type="submit" value="Login and Checkout" class="BuyButtonInput" style="margin-right:0px;" />  
-    <span style="font-size:.8em;">
+    <span>
     <input type="checkbox" style="margin-right:0px; padding:0px;" id="chkSave" name="chkSave" /> Save Login
     </span>
-    <div style="margin:0px; padding:0px; font-size:.7em;">Note: if you forgot your password, just put in your email address, click the button, and we will email it to you.</div>
+    <div>Note: if you forgot your password, just put in your email address, click the button, and we will email it to you.</div>
     </form>
 
     <form method="post" action="login.aspx">
@@ -447,8 +474,8 @@ All orders over $59 without other offers like coupons get free UPS Ground shippi
             <option  value="WI">Wisconsin</option>
             <option  value="WY">Wyoming</option>
             </select>
-        <div style="font-size:.8em;">
-        International customers, please see below.
+        <div >
+        International customers, please select the international checkout option.
         </div>
     Zip: <input type="text" class="Checkout" id="txtZip" name="txtZip" /><br />
     Phone: <input type="text" class="Checkout" id="txtPhone" name="txtPhone" /><br />
@@ -486,8 +513,8 @@ Returns and exchanges are accepted within 30 days of your order as long as the i
 
 
 <h1>Notes About UPS Shipping</h1>
-<div class="BlogPost">
-    <ul style="margin: 0px 10px 0px 0px; font-size:.7em;">
+<div class="BlogPost chkout-shipping">
+    <ul style="margin: 0px 10px 0px 0px; ">
         <li>Your shipping options are based on your cart's estimated weight (<%=strWeight %> lb) and your zip code (<%=strZip %>).</li>
         <li>The UPS "clock" starts ticking the DAY AFTER your order is handed to them.</li>
         <li>Examples:
@@ -507,36 +534,6 @@ Returns and exchanges are accepted within 30 days of your order as long as the i
 </div>
 
 </asp:Panel>
-
-
-<form name="icForm" id="icForm" method="post" action="https://www.internationalcheckout.com/cart.php">
-    <h1>International Checkout</h1>
-        <asp:SqlDataSource runat="server" ID="sdsIntl" SelectCommand="SPOT2012CartInternationalCheckout"
-             SelectCommandType="StoredProcedure" ConnectionString="<%$ConnectionStrings:CS %>">
-            <SelectParameters><asp:CookieParameter Name="CartID" CookieName="CartID" /></SelectParameters>
-        </asp:SqlDataSource>
-        <asp:Repeater runat="server" ID="rptIntl" DataSourceID="sdsIntl">
-            <ItemTemplate>
-                <input type="hidden" name="ItemDescription<%#Eval("RowNumber") %>"
-                     value="<%# Server.HtmlEncode(Eval("ItemDescription").ToString()) %>" />
-                <input type="hidden" name="ItemSKU<%#Eval("RowNumber") %>"
-                    value="<%#Eval("InventoryID") %>" />
-                <input type="hidden" name="ItemSize<%#Eval("RowNumber") %>"
-                    value=""<%# Server.HtmlEncode(Eval("Size").ToString()) %>" />
-                <input type="hidden" name="ItemColor<%#Eval("RowNumber") %>"
-                    value=""<%# Server.HtmlEncode(Eval("Color").ToString()) %>" />
-                <input type="hidden" name="ItemQuantity<%#Eval("RowNumber") %>"
-                    value="<%#Eval("Quantity") %>" />
-                <input type="hidden" name="ItemPrice<%#Eval("RowNumber") %>"
-                    value="<%#Eval("YourPriceUnit") %>" />
-                <input type="hidden" name="ItemImage<%#Eval("RowNumber") %>"
-                    value="<%#Eval("Photo") %>" />
-                
-            </ItemTemplate>
-        </asp:Repeater>
-        <input type="hidden" name="p" value="skateparkoftampa" />
-        <input type="submit" class="BuyButtonInput"  value="International Checkout" />
-    </form>
 
 </asp:Content>
 
